@@ -1,8 +1,6 @@
-# CPSC 128
+# CPSC 128: Object-oriented Programming 1
 
-The website for CPSC 128 Object-oriented Programming 1 at Yukon University.
-
-CPSC 128 is a three-credit, one semester (13 week course), CS1 course using Python.
+CPSC 128 is a three-credit, one semester (13 week), CS1 course using Python at [Yukon University](https://www.yukonu.ca).
 
 It's structure is:
 
