@@ -1,10 +1,8 @@
 # CPSC 128: Object-oriented Programming 1
 
-## This repository
+This repository contains the source files to create the website for the YukonU course CPSC 128. The web pages are generated from markdown files and supporting resources that can be found in `docs/`.
 
-This repository contains the source files to create the website for the YukonU course CPSC 128. They are mostly markdown files, and can be found in `docs/`.
-
-The repository also contains configuration files so it can be rendered by the [MkDocs](https://www.mkdocs.org) static site generation program.
+The repository also contains configuration files, e.g. `mkdocs.yml`, so it can be rendered by the [MkDocs](https://www.mkdocs.org) static site generation program.
 
 You can view the generated site at: https://ttopper.github.io/CPSC128/ 
 
