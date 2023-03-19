@@ -1,4 +1,4 @@
-# Built files
+# Generated files
 site
 
 # Python infrastructure
@@ -6,7 +6,7 @@ venv
 .venv
 __pycache__
 
-# macOS internals
+# OS generated files (macOS internals)
 .DS_Store
 
 # Temporary files

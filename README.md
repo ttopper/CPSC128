@@ -1,5 +1,15 @@
 # CPSC 128: Object-oriented Programming 1
 
+## This repository
+
+This repository contains the source files to create the website for the YukonU course CPSC 128. They are mostly markdown files, and can be found in `docs/`.
+
+The repository also contains configuration files so it can be rendered by the [MkDocs](https://www.mkdocs.org) static site generation program.
+
+You can view the generated site at: 
+
+## The course
+
 CPSC 128 is a three-credit, one semester (13 week), CS1 course using Python at [Yukon University](https://www.yukonu.ca).
 
 It's structure is:
