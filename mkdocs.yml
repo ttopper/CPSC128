@@ -1,6 +1,9 @@
 site_name: CPSC 128
 site_description: Yukon University > CPSC 128 - Object-oriented Programming 1
 site_author: Tim Topper and Kate Chatfield-Reed
+site_url: https://ttopper.github.io/CPSC128
+repo_url: https://github.com/ttopper/CPSC128
+edit_uri: edit/main/docs/
 
 theme: 
   name: readthedocs
