@@ -1,4 +1,7 @@
 site_name: CPSC 128
+site_description: Yukon University > CPSC 128 - Object-oriented Programming 1
+site_author: Tim Topper and Kate Chatfield-Reed
+
 theme: 
   name: readthedocs
   prev_next_buttons_location: bottom
@@ -7,11 +10,14 @@ theme:
           next: 78     # n
           previous: 80 # p
           search: 83   # s
-site_description: Yukon University > CPSC 128 - Object-oriented Programming 1
-site_author: Tim Topper and Kate Chatfield-Reed
+extra_css: # not working in dev-server 2023-03-19
+  - css/extra.css
+
 copyright:
   This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
-extra_css:
-  - css/extra.css
+
 markdown_extensions:
   - smarty
+
+# plugins:
+#     - search

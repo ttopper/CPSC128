@@ -1,2 +1,18 @@
-site/
-venv/
+# Built files
+site
+
+# Python infrastructure
+venv
+.venv
+__pycache__
+
+# macOS internals
+.DS_Store
+
+# Temporary files
+tmp
+
+# Utilities
+*.sh
+
+# Got ideas from: https://github.com/squidfunk/mkdocs-material/blob/master/.gitignore
