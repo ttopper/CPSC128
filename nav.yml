@@ -1,0 +1,5 @@
+nav:
+  - 01 Introduction: 'M01_Introduction/index.md'
+  - 02 SIPO: 'M02_SIPO/index.md'
+  - 03 Selection: 'M03_Selection/index.md'
+  - 04 Repetition: 'M04_Repetition/index.md'
