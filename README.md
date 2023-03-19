@@ -6,7 +6,7 @@ This repository contains the source files to create the website for the YukonU c
 
 The repository also contains configuration files so it can be rendered by the [MkDocs](https://www.mkdocs.org) static site generation program.
 
-You can view the generated site at: 
+You can view the generated site at: https://ttopper.github.io/CPSC128/ 
 
 ## The course
 
