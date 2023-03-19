@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tim Topper and Kate Chatfield-Reed" /><link rel="canonical" href="https://ttopper.github.io/CPSC128/M06_Functions/90_Assignment_6/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Assignment 6 - CPSC 128</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Assignment 6";
+        var mkdocs_page_input_path = "M06_Functions/90_Assignment_6.md";
+        var mkdocs_page_url = "/CPSC128/M06_Functions/90_Assignment_6/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> CPSC 128
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M00 Meta</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/01_M00_Overview/">This week's task list!</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/03_CoursePhilosophy/">Course Philosophy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/04_CourseSchedule/">Course Schedule</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/05_WhatLanguage/">What Language?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/06_Textbooks/">Textbooks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/07_ExaminableTopicsPointer/">Learning Outcomes → Examinable Topics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/08_InstallingPython/">Installing Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/09_MarkingScheme/">Assignment Marking Scheme</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M01 Course Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/">Introduction: The big picture 🔭</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/01-big-picture-1-computer-science/">Big Picture 1: Computer Science</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/02-big-picture-2-computers-and-programs/">Big Picture 2: Computers and Programs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/03-big-picture-3-programming/">Big Picture 3: Programming</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/04-the-world-of-the-computer-six-key-programming-concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/05-operation-1-input/">Operation #1: Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/06-operation-2-processing/">Operation #2: Processing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/07-operation-3-output/">Operation #3: Output</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/08-control-structures/">Control Structures</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/09-operation-4-sequential-execution/">Operation #4: Sequential Execution</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/10-operation-5-selection/">Operation #5: Selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/11-operation-6-repetition/">Operation #6: Repetition</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/12-bonus-operation-modularity/">Bonus Operation: Modularity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/13-summary/">Summary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/14-using-the-python-shell/">Using the Python Shell</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/70_Exercise_Sheet_1/">Exercise Sheet 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/90_Assignment_1/">Assignment 1</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M02 SIPO</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/">Introduction: Our first programs 🐣</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/01-recall-programming-is.../">Recall: Programming is\...</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/02-the-problem/">The Problem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/03-do-the-problem-by-hand/">Do The Problem By Hand</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/04-translate-the-algorithm-into-python/">Translate the Algorithm into Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/05-enter-run-and-test-the-program/">Enter, run and test the program</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/06-naming-values/">Naming Values</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/07-what-will-it-look-like-onscreen/">What will it look like onscreen?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/08-documentation/">Documentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/09-our-second-program-same-as-the-first-only-backwards/">Our second program (Same as the first only backwards)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/10-our-third-program-dhms2s.py/">Our third program (dhms2s.py)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/11-sipo-summary/">SIPO Summary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/12-packaging-quantities/">Packaging Quantities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/13-modulo-a-sixth-arithmetic-operator/">Modulo: A Sixth Arithmetic Operator</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/14-symbolic-constants/">Symbolic Constants</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/15-intermission-summary-so-far/">Intermission: Summary (so far)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/16-object-types-1-ints-and-floats/">Object Types 1: ints and floats</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/17-example-calculating-tree-radius/">Example: Calculating Tree Radius</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/18-example-value-of-your-change/">Example: Value of your change</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/19-example-making-change/">Example: Making change</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/20-pythonic-details/">Pythonic Details</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/21-triple-quoted-strings/">Triple Quoted Strings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/22-the-continuation-character/">The Continuation Character</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/23-the-done-trick/">The `done` trick</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/24-output-formatting/">Output Formatting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/25_pythonic_process/">Process for Algorithm Development in Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/70_Exercise_Sheet_2/">Exercise Sheet 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M02_SIPO/90_Assignment_2/">Assignment 2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M03 Selection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/">Introduction: Being selective 🧐</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/01-if-a-simple-artificial-example/">`if:` A Simple (artificial) Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/02-correcting-an-oversight/">Correcting an Oversight</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/03-if-syntax-in-detail/">`if` Syntax, in Detail</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/04-relational-expressions/">Relational Expressions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/05-compound-statements-and-indentation/">Compound Statements and Indentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/06-example-one-program-to-convert-f-to-c-or-c-to-f/">Example: One program to convert F to C *or* C to F</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/07-the-problem/">The Problem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/08-version-1/">Version 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/09-version-2/">Version 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/10-testing-selection/">Testing Selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/11-performance-analysis/">Performance Analysis*</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/12-a-final-very-small-example-absolute-value/">A Final (Very Small) Example: Absolute value</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/13-summary-selection-using-if/">Summary: Selection using `if`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/14-gazinta-as-in-2-gazinta-8-but-3-doesnt/">Gazinta (as in "2 Gazinta 8, but 3 doesn't")</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/15-ode-to-pythagoras/">Ode to Pythagoras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/16-utility-bills/">Utility bills</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/17-beaufort-scale/">Beaufort Scale</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/70_Exercise_Sheet_3/">Exercise Sheet 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M03_Selection/90_Assignment_3/">Assignment 3</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M04 Repetition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/">Introduction: Repetition, repetition, repetition 🔁</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/02-the-idea-go-back-up-and-repeat-some-code/">The idea: Go back up and repeat some code</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/03-the-flowchart/">The flowchart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/04-the-syntax/">The syntax</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/05-hihihi/">Hihihi!</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/06-infinite-loops/">Infinite Loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/08-validating-input/">Validating Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/10-repeating-a-program-without-restarting-it/">Repeating a program (without restarting it)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/12-problem-repeating-calculations/">Problem: Repeating calculations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/13-example-find-the-average/">Example: Find the average</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/14-sentinel-controlled-input/">Sentinel controlled input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/15-problem-the-guessing-game/">Problem: The guessing game</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/16-aside-getting-random-numbers/">Aside: Getting "random" numbers</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/17-solution-the-guessing-game/">Solution: The Guessing Game</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/18-a-puzzle-what-output-does-this-produce/">A puzzle: What output does this produce?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/19-nesting-loops/">Nesting loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/20-pythons-other-repetition-structure-for-loops/">Python's other repetition structure: `for` loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/21-completely-artificial-example-revisited-using-for/">Completely artificial example revisited: using for</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/22-for-vs-while/">`for` vs `while`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/23-f2c-revisited-fahrenheit-to-celsius-conversion-table-using-for/">f2c revisited: Fahrenheit to Celsius conversion table using `for`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/24-nesting-for-loops/">Nesting `for` loops</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/25-example-draw-a-square/">Example: Draw a square</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/26-module-4-summary/">Module 4 Summary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/27-brute-force/">Brute Force</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/28-simulation/">Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/29-problem-what-are-the-chances-four-children-all-girls/">29 problem what are the chances four children all girls</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/30-duelling-incompetents/">Duelling Incompetents</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/31-factors/">Factors</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/32-cryptarithms/">Cryptarithms</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/33-python-formatting-guidelines/">Python Formatting Guidelines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/34-a-list-creating-function-range/">A list-creating function: `range()`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/35-timing-programs/">Timing programs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/70_Exercise_Sheet_4/">Exercise Sheet 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M04_Repetition/90_Assignment_4/">Assignment 4</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M05 Lists and Strings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/">Introduction: Lists and strings 🧵</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/01-object-based-programming/">Object-based programming</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/02-sequence-types/">Sequence Types</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/03-what-can-you-do-with-a-list/">What can you do with a list?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/04-what-can-you-do-with-a-string/">What can you do with a string?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/05-example-cd-shuffle/">Example: CD Shuffle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/06-dice-odds/">Dice Odds</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/07-bar-graphs/">07 bar graphs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/08-representing-playing-cards/">Representing Playing Cards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/09-poker-hands/">Poker hands</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/10-playing-cards-an-alternative-representation/">Playing Cards: An alternative representation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/11-what-is-this-x-o-o-x-o-x/">What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/12-palindrome/">Palindrome</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/13-built-in-type-conversions/">Built-in Type Conversions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/14-the-map-function/">The map() function</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/15-tuples/">Tuples</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/70_Exercise_Sheet_5/">Exercise Sheet 5</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M05_Lists_and_Strings/90_Assignment_5/">Assignment 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M06 Functions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Introduction: Coding in chunks 🧱</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01-modularization/">Modularization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02-functions/">Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03-writing-functions-is_even/">Writing functions: `is_even()`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../04-writing-functions-syntax-summary/">Writing functions: Syntax summary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05-is_odd/">is_odd()</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06-example-dice_roll/">Example: dice_roll()</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07-default-arguments/">Default Arguments</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08-playing-card-functions-1/">Playing Card Functions 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09-reusing-functions/">Reusing Functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../10-modules/">Modules</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../11-documenting-modules-and-functions/">Documenting modules and functions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../12-summary-module-layout/">Summary: Module Layout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../13-example-playing-card-functions-2/">Example: Playing Card Functions 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-refining-import/">Refining import</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../15-scope/">Scope</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../16-the-perils-of-mutability/">The Perils of Mutability*</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../17-reference-semantics/">Object destruction: Garbage collection* using reference counting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../18-using-versus-changing-a-list/">Using versus changing a list</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../19-copying-a-list/">Copying a list</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../20-list-comprehensions/">List comprehensions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../21-what-are-these-pyc-files/">What are these pyc files?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../22-finding-the-standard-library-modules/">Finding the Standard Library Modules</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Assignment 6</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#problems">Problems</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M07 Dictionaries</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/">Introduction: Dictionaries? 📖</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/01-dictionaries/">Dictionaries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/02-dictionary-derivation/">Dictionary "derivation"</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/03-what-can-you-do-with-a-dictionary/">What can you do with a dictionary?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/04-example-word-frequencies/">Example: Word Frequencies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/05-example-scrabble-scoring/">Example: Scrabble Scoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/06-example-book-database/">Example: Book Database</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/07-example-a-list-of-dictionaries/">Example: A list of dictionaries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M07_Dictionaries/90_Assignment_7/">Assignment 7</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M08 Persistence</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/">Introduction: Persistence ∞</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/01-persistence/">Persistence</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/03-text-versus-binary-files/">Text versus Binary Files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/04-reading-from-text-files/">Reading from text files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/05-example-searching-log-files/">Example: Searching log files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/06-important-note-files-are-sequential/">Important note: Files are sequential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/07-is-there-more/">Is there more?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/08-writing-to-text-files/">Writing to text files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/09-appending-to-files/">Appending to files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/10-reading-numeric-data/">Reading numeric data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/11-designing-file-formats/">Designing file formats</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/12-pickling/">Pickling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/13-shelves/">Shelves</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/14-a-controller-for-our-database/">A controller for our database</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/15-the-main-event-loop/">The main event loop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M08_Persistence/90_Assignment_8/">Assignment 8</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M09 OOP1 Encapsulation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/">Introduction: Object-oriented programming 🎁</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/01-object-oriented-programming/">Object-Oriented Programming</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/02-encapsulation/">Encapsulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/03-inheritance/">Inheritance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/04-polymorphism/">Polymorphism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/05-the-plan-for-the-next-three-modules/">The plan for the next three modules</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/06-a-small-example-a-dice-class/">A small example: A dice class</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/07-python-oop-syntax/">Python OOP Syntax</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/08-playing-card-classes-the-specification/">Playing Card Classes: The Specification</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/09-identifying-the-necessary-classes/">Identifying the necessary classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/10-identifying-the-classes-methods/">Identifying the classes' methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/11-program-skeleton-1/">Program skeleton 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/12-an-invisible-method-a-polymorphic-aside/">An invisible method! (A polymorphic aside)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/13-program-skeleton-2/">Program Skeleton 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/14-an-invisible-class-too/">An invisible class too!</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/15-deck-methods/">Deck methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/16-hand-methods/">Hand methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/17-card-methods/">Card Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/18-putting-all-the-pieces-together/">Putting all the pieces together</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/19-running-the-whole-thing/">Running the whole thing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/20-programming-observation/">Programming Observation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M09_OOP1_Encapsulation/90_Assignment_9/">Assignment 9</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M10 OOD</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/">Introduction: Hunt the Wumpus! 😈</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/01-object-oriented-design-ood/">Object-Oriented Design (OOD)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/02-preamble-to-hunt-the-wumpus/">Preamble to Hunt the Wumpus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/03-about-hunt-the-wumpus/">About Hunt the Wumpus</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/04-oo-analysis/">OO Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/05-object-attributes-and-methods/">Object Attributes and Methods</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/06-the-cave-system-objects/">The Cave System Object(s)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/07-main-routine-pseudocode/">Main Routine Pseudocode</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/08-class-cave_system/">`class Cave_System`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/09-aside-iterative-design/">Aside: Iterative Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/10-class-room/">`class Room`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/11-class-pit/">`class Pit`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/12-class-bat/">`class Bat`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/13-class-wumpus/">`class Wumpus`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/14-class-player/">`class Player`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/15-putting-the-pieces-together/">Putting the pieces together</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/16-new-code-initializing-the-bats/">New code: Initializing the bats</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/17-new-code-pointing-to-a-missing-class-shoot-and-arrows/">New code (pointing to a missing class): `shoot` and `Arrow`s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/18-new-code-show_cheats/">New code: `show_cheats()`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/19-new-code-display-status-and-warnings/">New code: Display status and warnings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/20-memory-diagram/">Memory diagram</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/21-bug-fixing-mostly-snatch/">Bug: Fixing (mostly) snatch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/22-aside-data-structure-maintenance/">Aside: Data structure maintenance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/23-two-more-small-problems/">Two more (small) problems</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M10_OOD/24-howd-we-do/">How'd we do?</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M11 OOP2 Polymorphism and Inheritance</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/">Introduction: The rest of OOP 😎</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/01-inheritance-and-polymorphism/">Inheritance and Polymorphism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/02-inheritance-example-playing-cards/">Inheritance example: Playing Cards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/03-class-cardcollection/">`class CardCollection`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/04-class-deck/">`class Deck`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/05-class-hand/">`class Hand`</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/06-putting-the-pieces-together/">Putting the pieces together</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/07-aside-refactoring/">Aside: Refactoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/08-polymorphism/">Polymorphism</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/09-example-fractions/">Example: Fractions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/10-reverse-engineering/">Reverse engineering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/11-class-fraction/">class Fraction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/12-example-playing-cards/">Example: Playing cards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/13-a-subtle-point-semantics/">A subtle point: Semantics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M11_OOP2_Polymorphism_and_Inheritance/14-conclusion-adding-types/">Conclusion: Adding Types</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M12 Testing and Documentation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/">Introduction: Testing and documentation 🕵️</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/01-uml-and-testing-with-doctest/">UML and Testing with doctest</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/02-unified-modelling-language-uml/">Unified Modelling Language (UML)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/03-aside-is-a-versus-has-a/">Aside: *is-a* versus *has-a*</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/04-uml-class-diagram-visual-syntax/">UML class diagram visual syntax</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/05-example-playing-card-classes/">Example: Playing card classes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M12_Testing_and_Documentation/06-testing-with-doctest/">Testing with doctest</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">M13 Exam Preparation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M13_Exam_Preparation/">Introduction: The Final Exam 🫣 🙀</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../M13_Exam_Preparation/01_Examinable_Topics/">Examinable Topics</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">CPSC 128</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>M06 Functions &raquo;</li>
+      <li>Assignment 6</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/ttopper/CPSC128/edit/master/docs/M06_Functions/90_Assignment_6.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="assignment-6">Assignment 6</h1>
+<h2 id="problems">Problems</h2>
+<ol>
+<li>
+<p>Insert the necessary function definitions into the code below so
+    that it will work properly (i.e. as shown in the sample runs below
+    it).</p>
+<p>Notes:</p>
+<ul>
+<li>0 is a one-digit, even, unsigned number.</li>
+<li>You may not make any changes to the code below, i.e. your
+    functions have to fit the code, you are not allowed to modify
+    the code to fit your functions.</li>
+</ul>
+<p>``` python</p>
+<h1 id="a6p1v1py">a6p1v1.py</h1>
+<h1 id="just-some-practice-writing-little-functions">Just some practice writing little functions.</h1>
+<h1 id="insert-the-necessary-functions-here">Insert the necessary functions here.</h1>
+<p>line(60, &lsquo;=&rsquo;)
+print &lsquo;Function practice&rsquo;
+line(60, &lsquo;-&lsquo;)
+num = int(raw_input(&lsquo;Give me an integer value: &lsquo;))
+print &lsquo;Your number contains&rsquo;, ndigits(num),
+print &lsquo;digits, is&rsquo;, even_or_odd(num),
+if ispos(num):
+    print &lsquo;and is positive.&rsquo;
+else:
+    print &lsquo;but is not positive.&rsquo;
+line(60, &lsquo;-&lsquo;)
+```</p>
+<pre><code>============================================================
+Function practice
+------------------------------------------------------------
+Give me an integer value: 78931
+Your number contains 5 digits, is odd and is positive.
+------------------------------------------------------------
+
+============================================================
+Function practice
+------------------------------------------------------------
+Give me an integer value: -122
+Your number contains 3 digits, is even but is not positive.
+------------------------------------------------------------
+</code></pre>
+<p><strong>Hint</strong>: There are several ways of tackling the <code>ndigits</code> function.</p>
+<ul>
+<li>You can find the number of digits by counting how many times you
+    can divide a number by 10 before you get 0, e.g. 7 can be
+    divided by 10 once, while 732 can be divided 3 times.</li>
+<li>You can use the logarithm of the number to the base 10.</li>
+<li>You can convert the number to a string and then use <strong>len()</strong> to
+    see how long the string is.</li>
+</ul>
+</li>
+</ol>
+<p>The next three problems all involve writing functions to determine if a
+list of card numbers represents a straight. A straight is a hand in
+which the cards&rsquo; face values form a sequence, e.g. 3, 4, 5, 6, 7 and 6,
+4, 7, 3, 5 are both straights (even though the numbers in the second
+case are not in order), but 3, 4, 5, 7, 8 and 4, 5, 6, 5, 7 are not (the
+first, because 6 is missing, and the second because of the duplicate
+5s). Note that the cards do not have to be in the same suit, e.g. the
+hand containing 2♣, 3♦, 4♣, 5♠ and 6♥ is a straight.</p>
+<p>There are numerous computational approaches that can be taken to decide
+if a list of card numbers is a straight or not. Each of the following
+problems describes one of them and provides pseudocode for it. <strong>Your
+job is to translate each pseudocode description into a Python
+function</strong>.</p>
+<p>(Hint: You will notice that all three approaches contain the operation
+&ldquo;replace the card numbers in the copy with numbers representing their
+face values&rdquo;. To avoid rewriting, that would make a good function, no?)</p>
+<ol>
+<li>
+<p>One approach to seeing if the cards in the list are a straight is to
+    sort them in ascending order and then see if each one is one larger
+    than the previous one. That is we take 6, 4, 7, 3, 5 and sort it to
+    get 3, 4, 5 ,6, 7, and then we make sure the second entry (4) is one
+    larger than the first (3), and that the third entry (5) is one
+    larger than the second (4), and so on. If they all are it&rsquo;s a
+    straight, but if we find neighbouring values that are the same, or
+    that are more than 1 apart it&rsquo;s not a straight. Pseudocode:</p>
+<pre><code>def isStraight(hand):
+    '''Return True if the cards in hand are a straight, and False otherwise.'''
+    make a copy of hand (so we don't change it) and work with the copy from now on
+    replace the card numbers in the copy with numbers representing their face values
+        (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
+    sort the copy in ascending numerical order
+    Check that each value is one larger than the previous value:
+    assume the cards are a straight by setting a flag to True
+    for each value in the copy starting with the second value and going to the last value
+        if this value if not one greater than the previous value
+            set the flag to False
+    if the flag is still True
+        it's a straight
+    otherwise
+        it's not
+</code></pre>
+</li>
+<li>
+<p>Our second approach begins the same way as the first, i.e. by
+    replacing card numbers by face values and sorting them, but then we
+    compare the sorted list to a test list with the same starting value.
+    What test list? Suppose I tell you I have a five card straight
+    starting from a face value of 3. You could say &ldquo;Oh you have a 3, a
+    4, a 5, a 6 and a 7.&rdquo; The idea here is to build the necessary test
+    list and compare it to the actual list and to see if they match. If
+    they do it&rsquo;s a straight, otherwise it&rsquo;s not. Pseudocode:</p>
+<pre><code>def isStraight(hand):
+    '''Return True if the cards in hand are a straight, and False otherwise.'''
+    make a copy of hand (so we don't change it) and work with the copy from now on
+    replace the card numbers in the copy with numbers representing their face values
+        (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
+    sort the copy in ascending numerical order
+    find the minimum face value in the list
+    build a new list containing the values a straight starting with that 
+        minimum value would contain, i.e. a list of consecutive numbers
+        starting with the min value and having the same number of values
+        in it as the hand, e.g. min value = 3 and hand size = 5 implies a 
+        test list of [3, 4, 5, 6, 7]
+        (Hint: Use the range command to build the test list.)
+    if the test list equals the sorted copy
+        it's a straight
+    else
+        it's not
+</code></pre>
+</li>
+<li>
+<p>Our final approach is based on the observation that the cards in a
+    straight must all be different, and that the first and last cards&rsquo;
+    face values will differ by the length of the hand minus 1, e.g. in a
+    five card hand the face value of the last card will be 5 minus 1 or
+    4 greater than the first card (as it is for example in [3, 4, 5, 6,
+    7] where 7 is 4 greater than 3). Of course the hand [3, 3, 5, 7,
+    7] also has the right range of values but isn&rsquo;t a straight because
+    the face values in it are not unique (see the first condition in the
+    first sentence above &ldquo;the cards in a straight must all be
+    different&rdquo;). Which leads to the second test in the pseudocode
+    below:</p>
+<pre><code>def isStraight(hand):
+    '''Return True if the cards in hand are a straight, and False otherwise.'''
+    make a copy of hand (so we don't change it) and work with the copy from now on
+    replace the card numbers in the copy with numbers representing their face values
+    find the minimum face value (Hint: Use the min function.)
+    find the maximum face value (Hint: Can't you guess?)
+    # If the largest and smallest values are the right distance apart
+    # e.g. in a five card hand they 4 apart
+    if max - min equals length of the list - 1 then
+        # and all the values in the list are different
+        # i.e. they all occur exactly once
+        set the counter of unique values to 0
+        for each value in the list
+            if the number of times it ocurs in the list is 1
+                (Hint: Use the count method.)
+                add one to the counter of unique values
+        if the count of unique values equals the length of the list
+            it's a straight
+        otherwise
+            it's not
+     else
+         it's not a straight
+</code></pre>
+</li>
+</ol>
+<p>You can use the test program below to evaluate your code -- I will in
+marking it, though I may add to the set of test cases given below &mdash; or
+you can write and use your own test program.</p>
+<pre><code class="language-python"># isstraight_test.py
+# This program tests the function isStraight on several sample hands
+# of cards.
+from a6p2name import isStraight
+#from a6p3name import isStraight
+#from a6p4name import isStraight
+
+# TEST_HANDS is a list containing the hands of cards to use in testing
+# the function isStraight, and the correct result for each hand.
+# Note that not all hands have five cards, and some are straights,
+# while some are not.
+TEST_HANDS = [
+    [[ 1, 2, 3, 4, 5 ], True],
+    [[ 5, 4, 3, 2, 1 ], True],
+    [[ 14, 0, 28, 42, 4 ], True],
+    [[ 1, 2, 3, 4, 5, 6 ], True],
+    [[ 5 ], True],
+    [[ 1, 2, 2, 4, 5 ], False],
+    [[ 1, 2, 2, 5, 5 ], False],
+    [[ 1, 3, 5, 7, 9 ], False]
+]
+
+print 'Testing isStraight ... '
+# Loop through the list of TEST_HANDS, to test each sample hand.
+for test in TEST_HANDS:
+    # If the function isStraight does not return the correct
+    # result...
+    if isStraight(test[0]) != test[1]:
+        # ... display an error message
+        print 'isStraight fails on', test[0]
+print 'Done.'
+print
+</code></pre>
+<h2 id="logistics">Logistics</h2>
+<ul>
+<li>
+<p>Use the following naming scheme for your program files:
+    <code>a</code><em>assignment#</em><code>p</code><em>problem#</em><code>`yourname</code>.py<code>. So your first
+    attempt at problem 1 on this assignment will be named</code>a6p1bob.py<code>and your solution for problem will be named</code>a6p2bob.py` (adjusted obviously to use your name) .</p>
+</li>
+<li>
+<p>Please submit all your .py files to the Moodle dropbox.</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../22-finding-the-standard-library-modules/" class="btn btn-neutral float-left" title="Finding the Standard Library Modules"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../M07_Dictionaries/" class="btn btn-neutral float-right" title="Introduction: Dictionaries? 📖">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/ttopper/CPSC128" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../22-finding-the-standard-library-modules/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../M07_Dictionaries/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
