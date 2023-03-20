@@ -45,25 +45,6 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">M00 Meta</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/01_M00_Overview/">This week's task list!</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/03_CoursePhilosophy/">Course Philosophy</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/04_CourseSchedule/">Course Schedule</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/05_WhatLanguage/">What Language?</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/06_Textbooks/">Textbooks</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/07_ExaminableTopicsPointer/">Learning Outcomes → Examinable Topics</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/08_InstallingPython/">Installing Python</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../M00_Meta/09_MarkingScheme/">Assignment Marking Scheme</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">M01 Course Introduction</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../M01_Course_Introduction/">Introduction: The big picture 🔭</a>
@@ -626,20 +607,20 @@ screen. So the screen might look something like this:</p>
 <p>Hardly inspiring, and no casual user would realize they were supposed to
 type anything, nor, on the off chance they did type a number, would they
 realize what the output was.</p>
-<p>(This is a good chance to experience another error message. Press F5
+<p>(This is a good chance to experience another error message. Press <kbd>F5</kbd>
 again to run your program and instead of typing a number type the
 word <code>help</code> and then press the Enter key.)</p>
 <p>To make our program more useful we need to provide instructions to the
 user, and explain the output. We do this by inserting extra print
 statements into the program. For example:</p>
-<pre><code>print("This program converts temperatures from Fahrenheit to Celsius.")
-print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
-temp_in_f = int(input("Temperature in Fahrenheit: "))
+<pre><code>print(&quot;This program converts temperatures from Fahrenheit to Celsius.&quot;)
+print(&quot;Enter a temperature in Fahrenheit (e.g. 10) and press Enter.&quot;)
+temp_in_f = int(input(&quot;Temperature in Fahrenheit: &quot;))
 temp_in_c = (temp_in_f - 32) * 5 / 9
-print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+print(temp_in_f, &quot;degrees Fahrenheit =&quot;, temp_in_c, &quot;degrees Celsius.&quot;)
 </code></pre>
 <p>Now the screen will look like this:</p>
-<pre><code>This program converts temperatures from Fahrenheit to Celsius.
+<pre><code class="language-language-plaintext">This program converts temperatures from Fahrenheit to Celsius.
 Enter a temperature in Fahrenheit (e.g. 10) and press Enter.
 Temperature in Fahrenheit: 40
 40  degrees Fahrenheit =  4.444444444444445  degrees Celsius.

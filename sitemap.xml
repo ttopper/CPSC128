@@ -2,1232 +2,1192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ttopper.github.io/CPSC128/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/01_M00_Overview/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/03_CoursePhilosophy/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/04_CourseSchedule/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/05_WhatLanguage/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/06_Textbooks/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/07_ExaminableTopicsPointer/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/08_InstallingPython/</loc>
-         <lastmod>2023-03-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://ttopper.github.io/CPSC128/M00_Meta/09_MarkingScheme/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/01-big-picture-1-computer-science/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/02-big-picture-2-computers-and-programs/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/03-big-picture-3-programming/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/04-the-world-of-the-computer-six-key-programming-concepts/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/05-operation-1-input/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/06-operation-2-processing/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/07-operation-3-output/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/08-control-structures/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/09-operation-4-sequential-execution/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/10-operation-5-selection/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/11-operation-6-repetition/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/12-bonus-operation-modularity/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/13-summary/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/14-using-the-python-shell/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/70_Exercise_Sheet_1/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M01_Course_Introduction/90_Assignment_1/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/01-recall-programming-is.../</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/02-the-problem/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/03-do-the-problem-by-hand/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/04-translate-the-algorithm-into-python/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/05-enter-run-and-test-the-program/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/06-naming-values/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/07-what-will-it-look-like-onscreen/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/08-documentation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/09-our-second-program-same-as-the-first-only-backwards/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/10-our-third-program-dhms2s.py/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/11-sipo-summary/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/12-packaging-quantities/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/13-modulo-a-sixth-arithmetic-operator/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/14-symbolic-constants/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/15-intermission-summary-so-far/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/16-object-types-1-ints-and-floats/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/17-example-calculating-tree-radius/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/18-example-value-of-your-change/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/19-example-making-change/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/20-pythonic-details/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/21-triple-quoted-strings/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/22-the-continuation-character/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/23-the-done-trick/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/24-output-formatting/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/25_pythonic_process/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/70_Exercise_Sheet_2/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M02_SIPO/90_Assignment_2/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/01-if-a-simple-artificial-example/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/02-correcting-an-oversight/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/03-if-syntax-in-detail/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/04-relational-expressions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/05-compound-statements-and-indentation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/06-example-one-program-to-convert-f-to-c-or-c-to-f/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/07-the-problem/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/08-version-1/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/09-version-2/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/10-testing-selection/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/11-performance-analysis/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/12-a-final-very-small-example-absolute-value/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/13-summary-selection-using-if/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/14-gazinta-as-in-2-gazinta-8-but-3-doesnt/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/15-ode-to-pythagoras/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/16-utility-bills/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/17-beaufort-scale/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/70_Exercise_Sheet_3/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M03_Selection/90_Assignment_3/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/02-the-idea-go-back-up-and-repeat-some-code/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/03-the-flowchart/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/04-the-syntax/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/05-hihihi/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/06-infinite-loops/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/08-validating-input/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/10-repeating-a-program-without-restarting-it/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/12-problem-repeating-calculations/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/13-example-find-the-average/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/14-sentinel-controlled-input/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/15-problem-the-guessing-game/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/16-aside-getting-random-numbers/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/17-solution-the-guessing-game/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/18-a-puzzle-what-output-does-this-produce/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/19-nesting-loops/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/20-pythons-other-repetition-structure-for-loops/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/21-completely-artificial-example-revisited-using-for/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/22-for-vs-while/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/23-f2c-revisited-fahrenheit-to-celsius-conversion-table-using-for/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/24-nesting-for-loops/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/25-example-draw-a-square/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/26-module-4-summary/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/27-brute-force/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/28-simulation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/29-problem-what-are-the-chances-four-children-all-girls/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/30-duelling-incompetents/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/31-factors/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/32-cryptarithms/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/33-python-formatting-guidelines/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/34-a-list-creating-function-range/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/35-timing-programs/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/70_Exercise_Sheet_4/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M04_Repetition/90_Assignment_4/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/01-object-based-programming/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/02-sequence-types/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/03-what-can-you-do-with-a-list/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/04-what-can-you-do-with-a-string/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/05-example-cd-shuffle/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/06-dice-odds/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/07-bar-graphs/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/08-representing-playing-cards/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/09-poker-hands/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/10-playing-cards-an-alternative-representation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/11-what-is-this-x-o-o-x-o-x/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/12-palindrome/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/13-built-in-type-conversions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/14-the-map-function/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/15-tuples/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/70_Exercise_Sheet_5/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M05_Lists_and_Strings/90_Assignment_5/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/01-modularization/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/02-functions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/03-writing-functions-is_even/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/04-writing-functions-syntax-summary/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/05-is_odd/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/06-example-dice_roll/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/07-default-arguments/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/08-playing-card-functions-1/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/09-reusing-functions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/10-modules/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/11-documenting-modules-and-functions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/12-summary-module-layout/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/13-example-playing-card-functions-2/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/14-refining-import/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/15-scope/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/16-the-perils-of-mutability/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/17-reference-semantics/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/18-using-versus-changing-a-list/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/19-copying-a-list/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/20-list-comprehensions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/21-what-are-these-pyc-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/22-finding-the-standard-library-modules/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M06_Functions/90_Assignment_6/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/01-dictionaries/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/02-dictionary-derivation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/03-what-can-you-do-with-a-dictionary/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/04-example-word-frequencies/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/05-example-scrabble-scoring/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/06-example-book-database/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/07-example-a-list-of-dictionaries/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M07_Dictionaries/90_Assignment_7/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/01-persistence/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/03-text-versus-binary-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/04-reading-from-text-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/05-example-searching-log-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/06-important-note-files-are-sequential/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/07-is-there-more/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/08-writing-to-text-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/09-appending-to-files/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/10-reading-numeric-data/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/11-designing-file-formats/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/12-pickling/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/13-shelves/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/14-a-controller-for-our-database/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/15-the-main-event-loop/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M08_Persistence/90_Assignment_8/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/01-object-oriented-programming/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/02-encapsulation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/03-inheritance/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/04-polymorphism/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/05-the-plan-for-the-next-three-modules/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/06-a-small-example-a-dice-class/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/07-python-oop-syntax/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/08-playing-card-classes-the-specification/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/09-identifying-the-necessary-classes/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/10-identifying-the-classes-methods/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/11-program-skeleton-1/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/12-an-invisible-method-a-polymorphic-aside/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/13-program-skeleton-2/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/14-an-invisible-class-too/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/15-deck-methods/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/16-hand-methods/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/17-card-methods/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/18-putting-all-the-pieces-together/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/19-running-the-whole-thing/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/20-programming-observation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M09_OOP1_Encapsulation/90_Assignment_9/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/01-object-oriented-design-ood/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/02-preamble-to-hunt-the-wumpus/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/03-about-hunt-the-wumpus/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/04-oo-analysis/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/05-object-attributes-and-methods/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/06-the-cave-system-objects/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/07-main-routine-pseudocode/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/08-class-cave_system/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/09-aside-iterative-design/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/10-class-room/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/11-class-pit/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/12-class-bat/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/13-class-wumpus/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/14-class-player/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/15-putting-the-pieces-together/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/16-new-code-initializing-the-bats/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/17-new-code-pointing-to-a-missing-class-shoot-and-arrows/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/18-new-code-show_cheats/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/19-new-code-display-status-and-warnings/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/20-memory-diagram/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/21-bug-fixing-mostly-snatch/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/22-aside-data-structure-maintenance/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/23-two-more-small-problems/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M10_OOD/24-howd-we-do/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/01-inheritance-and-polymorphism/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/02-inheritance-example-playing-cards/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/03-class-cardcollection/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/04-class-deck/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/05-class-hand/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/06-putting-the-pieces-together/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/07-aside-refactoring/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/08-polymorphism/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/09-example-fractions/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/10-reverse-engineering/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/11-class-fraction/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/12-example-playing-cards/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/13-a-subtle-point-semantics/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M11_OOP2_Polymorphism_and_Inheritance/14-conclusion-adding-types/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/01-uml-and-testing-with-doctest/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/02-unified-modelling-language-uml/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/03-aside-is-a-versus-has-a/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/04-uml-class-diagram-visual-syntax/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/05-example-playing-card-classes/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M12_Testing_and_Documentation/06-testing-with-doctest/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M13_Exam_Preparation/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/M13_Exam_Preparation/01_Examinable_Topics/</loc>
-         <lastmod>2023-03-19</lastmod>
+         <lastmod>2023-03-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
