@@ -13,7 +13,7 @@ Hopefully you have noticed that your longer programs, for example the password c
     is_even()](03-writing-functions-is_even.md)
 1. [Writing functions: Syntax
     summary](04-writing-functions-syntax-summary.md)
-1. [s_odd()](05-s_odd.md)
+1. [s_odd()](05-is_odd.md)
 1. [Example:
     dice_roll()](06-example-dice_roll.md)
 1. [Default

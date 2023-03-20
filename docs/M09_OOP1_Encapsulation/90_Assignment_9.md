@@ -113,7 +113,7 @@
     > encodes the values of the actual attributes in an opaque way."
 
     And you know, they might be right. Modify the module
-    [`playing_cards_4.py`](playing_cards_4.py) to use `Card` objects
+    [`playing_cards_4.py`](90_playing_cards_4.py) to use `Card` objects
     with a pair of attributes. Name the attributes `suit` and
     `face_value`.
 

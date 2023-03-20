@@ -19,42 +19,42 @@ That's really the only new thing this week, but dictionaries can be used in lots
 1. [Dictionary
     "derivation"](02-dictionary-derivation.md)
     -   [Think
-        back](02-dictionary-derivation.html#think-back)
+        back](02-dictionary-derivation.md#think-back)
     -   [Counting
-        letters](02-dictionary-derivation.html#counting-letters)
+        letters](02-dictionary-derivation.md#counting-letters)
     -   [The limits of
-        ingenuity\...](02-dictionary-derivation.html#the-limits-of-ingenuity...)
+        ingenuity\...](02-dictionary-derivation.md#the-limits-of-ingenuity...)
     -   [\... call for greater ingenuity
-        \...](02-dictionary-derivation.html#call-for-greater-ingenuity-...)
+        \...](02-dictionary-derivation.md#call-for-greater-ingenuity-...)
     -   [\... which calls for even greater
-        ingenuity](02-dictionary-derivation.html#which-calls-for-even-greater-ingenuity)
-    -   [Summary](02-dictionary-derivation.html#summary)
+        ingenuity](02-dictionary-derivation.md#which-calls-for-even-greater-ingenuity)
+    -   [Summary](02-dictionary-derivation.md#summary)
 1. [What can you do with a
     dictionary?](03-what-can-you-do-with-a-dictionary.md)
 1. [Example: Word
     Frequencies](04-example-word-frequencies.md)
-    -   [Pseudocode](04-example-word-frequencies.html#pseudocode)
-    -   [Python](04-example-word-frequencies.html#python)
-    -   [Refinements](04-example-word-frequencies.html#refinements)
+    -   [Pseudocode](04-example-word-frequencies.md#pseudocode)
+    -   [Python](04-example-word-frequencies.md#python)
+    -   [Refinements](04-example-word-frequencies.md#refinements)
 1. [Example: Scrabble
     Scoring](05-example-scrabble-scoring.md)
-    -   [Pseudocode](05-example-scrabble-scoring.html#pseudocode-1)
+    -   [Pseudocode](05-example-scrabble-scoring.md#pseudocode-1)
     -   [Python
-        code](05-example-scrabble-scoring.html#python-code)
+        code](05-example-scrabble-scoring.md#python-code)
 1. [Example: Book
     Database](06-example-book-database.md)
-    -   [Pseudocode](06-example-book-database.html#pseudocode-2)
+    -   [Pseudocode](06-example-book-database.md#pseudocode-2)
     -   [Translated into
-        Python](06-example-book-database.html#translated-into-python)
+        Python](06-example-book-database.md#translated-into-python)
 1. [Example: A list of
     dictionaries](07-example-a-list-of-dictionaries.md)
     -   [Problem
-        1](07-example-a-list-of-dictionaries.html#problem-1)
-    -   [Pseudocode](07-example-a-list-of-dictionaries.html#pseudocode-3)
+        1](07-example-a-list-of-dictionaries.md#problem-1)
+    -   [Pseudocode](07-example-a-list-of-dictionaries.md#pseudocode-3)
     -   [Python
-        code](07-example-a-list-of-dictionaries.html#python-code-1)
+        code](07-example-a-list-of-dictionaries.md#python-code-1)
     -   [Problem
-        2](07-example-a-list-of-dictionaries.html#problem-2)
-    -   [Pseudocode](07-example-a-list-of-dictionaries.html#pseudocode-4)
+        2](07-example-a-list-of-dictionaries.md#problem-2)
+    -   [Pseudocode](07-example-a-list-of-dictionaries.md#pseudocode-4)
     -   [Python
-        Code](07-example-a-list-of-dictionaries.html#python-code-2)
+        Code](07-example-a-list-of-dictionaries.md#python-code-2)

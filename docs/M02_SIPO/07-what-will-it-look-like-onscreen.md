@@ -25,7 +25,7 @@ Hardly inspiring, and no casual user would realize they were supposed to
 type anything, nor, on the off chance they did type a number, would they
 realize what the output was.
 
-(This is a good chance to experience another error message. Press F5
+(This is a good chance to experience another error message. Press <kbd>F5</kbd>
 again to run your program and instead of typing a number type the
 word `help` and then press the Enter key.)
 
@@ -33,19 +33,22 @@ To make our program more useful we need to provide instructions to the
 user, and explain the output. We do this by inserting extra print
 statements into the program. For example:
 
-    print("This program converts temperatures from Fahrenheit to Celsius.")
-    print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
-    temp_in_f = int(input("Temperature in Fahrenheit: "))
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+```{ python linenos=true }
+print("This program converts temperatures from Fahrenheit to Celsius.")
+print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
+temp_in_f = int(input("Temperature in Fahrenheit: "))
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+```
 
 Now the screen will look like this:
 
-    This program converts temperatures from Fahrenheit to Celsius.
-    Enter a temperature in Fahrenheit (e.g. 10) and press Enter.
-    Temperature in Fahrenheit: 40
-    40  degrees Fahrenheit =  4.444444444444445  degrees Celsius.
-
+```language-plaintext
+This program converts temperatures from Fahrenheit to Celsius.
+Enter a temperature in Fahrenheit (e.g. 10) and press Enter.
+Temperature in Fahrenheit: 40
+40  degrees Fahrenheit =  4.444444444444445  degrees Celsius.
+```
 Still not earth-shattering, but a marked improvement.
 
 There are quite a few things to note in this small example:

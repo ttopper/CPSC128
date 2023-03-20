@@ -1,8 +1,10 @@
 # This week's task list!
 
-This week you'll prepare for the course proper to make sure all the
-systems you need are functioning so you are ready to get started without
-distraction next Saturday. Here's what you need to do:
+Here's what you need to do this week: 
+
+- know what you're getting into
+- orient yourself
+- gather supplies
 
 1.  **Read** the pages in the *Course Information* section that describe
     the course with some care. It's not exciting reading, but it is
@@ -19,7 +21,7 @@ distraction next Saturday. Here's what you need to do:
 2.  **Download and install** a Python development environment for your
     platform (Linux/Mac/Windows).
 
-    The [Installing Python](08_InstallingPython.html) page will get you
+    The [Installing Python](08_InstallingPython.md) page will get you
     started on this.
 
     Be sure to test your installation as decribed on the page!
@@ -54,7 +56,7 @@ distraction next Saturday. Here's what you need to do:
 
 4.  **Log in** to the MyYC site. We've got some instructions to guide
     you in [logging in to MyYC for the first
-    time](09_MyYC_Fall2013.pdf).
+    time]().
 
 5.  **Set** your MyYC email to forward to your regular email address
     (unless you really want another email address to check). The MyYC
@@ -62,7 +64,7 @@ distraction next Saturday. Here's what you need to do:
     address, but you've probably already got one you're used to using.
     You can tell MyYC to forward email from the address it assigns you
     to your regular one: [by following these
-    steps](10_ConfiguringEmailForwardingInMyYC.pdf).
+    steps]().
 
 With those tasks out of the way you'll be ready to begin the course
 itself (whew!).

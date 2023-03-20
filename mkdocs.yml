@@ -8,19 +8,19 @@ edit_uri: edit/main/docs/
 theme: 
   name: readthedocs
   prev_next_buttons_location: bottom
-  shortcuts:
+  shortcuts: # BUG not working in dev-server 2023-03-19
           help: 191    # ?
           next: 78     # n
           previous: 80 # p
           search: 83   # s
-extra_css: # not working in dev-server 2023-03-19
+extra_css: 
   - css/extra.css
-
-copyright:
-  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
 
 markdown_extensions:
   - smarty
+
+copyright:
+  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
 
 # plugins:
 #     - search

@@ -38,17 +38,16 @@ One thing to watch for is how we code our selection structures efficiently, so t
     using `if`](13-summary-selection-using-if.md)
 1. [Gazinta (as in "2 Gazinta 8, but 3
     doesn't")](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md)
-    -   [Problem](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.html#problem)
-    -   [Solution](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.html#solution)
+    -   [Problem](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md#problem)
+    -   [Solution](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md#solution)
 1. [Ode to
     Pythagoras](15-ode-to-pythagoras.md)
-    -   [Problem:](15-ode-to-pythagoras.html#problem-1)
-    -   [Solutions:](15-ode-to-pythagoras.html#solutions)
+    -   [Problem:](15-ode-to-pythagoras.md#problem-1)
+    -   [Solutions:](15-ode-to-pythagoras.md#solutions)
 1. [Utility bills](16-utility-bills.md)
-    -   [Problem:](16-utility-bills.html#problem-2)
-    -   [Solution:](16-utility-bills.html#solution-1)
+    -   [Problem:](16-utility-bills.md#problem-2)
+    -   [Solution:](16-utility-bills.md#solution-1)
 1. [Beaufort Scale](17-beaufort-scale.md)
-    -   [Problem:](17-beaufort-scale.html#problem-3)
-    -   [Solutions:](17-beaufort-scale.html#solutions-1)
-1. [Output
-    Formatting](18-output-formatting.md)
+    -   [Problem:](17-beaufort-scale.md#problem-3)
+    -   [Solutions:](17-beaufort-scale.md#solutions-1)
+

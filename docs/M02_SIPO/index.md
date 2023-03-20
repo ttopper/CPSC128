@@ -56,7 +56,7 @@ html#translate-to-python)
     (dhms2s.py)](10-our-third-program-dhms2s.py.md)
 1. [SIPO Summary](11-sipo-summary.md)
 1. [Translate into
-    Python](12-translate-into-python.md)
+    Python](12-packaging-quantities.md)
 1. [Modulo: A Sixth Arithmetic
     Operator](13-modulo-a-sixth-arithmetic-operator.md)
 1. [Symbolic

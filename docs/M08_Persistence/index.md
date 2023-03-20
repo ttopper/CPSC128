@@ -21,24 +21,24 @@ The topic of this module is persistence, but not of the human variety. In comput
 1. [Designing file
     formats](11-designing-file-formats.md)
     -   [Option
-        1](11-designing-file-formats.html#option-1)
+        1](11-designing-file-formats.md#option-1)
     -   [Option
-        2](11-designing-file-formats.html#option-2)
+        2](11-designing-file-formats.md#option-2)
     -   [Option
-        3](11-designing-file-formats.html#option-3)
+        3](11-designing-file-formats.md#option-3)
     -   [Option
-        4](11-designing-file-formats.html#option-4)
+        4](11-designing-file-formats.md#option-4)
     -   [Why no
-        code?](11-designing-file-formats.html#why-no-code)
+        code?](11-designing-file-formats.md#why-no-code)
 1. [Pickling](12-pickling.md)
 1. [Shelves](13-shelves.md)
     -   [A small
-        gotcha](13-shelves.html#a-small-gotcha)
+        gotcha](13-shelves.md#a-small-gotcha)
     -   [The problem:
-        Surprise!](13-shelves.html#the-problem-surprise)
-    -   [Solution 1](13-shelves.html#solution-1)
-    -   [Solution 2](13-shelves.html#solution-2)
-    -   [Summary](13-shelves.html#summary)
+        Surprise!](13-shelves.md#the-problem-surprise)
+    -   [Solution 1](13-shelves.md#solution-1)
+    -   [Solution 2](13-shelves.md#solution-2)
+    -   [Summary](13-shelves.md#summary)
 1. [A controller for our
     database](14-a-controller-for-our-database.md)
 1. [The main event

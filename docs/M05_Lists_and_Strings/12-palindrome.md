@@ -24,7 +24,7 @@ else
     It is NOT a palindrome.
 ```
 
-We have enough programming experience by now to see that this solution is unworkable exactly as it is since we don't know ahead of time how many test expressions we need (because we don't know ahead of time how long the string is). But the concept is sound and we can make it workable if we replace the `if` statement with a loop that iterates through the font half of the string comparing the characters there to their counterparts in the back half of the string. We'll use the same strategy to detect a palindrome that we did to [detect a flush in a poker hand](009-poker-hands.md): Assume the word is a palindrome and then test to see if we are right. As before we will use a flag variable to keep track.
+We have enough programming experience by now to see that this solution is unworkable exactly as it is since we don't know ahead of time how many test expressions we need (because we don't know ahead of time how long the string is). But the concept is sound and we can make it workable if we replace the `if` statement with a loop that iterates through the font half of the string comparing the characters there to their counterparts in the back half of the string. We'll use the same strategy to detect a palindrome that we did to [detect a flush in a poker hand](09-poker-hands.md): Assume the word is a palindrome and then test to see if we are right. As before we will use a flag variable to keep track.
 
 ```
 palindrome = True # Our flag variable.

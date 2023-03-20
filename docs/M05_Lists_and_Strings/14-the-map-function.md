@@ -1,6 +1,6 @@
 # The map() function
 
-The `map` function (seen in [Bar Graph](007-bar-graphs.md))
+The `map` function (seen in [Bar Graph](07-bar-graphs.md))
 can simplify some list processing. The command,
 
     map(fn, seq)
