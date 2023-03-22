@@ -7,28 +7,28 @@ There are only six+1 key instruction types:
 
 Three elementary ones:
 
-*input*
+_input_
 :   gets a value from the input stream and stores it in memory,
 
-*processing*
+_processing_
 :   processes/combines/manipulates values stored in memory and stores
     the result in memory,
 
-*output*
+_output_
 :   sends a value to the output stream.
 
 and four control structures:
 
-*sequential processing*
+_sequential processing_
 :   in which statements are executed one at a time in sequence,
 
-*selection*
+_selection_
 :   in which one group of statements or another, but not both, are
     executed,
 
-*repetition*
+_repetition_
 :   in which a group of statements is executed repeatedly,
 
-*modularity*
+_modularity_
 :   in which code is broken into chunks that can be named and
     manipulated.

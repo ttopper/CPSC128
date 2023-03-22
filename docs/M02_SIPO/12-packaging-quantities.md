@@ -16,7 +16,9 @@ number of days, hours, minutes, and seconds.
 Our first step is to figure out how many days worth of seconds this is.
 So we divide 200,000 by `(24*60*60)`:
 
-> `days = 200,000/(24*60*60) = 2`
+```plaintext
+days = 200,000 / (24 * 60 * 60) = 2
+```
 
 Note that the result is two because we do an integer (not "decimal")
 division; what we want to know is how many whole days worth of seconds
@@ -25,52 +27,65 @@ will go into 200,000.
 Now we calculate how many seconds are left over after taking out two
 days worth of seconds.
 
-> `remainder = 200,000 - 2*(24*60*60) = 27,200`
+```plaintext
+remainder = 200,000 - 2 * (24 * 60 * 60) = 27,200
+```
 
 Next we want to calculate how many hours worth of seconds this is. We do
 this similarly to the days calculation above.
 
-> hours = 27,200/(60*60) = 7
+```plaintext
+hours = 27,200/(60*60) = 7
+```
 
 And find the remainder,
 
-> remainder = 27,200 - 7x(60x60) = 2000
+```plaintext
+remainder = 27,200 - 7x(60x60) = 2000
+```
 
 Finally we calculate the number of minutes,
 
-> minutes = 2,000/60 = 33
+```plaintext
+minutes = 2,000/60 = 33
+```
 
 and the remainder of that is the leftover seconds,
 
-> seconds = 2,000 - 33*60 = 20
+```plaintext
+seconds = 2,000 - 33*60 = 20
+```
 
 So 200,000 seconds is equivalent to 2 days, 7 hours, 33 minutes and 20
 seconds.
 
 In terms of input, processing and output:
 
-the **input** is the number of seconds (200,000),
+- the **input** is the number of seconds (200,000),
 
-the **processing** consists of several steps to find the number of days,
+- the **processing** consists of several steps to find the number of days,
 hours, minutes and seconds, including intermediate steps to find the
-remainders along the way,
+remainders along the way, and
 
-and the **output** is the number of days, hours, minutes and seconds.
+- the **output** is the number of days, hours, minutes and seconds.
 
 ## Translate into Python
 
 A literal translation of our manual steps,
 
-    days = 200,000/(24*60*60) = 2\
-    remainder = 200,000 - 2*(24*60*60) = 27,200\
-    hours = 27,200/(60*60) = 7\
-    remainder = 27,200 - 7x(60*60) = 2000\
-    minutes = 2,000/60 = 33\
+```plaintext
+    days = 200,000/(24*60*60) = 2
+    remainder = 200,000 - 2*(24*60*60) = 27,200
+    hours = 27,200/(60*60) = 7
+    remainder = 27,200 - 7x(60*60) = 2000
+    minutes = 2,000/60 = 33
     seconds = 2,000 - 33*60 = 20
+```
 
 into Python might look like this (we used the // symbol to tell python
 to use integer division):
 
+```python
     tot_seconds = int(input("Enter the number of seconds: "))
     days = tot_seconds // (24*60*60)
     remainder = tot_seconds - days * (24*60*60)
@@ -81,6 +96,7 @@ to use integer division):
     print(tot_seconds, "seconds is", days, "days,")
     print(hours, "hours,", minutes, "minutes and")
     print(remainder, " seconds.")
+```
 
 Notes:
 

@@ -28,21 +28,22 @@ those originally used by the language C and now also used by the
 languages C++, AWK, Perl, and PHP among others. Each format placeholder
 has the form,
 
+```plaintext
     %[optional arguments]letter
+```
 
 The % sign indicates the beginning of a placeholder.
 
 The letter indicates the desired format:
 
-  -------- ------------------------------
-  Letter   Format
-  d        decimal integer
-  o        unsigned octal integer
-  x        unsigned hexadecimal integer
-  f        floating point
-  s        string
-  -------- ------------------------------
-
+  Letter  | Format
+  :------:|------------------------------
+  d       | decimal integer
+  o       | unsigned octal integer
+  x       | unsigned hexadecimal integer
+  f       | floating point
+  s       | string
+  
 All these take an optional argument specifying the width of the field in
 which the value should be displayed, e.g.
 

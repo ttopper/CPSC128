@@ -1,26 +1,43 @@
 site_name: CPSC 128
-site_description: Yukon University > CPSC 128 - Object-oriented Programming 1
+site_description: Yukon University > CPSC 128 Object-oriented Programming 1
 site_author: Tim Topper and Kate Chatfield-Reed
 site_url: https://ttopper.github.io/CPSC128
 repo_url: https://github.com/ttopper/CPSC128
 edit_uri: edit/main/docs/
 
-theme: 
-  name: readthedocs
-  prev_next_buttons_location: bottom
-  shortcuts: # BUG not working in dev-server 2023-03-19
-          help: 191    # ?
-          next: 78     # n
-          previous: 80 # p
-          search: 83   # s
-extra_css: 
-  - css/extra.css
-
-markdown_extensions:
-  - smarty
-
 copyright:
   This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
 
-# plugins:
-#     - search
+theme: 
+ name: readthedocs
+#  prev_next_buttons_location: bottom
+#  shortcuts: # BUG not working in dev-server 2023-03-19
+#          help: 191    # ?
+#          next: 78     # n
+#          previous: 80 # p
+#          search: 83   # s
+# theme: gitbook
+# theme: windmill
+extra_css: 
+  - css/extra.css
+
+# Python-Markdown extensions, see https://python-markdown.github.io/extensions/
+markdown_extensions:
+  # - smarty # Enter Unicode characters!
+  - abbr
+  - attr_list
+  - def_list
+  - fenced_code
+  - footnotes
+  - tables
+  - admonition
+#  - codehilite
+  - sane_lists
+
+plugins:
+  - search
+#  - img2fig # Did not work for me.
+  - mermaid2:
+      arguments:
+        version: 8.6.4
+        securityLevel: 'loose'

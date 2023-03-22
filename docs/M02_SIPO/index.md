@@ -2,13 +2,15 @@
 
 The wait is over! Week 0 was about preparing for the course, and Week 1 was about course information and the "Big Picture", but starting now we focus on writing programs.
 
+The goals for the week are for you to become comfortable writing SIPO style programs using Python, and to get some practice in moving from a problem described in English, through a solution procedure described using English to one expressed in Python.
+
 This week we'll move on and begin writing short programs to calculate
 things. These programs sometimes go by the acronym SIPO to remind us
 of the operations they use: Sequence, Input, Processing and Output.
 They are just like sequences of calculator commands placed one after
 another.
 
-This week we will put the first four (of six) computational constructs to work to write SIPO programs. These are calculator-style programs that use a sequence (S) of instructions to take some data (input or I), process it (P), and display the result (output or O). I say "calculator-style" because the problems are ones people often use calculators for.
+This week we will put the first four (of six) computational constructs to work to write SIPO programs. These are calculator-style programs that use a sequence (**S**) of instructions to take some data (input or **I**), process it (**P**), and display the result (output or **O**). I say "calculator-style" because the problems are ones people often use calculators for.
 
 While the programs themselves are quite short, they will introduce you
 to the need to keep three separate things in mind as you program:

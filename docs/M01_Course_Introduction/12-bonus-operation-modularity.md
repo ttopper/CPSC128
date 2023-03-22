@@ -12,9 +12,9 @@ lines. Beyond a page it becomes too hard to think about, and more errors
 are made.
 
 (Aside. How large can programs get? Thousands of lines is typical.
-Hundreds of thousands and millions is common. Windows NT 5.0 for example
-was rumoured to consist of 50,000,000 lines of code, and in 2011 the
-Linux kernel contained around 15,000,000 lines of code.)
+Hundreds of thousands and millions is common. Windows 10 for example
+consists of around 50,000,000 lines of code, the google chrome browser has 35 million lines, and as of 2020 the
+Linux kernel contains around 27,800,000 lines of code.)
 
 In Python, modularization is enabled by using functions (via
 the `def` statement), classes (via the `class` statement) and modules

@@ -7,7 +7,7 @@
 2. Write a program that calculates the annual compound interest on an investment in a bank account. The program will get as input the starting account balance, the interest rate on the account, and the number of years for the money to grow. It will calculate the compound interest assuming that the rate is compounded annually. The equation for compound interest is:
 
 
-    ```
+```plaintext
     A = P(1 + r/n)nt
 
     A = final balance   
@@ -15,7 +15,7 @@
     r = interest rate (remember this needs to be a percentage)
     n = number of times interest applied per time period (use n = 1)
     t = the time in years
-    ```
+```
 
 
 3. Write a program that calculates how long a storm will last based on its diameter in miles.
@@ -24,20 +24,20 @@
 
     where,
 
-    ```
+```
     t= time of storm in hours
     and
     d = diameter of the storm in miles
-    ```
+```
 
-    To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.
+To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.
 
-    ```python
+```python
     import math
     num = int(input(‘Enter a number: ‘)
     root = math.sqrt(num)
     print(‘The square root of’, num, ‘is’, root)
-    ```
+```
 
 4. Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds. You will need to know that 1 in = 2.53 cm and that 1 kg = 2.2 lbs. It will then convert those value to cm and kg before applying the following equation:
 
@@ -45,23 +45,24 @@
 
     where,
 
-    ```
+```
     BSA = body surface area
     W= weight in kg
     H= height in cm
-    ```
+```
 
 5. Write an equation that asks for the radius of a circle in centimeters (in my example 5 cm) and then prints out the following:
 
+```plaintext
     A circle with a radius of 5 cm has a diameter of 10.0 cm,
     a circumference 31.41592653589793 cm,
     and an area of 78.53981633974483
+```
+You can get the value of pi by importing the math library again and using math.pi
+Here are all the equations you’ll need for the diameter (D) 𝐃 = 𝟐𝐫, circumference (C) 𝐂 = 𝟐𝛑𝐫, and Area (A) 𝐀 = 𝛑𝐫^𝟐^.
 
-    You can get the value of pi by importing the math library again and using math.pi
-    Here are all the equations you’ll need for the diameter (D) 𝐃 = 𝟐𝐫, circumference (C) 𝐂 = 𝟐𝛑𝐫, and Area (A) 𝐀 = 𝛑𝐫^𝟐^.
-
-    ```python
+```python
     import math
     # this will print pi, but you can also use it in your equations
     print(math.pi)
-    ```
+```

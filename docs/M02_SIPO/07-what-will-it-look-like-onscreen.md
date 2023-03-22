@@ -1,6 +1,6 @@
 # What will it look like onscreen?
 
-Our first consideration of user interface and user interaction.
+> Our first consideration of user interface and user interaction.
 
 As you've seen when you ran the program, the disappointing answer is
 that not much appears on-screen. When we run the program it will watch
@@ -18,8 +18,10 @@ If we have typed 40, then after it has calculated the equivalent
 temperature on the Celsius scale it will display 4 beneath our 40 on the
 screen. So the screen might look something like this:
 
+```plaintext
     40
     4.444444444444445
+```
 
 Hardly inspiring, and no casual user would realize they were supposed to
 type anything, nor, on the off chance they did type a number, would they
@@ -33,7 +35,7 @@ To make our program more useful we need to provide instructions to the
 user, and explain the output. We do this by inserting extra print
 statements into the program. For example:
 
-```{ python linenos=true }
+```python
 print("This program converts temperatures from Fahrenheit to Celsius.")
 print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
 temp_in_f = int(input("Temperature in Fahrenheit: "))
@@ -43,7 +45,7 @@ print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
 
 Now the screen will look like this:
 
-```language-plaintext
+```plaintext
 This program converts temperatures from Fahrenheit to Celsius.
 Enter a temperature in Fahrenheit (e.g. 10) and press Enter.
 Temperature in Fahrenheit: 40

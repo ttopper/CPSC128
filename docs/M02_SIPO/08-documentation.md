@@ -27,6 +27,7 @@ statements make clear what the program is intended to do). So we will
 simply add a small banner of meta-information at the top. The result is
 our first complete Python program.
 
+```python
     # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
     # CPSC 128 Example program
     # Kate Chatfield-Reed, Winter 2023
@@ -36,3 +37,4 @@ our first complete Python program.
     temp_in_f = int(input("Temperature in Fahrenheit: "))
     temp_in_c = (temp_in_f - 32) * 5 / 9
     print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+```

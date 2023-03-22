@@ -39,43 +39,38 @@ download and install it: <https://www.python.org/downloads/>
 Provide the transcript of your Python shell session (including the
 output!) after you have used the Python shell to:
 
--   Display the value of 2^100^.
+-   Display the value of 2<sup>100</sup>.
 
 -   Calculate the volume of a sphere of radius 2.0 metres. (The formula
-    for the volume of a sphere is 4ϖ*r*^3^/3.)
+    for the volume of a sphere is 4πr<sup>3</sup>/3.)
 
 -   Display the square root of 2.
 
 -   Run the following code:
 
-> \>\>\> if 10**20 \> 20**10:
->
-> print('10**20 wins!')
->
-> else:
->
-> print('20**10 wins!')
+```python
+>>> if 10**20 > 20**10:
+    print('10**20 wins!')
+else:
+    print('20**10 wins!')
+```
 
 -   Run the following code:
 
-> \>\>\> n = 1000000
->
-> \>\>\> size = 0
->
-> \>\>\> while n \> 1:
->
-> n = n // 2
->
-> size = size + 1
->
-> \>\>\> print('1000000 is approximately 2**', size)
-
+```python
+>>> n = 1000000
+>>> size = 0
+>>> while n > 1:
+    n = n // 2
+    size = size + 1
+>>> print('1000000 is approximately 2**', size)
+```
 -   Run the following code:
 
-> \>\>\> for c in 'Kate':
->
-> print(c)
-
+```python
+>>> for c in 'Kate':
+    print(c)
+```
 ## Part IV: Writing Algorithms
 
 To get some practice specifying algorithms write instructions to enable
@@ -111,7 +106,7 @@ depending on how many processors and how much memory we have.
 2.  Shuffle the deck of cards.
 
 3.  Time how long it takes you to sort the cards into
-    order[[*]] using
+    order[^*] using
     your hands and a table top (i.e. you can spread the cards out or
     stack them anyway you want on the table top).
 
@@ -134,6 +129,6 @@ depending on how many processors and how much memory we have.
     sorting the deck one last time but this time using only your two
     hands, i.e. no table top! (Or knees etc.)
 
-* We'll use Bridge order where the order of the suits will be
+[^*]: We'll use Bridge order where the order of the suits will be
 Clubs-Diamonds-Hearts-Spades and the cards within each suit will be
 ordered from Ace to King.

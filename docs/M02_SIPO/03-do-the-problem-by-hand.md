@@ -6,7 +6,7 @@ it first. So let's begin by doing a temperature conversion by hand.
 Here's what I wrote down as I converted 40 degrees Fahrenheit to its
 Celsius equivalent.
 
-![](03_f2c_by_hand.jpg)
+![.](03_f2c_by_hand.jpg)
 
 Here's what I did step by step:
 

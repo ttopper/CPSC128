@@ -1,9 +1,9 @@
 # The Problem
 
-We need to convert a temperature measured on the Fahrenheit scale to its
+> We need to convert a temperature measured on the Fahrenheit scale to its
 equivalent on the Celsius scale.
 
-An aside: This is not a realistic programming problem. It would be
+_An aside_: This is not a realistic programming problem. It would be
 faster to use a hand held calculator to do this than to write a computer
 program to do it. But, it would not be practical to use a hand held
 calculator to convert 20 years worth of daily temperatures stored in a

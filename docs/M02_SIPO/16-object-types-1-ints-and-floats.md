@@ -1,13 +1,16 @@
 # Object Types 1: ints and floats
 
-In which we consider the types of objects for the first, but definitely not the last, time. Python version 3 automatically converts ints to floats if needed. However, in some cases it is still important to know the difference.
+> In which we consider the types of objects for the first, but definitely not the last, time.
 
-5 is not the same as 5.0
+## 5 is not the same as 5.0
+
+Python version 3 automatically converts ints to floats if needed. However, in some cases it is still important to know the difference.
 
 ## The Issue
 
 Recall our program to convert from Farenheit to Celsius:
 
+```python
     # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
     # CPSC 128 Example program
     # Kate Chatfield-Reed, Winter 2023
@@ -18,9 +21,11 @@ Recall our program to convert from Farenheit to Celsius:
     temp_in_c = (temp_in_f - 32) * 5 / 9
     print temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees
     Celsius."
+```
 
 In this example I assumed that the input would be an integer (or round number). If you enter the input 2.2, it will give an error because I told the computer to expect only an integer.
 
+```python
     # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
     # CPSC 128 Example program
     # Kate Chatfield-Reed, Winter 2023
@@ -30,6 +35,7 @@ In this example I assumed that the input would be an integer (or round number). 
     temp_in_f = float(input("Temperature in Fahrenheit: "))
     temp_in_c = (temp_in_f - 32) * 5 / 9
     print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+```
 
 The necessary changes are shown in red. Try running this version of the program and see how the output changes. Is it what you wanted? If not stay tuned for an update coming soon to a module near you.
 

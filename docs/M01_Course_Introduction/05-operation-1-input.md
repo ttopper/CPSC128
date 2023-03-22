@@ -11,9 +11,10 @@ Conveniently Python names the input command `input`. To input a value
 and store it with the name `speed` and then input a second value and
 store it with the name `duration` we use the commands,
 
-    speed = input()
-    duration = input()
-
+```python
+speed = input()
+duration = input()
+```
 Each of these statements will look to the input channel, take the next
 value from it, store it in memory and label the value. The first
 statement labels the value it stores `speed` and the second labels its

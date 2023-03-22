@@ -42,7 +42,7 @@ rest is what the Python shell produced.
 
 Points to ponder:
 
--   What is the difference between the mathematical
+-   What is the difference between the arithmetic
     operators `*` and `**`?
 -   `Traceback`'s are error messages. You'll see many of those.
 -   What does the `import` command seem to do?

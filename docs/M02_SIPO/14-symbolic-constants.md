@@ -6,6 +6,7 @@ A second small concern is that it may not be clear to a someone reading our prog
 
 Python has a convention we will adhere to to help deal with these issues. We will calculate our reused values once near the top of the program and give them names in all caps to indicate that these values are intended to remain unchanged.
 
+```python
     SECS_PER_DAY = 24 * 60 * 60
     SECS_PER_HOUR = 60 * 60
     SECS_PER_MINUTE = 60
@@ -16,7 +17,7 @@ Python has a convention we will adhere to to help deal with these issues. We wil
     remainder = remainder % SECS_PER_HOUR
     minutes = remainder // SECS_PER_MIN
     remainder = remainder % SECS_PER_MIN
-
+```
 Notes:
 
 - By convention constants are given capitalized names. This makes them stand out, and serves as a cue for people reading the program to the fixed nature of the quantity.
@@ -25,6 +26,7 @@ Notes:
 
 Putting all these changes together and adding the declarations, overhead, and some instructions gives us the following complete program.
 
+```python
     # s2dhms.py -- converts a time in seconds to
     # its equivalent in days, hours, minutes and seconds.
     #
@@ -57,12 +59,13 @@ Putting all these changes together and adding the declarations, overhead, and so
     # Output.
     print(tot_seconds, "seconds =", days, "days,", hours, "hours,",)
     print(minutes, "minutes and", remainder, "seconds")
+```
 
 Notes:
 
 - Note the effect of the trailing comma in the second last line. Try removing it and see how the output changes. How would you describe what this comma does?
 
-- Note the blank print() statements, i.e. print() statements with no items in the brackets, used to output blank lines.
+- Note the blank `print()` statements, i.e. `print()` statements with no items in the brackets, used to output blank lines.
 
 ## Summary
 

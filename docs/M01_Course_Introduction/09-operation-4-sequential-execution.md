@@ -3,10 +3,12 @@
 Together our first four commands make a little program and illustrate
 the fourth operation: sequential execution.
 
-    speed = input()
-    duration = input()
-    distance = duration * speed
-    print(distance)
+```python
+speed = input()
+duration = input()
+distance = duration * speed
+print(distance)
+```
 
 By default the computer executes statements in the order they are
 presented, from first to last, top to bottom (the same order in which we
@@ -15,24 +17,30 @@ will still work if we swap the first two statements, but most other
 reorderings will produce errors. For example swapping the second and
 third ones,
 
-    speed = input()
-    distance = duration * speed
-    duration = input()
-    print(distance)
+```python
+speed = input()
+distance = duration * speed
+duration = input()
+print(distance)
+```
 
 or the second and fourth ones,
 
-    speed = input()
-    print(distance)
-    distance = duration * speed
-    duration = input()
+```python
+speed = input()
+print(distance)
+distance = duration * speed
+duration = input()
+```
 
 or the third and fourth ones,
 
-    speed = input()
-    duration = input()
-    print(distance)
-    distance = duration * speed
+```python
+speed = input()
+duration = input()
+print(distance)
+distance = duration * speed
+```
 
 To understand why each of these other orderings results in an error try
 stepping through the effects of the statements using a functional
