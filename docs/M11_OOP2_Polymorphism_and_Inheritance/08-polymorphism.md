@@ -13,7 +13,7 @@ context.
 
 From the developer's perspective the question is how we can make our
 object types trigger appropriate behaviour. Or to put it another way,
-can we give *our* objects the same status and abilities as Python's
+can we give_our_objects the same status and abilities as Python's
 built-in objects? The answer is yes. All we need to do is to define some
 special methods for our classes. This is all we have to do because when
 Python encounters an operator in an expression it looks at the objects

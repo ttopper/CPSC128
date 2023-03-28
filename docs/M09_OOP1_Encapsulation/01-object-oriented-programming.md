@@ -3,7 +3,7 @@
 So far we have been doing **procedural, object-based programming**.
 
 In **procedural programming** the programmer specifies
-the *procedure* to follow to solve a problem. As you have discovered,
+the_procedure_to follow to solve a problem. As you have discovered,
 this procedure consists of a series of step-by-step instructions and
 must be specified quite precisely. Although some large programs are
 procedural, e.g. the Linux kernel and the Apache web server, the larger
@@ -17,9 +17,9 @@ objects, methods and messages. For example when we write
 
     a_list.append('Tom')
 
-we are invoking the `append` *method* of the list *object* `a_list`. We
+we are invoking the `append`_method_of the list_object_`a_list`. We
 might also say we are sending the
-object `a_list` the *message* `append`. Objects package data (e.g. the
+object `a_list` the_message_`append`. Objects package data (e.g. the
 data inside `a_list` above) and the code to operate on it (e.g.
 the `append` method) together into convenient units that are easy to
 use, and to **reuse**.
@@ -39,7 +39,7 @@ these objects.
 
 OOP comes with even more impressive jargon than object-based
 programming. The three key aspects of OOP
-are *encapsulation*, *inheritance* and *polymorphism*. The ideas are not
+are_encapsulation__inheritance_and_polymorphism_ The ideas are not
 as difficult as their forbidding names suggest and this module and the
 next two are essentially long explanations with examples of these three
 concepts. To get started though here are brief explanations of these

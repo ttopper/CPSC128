@@ -33,15 +33,15 @@ This example shows most of what you can do with inheritance:
 → line 1
 :   The syntax to define a class `Deck` that inherits from the
     class `CardCollection`. Jargon: Deck is
-    the *derived* or *descendant* class; `CardCollection` is the *base
-    class*, *superclass* or *ancestor class*.
+    the_derived_or_descendant_class; `CardCollection` is the *base
+    class*,_superclass_or *ancestor class*.
 
 → lines 3-6
 
 :   Replace a method from the base class with a customized version. This
     is just done by redefining the method, i.e. if you use the same name
     in the derived class it hides the version in the base class. The
-    jargon for this is *specialization* because we specialize the
+    jargon for this is_specialization_because we specialize the
     operation of the method for our derived class' characteristics.
 
 → lines 11-12
@@ -49,7 +49,7 @@ This example shows most of what you can do with inheritance:
 :   We provide an "alias", i.e. a more meaningful name, for a method
     in the base class. In this case we can refer
     to `cards_left()` instead of `size()`. Note that this
-    is *not* a **re**naming; it is providing a *second name*. We can
+    is_not_a **re**naming; it is providing a *second name*. We can
     still access the method `size()` if we wish.
 
 → lines 16-17
@@ -63,5 +63,5 @@ This example shows most of what you can do with inheritance:
     base class. In this case we add a `shuffle` method to our derived
     class. Note that inheritance is one way: we cannot call
     the `shuffle` method on a `CardCollection` object only on
-    a `Deck` object. The jargon for this is *augmentation* since we are
+    a `Deck` object. The jargon for this is_augmentation_since we are
     augmenting the functionality of our base class.

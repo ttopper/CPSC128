@@ -1,7 +1,7 @@
 # Summary: Selection using `if`
 
 We have seen three ways of using the `if` statement
-to *select* statements to execute.
+to_select_statements to execute.
 
 One possibility is that we have a statement (simple or compound) to
 execute conditionally. The construct to use is:

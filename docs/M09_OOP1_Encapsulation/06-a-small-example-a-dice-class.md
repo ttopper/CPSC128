@@ -3,7 +3,7 @@
 Before considering an extended example let's consider a small one to
 see what the syntactical elements are that support OOP in Python. In
 Python as in most OOP languages (including C++ and
-Java—but *not* Javascript) the key OOP construct is the class. A class
+Java—but_not_Javascript) the key OOP construct is the class. A class
 specifies the characteristics of an object type and provides a rubber
 stamp or template for creating objects of a particular type. Consider
 for example a die (as in one dice, not death!). A die is quite a simple

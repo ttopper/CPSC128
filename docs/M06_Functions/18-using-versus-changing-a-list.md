@@ -103,15 +103,15 @@ For more Pythonic approaches to the problem consult Pythonic Details.
 ## Summary
 
 When working with lists be clear in your own mind whether you
-are *using* the elements in the list, or *modifying* them and choose
+are_using_the elements in the list, or_modifying_them and choose
 your coding approach accordingly.
 
-For *use*,
+For_use_
 
     for item in thelist:
         # do stuff with item
 
-For *modification*,
+For_modification_
 
     for i in range( len(thelist) ):
         thelist[i] = ...

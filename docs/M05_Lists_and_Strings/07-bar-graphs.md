@@ -1,6 +1,6 @@
 ## The Problem
 
-What we have is a list of numbers, say [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2] and we would like to draw a bar graph like this,
+What we have is a list of numbers, say [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2] and we would like to draw a bar graph of them like this,
 
 ```
 ***
@@ -20,14 +20,14 @@ What we have is a list of numbers, say [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2] an
 
 The pseudocode to do so might look like this,
 
-```
+```plaintext
 for each value in the list
     draw a bar of value asterisks
 ```
 
 which could be translated into the following Python,
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
     print(datum * '*')
@@ -35,14 +35,14 @@ for datum in data:
 
 Note:
 
-* The use of * as a string repetition operator.
+* The use of `*` as a string repetition operator.
 * The difference between the two asterisks in the second line: the first is an operator; the second is a string literal.
 
 ## Version 2
 
 The graph doesn't look like much, even for a text graphics chart. Let's dress it up one step at a time. First we'll display the data value in front of the bar:
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
     print(datum, datum * '*')
@@ -50,7 +50,7 @@ for datum in data:
 
 To produce,
 
-```
+```plaintext
 3 ***
 7 *******
 8 ********
@@ -68,7 +68,7 @@ To produce,
 
 This is a little better, but the bars don't all start in the same place. We need to place our data values in fixed length fields. For this data we could do this,
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
     print("{:2d}".format(datum), datum * '*')
@@ -90,9 +90,9 @@ and get this,
  2 **
 ```
 
-but a width of 2 wouldn't work well for larger values. It would be better to find the largest value in the list and then use the length of that value as the field width. We can do that using the built-in function `max` to find the field width and then converting that value to a string* and using the `len` function to get the length of the string. We can then use that output field width to build an appropriate format string. The resuting code,
+but a width of 2 wouldn't work well for larger values. It would be better to find the largest value in the list and then use the length of that value as the field width. We can do that using the built-in function `max` to find the field width and then converting that value to a string[^*] and using the `len` function to get the length of the string. We can then use that output field width to build an appropriate format string. The resuting code,
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 OFW = len(str(max(data))) # Output Field Width.
 FORMAT = "{:" + str(OFW) + "d}" # Format string.
@@ -102,7 +102,7 @@ for datum in data:
 
 produces this graph,
 
-```
+```plaintext
  3 ***
  7 *******
  8 ********
@@ -120,7 +120,7 @@ produces this graph,
 
 But now we have added a potential confusion: are those the values of the bars or the labels of the data? Let's add data labels, and put the values into parentheses so our output will look like this,
 
-```
+```plaintext
  2s ( 3) ***
  3s ( 7) *******
  4s ( 8) ********
@@ -136,7 +136,7 @@ But now we have added a potential confusion: are those the values of the bars or
 
 Here's the Python code to do it,.
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s',
           '8s','9s', '10s', '11s', '12s']
@@ -151,14 +151,14 @@ for i in range(len(data)):
 
 Notes:
 
-* For more on the `map` function in line 8 see Pythonic Details.
+* For more on the `map` function in line 8 see [The `map` function](14-the-map-function.md).
 * The loop discipline is now index-based because we need to loop through the two lists (data and labels) at the same time picking one item from each list.
 
 ## Reading Code
 
 It may surprise you to learn that working programmers spend more time reading code than writing it. There's reading their own code of course, but they almost always work on large systems made up of code from many programmers, and since their code needs to work with the existing code, they need to be able to read that existing code. When you work in a production environment you have the use of intelligent editors and debuggers that help you trace through code to see what it is doing, and we will indeed use IDLE's debugger later. For now though we can use the original poor man's debugger: `print` statements. To understand the code above, paste it into a file and then place an appropriate `print` statement after each line so you can see the values that are being calculated, e.g.
 
-```
+```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
           '9s', '10s', '11s', '12s']
@@ -184,7 +184,7 @@ for i in range(len(data)):
 
 This will produce the output,
 
-```
+```plaintext
 OFW =  2
 DFORMAT =  ({:2d})
 label_lens =  [2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]
@@ -209,7 +209,7 @@ enabling you to see what the calculated values are.
 
 There is one last refinement worth working on. We were fortunate that all the values in our data set were relatively small, because if any of them had been very large the bars would have wrapped across multiple lines on our screens. The final refinement is to scale the data values if they are larger than the screen is wide so that there will be no wrapped lines. Here's the code to do that. Take the time to understand what it is doing (add in `print` statements if necessary!).
 
-```
+```python
 SCREEN_WIDTH = 60
 data = [300, 700, 800, 1000, 1400, 1400, 1100, 1100, 900, 600, 200]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
@@ -268,15 +268,15 @@ original tabular data and it allowed us to experience several common
 programming issues.
 
 More important is the approach demonstrated through the 5 versions of
-this program: The method of *successive refinement*. It is much easier
+this program: The method of _successive refinement_. It is much easier
 to start with a simple program that works and gradually refine it, than
 to try and design the ideal system at the outset. Later in this course,
-and even more so in its successor we will discuss when it is appropriate
+and even more so in its successor, we will discuss when it is appropriate
 to use big up front design, and when it is appropriate to use agile
-design**.
+design[^*].
 
-------------------------------------------------------------------------
+---
 
-* See Type Conversions in Pythonic Details for more on this.
+[^*]: See [Type Conversions](13-built-in-type-conversions.md) for more on this.
 
-** To read more about this Google "agile software development".
+[^*]: To read more about this Google "agile software development".

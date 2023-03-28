@@ -20,10 +20,10 @@ def ScrabbleValue( s ):
     Return the total value
 ```
 
-<br>
 
 ## Python code
 
+```python
     # ScrabbleScoring.py
     LETTER_VALUES = {'A':1, 'B':3, 'C':3, 'D':2, 'E':1, 'F':4, 'G':2,
                      'H':4, 'I':1, 'J':8, 'K':5, 'L':1, 'M':3, 'N':1,
@@ -38,6 +38,7 @@ def ScrabbleValue( s ):
 
     if __name__ == '__main__':
         print('The value of the word HERE is', scrabble_value('HERE'))
+```
 
 Note: The documentation and testing are both minimal. I included what I
 did as placeholders to remind you that they are part of complete

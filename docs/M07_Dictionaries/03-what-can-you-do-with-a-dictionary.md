@@ -117,7 +117,7 @@ object, e.g.
 
 ------------------------------------------------------------------------
 
-* *Literals* are how to write out values.
+*_Literals_are how to write out values.
 
 -   `4` is an integer literal,
 -   `4.1` is a floating point literal,

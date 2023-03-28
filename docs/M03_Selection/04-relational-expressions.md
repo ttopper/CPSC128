@@ -30,7 +30,7 @@ expressions. The logical operators are,
     or
     not
 
-An `and` relation is only `True` if *both* its arguments are `True`.
+An `and` relation is only `True` if_both_its arguments are `True`.
 An `or` relation is `True` as long as *at least one* of its arguments
 is `True`. The `not` operator negates its argument. Consider the
 following example:
@@ -59,4 +59,4 @@ and `False` when the value stored in tested is `True`.
 * The values `True` and `False` are Boolean constants in Python in the
 same way that 1 and -5 are numerical constants. Note however that while
 there are an infinite number of numerical constants there
-are *exactly* two Boolean constants: `True` and `False`.
+are_exactly_two Boolean constants: `True` and `False`.

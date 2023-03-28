@@ -2,7 +2,7 @@
 
 UML stands for Unified* Modeling Language. Rather than being a spoken
 (like English) or written (like Python) language UML specifies
-a *graphical* language for describing the production of software. UML
+a_graphical_language for describing the production of software. UML
 includes 13 kinds of diagrams that provide for the depiction of business
 processes, database schemas, project activities and programming language
 statements. We are just going to use one of them, [UML class

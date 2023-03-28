@@ -36,3 +36,5 @@ p.s. My goal is to always respond to email during the week within 24 hours. If I
 1. [Summary](13-summary.md)
 1. [Using the Python
     Shell](14-using-the-python-shell.md)
+1. [Exerxise sheet 1](70_Exercise_Sheet_1.md)
+1. [Assignment 1](90_Assignment_1.md)

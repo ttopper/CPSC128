@@ -57,18 +57,16 @@
     contain 1, 2, 3, 4, 5 and 6 spots. After the dice have come to
     rest, the sum of the spots on the two upward faces is calculated.
     If the sum is 7 or 11 on the first throw, the player wins. If the
-    sum is 2, 3 or 12 on the first throw (called "craps"), the
-    player loses (i.e. the "house" wins). If the sum is 4, 5, 6, 8,
+    sum is 2, 3 or 12 on the first throw (called “craps”), the
+    player loses (i.e. the “house” wins). If the sum is 4, 5, 6, 8,
     9 or 10 on the first throw, then that sum becomes the player's
-    "point". To win, you must continue rolling the dice until you
-    "make your point". The player loses by rolling a 7 before making
-    the point.
+    “point”. To win, you must continue rolling the dice until you
+    “make your point”. The player loses if they roll a 7 before making
+    their point.
 
 ## Logistics
 
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#*.py . So your solution for problem 1 on this assignment will be named `a4p1.py` .
 
--   Submit your assignment through the Moodle page. There will be a Dropbox for the assignment for you to upload your .py files.
-
-------------------------------------------------------------------------
+-   Submit your assignment through the Moodle page. There will be a Dropbox for the assignment for you to upload your `.py` files.

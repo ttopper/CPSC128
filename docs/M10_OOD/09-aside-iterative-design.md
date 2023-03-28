@@ -16,7 +16,7 @@ deal with the shortcomings of our classes might be too hard to resist.
 Similarly if we were to write our main routine in detail before
 considering what classes we should use we would only end up with well
 designed classes by sheer luck since they would not in fact have
-been *designed*.
+been_designed_
 
 So was there a mistake in my original class design? Sure. But the
 iterative approach ensured that I caught it early when it was easy to

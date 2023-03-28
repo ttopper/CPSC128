@@ -11,5 +11,5 @@ actions on those connections.
 
 I find all but the simplest data structures difficult to visualize just
 by looking at the code that creates them so I draw diagrams like the
-ones in this module to help me *see* what manipulations need to be done.
+ones in this module to help me_see_what manipulations need to be done.
 You may want to too.

@@ -11,5 +11,5 @@ contains several individual sub-statements. As long as the group of
 statements are all indented the same amount they will be treated as a
 single block or chunk and all be executed. Indentation is encouraged in
 almost all modern programming languages to enhance readability, but
-Python goes a step further and *requires* it. The next program we
+Python goes a step further and_requires_it. The next program we
 consider illustrates compound statements.

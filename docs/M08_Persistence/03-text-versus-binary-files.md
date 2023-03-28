@@ -3,7 +3,7 @@
 Files on disk are always just sequences of bytes so how can there be two
 types, text and binary? The difference between text and binary files is
 not a physical difference on disk, but a difference in the way those
-bytes are *interpreted*.
+bytes are_interpreted_
 
 Consider storing the two dimensional coordinate (12, 31) to disk.
 Storing it as text would be in essence to print it to a file (instead of
@@ -42,7 +42,7 @@ typical four byte representations we would write the following to disk:
 
 As you can see both files have binary representations on disk so why do
 we call the first text and only the second binary? Because to be
-meaningful each should be *interpreted* differently. We call the first a
+meaningful each should be_interpreted_differently. We call the first a
 text file because its bits should be interpreted as giving the ASCII
 values of text characters. We call the second binary because its bits
 should be read in four bytes at a time and interpreted as integer
@@ -53,7 +53,7 @@ manipulate the files.
 Note that either representation could be read in as either text, i.e. a
 sequence of bytes corresponding to ASCII codes of characters, or binary,
 i.e. a pair of 4-byte wide integers, but that in each case the wrong
-interpretation produces nonsense. *So* knowing the correct
+interpretation produces nonsense._So_knowing the correct
 interpretation is crucial. In everyday computing you can often tell
 which interpretation is correct by displaying some of the file to a
 terminal, or opening it in a 'pure' text editor, e.g. the IDLE editor.

@@ -17,6 +17,8 @@ table? For example:
         90        32
        100        37
 
+## Solution:
+
 ![](12_f2c_table_py.png)
 
 Note the string formatting I used to make the table display cleanly.

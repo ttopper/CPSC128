@@ -4,7 +4,7 @@ Experience creating objects soon showed programmers that many objects
 shared features, e.g. several might have text blocks, or creation dates,
 or screen positions, and they realized that they could further reduce
 the amount of new code they had to write if they could reuse existing
-code by having one type of object *inherit* behaviour and properties
+code by having one type of object_inherit_behaviour and properties
 from another. Then if the ancestor's behaviour or properties were
 updated the descendant would instantly inherit the improvements. This
 can lead to large hierarchies of object types; some define thousands of

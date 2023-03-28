@@ -6,7 +6,7 @@ have used so far are not up to the task. The problem is that the message
 we output depends on the sign of the variable, and that may change from
 one run of the program to the next. That means that both the possible
 output statements "is negative" and "is positive" must be present in
-the program, and that the program must *select* which one to execute
+the program, and that the program must _select_ which one to execute
 based on the sign of the variable. Python has a selection statement
 called `if` that allows us to do that, like this:
 
@@ -32,11 +32,11 @@ and then skips over the `else` and the second `print` statement. On the
 other hand, if the expression is `False`, it skips the
 first `print` statement and executes the statement after the `else`. The
 key is that in either case only one of the `print` statements is
-executed, i.e. the `if` statement *selects* which one to execute based
-on the *test* `value < 0`.
+executed, i.e. the `if` statement _selects_ which one to execute based
+on the _test_ `value < 0`.
 
 The flow of control of this `if` statement can be represented using a
-flowchart as shown below. Following the arrows (the *flow* so to speak)
+flowchart as shown below. Following the arrows (the _flow_ so to speak)
 from top to bottom makes it clear that on any run of the program only
 one of the two output statements will be executed.
 

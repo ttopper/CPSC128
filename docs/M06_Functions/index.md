@@ -1,10 +1,10 @@
 # Introduction: Coding in chunks 🧱
 
-How time flies -- at the end of this module you'll be halfway through the course material!
+How time flies — at the end of this module you'll be halfway through the course material!
 
-Brian Kernighan says that "Controlling complexity is the essence of computer programming" and this week we start to look at language features that allow us to control complexity.
+Brian Kernighan says that “_Controlling complexity is the essence of computer programming_” and this week we start to look at language features that allow us to control complexity.
 
-Hopefully you have noticed that your longer programs, for example the password checking program, are made up of "chunks" of code that almost stand on their own. Programming languages give you a way to isolate these chunks so you can focus on writing them one at a time (reducing the complexity of what you have to think about) and then give them names so you can reuse them (reducing the complexity of writing future programs). Sometimes we reuse one chunk multiple times in the same program, for example we've written several programs that call random.randint() more than once, and sometimes we reuse chunks of code in multiple programs. Python provides three ways of chunking -- functions, classes and modules -- and this week we'll cover functions and modules, and develop some "chunks" for working with playing cards.
+Hopefully you have noticed that your longer programs, for example the password checking program, are made up of "chunks" of code that almost stand on their own. Programming languages give you a way to isolate these chunks so you can focus on writing them one at a time (reducing the complexity of what you have to think about, win) and then give them names so you can reuse them (reducing the complexity of writing future programs, win-win!). Sometimes we reuse one chunk multiple times in the same program, for example we've written several programs that call `random.randint()` more than once, and sometimes we reuse chunks of code in multiple programs. Python provides three ways of chunking — functions, classes and modules — and this week we'll cover functions and modules, and develop some “chunks” for working with playing cards.
 
 
 1. [Modularization](01-modularization.md)
@@ -44,3 +44,4 @@ Hopefully you have noticed that your longer programs, for example the password c
     files?](21-what-are-these-pyc-files.md)
 1. [Finding the Standard Library
     Modules](22-finding-the-standard-library-modules.md)
+1. [Assignment 6](90_Assignment_6.md)

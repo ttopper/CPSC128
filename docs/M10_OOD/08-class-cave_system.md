@@ -6,7 +6,7 @@ our other objects need to refer to the cave system we have to begin with
 its class definition.
 
 Recall that in our first pass at the cave system object we said it
-consists of *multiple* rooms connected by *multiple* tunnels. This means
+consists of_multiple_rooms connected by_multiple_tunnels. This means
 that it will have to be a container type of some sort.
 
 -   Attributes: **20 caves**; the **pattern of connections** between
@@ -51,7 +51,7 @@ of `Room` objects not of the cave system as a whole:
 This means that these methods properly belong to `Room` objects
 not `Cave_System`s so we'll move them there.
 
-What methods *do* cave systems have then? Almost none, but there is one
+What methods_do_cave systems have then? Almost none, but there is one
 slightly non-obvious one. Try spotting it\...
 
 Did you spot it in this line?
@@ -74,7 +74,7 @@ rooms and a map of the system. We can tell `tunnels` is a list because
 of the way it is used with square brackets in the sixth
 line: `tunnels[i]`. We can tell `system_map` will need to be a string
 containing a printable map of the system because it is returned
-by `__str__` and that method *has* to return a string. To make this more
+by `__str__` and that method_has_to return a string. To make this more
 concrete here's the code to create a `Cave_System` object corresponding
 to our squashed dodecahedron cave system:
 

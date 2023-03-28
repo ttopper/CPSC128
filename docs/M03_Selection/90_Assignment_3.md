@@ -21,8 +21,8 @@
 
 2.  ### Is it an Armstrong number?
 
-    An Armstrong number is an *n*-digit number that is equal to the sum
-    of its digits each raised to the *n*th power. For example 153 equals
+    An Armstrong number is an_n_digit number that is equal to the sum
+    of its digits each raised to the_n_h power. For example 153 equals
     1^3^+5^3^+3^3^, so it is an Armstrong number. Write a program that
     inputs a three-digit number, and outputs a message saying whether it
     is an Armstrong number or not.
@@ -35,7 +35,7 @@
         Enter your number: 284
         I'm afraid 284 is NOT an Armstrong number.
 
-    *Hint*: You can pull apart a number to get its individual digits by
+   _Hint_ You can pull apart a number to get its individual digits by
     dividing and modulo-ing by appropriate multiples of 10, e.g. num %10
     will give you the 1s digit, i.e. the rightmost digit, and num/100
     will give you the 100s digit, i.e. the leftmost digit.

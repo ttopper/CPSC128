@@ -23,7 +23,7 @@ One thing to watch for is how we code our selection structures efficiently, so t
     Expressions](04-relational-expressions.md)
 1. [Compound Statements and
     Indentation](05-compound-statements-and-indentation.md)
-1. [Example: One program to convert F to C *or* C to
+1. [Example: One program to convert F to C_or_C to
     F](06-example-one-program-to-convert-f-to-c-or-c-to-f.md)
 1. [The Problem](07-the-problem.md)
 1. [Version 1](08-version-1.md)
@@ -38,16 +38,9 @@ One thing to watch for is how we code our selection structures efficiently, so t
     using `if`](13-summary-selection-using-if.md)
 1. [Gazinta (as in "2 Gazinta 8, but 3
     doesn't")](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md)
-    -   [Problem](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md#problem)
-    -   [Solution](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md#solution)
 1. [Ode to
     Pythagoras](15-ode-to-pythagoras.md)
-    -   [Problem:](15-ode-to-pythagoras.md#problem-1)
-    -   [Solutions:](15-ode-to-pythagoras.md#solutions)
 1. [Utility bills](16-utility-bills.md)
-    -   [Problem:](16-utility-bills.md#problem-2)
-    -   [Solution:](16-utility-bills.md#solution-1)
 1. [Beaufort Scale](17-beaufort-scale.md)
-    -   [Problem:](17-beaufort-scale.md#problem-3)
-    -   [Solutions:](17-beaufort-scale.md#solutions-1)
-
+1. [Exercise sheet 3](70_Exercise_Sheet_3.md)
+1. [Assignment 3](90_Assignment_3.md)

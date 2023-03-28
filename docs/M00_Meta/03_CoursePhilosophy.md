@@ -1,7 +1,7 @@
 # Course Philosophy
 
 I think Kernighan and Plauger nailed it on the cover of their seminal
-book Software Tools in Pascal[*](#L833):
+book Software Tools in Pascal[^*]:
 
 ![](03_KernighanAndPlaugerCover.jpg)
 
@@ -23,4 +23,4 @@ of the first introductory module) all aim to get you writing code in a
 careful sequence that will take you in stages from writing simplistic
 programs to writing subtle and powerful ones.
 
-[*]{#L833} Kernighan, Brian W. and P. J. Plauger <em>Software Tools inPascal</em>, Reading, Massachusetts: Addison-Wesley, 1981.
+[^*]: Kernighan, Brian W. and P. J. Plauger <em>Software Tools in Pascal</em>, Reading, Massachusetts: Addison-Wesley, 1981.

@@ -11,7 +11,7 @@ it feels like such straightforward busywork that our intuitions suggest
 it could be automated, and in fact Python provides a module that
 automatically converts its built-in types to strings that can be stored
 in text files. The module is whimsically called `pickle` (because
-it *preserves* the objects the way pickling preserves foods). Its use is
+it_preserves_the objects the way pickling preserves foods). Its use is
 straightforward:
 
     # life.py
@@ -44,7 +44,7 @@ Output:
 Almost any Python object can be pickled (among the exceptions are odd
 ducks like sockets for network connections and file handles). Given how
 compact it is why would we not just always use it? The answer is that
-we *will* often use it, but not without thinking first. One reason we
+we_will_often use it, but not without thinking first. One reason we
 will sometimes avoid it is that the pickled representation is neither
 particularly compact nor particularly
 readable. `pickled_universe.txt` above looks like this,
@@ -81,7 +81,7 @@ hand-rolled solutions in Options 1 and 2.
 A more subtle reason is that it can be inefficient for some data types.
 One common situation is to want to store a dictionary of objects to
 disk. The dictionary can be pickled, but then to access any individual
-element of the dictionary the *whole* dictionary must be read into
+element of the dictionary the_whole_dictionary must be read into
 memory and unpickled before the element can be accessed. If the
 dictionary is large this can represent a significant amount of
 processing time and memory. Because this use case is so common Python

@@ -6,9 +6,10 @@ Imagine that before we go on vacation to Vegas we want to bone up on some of the
 
 Without using lists we could do it like this:
 
-```
+```python
 import random
 ROLLS = 1000
+
 # Initialize counters to 0.
 twos = 0
 threes = 0
@@ -21,6 +22,7 @@ nines = 0
 tens = 0
 elevens = 0
 twelves = 0
+
 # Roll dice many times and record frequency of outcomes.
 for roll in range(ROLLS):
     outcome = random.randint(1, 6) + random.randint(1, 6)
@@ -67,7 +69,7 @@ print("  ---------------------")
 
 which produces output like this,
 
-```
+```plaintext
 >>>
   =====================
   Outcome | Occurrences
@@ -93,7 +95,7 @@ The code is straightforward but lengthy, and relatively slow, because of the cas
 
 These operations can be done more compactly and quickly using _a list of counters_. We'll let each item in the list count one of the outcomes so we'll need eleven entries in the list all initialized to 0. Then instead of using logic tests to identify the counter to increment we can use the `outcome` value as an index to directly access the appropriate counter.
 
-```
+```python
 import random
 
 ROLLS = 1000
@@ -125,10 +127,8 @@ Notes:
 
 ## The verdict
 
-  --------------------------------------------------- ---------------------------------------------------------
-  Without list                                        Using list
-  52 lines of code                                    12 lines of code
-  Average 5.5 tests to select counter to increment.   Exactly one calculation to select counter to increment.
-  --------------------------------------------------- ---------------------------------------------------------
-
- 
+  Without list | Using list
+  -------------|-----------
+  52 lines of code | 12 lines of code
+  Average 5.5 tests to select counter to increment. |   Exactly one calculation to select counter to increment.
+  

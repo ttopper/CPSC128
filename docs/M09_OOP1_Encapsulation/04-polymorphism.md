@@ -2,16 +2,16 @@
 
 Programmers noticed another regularity among their objects: often many
 of them needed to be able to respond to the same message, but by doing
-somewhat different things. For example we *add* items to a list, and to
+somewhat different things. For example we_add_items to a list, and to
 a dictionary, and to a menu, etc. In this case we want all these object
 types to be able to respond to an `add` message, i.e. to provide
 an `add` method. Of course in Python we don't always know what type of
 object a name refers to, `list[3]` could be another list, or a menu, or
 a string, etc. The ability to be able to say `list[3].add(thing)` and
-have the language interpreter figure out what to do is *polymorphism*.
+have the language interpreter figure out what to do is_polymorphism_
 More technically it is the ability for an operation to trigger different
 behaviours in different contexts. An concrete example we have seen of
-this is the behaviour of the + operator: it *adds* numbers,
+this is the behaviour of the + operator: it_adds_numbers,
 
     x = y + 5
 
@@ -19,7 +19,7 @@ this is the behaviour of the + operator: it *adds* numbers,
 
     salutation = 'Mr.' + last_name
 
-and *extends* lists,
+and_extends_lists,
 
     t = [3, 7] + [6, 2]
 

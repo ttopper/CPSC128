@@ -22,7 +22,7 @@ Notes:
 -   The "magic number" 2 has been assigned to the symbolic
     constant `NUMBATS` so the number of bats can be changed by changing
     a single line of code. The jargon for this is to say that the number
-    of bats has been *parameterized*.
+    of bats has been_parameterized_
 
 -   The method `random.choice` may be new to you (I can't remember if I
     have used it before). It chooses an item at random from a list. It

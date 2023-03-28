@@ -5,7 +5,7 @@ correctly, you may need to try and make it faster. Making it faster
 implies being able to measure its speed. Just as you measure the speed
 of an athlete by timing them when they run a race we measure the speed
 of a program by timing how long it takes to execute. The simplest way to
-do this in Python is using a program structured like this,
+do this in Python is to use a program structured like this,
 
 ![](35_timing_template_py.png)
 
@@ -19,13 +19,13 @@ sum of the square roots of the numbers from 1 to 1,000,000.
 ![](35_timing_eg_py.png)
 
 Truly accurate timing of program execution is much trickier than this
-technique suggests. Unless you get the help of the operating system the
+technique suggests. Unless you get the help of the operating system, the
 timing shown above will depend on what else happens to be running on
 your computer at the same time. More sophisticated timing is possible
 using programs called profilers that measure the time more accurately
 than our approach above.
 
-------------------------------------------------------------------------
+---
 
 * For more see the Python documentation
 on [time](http://docs.python.org/library/time.html).

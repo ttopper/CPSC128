@@ -1,6 +1,6 @@
 # Example: Draw a square
 
-Write a program that reads in the size of a square and a character and then prints out a hollow square of that size out of the specified character and blanks. Your program should work for squares of all sizes from 1 to 20 inclusive. Here is a sample run of the program,
+Write a program that reads in the size of a square and a character and then prints out a hollow square of that size using the specified character and blanks. Your program should work for squares of all sizes from 1 to 20 inclusive. Here is a sample run of the program,
 
     What size square? 5
     What character? *

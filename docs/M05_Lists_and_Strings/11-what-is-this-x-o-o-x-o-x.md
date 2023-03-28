@@ -15,7 +15,7 @@ it has the pattern `[ ...`*`stuff`*`...]` which makes it a list.
 Now what is it a list of? Well the commas separate the items of the list
 and the things between the commas,
 i.e. `['X', 'O', '' ]`, `[ 'O', 'X', 'O' ]` and, `[ '', '', 'X']`, are
-all surrounded by square brackets so they are *also* lists. That means
+all surrounded by square brackets so they are_also_lists. That means
 that the entire construct is *a list of lists*.
 
 When the sizes of all the lists are the same as they are here (because

@@ -1,16 +1,20 @@
 # Introduction: Repetition, repetition, repetition 🔁
 
 So far we've covered 5 of the 6 essential
-constructs: *input*, *processing*, *output*, *sequence*,
-and *selection*. This module will cover the final
-construct, *repetition*. With repetition added to your toolbox you will
+constructs: _input_, _processing_, _output_, _sequence_,
+and _selection_. This module will cover the final
+construct, _repetition_. With _repetition_ added to your toolbox you will
 be able to express **any** computational algorithm.
 
-Repetition is just the ability to say "Do this a bunch of times" without having to write the actual code out several times. This is merely a convenience when the number of times is 2 or 3, but an absolute necessity when the number of times is, say, a few million.
+Repetition is just the ability to say “Do this a bunch of times” without having to write the actual code out several times. This is merely a convenience when the number of times is 2 or 3, but an absolute necessity when the number of times is, say, a few million.
 
 Repetition
 constructs are needed because many algorithms involve performing an
-action not just once, but repeatedly while some condition holds. Repetition comes in a couple of flavours. First, there are those cases where we want to keep repeating an action while some condition is true. For example keeping the water flowing while the humidity is less than 60%. Second are those cases where we can calculate exactly how many times we will need to repeat the action. For example there are 8 customers in the line so I will need to "sell ticket" eight times.  Python provides the `while` statement for the first type of repetition, and the `for` statement to handle the second type. Now dig in and go read more about them online.
+action not just once, but repeatedly while some condition holds. Repetition comes in a couple of flavours.
+
+First, there are those cases where we want to keep repeating an action while some condition is true. For example keeping the water flowing while the humidity is less than 60%.
+
+Second are those cases where we can calculate exactly how many times we will need to repeat the action. For example: there are 8 customers in the line so I will need to "sell ticket" eight times.  Python provides the `while` statement for the first type of repetition, and the `for` statement to handle the second type.
 
 The core skill to develop in this module is to be able to use
 the `while` and `for` statements in your programs.
@@ -18,11 +22,6 @@ the `while` and `for` statements in your programs.
 A secondary topic will be the process of writing a program by moving
 from an English description, to a pseudocode description, and on to a
 Python program.
-
-Finally, be sure not to miss the topics in the section Pythonic Details
-because you are expected to apply these where appropriate in your
-assignment.
-
 
 1. [The idea: Go back up and repeat some
     code](02-the-idea-go-back-up-and-repeat-some-code.md)
@@ -71,3 +70,5 @@ assignment.
 1. [A list-creating
     function: `range()`](34-a-list-creating-function-range.md)
 1. [Timing programs](35-timing-programs.md)
+1. [Exercise sheet 4](70_Exercise_Sheet_4.md)
+1. [Assignment 4](90_Assignment_4.md)

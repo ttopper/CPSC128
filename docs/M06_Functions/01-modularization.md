@@ -3,35 +3,35 @@
 The first module in this course introduced the six essential imperative
 programming operations. There were three simple statements,
 
-*input*
+_input_
 :   gets a value from the input stream and stores it in memory.
 
-*processing*
+_processing_
 :   processes/combines/manipulates values stored in memory and stores
     the result in memory
 
-*output*
+_output_
 :   sends a value to the output stream
 
 and three control structures,
 
-*sequential processing*
+_sequential processing_
 :   in which statements are executed one at a time in sequence
 
-*selection*
+_selection_
 :   in which one group of statements or another, but not both, are
     executed
 
-*repetition*
+_repetition_
 :   in which a group of statements is executed repeatedly
 
-I also introduced one "bonus" structure: modularity. Many modern
-computer scientists would take issue with the *bonus* characterization
+I also introduced one “bonus” structure: _modularity_. Many modern
+computer scientists would take issue with the _bonus_ characterization
 and argue that modularization is perhaps the most fundamental structure
 provided by modern programming languages.
 
 I do not disagree with their assessment. I refer to the other control
-structures as *essential* because it is logically impossible to write
+structures as _essential_ because it is logically impossible to write
 all programs without each and every one of them. It is possible to write
 a program without modularization, but extremely difficult, and the
 resulting program if it was ever successfully written and tested would
@@ -41,7 +41,7 @@ Why is modularization so important? Because it enables us to
 
 1.  **reduce the complexity** of our programs, while at the same time
     allowing us to
-2.  **create reusable fragments of code**.
+2.  **create reusable chunks of code**.
 
 We reduce complexity by using a divide and conquer strategy, i.e. taking
 a large program and dividing it into smaller, more manageable, pieces.

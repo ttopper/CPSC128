@@ -117,13 +117,13 @@
     with a pair of attributes. Name the attributes `suit` and
     `face_value`.
 
-    *Hint*~1~: You shouldn't change *anything* after the
+   _Hint_1~: You shouldn't change_anything_after the
     `if __name__ == '__main__':` statement. Remember that one of the
     goals of encapsulation is to be able drop in a new class
     implementation for an older one without having to rewrite any code
     that uses it.
 
-    *Hint*~2~: You don't have to rewrite that much of the code above
+   _Hint_2~: You don't have to rewrite that much of the code above
     the `if` either. Think carefully about what needs to change.
 
 ## Logistics

@@ -1,4 +1,4 @@
-#Problem: What are the chances: four children, all girls?
+# Problem: What are the chances: four children, all girls?
 
 Write a simulation program that estimates the percentage of 4-child families in which all the children are girls by simulating the formation of 1000 four-child families. Assume that the chances of a newborn being a girl or a boy are equal. A sample run of the program might look like this:
 

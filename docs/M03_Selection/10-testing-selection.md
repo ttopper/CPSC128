@@ -2,7 +2,7 @@
 
 -   We did some rough testing of our grade conversion program logic
     using a couple of **typical values**, 65 and 93. While it
-    is *necessary* to test with common values like these, it is *not
+    is_necessary_to test with common values like these, it is *not
     sufficient*. When programs break it is usually on **uncommon
     values**, i.e. values at the edge of the range of allowable values,
     or even outside the range. What uncommon values should we use to

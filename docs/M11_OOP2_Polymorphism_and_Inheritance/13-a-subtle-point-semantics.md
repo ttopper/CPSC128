@@ -34,13 +34,13 @@ Output:
     >>> 
 
 Uh oh! The value of `roxx` is changed by what we've done in
-creating `new` which may or may not be the *semantics* we intended by
+creating `new` which may or may not be the_semantics_we intended by
 the statement `new = roxx + chris`. The problem here is that we are
 building our return value from an existing object so we are changing the
 existing object as we do so, and then ending up with a shared reference
 to a single modified object. And we know from our first encounter with
 shared references that they can be a serious problem. The fix is to
-create a new `CardCollection` object in `__add__`, fill *it* with the
+create a new `CardCollection` object in `__add__`, fill_it_with the
 necessary values, and then return it. The result is code like this,
 
         def __add__(self, other):
@@ -68,13 +68,13 @@ which produces the output,
     chris: 4 of Clubs, 5 of Clubs
     >>> 
 
-There are further *semantic* issues. When we write `new = roxx + chris`,
+There are further_semantic_issues. When we write `new = roxx + chris`,
 to create a new `Hand` from `roxx` and `chris`,
 should `roxx` and `chris` be emptied? That is, are we taking the cards
 out of the hands `roxx` and `chris` to create `new` like a game of Go
 Fish? Or does `new = roxx + chris` mean to make a hand called `new` that
-is *like* the combination of `new = roxx + chris`? Sorting out
-the *meaning* of operations is semantics, and the semantics of
+is_like_the combination of `new = roxx + chris`? Sorting out
+the_meaning_of operations is semantics, and the semantics of
 collection types is notoriously tricky. There aren't universally right
 and wrong answers to these questions. What we strive for are answers
 that fit the problem domain, i.e. code that matches our experience of

@@ -1,6 +1,6 @@
 # What can you do with a string?
 
-Here's an idea of how you might use and combine these methods to carry
+The full list of string methods is in [Section 2.2.6.4 of the Python Library Reference](http://www.python.org/doc/2.2.1/lib/string-methods.html). Here's an idea of how you might use and combine these methods to carry
 out common operations.
 
 Create a string:
@@ -17,13 +17,13 @@ Access a character from a string:
 (Note that each individual character in a string is itself a string —
 albeit of length 1.)
 
-Access a substring of a string (called a *slice* in Python):
+Access a substring of a string (called a _slice_ in Python):
 
 -   `name[1:5]` is the substring of the string from position 1 up to,
     but not including, character 5, i.e. `'im T'`
 
     Note: that the range is \[*inclusive*:*exclusive*\]
-    thus `name[1:1]` is '', the empty string.
+    thus `name[1:1]` is `''`, the empty string.
 
 Adding to a string. Because strings are immutable you cannot change the
 contents of one, but you can create a new one and assign it to the same
@@ -42,7 +42,7 @@ Getting information about a string and its contents:
 -   `len( name )` returns the length of the string `name`, i.e. the
     number of characters in it.
 -   `name.find( 'ola' )` returns the position in which the first
-    occurrence of `'ola'` begins, and -1 if it is not found (see
+    occurrence of `'ola'` begins, or -1 if it is not found (see
     also `rfind` which searches from the back of the string towards the
     front).
 

@@ -73,7 +73,7 @@ There are quite a few things to note in this small example:
 
 -   An input statement can include a string literal that acts as a
     prompt to the user, in which case the string will be displayed
-    and *then* the computer will watch for input from the user. This
+    and_then_the computer will watch for input from the user. This
     gives you a way to instruct the user. Note that the string must be
     enclosed in quotes. If your prompt is too long to fit inside the
     parentheses just put some of it into print statements preceding the

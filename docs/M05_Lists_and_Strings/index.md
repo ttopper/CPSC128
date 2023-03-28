@@ -2,30 +2,33 @@
 
 Finally something other than numbers!
 
-So far all of your programs have had a mathematical, or at least arithmetic, feel to them. That's because the main data type we've had to work with have been numbers, and single numbers at that. This week we will look at compound datatypes that let us represent words and lists of things. Together they vastly expand the types of things we can represent, and thus work with, in our programs. We will work with code like,
+So far all of your programs have had a mathematical, or at least arithmetic, feel to them. That's because the main data type we've had to work with has been numbers, and single numbers at that. This week we will look at compound datatypes that let us represent words and lists of things. Together they vastly expand the types of things we can represent, and thus work with, in our programs. We will work with code like,
 
-    grades = [78, 91, 84] # a list containing three numbers
-    name = 'Tim Topper' # a string, which is a sequence of characters
-    names = ['Tim', 'Anne', 'Mary', 'Geoff'] # a list containing 4 strings
+```python
+grades = [78, 91, 84] # a list containing three numbers
+name = 'Tim Topper' # a string, which is a sequence of characters
+names = ['Tim', 'Anne', 'Mary', 'Geoff'] # a list containing 4 strings
+```
 
-We cover lists and strings in the same week because they are both _sequence_ types that share a lot of operations.
+We cover lists and strings in the same week because they are both _sequence_ types that share a lot of common operations.
 
 Lists and strings are also both _object_ types and to work with them you will have to get comfortable with some new-ish notation, and a bit of jargon that goes with it. The notation isn't that hard to follow, for example,
 
-    >>> s = 'Topper'
-    >>> s.count('p')
-    2
-    >>> s.endswith('er')
-    True
-    >>> s.upper()
-    'TOPPER'
-    >>>
+```plaintext
+>>> s = 'Topper'
+>>> s.count('p')
+2
+>>> s.endswith('er')
+True
+>>> s.upper()
+'TOPPER'
+>>>
+```
+This notation features the name of an object `s`, a period `.`, the method to perform `count`, and then any information the method requires in parentheses `('p')`: `s.count('p')`. (This notation is not entirely new, e,g, we have seen and used `random.randint(1,6)`.)
 
-This notation features the name of an object (s), a period (.), the method to perform (count), and then any information the method requires in parentheses ('p'): s.count('p'). (This notation is not entirely new, e,g, we have seen and used random.randint(1,6).)
+The list and string object types support **a lot** of methods. Some are shown in the resources and the complete lists of them in the official Python documentation are linked to. To prepare for the assignment problems you will want to familiarize yourself with the operations available to you (so you don't reinvent the wheel!), and get a little practice using them in the Python shell, like the excerpt above.
 
-The list and string object types support A LOT of methods. Some are shown in the resources and the complete lists of them in the official Python documentation are linked to. To prepare for the assignment problems you will want to familiarize yourself with the operations available to you (so you don't reinvent the wheel!), and get a little practice using them in the Python shell, like the excerpt above.
-
-I hope you find lists and strings interesting.
+I hope you find lists and strings interesting!
 
 1. [Object-based
     programming](01-object-based-programming.md)
@@ -52,3 +55,5 @@ I hope you find lists and strings interesting.
 1. [The map()
     function](14-the-map-function.md)
 1. [Tuples](15-tuples.md)
+1. [Exercise sheet 5](70_Exercise_Sheet_5.md)
+1. [Assignment 5](90_Assignment_5.md)

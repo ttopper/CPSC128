@@ -16,7 +16,7 @@ automatically from improvements to our functions.
 
 Well it turns out that automatically copying and pasting code is tricky
 and thus unreliable. Instead programmers have found the best way to
-reuse code is to have a way to include the contents (all or just some)
+reuse code is to have a way to include the contents (all of them or just some of them)
 of one file in another. Python does this using modules and
 the `import` command. We have already used `import` to get at functions
 in the `math` and `random` modules. Now we will see how to use it to get

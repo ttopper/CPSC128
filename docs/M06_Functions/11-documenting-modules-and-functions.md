@@ -4,7 +4,7 @@ The goal of documentation is to provide enough information for other programmers
 
 So far our documentation has consisted of a block of header comments identifying the module and programmer, and occasional comments inserted into the code to explain tricky points. Modules and the functions in them require further documentation. The primary mechanism used to provide it is docstrings. These are triple quoted strings that appear at the top of the module and immediately after each function definition. Here's an artificial example,
 
-```
+```python
 # module_docn.py
 '''This is the module documentation pointing out that
 this is an artificial test module.'''
@@ -19,11 +19,11 @@ def test_fn_2():
     return
 ```
 
-In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the standard library* modules.
+In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the standard library[^*] modules.
 
 Python also has built-in commands that extract this documentation. Recall that when we import a module in the shell we can use `dir` to see it's attributes. Here's an example for a real module, `math`,
 
-```
+```plaintext
 >>> import math
 >>> dir(math)
 ['__doc__', '__loader__', '__name__', '__package__', '__spec__',
@@ -41,7 +41,7 @@ Python also has built-in commands that extract this documentation. Recall that w
 
 and here's the `dir` for our artificial module,
 
-```
+```plaintext
 >>> import module_docn
 >>> dir(module_docn)
 ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'test_fn_1', 'test_fn_2']
@@ -50,7 +50,7 @@ and here's the `dir` for our artificial module,
 
 You can see that in addition to the Python reserved names, i.e. `__builtins__` to `__package__` there are our two functions `test_fn_1` and `test_fn_2`. We've already seen that the reserved name `__name__` gives the current name of this module which will be `module_docn` if it has been imported or `__main__` if it is running. Now let's see what `__doc__` is,
 
-```
+```plaintext
 >>> print(module_docn.__doc__)
 This is the module documentation pointing out that
 this is an artificial test module.
@@ -59,7 +59,7 @@ this is an artificial test module.
 
 `module_docn.__doc__` contains the module docstring. And now you may see why they are called docstrings: because they are the _strings_ that get assigned to the `__doc__` attributes. The docstrings for `tst_fn_1` and `test_fn_2` are also available in their `__doc__` attributes,
 
-```
+```plaintext
 >>> print(module_docn.test_fn_1.__doc__)
 This is the first test function.
     It doesn't do anything.
@@ -71,7 +71,7 @@ This is the second test function.
 
 The docstrings are so useful but this is such a cumbersome way to access them that Python provides the built-in command `help` to provide easy access to them and improve the formatting of their display, e.g.
 
-```
+```plaintext
 >>> help(module_docn)
 Help on module module_docn:
 
@@ -98,7 +98,7 @@ FILE
 
 All the information displayed is automatically extracted from the docstrings in the module. The pydoc module which is used behind the scenes by `help` is also used to produce much of the HTML Python documentation you encounter on the web. Just for completeness I will point out that `help` can also be used on an individual member function,
 
-```
+```plaintext
 >>> help(module_docn.test_fn_1)
 Help on function test_fn_1 in module module_docn:
 test_fn_1()
@@ -109,7 +109,7 @@ test_fn_1()
 
 or more usefully on real functions,
 
-```
+```plaintext
 >>> help(math.sqrt)
 Help on built-in function sqrt in module math:
 sqrt(...)
@@ -123,6 +123,6 @@ sqrt(...)
 
 -   Place triple quoted docstrings at the top of each module and after
     each function definition. These should provide provide descriptions
-    of what the module and each function does.
--   Use the `help()` builtin to access the docstrings of modules and
+    of what the module and each function do.
+-   Use the `help()` built-in to access the docstrings of modules and
     functions you import.

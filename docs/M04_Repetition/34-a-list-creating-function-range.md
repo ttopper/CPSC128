@@ -15,9 +15,9 @@ brackets and the commas.
 
 Notes:
 
--   the *start_value* defaults to 0.
--   the *stepsize* defaults to 1.
--   the *stop_value* is NOT included in the list. This means that
+-   the_start_value_defaults to 0.
+-   the_stepsize_defaults to 1.
+-   the_stop_value_is NOT included in the list. This means that
     the `range` is asymmetric: because the starting value is included,
     but the stopping value is not included.
 

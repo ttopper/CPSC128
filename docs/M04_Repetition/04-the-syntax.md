@@ -3,8 +3,9 @@
 Python provides two repetition statements, `while` and `for`. We will
 consider `while` first. The syntax for the `while` statement is,
 
-    while test-expression:
-        statement
+<pre>    <b>while</b> <i>test-expression</i> <b>:</b>
+        <i>statement</i>
+</pre>
 
 Or, in words, the `while` statement consists of the
 keyword `while` followed by a test expression, terminated by a colon,

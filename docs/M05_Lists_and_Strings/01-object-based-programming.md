@@ -2,9 +2,9 @@
 
 All the values we have worked with in Python have been objects, but we haven't really been aware of that because we've been able to work with them using built-in operators. For example we have been able to write `x = a + 10` and it has looked enough like regular arithmetic that we haven't had to address the fact that those things, `x` and `a`, are objects.
 
-Aside 1: Already though we have seen that the meaning of the operator depends on the types of the objects to which it is applied. The `+` in `3 + 2` means arithmetic addition, but the `+` in `"Tim" + "Topper"` means string concatenation. Similarly the `%` in `9%5` means modulo, but the second `%` in `"%1.2f" % temp` means string interpolation. (Jargon alert: In object oriented programming this is referred to as polymorphism or more specifically operator overloading).
+Aside 1: Already though we have seen that the meaning of the operator depends on the types of the objects to which it is applied. The `+` in `3 + 2` means arithmetic addition, but the `+` in `"Tim" + "Topper"` means string concatenation. Similarly the `%` in `9%5` means modulo, but the second `%` in `"%1.2f" % temp` means string interpolation. (Jargon alert: In object-oriented programming this is referred to as _polymorphism_ or more specifically _operator overloading_).
 
-Aside 2: Remember that you can query the type of a literal value or of the value associated with a name by using the built-in function type, e.g.
+Aside 2: Remember that you can query the type of a literal value, or of the value associated with a name, by using the built-in function `type`, e.g.
 
 ```python
 >>> type(4)
@@ -49,7 +49,7 @@ The names beginning with double underscores `__` correspond to the methods invok
 
 Note that when the method requires parameters they are listed in the parentheses, like 20 in the second command above.
 
-In Python everything is an object. For instance we have seen this dot notation before, when importing the modules random and math. That's because an imported module is an object and we access the methods the module provides using this same dot notation. The dot notation for accessing object attributes and methods is common to most object-oriented languages including C++, Java, and Javascript.
+In Python everything is an object. For instance we have seen this dot notation before, when importing the modules `random` and `math`. That's because an imported module is an object and we access the methods the module provides using this same dot notation. The dot notation for accessing object attributes and methods is common to most object-oriented languages including C++, Java, and Javascript.
 
 The general syntax to invoke one of an object's methods is,
 

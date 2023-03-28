@@ -81,3 +81,6 @@ html#translate-to-python)
 1. [The `done` trick](23-the-done-trick.md)
 1. [Output
     Formatting](24-output-formatting.md)
+1. [The Pythonic Process](25_pythonic_process.md)
+1. [Exercise sheet 2](70_Exercise_sheet_2.md)
+1. [Assignment 2](90_Assignment_2.md)

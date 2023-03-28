@@ -6,53 +6,53 @@ single most important skill is the ability to devise solution procedures
 for problems in terms of sequence, selection (if) and iteration (for and
 while).
 
--   *Base skill*: IPO programming: Using Python to calculate values of
+- _Base skill_: IPO programming: Using Python to calculate values of
     formulas, e.g. wind-chill, unit conversions.
--   *Core skill*: Combining if, while, for to express algorithmic
+- _Core skill_: Combining if, while, for to express algorithmic
     procedures.
--   *Technique*: Packaging quantities using / and %; pulling apart
+- _Technique_ Packaging quantities using / and %; pulling apart
     numbers using % and /.
--   *Technique*: Formatting output using format strings.
--   *Technique*: Knowing when to use input and when to use raw_input.
--   *Technique*: Input validation using while.
--   *Technique*: Using counters in programs.
--   *Technique*: Using flag variables, i.e. Boolean variables that
+- _Technique_ Formatting output using format strings.
+- _Technique_ Knowing when to use input and when to use raw_input.
+- _Technique_ Input validation using while.
+- _Technique_ Using counters in programs.
+- _Technique_ Using flag variables, i.e. Boolean variables that
     record state, e.g. `while not done:`, `if game_lost:`.
--   *Core skill*: Defining functions. Knowing how to do it, and knowing
+- _Core skill_: Defining functions. Knowing how to do it, and knowing
     when to do it.
--   *Approach*: Using randomness to simulate events, e.g. four
+- _Approach_ Using randomness to simulate events, e.g. four
     daughters, hockey series.
--   *Data representation*: Representing things using lists, e.g. playing
+- _Data representation_: Representing things using lists, e.g. playing
     cards.
--   *Data representation*: Creating and interpreting heterogeneous data
+- _Data representation_: Creating and interpreting heterogeneous data
     structures (lists of lists, lists of dictionaries, dictionaries of
     lists, etc.), e.g. the cave system for Hunt the Wumpus.
--   *Technique*: Processing strings using string operations, as in the
+- _Technique_ Processing strings using string operations, as in the
     password checking program.
--   *Technique*: Processing lists, e.g. CD shuffle, `is_straight()`.
--   *Technique*: Using vs changing lists, i.e. how to change a list in
+- _Technique_ Processing lists, e.g. CD shuffle, `is_straight()`.
+- _Technique_ Using vs changing lists, i.e. how to change a list in
     place, and how to avoid changing a list.
--   *Technique*: Converting lists to strings and vice versa.
--   *Data representation*: Using and processing dictionaries, e.g. for
+- _Technique_ Converting lists to strings and vice versa.
+- _Data representation_: Using and processing dictionaries, e.g. for
     counting.
--   *Data representation*: File processing, e.g. the temperature data
+- _Data representation_: File processing, e.g. the temperature data
     file.
--   *Approach*: Parameterizing code for generality. (And on a minor
+- _Approach_ Parameterizing code for generality. (And on a minor
     note, using \'constants\').
--   *OOD*: object types → classes → attributes & methods (tell, ask)
--   *OOP* concepts: Abstraction, Inheritance, Polymorphism.
--   *OOP*: Defining (base) classes, reverse engineering them when
+- _OOD_ object types → classes → attributes & methods (tell, ask)
+- _OOP_concepts: Abstraction, Inheritance, Polymorphism.
+- _OOP_ Defining (base) classes, reverse engineering them when
     necessary.
--   *OOP*: Modifying a class via inheritance. Using inheritance to avoid
+- _OOP_ Modifying a class via inheritance. Using inheritance to avoid
     code duplication.
--   *UML*: Creating class diagrams from code, and code from class
+- _UML_ Creating class diagrams from code, and code from class
     diagrams.
--   *Software development*:
+- _Software development_:
     -   By hand → Pseudocode → Python
     -   Documentation
     -   Divide and conquer
     -   Design first; code second
     -   Incremental development
     -   Testing frameworks, including doctest strings.
--   *Problem domains*: Playing cards, Tic-Tac-Toe, Hangman, Hunt the
+- _Problem domains_: Playing cards, Tic-Tac-Toe, Hangman, Hunt the
     Wumpus.

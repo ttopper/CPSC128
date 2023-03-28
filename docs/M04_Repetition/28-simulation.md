@@ -1,12 +1,11 @@
 # Simulation
 
-In a simulation problem we write a program that simulates a real world
+In a simulation problem we write a program that simulates a real-world
 process, relying on our ability to generate random numbers to take
 account of the uncertainty of real-world processes like whether newborns
 are girls or boys, how long it will take to unload an airplane, the
 chances a vehicle will turn left or right or go straight. If we do this
-enough times we can make a reliable estimate of the probability of a
-real-world event occurring.
+enough times we can make a reliable estimate of the probability of some event occurring.
 
 Because we are usually simulating to find out what will happen only
 because we don't already know what will actually happen they are

@@ -11,7 +11,7 @@ are not very challenging otherwise. So these are actually good weeks to
 try and get ahead!
 ```
 +-----------------------------------+-----------------------------------+
-| *Orientation*                     | *Completion deadline*             |
+|_Orientation_                    | *Completion deadline*             |
 +-----------------------------------+-----------------------------------+
 | 0.  Course start-up.              | * Jan 5*                          |
 +-----------------------------------+-----------------------------------+

@@ -9,8 +9,8 @@ print(random.randint(1,100))
 
 The module is named `random` and one of its members is `randint` which returns a random number in the specified range.
 
-*Exercise*: Try entering the lines above into a program file and running it several times. Most times you will get new numbers. ('Most' because since it is random you may get the same number twice in a row, but since there are 100 possibilities that is unlikely.)
+_Exercise_: Try entering the lines above into a program file and running it several times. Most times you will get new numbers. ('Most' because since it is random you may get the same number twice in a row, but since there are 100 possibilities that is unlikely.)
 
-*Exercise*: Does `randint` generate numbers **between** 1 and 100 or from 1 to 100 **including** 1 and 100? You can find out either by looking it up, or by writing a very small program and watching its output.
+_Exercise_: Does `randint` generate numbers **between** 1 and 100 or from 1 to 100 **including** 1 and 100? You can find out either by looking it up, or by writing a very small program and watching its output.
 
-*Jargon*: If the range includes the endpoints, e.g. 1 and 100 above, we say it is an *inclusive* range. If it doesn't, we say it is an *exclusive* range.
+_Jargon_: If the range includes the endpoints, e.g. 1 and 100 above, we say it is an _inclusive_ range. If it doesn't, we say it is an _exclusive_ range.

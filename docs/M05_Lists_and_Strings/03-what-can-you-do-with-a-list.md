@@ -10,7 +10,7 @@ Create a list:
 -   Using `range`, e.g. `nums = list(range(10))`.
 -   By listing the items in the
     list: `mishmash = [14, 'a', 4.19, 'Kate', True]`\
-    Note that values of several types can be stored in the same list.
+    Notice that values of several types can be stored in the same list.
 
 Access an item from a list:
 
@@ -37,7 +37,7 @@ Adding items to a list:
 -   `mishmash.insert(1, 'hi')` inserts the string `'hi'` into the list
     in position `1`, i.e. after 14 but before `'a'`.
 -   `mishmash = mishmash + ['bye']` appends `'bye'` to the list. (Note
-    the \[\]s around 'bye').
+    the `[]`s around `'bye'`).
 
 Removing items:
 

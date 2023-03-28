@@ -13,55 +13,60 @@ Similarly we determine the face value of a card by determining its
 offset within a group of thirteen using modulo. Packing those earlier
 methods into functions gives us,
 
-    SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
-    FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                   'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                   'Queen', 'King')
+```python
+SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
+FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
+                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+                'Queen', 'King')
 
-    def suit(cardnum):
-        return SUITS[cardnum // 13]
+def suit(cardnum):
+    return SUITS[cardnum // 13]
 
-    def face_value(cardnum):
-        return FACE_VALUES[cardnum % 13]
+def face_value(cardnum):
+    return FACE_VALUES[cardnum % 13]
 
-    card = 15
-    print("Card", card, "is the", face_value(card), "of", suit(card))
-     
+card = 15
+print("Card", card, "is the", face_value(card), "of", suit(card))
+```     
 
 with output
 
-    >>> 
-    Card 15 is the Three of Diamonds
-    >>> 
-
-We'll probably have to display card labels, e.g. Three of Diamonds,
+```plaintext
+>>> 
+Card 15 is the Three of Diamonds
+>>> 
+```
+We'll probably have to display card labels, e.g. “Three of Diamonds”,
 fairly often so let's add a function for that too,
 
-    SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
-    FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                   'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                   'Queen', 'King')
+```python
+SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
+FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
+                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+                'Queen', 'King')
 
-    def suit(cardnum):
-        return SUITS[cardnum // 13]
+def suit(cardnum):
+    return SUITS[cardnum // 13]
 
-    def face_value(cardnum):
-        return FACE_VALUES[cardnum % 13]
+def face_value(cardnum):
+    return FACE_VALUES[cardnum % 13]
 
-    def label(cardnum):
-        return face_value(cardnum) + " of " + suit(cardnum)
+def label(cardnum):
+    return face_value(cardnum) + " of " + suit(cardnum)
 
-    card = 15
-    print("Card", card, "is the", face_value(card), "of", suit(card))
-    print("Card", card, "is the", label(card))
-     
+card = 15
+print("Card", card, "is the", face_value(card), "of", suit(card))
+print("Card", card, "is the", label(card))
+```     
 
 to get output like,
 
-    >>> 
-    Card 15 is the Three of Diamonds
-    Card 15 is the Three of Diamonds
-    >>> 
+```plaintext
+>>> 
+Card 15 is the Three of Diamonds
+Card 15 is the Three of Diamonds
+>>> 
+```
 
 Note how we reused our `suit` and `face_value` functions to
 define `label` in the same way we reused `is_even` to
