@@ -1,14 +1,14 @@
 # `class Room`
 
 Rooms have the attributes and methods we identified in our first
-pass_plus_the methods we have shifted from `Cave_System`s to `Room`s:
+pass _plus_ the methods we have shifted from `Cave_System`s to `Room`s:
 
 -   Attributes: **3 tunnels**, possibly **a bat**, possibly **a pit**,
     possibly **a wumpus**.
 -   Methods: Should be able to tell us if it **has a bat**, **has a
     pit**, or **has a wumpus,**\
    _plus_
-    "should be able to tell us **where you can go from here**/what
+    should be able to tell us **where you can go from here**/what
     rooms are connected to this one; if a room **has a bat**; if a
     room **has a pit**; if the **player is in** a room.
 
@@ -43,7 +43,7 @@ Notes:
     (`b=None, p=None, w=None`). These will be sprinkled around the cave
     system later.
 -   The `has_...` methods that answer questions look to see if the
-    relevant attribute is defined and if it is returns `True`,
+    relevant attribute is defined and if it is, returns `True`,
     otherwise `False`.
 
 In memory a single Room object can be pictured like this (for room 12

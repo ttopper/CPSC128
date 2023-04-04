@@ -3,21 +3,23 @@
 Some detail has been added to the `Player.shoot` method compared to the
 pseudocode. First, inside the `Player` class we have the method,
 
-        def shoot(self):
-            roomlist = input('What rooms [a, b, c]? ')
-            self.arrows = self.arrows - 1
-            print 'Shooting...'
-            # Uncomment the next line when you are ready to add the code it requires.
-            # The return below it is a temporary statement to allow the program
-            # to execute.
-            # return Arrow(self.location, roomlist).fly()
-            return MISS
+```python
+    def shoot(self):
+        roomlist = input('What rooms [a, b, c]? ')
+        self.arrows = self.arrows - 1
+        print 'Shooting...'
+        # Uncomment the next line when you are ready to add the code it requires.
+        # The return below it is a temporary statement to allow the program
+        # to execute.
+        # return Arrow(self.location, roomlist).fly()
+        return MISS
+```
 
 The `shoot` method will get the list of rooms for the arrow to fly
-through from the user, decrement the number of arrows left by 1 and then
+through from the user, decrement the number of arrows left by 1, and then
 create an `Arrow` object and tell it to `fly`. Note that the
-line `Arrow(self.location, roomlist).fly()` does two things. It first
-creates an `Arrow` object with `Arrow(self.location, roomlist)` and then
+line `Arrow(self.location, roomlist).fly()` does two things. First it 
+creates an `Arrow` object with `Arrow(self.location, roomlist)`, and then
 it immediately sends it the message to fly with the appended `.fly()`.
 This line is commented out at the moment since it would just throw an
 error because there is no class `Arrow` (you will be creating it as part
@@ -35,23 +37,26 @@ may come back at you and hit you.
 
 The constants are assigned by the statement,
 
+```python
     (HIT, OOPS, MISS) = range(3) # Possible outcomes of shooting an arrow.
+```
 
 The section of the main routine handling shooting was expanded to deal
 with each possible return value appropriately,
 
-        elif action == 's':
-            outcome = player.shoot()
+```python
+    elif action == 's':
+        outcome = player.shoot()
+        
+        if outcome == HIT:
+            print('You hit the wumpus! You win!')
+            game_over = True
             
-            if outcome == HIT:
-                print('You hit the wumpus! You win!')
-                game_over = True
-                
-            elif outcome == OOPS:
-                print('Ouch! You shot yourself!')
-                game_over = True
-                
-            elif outcome == MISS:
-                print('I'm afraid the Wumpus wasn't in any of those rooms.')
-                print('You wasted your arrow.')
+        elif outcome == OOPS:
+            print('Ouch! You shot yourself!')
+            game_over = True
             
+        elif outcome == MISS:
+            print('I'm afraid the Wumpus wasn't in any of those rooms.')
+            print('You wasted your arrow.')
+```      

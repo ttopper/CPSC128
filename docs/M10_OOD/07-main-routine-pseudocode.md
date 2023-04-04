@@ -1,10 +1,11 @@
 # Main Routine Pseudocode
 
-Let's use these class, attribute and method names we've identified so
+Let's use the class, attribute and method names we've identified so
 far and try to write the main routine of our program. Doing so should
 reveal any missing objects, or missing attributes or methods of objects.
 First we'll say what we want to do as plainly as we can in English.
 
+```plaintext
     While the game isn't over
         Display the game state
         Display the menu of possible actions
@@ -24,6 +25,7 @@ First we'll say what we want to do as plainly as we can in English.
             Tell the arrow to fly that path
         Otherwise if the action is quit
             Quit the game
+```
 
 There's one subtlety here that may escape your notice at first glance
 and that is the significance of the ordering of the three possibilities
@@ -41,6 +43,7 @@ and attributes, and introduce some Python where the equivalent Python
 commands are obvious (e.g. the main while loop control is something
 we've seen before):
 
+```python
      1 while not game_over:
      2     print(cave_system)
      3     print(player.location)
@@ -61,58 +64,59 @@ we've seen before):
     18         player.shoot()
     19     elif action == 'q':
     20         game_over = True
+```
 
 Take some time to study this code. There are numerous things to note:
 
 → line 3
-:   Displaying the player's location attribute (see the dot notation?)
+:   Displaying the player's `location` attribute (see the dot notation?)
 
 → line 6
-:   cave_system.rooms\[player.location\].tunnels is a relatively complex
+:   `cave_system.rooms[player.location]`.tunnels is a relatively complex
     expression for us, so let's deconstruct it carefully.
-    -   cave_system.rooms is the rooms attribute of cave_system
-    -   the square brackets of cave_system.rooms\[\] indicate that the
-        rooms attribute is a list of rooms
-    -   we use the player's location attribute, player.location, to
+    -   cave_system.rooms is the rooms attribute of `cave_system`
+    -   the square brackets of `cave_system.rooms[]` indicate that the
+        `rooms` attribute is a list of `room`s
+    -   we use the player's `location` attribute, `player.location`, to
         access the current room
-    -   we display the tunnels leading from the current room by printing
-        the tunnels attribute of the current room
+    -   we display the tunnels leading from the current `room` by printing
+        the `tunnels` attribute of the current room
 
 → line 8
-:   player.move(room_choice) calls the player's move method with
-    room_choice as a parameter (or equivalently, sends the player object
-    the message to move to room_choice)
+:   `player.move(room_choice)` calls the player's `move` method with
+    `room_choice` as a parameter (or equivalently, sends the `player` object
+    the message to `move` to `room_choice`)
 
 → line 9
-:   the player is now in room cave_systems.rooms\[player.location\] but
+:   the player is now in `room` `cave_systems.rooms[player.location]` but
     that is a mouthful to say or type so we will introduce a simplifying
-    alias for it and refer to it as new_room. Note that new_room
-    is *exactly *cave_systems.rooms\[player.location\] because it is a
+    alias for it and refer to it as `new_room`. Note that `new_room`
+    is _exactly_ `cave_systems.rooms[player.location]` because it is a
     reference to that object.
 
 → line 10
-:   we call new_room's has_bat method to find out if the room contains
-    a bat.
+:   we call `new_room`'s `has_bat` method to find out if the room contains
+    a `bat`.
 
 → line 11
-:   we call the bat in new_room's snatch method (or equivalently, send
-    the bat object in new_room the message to snatch).
+:   we call the `bat` in `new_room`'s `snatch` method (or equivalently, send
+    the `bat` object in `new_room` the message to `snatch`).
 
 → line 12-15
 :   similarly to lines 10 and 11
 
 → line 16
-:   we don't just tell the wumpus to wake_up, we ask it to report back
+:   we don't just tell the Wumpus to `wake_up`, we ask it to report back
     to us if the game is over. We need to do this because the game may
     or may not end depending on what the wumpus does, whereas in line 13
     we know the game ends when the player falls in a pit. This is why
-    the swallow method does not report back: its outcome is a foregone
+    the `swallow` method does not report back: its outcome is a foregone
     conclusion.
 
 → line 18
-:   to keep things short I just called the player's shoot method here.
+:   to keep things short I just called the player's `shoot` method here.
     It may in fact be better to get the arrow's desired path here, like
-    we did for the movement destination, than inside the shoot method.
+    we did for the movement destination, than inside the `shoot` method.
 
 That didn't reveal any objects, attributes or methods we had missed,
 which gives me enough confidence that we have a reasonable object model

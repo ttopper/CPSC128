@@ -3,7 +3,7 @@
 Welcome to the home stretch of the course. You're two thirds of the way through, and the final module is a light one, so there are
 only three more modules of substantive content left!
 
-These modules cover Object-Oriented Programming or OOP. Don't worry, it's not something brand new and different, just a way of packaging the algorithms and data structures you've been working with into larger chunks called objects. This makes them even easier to reuse and to connect together into larger programs.
+These modules cover Object-Oriented Programming or OOP. Don't worry, it's not something brand new and different, just a way of packaging the algorithms and data structures you've been working with into larger chunks called _objects_. This makes them even easier to reuse and to connect together into larger programs.
 
 There _is_ some new notation and jargon, so to help you concentrate on that we'll revisit a programming domain we've already seen, playing cards, and repackage our techniques and data structures for dealing with them into classes and objects. We'll develop a set of playing card classes in this module. Be sure to follow that development carefully, since three of your four assignment problems involve it.
 
@@ -43,3 +43,4 @@ There _is_ some new notation and jargon, so to help you concentrate on that we'l
     thing](19-running-the-whole-thing.md)
 1. [Programming
     Observation](20-programming-observation.md)
+[1. Assignment 9](90_Assignment_9.md)

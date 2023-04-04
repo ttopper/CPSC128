@@ -6,21 +6,22 @@ first game written for a microprocessor (as opposed to a minicomputer or
 mainframe). As usual Wikipedia has  [a fine background
 article](http://en.wikipedia.org/wiki/Wumpus) about it. There are
 several online implementations of the game, e.g.
-\[[1](http://www.dreamcodex.com/wumpus.php)\] and
-\[[2](http://www.funkypages.com/games/wumpus.php)\] so you can try it
+[[1](http://www.dreamcodex.com/wumpus.php)] and
+[[2](http://www.funkypages.com/games/wumpus.php)] so you can try it
 out before we begin building our own version. The original version was
 written in 1970 in BASIC, but it has since been translated into many
 other languages ([including
 Python](http://granite.sru.edu/~conlon/python_page.html)). For interest,
 here's  [the original BASIC source
-code](http://www.atariarchives.org/morebasicgames/showpage.php?page=179) \-- **users
+code](http://www.atariarchives.org/morebasicgames/showpage.php?page=179)— **users
 would type this in** (!) in order to play the game.
 
 I hope you realized from its age that this is a text-based game and not
-a graphical first person shooter. If not this short game transcript
+a graphical first person shooter. If not, this short game transcript
 should make it clear, and also demonstrate the game and explain the
 rules:
 
+```plaintext
     Welcome to "Hunt the Wumpus"
      
     The wumpus lives in a cave of 20 rooms. Each room has 3 tunnels to
@@ -66,17 +67,18 @@ rules:
     Shoot, move, or quit (s/m/q)? m
     To which room (11, 13, or 19)? 13
     AEEEIIIIII! You fell into a pit!
+```
 
-I won't make you ask by email about the dodecahedron :-) A
-[dodecahedron on
-Wikipedia](https://en.wikipedia.org/wiki/Dodecahedron#/media/File:Dodecahedron.png).
+I won't make you ask by email about the dodecahedron :-) A dodecahedron looks like this:
+
+![A dodecahedron](03_Dodecahedron.jpg)
 
 In our game the vertices (the corners or points) correspond to the
-locations of the rooms and the edges (or ridgelines) correspond to the
+locations of the rooms, and the edges (or ridgelines) correspond to the
 tunnels that connect caves. You can see that each cave is connected to
 three others. For our purposes it is easier to work with a "squashed"
 version (imagine someone steps on the 3-D picture above and squashes it
-flat),
+flat):
 
 ![.](03_dodecahedron.gif)
 

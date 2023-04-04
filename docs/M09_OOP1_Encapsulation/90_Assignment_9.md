@@ -44,11 +44,11 @@
         a Quarter
     The total value of the coins in your purse is 137 cents.
     Flipping your coins you get: Tails Tails Tails Heads Tails
-
     ```
 
     and produce this output,
 
+    ```plaintext
         >>> 
         Your first coin is a Penny.
         Adding four more coins to your purse...
@@ -61,6 +61,7 @@
         The total value of the coins in your purse is 137 cents.
         Flipping your coins you get: Tails Tails Tails Heads Tails
         >>> 
+    ```
 
     Of course due to their random selection the exact coins that end up
     in the purse will vary from run to run, though the first coin
@@ -70,7 +71,7 @@
 2.  ### Extending a class 1
 
     Extend the code in [`playing_cards_4.py`](90_playing_cards_4.py) so we
-    can find out if a five card poker hand is a flush, i.e. all cards
+    can find out if a five-card poker hand is a flush, i.e. all cards
     are from the same suit. Here's the specification code to add to the
     end of the module,
 
@@ -117,13 +118,13 @@
     with a pair of attributes. Name the attributes `suit` and
     `face_value`.
 
-   _Hint_1~: You shouldn't change_anything_after the
+   _Hint 1_: You shouldn't change _anything_ after the
     `if __name__ == '__main__':` statement. Remember that one of the
     goals of encapsulation is to be able drop in a new class
     implementation for an older one without having to rewrite any code
     that uses it.
 
-   _Hint_2~: You don't have to rewrite that much of the code above
+   _Hint 2_: You don't have to rewrite that much of the code above
     the `if` either. Think carefully about what needs to change.
 
 ## Logistics
@@ -133,4 +134,4 @@
     attempt at problem 1 on this assignment will be named `a9p1bob.py`
     and your solution for problem will be named `a9p2bob.py` (adjusted obviously to use your name) .
 
--   Please submit all your .py files to the Moodle dropbox.
+-   Please submit all your `.py` files to the Moodle dropbox.

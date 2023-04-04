@@ -1,10 +1,11 @@
 # Python OOP Syntax
 
-    class ClassName:
-        def __init__(self, ...):
+<pre><code>
+    <b>class</b> <i>ClassName</i><b>:</b>
+        <b>def __init__(self,</b> ...<b>):</b>
             ...
             
-        def method1(self, ...):
+        <b>def</b> <i>method1</i><b>(self,</b> ...<b>):</b>
             ...
-        def method2(self, ...):
+        <b>def</b> <i>method2</i>(self,</b> ...<b>):</b>
             ...

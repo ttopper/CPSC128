@@ -2,7 +2,7 @@
 
 Based on the classes and methods we have identified we can add empty
 class and method definitions above our specification code. This is
-sometimes called stubbing out the methods:
+sometimes called _stubbing out_ the methods:
 
 ![](11_Skeleton_1.png)
 

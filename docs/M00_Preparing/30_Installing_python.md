@@ -42,7 +42,7 @@ software out there are numerous other more powerful Pyton IDEs you can
 explore. Let the Google guide you!)
 
 If you run IDLE you will get a window that looks something like this
-(allowing for OS and version differences, and probably larger---I scaled
+(allowing for OS and version differences, and probably larger—I scaled
 it down a bit to keep the image compact),
 
 ![.](08_IDLE_Window.png)

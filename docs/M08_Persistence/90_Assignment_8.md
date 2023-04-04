@@ -20,6 +20,7 @@
 
     The output of running the module might look like this:
 
+```plaintext
         Name of file to test with: pooh.txt
         Number of lines to display: 3
 
@@ -37,10 +38,10 @@
         The more it snows
         The more it goes
         And nobody knows
-            
+```
 
-    Since the file could be very long you will **not** want to read the
-    whole thing into memory as a list of lines\...
+Since the file could be very long you will **not** want to read the
+whole thing into memory as a list of lines\...
 
 2.  ### Testing `biggest()`
 
@@ -79,6 +80,6 @@
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#*``yourname`.py` . So your first
     attempt at problem 1 on this assignment will be named `a8p1bob.py`
-    and your solution for problem will be named `a8p2bob.py` (adjusted obviously to use your name) .
+    and your solution for problem will be named `a8p2bob.py` (adjusted obviously to use your name).
 
--   Please submit all your .py files to the Moodle dropbox.
+-   Please submit all your `.py` files to the Moodle dropbox.

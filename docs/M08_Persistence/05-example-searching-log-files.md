@@ -20,15 +20,17 @@ The file is quite large, 100s of megabytes in size, so we'd rather not
 read it all into memory if we can avoid it so we'll use a line at a
 time approach. Our pseudocode looks like this,
 
+```plaintext
     Get the name of the log file
     Get the name of the IP address to scan for
     Open the file for reading
     For each line in the file
         If the line contains the IP address
             Display the line
-
+```
 and in Python we get,
 
+```python
     # ip_extractor.py
     fname = input('What file do you want to scan? ')
     ip = input('What IP address do you want to scan for? ')
@@ -36,9 +38,11 @@ and in Python we get,
     for line in f:
         if line.find(ip) != -1:
             print(line)
+```
 
 which produces the output,
 
+```plaintext
     >>> 
     What file do you want to scan? access.log.1
     Waht IP address do you want to scan for? 199.247.232.110
@@ -46,3 +50,4 @@ which produces the output,
     199.247.232.110 - - [12/Apr/2009:08:53:00 -0700] "GET /Math101.W09/10-8.html HTTP/1.1" 200 2326 "http://ttopper.yukoncollege.yk.ca/Math101.W09/index.html" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.53 Safari/525.19"
     199.247.232.110 - - [12/Apr/2009:08:53:01 -0700] "GET /Math101.W09/MATH101W08.css HTTP/1.1" 200 737 "http://ttopper.yukoncollege.yk.ca/Math101.W09/10-8.html#25" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/1.0.154.53 Safari/525.19"
     ...
+```

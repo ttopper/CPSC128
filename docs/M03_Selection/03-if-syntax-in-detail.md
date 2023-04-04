@@ -2,13 +2,15 @@
 
 The syntax of the `if` statement is,
 
-    if test-expression1:
-        true-statement1
-    [elif test-expression2:
-        true-statement2]
+!!! note "_if_ statement syntax"
+
+    <pre>**if** _test-expression1_ **:**
+        _true-statement1_
+    [**elif** _test-expression2_ **:**
+        _true-statement2_]
     ...
-    [else:
-        false-statement]
+    [**else:**
+        _false-statement_]</pre>
 
 Or in words, the `if` statement consists of the
 keyword **`if`** followed by a *test expression*, followed by a

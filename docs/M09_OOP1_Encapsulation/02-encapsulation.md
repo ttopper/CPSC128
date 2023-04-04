@@ -1,10 +1,10 @@
 # Encapsulation
 
-The first benefit of OOP is that it allows for_encapsulation_ This
+The first benefit of OOP is that it allows for _encapsulation_. This
 just means that an object encapsulates (or hides) how it operates from
 the code that invokes it. We have benefitted, for example, by being able
 to use Python's lists and dictionaries without having to worry about
-how they are implemented internally. That's because they_abstract_the
+how they are implemented internally. That's because they _abstract_ the
 behaviour to encapsulate their functionality and hide the implementation
 details from us.
 

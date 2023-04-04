@@ -2,7 +2,7 @@
 
 Like `Pit`s, `Bat`s have one attribute, `location`, and one method
 called `snatch`. Snatching is a little more involved than swallowing.
-The bat has to move the player to a new randomly chosen room and then
+The bat has to move the player to a new randomly chosen room, and then
 flap off to another randomly chosen room.
 
 ![](12_class_bat_py.png)

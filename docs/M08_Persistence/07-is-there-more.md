@@ -12,6 +12,7 @@ enough for now^*^.
 online](http://docs.python.org/library/stdtypes.html#file-objects) or
 explore via the Python Shell, e.g.
 
+```plaintext
     >>> dir(f)
     ['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', 
     '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', 
@@ -21,3 +22,4 @@ explore via the Python Shell, e.g.
     'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 
     'writelines', 'xreadlines']
     >>> 
+```

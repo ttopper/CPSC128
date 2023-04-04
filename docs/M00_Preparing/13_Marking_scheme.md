@@ -22,14 +22,14 @@ specified by the assignment.
 Sometimes it is helpful to remind ourselves what key words mean:
 
 *ex·cel·lent*
-:   ---adj. 1. Of the highest or finest quality; exceptionally good of
+:   —adj. 1. Of the highest or finest quality; exceptionally good of
     its kind.
 
 *good*
-:   ---adj. 1. Having positive or desirable qualities; not bad or poor.
+:   —adj. 1. Having positive or desirable qualities; not bad or poor.
 
 *ac·cept·a·ble*
-:   ---adj. 1. Worthy of being accepted. 2. Adequate enough to satisfy a
+:   —adj. 1. Worthy of being accepted. 2. Adequate enough to satisfy a
     need, requirement, or standard; satisfactory. 3. Designating an
     amount or level that can be endured or allowed.
 

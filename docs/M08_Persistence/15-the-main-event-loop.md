@@ -9,7 +9,7 @@ trigger an action based on it. Most office productivity programs (word
 processors, spreadsheets, etc.) spend almost all of their time waiting
 for the user to do something and then just follow a clear set of rules
 to determine what routine to fire as a result. "The main event loop"
-is just jargon, not a deep idea, but its jargon you should know, and
+is just jargon, not a deep idea, but it's jargon you should know, and
 even use, e.g. in interviews.
 
 

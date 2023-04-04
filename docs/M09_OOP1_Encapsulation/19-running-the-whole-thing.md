@@ -3,6 +3,7 @@
 Putting all the pieces together and running the resulting module
 produces the output,
 
+```plaintext
     >>> 
     d after shuffling = 3 of Hearts, 2 of Spades, 4 of Diamonds, Q of Clubs, 7 of Diamonds, 
     9 of Hearts, 4 of Spades, 9 of Diamonds, A of Diamonds, A of Clubs, K of Hearts, 
@@ -18,6 +19,7 @@ produces the output,
     Your hand of 5 cards contains: 5 of Clubs, K of Diamonds, 5 of Diamonds, 6 of Clubs, J of Clubs, 
     There are 42 cards left in the deck.
     >>> 
+```
 
-Which is what we had hoped for when we first wrote our spec code
+Which is what we had hoped for when we first wrote our spec code,
 indicating that our module is complete.

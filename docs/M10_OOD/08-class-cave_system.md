@@ -1,12 +1,12 @@
 # `class Cave_System`
 
 Generally I like to write my classes from simplest to most complicated,
-but that's not always possible. In this case for instance because all
+but that's not always possible. In this case for instance, because all
 our other objects need to refer to the cave system we have to begin with
 its class definition.
 
 Recall that in our first pass at the cave system object we said it
-consists of_multiple_rooms connected by_multiple_tunnels. This means
+consists of _multiple_ rooms connected by _multiple_ tunnels. This means
 that it will have to be a container type of some sort.
 
 -   Attributes: **20 caves**; the **pattern of connections** between
@@ -18,13 +18,15 @@ that it will have to be a container type of some sort.
 Looking at our pseudocode it looks like I was right about the container
 type, notice the square brackets in lines 6 and 9 which indicate a list:
 
+```python
      6         print('Choose from: ', cave_system.rooms[player.location].tunnels)
      ...
      9         new_room = cave_system.rooms[player.location] # Note simplifying alias.
+```
 
 Those show us that `Cave_System`s have a `rooms` attribute that is a
-list. Based on its name `rooms` is a list of the `Room` objects in the
-cave system. Now how to represent the *pattern of connections* between
+list. Based on its name, `rooms` is a list of the `Room` objects in the
+cave system. Now how to represent the _pattern of connections_ between
 rooms? One simple way would be for each `Room` to know what
 other `Room`s it is connected to, and that seems like a reasonable thing
 for a `Room` object to know so we'll make it an attribute
@@ -41,40 +43,44 @@ if the **player is in** a room." But, if you look at the pseudocode
 where these questions are actually asked you can see that they are asked
 of `Room` objects not of the cave system as a whole:
 
+```python
     10         if new_room.has_bat():
                    ...
     12         elif new_room.has_pit():
                    ...
     15         elif new_room.has_wumpus():
                    ...
+```
 
 This means that these methods properly belong to `Room` objects
 not `Cave_System`s so we'll move them there.
 
 What methods_do_cave systems have then? Almost none, but there is one
-slightly non-obvious one. Try spotting it\...
+slightly non-obvious one. Try spotting it...
 
 Did you spot it in this line?
 
+```python
      2     print(cave_system)
+```
 
 There's no explicit method call there, i.e. no parentheses, but
 remember that for an object to be printable it has to provide
 an `__str__` method so there is an implicit call
 to `cave_system.__str__` in this line. Thus a `Cave_System`'s only
-method (beyond `__init__` ) will be \_\_str\_\_.
+method (beyond `__init__` ) will be `__str__`.
 
 In sum this class doesn't have that much in it. It has to initialize a
-list of `Room` objects and provide a `__str__` method. Here's its code,
+list of `Room` objects and provide an `__str__` method. Here's its code,
 
 ![](08_class_cave_system_py.png)
 
 Note that the constructor is passed a list of tunnel connections between
-rooms and a map of the system. We can tell `tunnels` is a list because
+rooms, and a map of the system. We can tell that `tunnels` is a list because
 of the way it is used with square brackets in the sixth
 line: `tunnels[i]`. We can tell `system_map` will need to be a string
 containing a printable map of the system because it is returned
-by `__str__` and that method_has_to return a string. To make this more
+by `__str__` and that method _has_ to return a string. To make this more
 concrete here's the code to create a `Cave_System` object corresponding
 to our squashed dodecahedron cave system:
 
@@ -107,6 +113,6 @@ to our squashed dodecahedron cave system:
     '''
     cave_system = Cave_System(TUNNELS, MAP)
 
-What does cave_system look like in memory? We can picture it like this:
+What does `cave_system` look like in memory? We can picture it like this:
 
 ![.](08_cave_system_memory_diagram.png)

@@ -6,7 +6,7 @@ The differences of one versus many lines, and commas versus spaces are just cosm
 
 The universe in Conway's game of life is a grid of cells each of which can be in one of two states: alive or dead. A natural way to represent it in Python would be as a list of lists of cells (like a very large tic-tac-toe board):
 
-```
+```python
 universe = [ [0, 0, 0, 0, 0, 0, 0, 0],
              [0, 0, 0, 0, 0, 0, 0, 0],
              [0, 0, 0, 1, 0, 0, 0, 0],
@@ -22,7 +22,7 @@ universe = [ [0, 0, 0, 0, 0, 0, 0, 0],
 
 One way to write this to a text file would be to write lines of space-separated 0s and 1s to the file:
 
-```
+```plaintext
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 1 0 0 0 0
@@ -33,7 +33,7 @@ One way to write this to a text file would be to write lines of space-separated 
 0 0 0 0 0 0 0 0
 ```
 
-The size of this file would be 136 bytes because we have one byte for the 0 or 1 for each cell, 1 byte for the space to separate them, and 1 byte for the line end marking the end of each row of the universe, i.e. 1 × 8 × 8 + 1 × 8 × 8 + 1 × 8 = 136 bytes. Generalizing this, an _n_ × _n_ universe would require 2 _n_2 + _n_ bytes.
+The size of this file would be 136 bytes because we have one byte for the 0 or 1 for each cell, 1 byte for the space to separate them, and 1 byte for the line end marking the end of each row of the universe, i.e. 1 × 8 × 8 + 1 × 8 × 8 + 1 × 8 = 136 bytes. Generalizing this, an _n_ × _n_ universe would require 2 _n_<sup>2</sup> + _n_ bytes.
 
 ## Option 2
 
@@ -45,7 +45,7 @@ Using text graphics the universe might be displayed onscreen using blanks to rep
   ***
 ```
 
-This suggests a second approach: we could save the state of the universe by taking a "snapshot" of it and writing that snapshot to the file. Our file would look just like the universe, and would use somewhat less storage because this time we use one byte (to store a blank or an asterisk character) for each cell and one byte for the newline at the end of each row. Thus for an _n_ × _n_ universe we would require _n_2 + _n_ bytes or roughly half as much storage (for medium and large values of _n_). For our 8 × 8 universe this approach uses 72 bytes.
+This suggests a second approach: we could save the state of the universe by taking a "snapshot" of it and writing that snapshot to the file. Our file would look just like the universe, and would use somewhat less storage because this time we use one byte (to store either a blank character or an asterisk character) for each cell, and one byte for the newline at the end of each row. Thus for an _n_ × _n_ universe we would require _n_<sup>2</sup> + _n_ bytes or roughly half as much storage (for medium and large values of _n_). For our 8 × 8 universe this approach uses 72 bytes.
 
 ## Option 3
 

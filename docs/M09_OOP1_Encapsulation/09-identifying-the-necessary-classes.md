@@ -6,6 +6,7 @@ constructors. The form of a constructor is that it uses a class name as
 a function. We've seen examples of this with Python's built-in
 classes, e.g.
 
+```plaintext
     >>> num = int(43.72)
     >>> num
     43
@@ -13,10 +14,11 @@ classes, e.g.
     >>> lst
     ['T', 'i', 'm']
     >>>
+```
 
 Now we want to look for similar syntax in our specification code,
 
 ![](09_Identifying_necessary_classes.png)
 
 Doing so reveals that two classes are explicitly referred to in our
-specification one called `Hand` and another called `Deck`.
+specification, one called `Hand` and another called `Deck`.

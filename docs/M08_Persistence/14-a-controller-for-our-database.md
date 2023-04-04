@@ -21,18 +21,20 @@ does it also include finding entries that match certain criteria?
 Because the latter operation, searching, is a very complicated task
 (basically it's the problem Google is being rewarded for "solving").
 
-What we'll do here is to build a little controller^*^ that will let us
+What we'll do here is to build a little controller[^*] that will let us
 work on our database of quotations. The pseudocode for most controllers
-is similar^**^,
+is similar[^**],
 
+```plaintext
     Forever
         Display the possible actions
         Get the user's choice of action
         Execute the code corresponding to the chosen action
-
+```
 The Python code for CRUD operations on a shelve of quotes could look
 like,
 
+```python
     # crud_controller.py
     import shelve
     fname = input('What file of quotes would you like to work with? ')
@@ -74,19 +76,21 @@ like,
             print('Not a valid choice!')
             
     db.close()
+```
 
 The code is a fairly straightforward translation of the pseudocode:
 
 -   The Forever loop is implemented with a quit option.
 -   The possible actions are displayed using a triple quoted string to
     display a menu of choices.
--   We get the user's choice via a call to `raw_input`.
+-   We get the user's choice via a call to `input`.
 -   We choose the appropriate action using an `if-elif-else` cascade.
 
 The `pass` statements are new, but they do nothing. Truly. If they do
 nothing why have them? Because you can't have nothing between
 an `if` and an `elif` or between a pair of `elif`s,
 
+```plaintext
     >>> if x > 5:
     elif x == 5:
       File "<pyshell#59>", line 2
@@ -94,6 +98,7 @@ an `if` and an `elif` or between a pair of `elif`s,
            ^
     IndentationError: expected an indented block
     >>> 
+```
 
 The job of a `pass` statement is to have a statement somewhere you
 don't want one by 1) being a statement, but 2) doing nothing. Most
@@ -110,6 +115,7 @@ code.
 
 Here's another version with a couple of the actions filled in,
 
+```python
     # crud_controller.py
     import shelve
     fname = input('What file of quotes would you like to work with? ')
@@ -155,9 +161,11 @@ Here's another version with a couple of the actions filled in,
             print('Not a valid choice!')
             
     db.close()
+```
 
 and a sample run,
 
+```plaintext
     >>> 
     What file of quotes would you like to work with? quotes
         Actions
@@ -214,16 +222,17 @@ and a sample run,
         Your choice?
     q
     >>> 
+```
 
 What about the other actions? Check out the assignment :-)
 
 ------------------------------------------------------------------------
 
-^*^ Controllers are ubiquitous in computing. If you have a device or
+[^*]: Controllers are ubiquitous in computing. If you have a device or
 server you want to manipulate through software then you need a
 controller.
 
-^**^ Which may have you thinking that it should be possible to build a
+[^**]: Which may have you thinking that it should be possible to build a
 universal controller which with some OOP and an MVC architecture it
 pretty much is. OOP will be the subject of the remaining four modules of
 this course. MVC you can either Google or wait to study in NCIT 212.

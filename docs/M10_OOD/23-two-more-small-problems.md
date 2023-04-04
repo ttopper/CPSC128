@@ -2,7 +2,7 @@
 
 ## Bug: Wumpus movement
 
-The wumpus position is not updated properly after moving for the same reason that `Bat`s' movements were not properly updating. Fixing this will be part of your assignment.
+The Wumpus position is not updated properly after moving for the same reason that `Bat`s' movements were not properly updating. Fixing this will be part of your assignment.
 
 ## Missing Piece: Initialize `Pit`s
 

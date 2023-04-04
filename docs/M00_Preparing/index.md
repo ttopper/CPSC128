@@ -10,7 +10,7 @@ This means you need to:
 
 ## 1. Know what you are getting into
 
-[The official course outline](CPSC_128_2022-02.pdf). Start here. It's not exciting reading, but it is
+[The official course outline](01_Course_outline.md). Start here. It's not exciting reading, but it is
 important, and will give you a clear idea what you are getting
 yourself into. If anything is unclear, or if you would like further
 information, don't hesitate to ask in class, or post your question to the Moodle Discussion Forum.
@@ -22,34 +22,34 @@ questions too!)
 
 Then you can read about:
 
-[The course philosophy](03_CoursePhilosophy.md)
+[The course philosophy](11_Course_philosophy.md)
 
-[What language we'll use (and why)](05_WhatLanguage.md)
+[What language we'll use (and why)](12_What_language.md)
 
-And even [What will be on the final exam!](07_ExaminableTopicsPointer.md)
+[How your assignments will be graded](13_Marking_scheme.md)
+
+And even [What will be on the final exam!](14_Examinable_topics_pointer.md)
 
 ## 2. Know where to find the course resources
 
 Familiarize yourself with the two[^*] (2!) course websites.
 
-1. The [Moodle]() site will be used for the administrative side of the course, e.g. a calendar showing due dates, and the course gradebook are there.
+1. The [Moodle site]() will be used for the administrative side of the course.
 
-2. The [Github site](https://ttopper.github.io/CPSC128/) provides the learning resources like the course notes and assignments. It is our online textbook.
+2. The [Github site](https://ttopper.github.io/CPSC128/) provides the learning resources. It is our online textbook.
 
-This table lays out it more specifically:
-
-Github Site <br> (Textbook) | Moodle <br> (Administration)
+Github Site <br> (Textbook) | Moodle site <br> (Administration)
 ----------------------------|---------------------------- 
 Course Notes and Videos     | Discussion forum
 Assignment descriptions     | Schedule and Calendar (so you can see when the next assignment is due!)
 &nbsp;                      | Your Grades (so you can see how you are doing)
 &nbsp;                      | Assignment submission (or you can use email)
 
-If you like having options, there are several good free online [Python textbooks](06_Textbooks.md) available.
+If you like having options, there are several good free online [Python textbooks](20_Textbooks.md) available.
 
 ## 3. Install Python on your personal computer [Optional, but desirable]
 
-Python is free and available for Windows, MacOS, and Linux. The [Installing Python](08_InstallingPython.md) page will get you started installing it on your system.
+Python is free and available for Windows, MacOS, and Linux. The [Installing Python](30_InstallingPython.md) page will get you started installing it on your system.
 
 Be sure to test your installation as described on the page!
 

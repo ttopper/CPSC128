@@ -1,8 +1,8 @@
 # Identifying the classes' methods
 
 Our next step is to identify the methods these classes must provide. To
-do so we look for method syntax that is we look for the
-pattern *`object`*`.`*`method`*`()`. Note that the parentheses are
+do so we look for method syntax, that is we look for the
+pattern _`object`_`.`_`method`_`()`. Note that the parentheses are
 important. With them we know we are looking at a method, without them it
 would be an object attribute.
 
@@ -25,4 +25,6 @@ must provide
 
 -   `add`,
 -   `size`, and
--   `is_flush`.
+-   `is_flush`
+
+methods.

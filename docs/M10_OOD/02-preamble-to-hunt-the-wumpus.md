@@ -8,4 +8,4 @@ different looking programs. Furthermore the pattern of communication can
 be quite complicated and depend on subtle conditions. In this module we
 will consider a problem with more objects and a less obvious analysis
 than the playing cards, and with considerably more communication between
-objects. Our problem will be to implement the game Hunt the Wumpus.
+objects. Our problem will be to implement the game [Hunt the Wumpus](https://en.wikipedia.org/wiki/Hunt_the_Wumpus).
