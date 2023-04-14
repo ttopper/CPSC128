@@ -2,10 +2,11 @@
 
 We have used both is-a and has-a relations already but without drawing
 attention to the distinction between them. The is-a relationship
-typifies inheritance in which we can say of each subtype or descendant
+typifies inheritance, in which we can say of each subtype or descendant
 class that it "is a" superclass. For instance consider the small
 hierarchy below,
 
+```python
     class Person:
         ...
     class Student(Person):
@@ -16,19 +17,21 @@ hierarchy below,
         ...
     class Administrator(Employee):
         ...
+```
 
-In this case we can say that *a Student **is a** Person* and that *an
-Employee **is a** Person*.
+In this case we can say that _a `Student `**is a**` Person_ and` that _an
+`Employee `**is a**` Person_`.
 
-Similarly we can say that *an Instructor **is an** Employee* and
-that *an Administrator **is an** Employee*.
+Similarly we can say that _an `Instructor `**is an**` Employee_ and`
+that _an `Administrator `**is an**` Employee_`.
 
 Now since an Instructor is an Employee and an Employee is a Person it
-follows that through inheritance *an Instructor **is a** Person* and
-similarly that *an Administrator **is a** Person*.
+follows that through inheritance _an `Instructor `**is a**` Person_ and`
+similarly that _an `Administrator `**is a**` Person_`.
 
 Let's add some more classes and show some of the attributes.
 
+```python
     class Date:
         ...
     class CourseList:
@@ -49,14 +52,15 @@ Let's add some more classes and show some of the attributes.
         ...
     class Administrator(Employee):
         ...
+```
 
-Here we can see some has-a relationships. *A Person **has
-a** birthdate* which is presumably of type Date. Thus since all the
-classes listed below Person are also Persons they all have birthdates
-too and we can say *everyone **has a** Date*.
+Here we can see some has-a relationships. _A `Person `**has
+a**` birthdate_ which` is presumably of type `Date`. Thus since all the
+classes listed below `Person` are also `Person`s they all have `birthdate`s
+too and we can say _everyone **has a** `Date`_.
 
 We can also see that both Students and Instructors have
-a `courses` attribute (of type CourseList, take my word for it) so we
-can say that *a Student **has a** CourseList* (of the ones s/he takes)
-and that *an Instructor **has a** CourseList* (of the ones s/he
+a `courses` attribute (of type `CourseList`, take my word for it) so we
+can say that _a `Student `**has a** `CourseList`_ (of the ones s/he takes)
+and that _an `Instructor `**has a**` CourseList`_ (of the ones s/he
 teaches).

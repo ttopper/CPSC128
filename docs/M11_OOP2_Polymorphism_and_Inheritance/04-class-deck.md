@@ -5,6 +5,7 @@ this `CardCollection` base class. The mechanism to show inheritance in
 Python is simply to include the base class name in parentheses after the
 derived class name,
 
+```python
      1 class Deck(CardCollection):
      2     # Override ancestor's constructor, i.e. replace the default.
      3     def __init__(self):
@@ -27,21 +28,22 @@ derived class name,
     20     def shuffle(self):
     21         for i in range(  2*self.size() ):
     22             self.cards.insert(random.randrange(len(self.cards)), self.cards.pop())
+```
 
 This example shows most of what you can do with inheritance:
 
 → line 1
 :   The syntax to define a class `Deck` that inherits from the
     class `CardCollection`. Jargon: Deck is
-    the_derived_or_descendant_class; `CardCollection` is the *base
-    class*,_superclass_or *ancestor class*.
+    the _derived_ or _descendant_ class; `CardCollection` is the _base
+    class_, _superclass_ or _ancestor class_.
 
 → lines 3-6
 
 :   Replace a method from the base class with a customized version. This
     is just done by redefining the method, i.e. if you use the same name
     in the derived class it hides the version in the base class. The
-    jargon for this is_specialization_because we specialize the
+    jargon for this is _specialization_ because we specialize the
     operation of the method for our derived class' characteristics.
 
 → lines 11-12
@@ -49,7 +51,7 @@ This example shows most of what you can do with inheritance:
 :   We provide an "alias", i.e. a more meaningful name, for a method
     in the base class. In this case we can refer
     to `cards_left()` instead of `size()`. Note that this
-    is_not_a **re**naming; it is providing a *second name*. We can
+    is _not_ a **re**naming; it is providing a _second name_. We can
     still access the method `size()` if we wish.
 
 → lines 16-17
@@ -63,5 +65,5 @@ This example shows most of what you can do with inheritance:
     base class. In this case we add a `shuffle` method to our derived
     class. Note that inheritance is one way: we cannot call
     the `shuffle` method on a `CardCollection` object only on
-    a `Deck` object. The jargon for this is_augmentation_since we are
+    a `Deck` object. The jargon for this is _augmentation_ since we are
     augmenting the functionality of our base class.

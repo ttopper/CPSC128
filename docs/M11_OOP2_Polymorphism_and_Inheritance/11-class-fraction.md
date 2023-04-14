@@ -3,6 +3,7 @@
 The code needed to implement a class Fraction that can produce the shell
 session shown earlier is,
 
+```python
     class Fraction:
         def __init__(self, n, d = 1):
             self.num = n # numerator
@@ -53,10 +54,12 @@ session shown earlier is,
         print(d1[0], d1[1], '(s/b 2 5)')
         print(d1 + 2, '(s/b 12/5)')
         print(d1 - 2, '(s/b -8/5)')
+```
 
 The output when this module is run is (note that s/b is a short form for
 "should be")
 
+```plaintext
     >>> 
     2/5 (s/b 2/5)
     4/1 (s/b 4/1)
@@ -66,6 +69,7 @@ The output when this module is run is (note that s/b is a short form for
     12/5 (s/b 12/5)
     -8/5 (s/b -8/5)
     >>> 
+```
 
 Notes:
 

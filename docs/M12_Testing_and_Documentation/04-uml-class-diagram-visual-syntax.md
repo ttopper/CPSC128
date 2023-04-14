@@ -2,7 +2,7 @@
 
 The visual syntax that UML class diagrams use to show classes'
 attributes, methods, and is-a or has-a relationships is fairly
-straightforward. Each class is represented by a three part rectangular
+straightforward. Each class is represented by a three-part rectangular
 box. The top portion is used for the class name. The middle portion
 lists the attributes and their types. The bottom portion lists the
 methods, the types of arguments they expect, and the type of value they

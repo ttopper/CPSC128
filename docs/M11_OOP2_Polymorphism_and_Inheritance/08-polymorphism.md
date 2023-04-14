@@ -7,20 +7,22 @@ example the `+` symbol triggers three different operations in the code
 below each determined by the objects surrounding it, i.e. by its
 context.
 
+```python
     x = y + 5
     salutation = 'Mr.' + last_name
     t = [3, 7] + [6, 2]
+```
 
 From the developer's perspective the question is how we can make our
 object types trigger appropriate behaviour. Or to put it another way,
-can we give_our_objects the same status and abilities as Python's
+can we give _our_ objects the same status and abilities as Python's
 built-in objects? The answer is yes. All we need to do is to define some
 special methods for our classes. This is all we have to do because when
 Python encounters an operator in an expression it looks at the objects
 on each side of it (for a binary operator) and then calls a method from
-their class definitions *if one is provided*. For example when it
-encounters a + sign it checks to see if the object on the left hand side
-of the + sign has a method called \_\_add\_\_. If it does, it invokes
+their class definitions _if one is provided_. For example when it
+encounters a `+` sign it checks to see if the object on the left hand side
+of the `+` sign has a method called `__add__`. If it does, it invokes
 it.
 
 Nor is this limited to binary arithmetic operators. We saw earlier that

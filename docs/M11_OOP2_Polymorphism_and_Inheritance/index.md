@@ -6,7 +6,7 @@ Last week's Wumpus program is the largest one we'll work on this term at around 
 
 This week we'll finish off the remaining two parts of OOP: inheritance and polymorphism. Inheritance is a fairly straightforward idea and is achieved with just one small syntactic addition. Adding inheritance to large programs often means getting to delete lots of code, so programs become shorter _and_ clearer: win-win! To explore inheritance we'll revisit playing cards.
 
-Polymorphism isn't difficult to understand, but implementing it often involves adding lots of code. Fortunately that code is largely boilerplate, as opposed to subtle algorithms, and the benefit is that we can make our types look like built-in types by using operators like + and * to combine them. Our example for polymorphism is fairly pedestrian, fractions, so we can keep it simple and focus on the new syntactic elements polymorphism uses.
+Polymorphism isn't difficult to understand, but implementing it often involves adding lots of code. Fortunately that code is largely boilerplate, as opposed to subtle algorithms, and the benefit is that we can make our types look like built-in types by using operators like `+` and `*` to combine them. Our example for polymorphism is fairly pedestrian, fractions, so we can keep it simple and focus on the new syntactic elements polymorphism uses.
 
 1. [Inheritance and
     Polymorphism](01-inheritance-and-polymorphism.md)

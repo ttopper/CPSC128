@@ -5,6 +5,7 @@ new `CardCollection`, `Deck` and `Hand` classes with our
 earlier `Card` class and a main routine that exercises them a little.
 Try it out.
 
+```python
     # playing_cards_5.py
     import random
     class Card:
@@ -70,37 +71,46 @@ Try it out.
         print('Testing Card class')
         print('------------------')
         print()
+
         print('Your card number is 42.')
         c = Card(42)
         print('It's face value is:', c.face_value())
         print('It's suit is:', c.suit())
         print('It's printable representation is:', c)
         print()
+
         print('==================')
         print('Testing Deck class')
         print('------------------')
         print()
+
         print('Creating a new Deck...')
         print()
+
         d = Deck()
         print('The deck's printable representation:')
         print(d)
         print()
+
         print('Shuffling the deck...')
         d.shuffle()
         print('The deck after shuffling:')
         print(d)
         print()
+
         print('The deck has', d.cards_left(), 'cards.')
         print()
+
         print('Dealing a card...')
         card = d.deal()
         print('The card dealt is:', card)
         print('Dealing another card...')
         print('The card dealt is:', d.deal())
         print()
+
         print('Now the deck has', d.cards_left(), 'cards')
         print()
+        
         print('==================')
         print('Testing Hand class')
         print('------------------')
@@ -111,3 +121,4 @@ Try it out.
         for card in range(5):
             h.add(d.deal())
         print('Your hand of', h.size(), 'cards contains:', h)
+```

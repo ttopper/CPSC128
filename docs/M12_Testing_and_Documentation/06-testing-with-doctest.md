@@ -6,7 +6,7 @@ depended on the kinds of tests needed to verify the code works.
 
 Python provides a nice built-in mechanism that makes it easy to express
 tests for many kinds of programs and produces useful documentation at
-the same time. The doctest module lets you include test specifications
+the same time. The `doctest` module lets you include test specifications
 in docstrings and then automatically extracts and uses them and reports
 on the results. The rationale behind it is roughly that (i) we all agree
 that documentation is good, and (ii) we all agree that testing is good,
@@ -17,6 +17,7 @@ with the code they test and not somewhere else in the module.
 Here's a familiar bit of code with tests in it and a main routine that
 will run and report on the tests:
 
+```python
     # WumpusAdjMatrixMap.py
     #
     # Adjacency matrix representation of a cave_system.
@@ -63,6 +64,7 @@ will run and report on the tests:
     if __name__=='__main__':
         import doctest
         doctest.testmod()
+```
 
 The `testmod` method will extract the lines in the docstrings that look
 like interactive python sessions, i.e. the ones beginning with `>>>` and
@@ -72,6 +74,7 @@ output matches the specified output it counts as a success. If they do
 not match it counts as a failure, and reports on it. For example here is
 the output from executing the module above:
 
+```plaintext
     >>> 
     **********************************************************************
     File "__main__", line 32, in __main__.tunnels_from
@@ -93,13 +96,14 @@ the output from executing the module above:
        1 of   1 in __main__.tunnels_to
     ***Test Failed*** 2 failures.
     >>> 
+```
 
 You can see that the output shows what it expected to get and what it
-actually got test by test and at the end it summarizes the
+actually got test by test, and at the end it summarizes the
 failures. `testmod`'s default setting is to be silent on successes so
 had there been successful tests they would have generated no output.
 
-The strength of the doctest approach to testing are that:
+The strengths of the `doctest` approach to testing are that:
 
 -   It enables you to embed your tests in your documentation.
 -   It requires you to be specific about the exact result you expect.
@@ -110,7 +114,7 @@ The strength of the doctest approach to testing are that:
     or worse, spread around the module.
 
 The downside to the doctest approach is just that not all methods lend
-themselves to being run in a shell session and that is doctest's only
+themselves to being run in a shell session, and that is doctest's only
 paradigm. It also can't help you catch runtime errors in interactive
 programs, e.g. problems with bat snatching in Hunt the Wumpus.
 

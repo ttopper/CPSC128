@@ -3,18 +3,18 @@
 I will attempt to cover all the following topics on the final exam,
 though not all topics will be given equal weight. For example, the
 single most important skill is the ability to devise solution procedures
-for problems in terms of sequence, selection (if) and iteration (for and
-while).
+for problems in terms of sequence, selection (`if`) and iteration (`for` and
+`while`).
 
 - _Base skill_: IPO programming: Using Python to calculate values of
     formulas, e.g. wind-chill, unit conversions.
-- _Core skill_: Combining if, while, for to express algorithmic
+- _Core skill_: Combining `if`, `while`, `for` to express algorithmic
     procedures.
-- _Technique_ Packaging quantities using / and %; pulling apart
-    numbers using % and /.
+- _Technique_ Packaging quantities using `//` and `%`; pulling apart
+    numbers using `%` and `//`.
 - _Technique_ Formatting output using format strings.
-- _Technique_ Knowing when to use input and when to use raw_input.
-- _Technique_ Input validation using while.
+- _Technique_ Knowing when to use `input` and when to use `raw_input`.
+- _Technique_ Input validation using `while`.
 - _Technique_ Using counters in programs.
 - _Technique_ Using flag variables, i.e. Boolean variables that
     record state, e.g. `while not done:`, `if game_lost:`.
@@ -38,7 +38,7 @@ while).
 - _Data representation_: File processing, e.g. the temperature data
     file.
 - _Approach_ Parameterizing code for generality. (And on a minor
-    note, using \'constants\').
+    note, using 'constants').
 - _OOD_ object types → classes → attributes & methods (tell, ask)
 - _OOP_concepts: Abstraction, Inheritance, Polymorphism.
 - _OOP_ Defining (base) classes, reverse engineering them when

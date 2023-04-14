@@ -6,4 +6,4 @@ a couple of important topics for us to cover.
 
 -   The first is the use of UML class diagrams as both design aid and
     documentation of our OO designs.
--   The second is Python's doctest module.
+-   The second is Python's `doctest` module.
