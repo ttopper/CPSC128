@@ -53,7 +53,7 @@ print(playlist)
 
 Wait! What about that 6? Not all CDs have exactly 6 tracks. We'll need to replace that by an appropriate variable name and get its value from the user. The result is,
 
-![](05_cd_shuffle_a_py.png)
+![](05_cd_shuffle_a.py.png)
 
 _Exercise_. Try the program out. Does it work for all values of `tracks`? What would be good test values?[^*]
 
@@ -70,7 +70,7 @@ Shuffle it to generate the playlist by
 
 Translating into Python gives us,
 
-![](05_cd_shuffle_b_py.png)
+![](05_cd_shuffle_b.py.png)
 
 Be sure you understand each of the Python statements and how they are accurate translations of the pseudocode.
 
@@ -97,7 +97,7 @@ many times to be sure it has sufficiently scrambled the original list.
 
 The Python translation is,
 
-![](05_cd_shuffle_c_py.png)
+![](05_cd_shuffle_c.py.png)
 
 ---
 

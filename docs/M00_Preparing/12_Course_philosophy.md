@@ -3,7 +3,7 @@
 I think Kernighan and Plauger nailed it on the cover of their seminal
 book Software Tools in Pascal[^*]:
 
-![](03_KernighanAndPlaugerCover.jpg)
+![](12_Kernighan_and_Plauger_cover.jpg)
 
 The fine print in the image says:
 

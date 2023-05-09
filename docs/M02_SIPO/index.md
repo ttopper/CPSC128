@@ -68,7 +68,7 @@ html#translate-to-python)
 1. [Object Types 1: `int`s
     and `float`s](16_Object_types_1_ints_and_floats.md)
 1. [Example: Calculating Tree
-    Radius](17-example-calculating-tree-radius.md)
+    Radius](17_Example_Calculating_tree_diameter.md)
 1. [Example: Value of your
     change](18_Example_Value_of_your_change.md)
 1. [Example: Making

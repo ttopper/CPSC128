@@ -25,4 +25,4 @@ displayed, and the program terminates.
 Here is an example of this template being put to work to allow the user
 to carry out multiple f2c conversions during one run of a program,
 
-![Python program to do multiple Fahrenheit to Celsius conversions one at a time.](07_multiple_f2c.py.png)
+![Python program to do multiple Fahrenheit to Celsius conversions one at a time.](07_repeat_program.py.png)

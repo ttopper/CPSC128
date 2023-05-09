@@ -1,6 +1,6 @@
 # Putting all the pieces together
 
-![](18_playing_card_1_py.png)
+![](18_playing_card_1.py.png)
 
 Notes:
 

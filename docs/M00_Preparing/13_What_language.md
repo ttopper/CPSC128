@@ -65,7 +65,7 @@ platforms.)
 
 ## And there's this\...
 
-![](05_xkcd_on_python.png)
+![](13_Xkcd_on_python.png)
 
 ------------------------------------------------------------------------
 

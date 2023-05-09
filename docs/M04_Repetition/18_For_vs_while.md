@@ -11,7 +11,7 @@ loop.](18_hihihi_for.py.png)
 And using a `while` statement,
 
 ![Python code that uses a loop to print hi multiple
-times.](18_hihihi_while_py.png)
+times.](18_hihihi_while.py.png)
 
 Since the `for` statement version is more compact and reads more
 naturally you might wonder why `while` loops are ever used. The answer

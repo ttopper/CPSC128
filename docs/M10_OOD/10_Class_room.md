@@ -31,7 +31,7 @@ remove that method from class `Room`, leaving us with,
 
 In Python we get,
 
-![](10_class_Room_py.png)
+![](10_class_Room.py.png)
 
 Notes:
 

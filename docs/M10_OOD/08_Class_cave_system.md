@@ -73,7 +73,7 @@ method (beyond `__init__` ) will be `__str__`.
 In sum this class doesn't have that much in it. It has to initialize a
 list of `Room` objects and provide an `__str__` method. Here's its code,
 
-![](08_class_cave_system_py.png)
+![](08_class_cave_system.py.png)
 
 Note that the constructor is passed a list of tunnel connections between
 rooms, and a map of the system. We can tell that `tunnels` is a list because

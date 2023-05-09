@@ -2,7 +2,7 @@
 
 The course is divided into 12 content modules (01-12 below) bracketed up front by a module with information about the course, and one at the end about preparing for the exam.
 
-- [00 Meta (Information about the course)](M00_Meta/index.md)
+- [00 Meta (Information about the course)](M00_Preparing/index.md)
 - [01 Introduction to Computers and Programming](M01_Course_Introduction/index.md)
 - [02 SIPO (Sequential, Input, Processing, Output) Programming](M02_SIPO/index.md)
 - [03 Selection Control Structures](M03_Selection/index.md)

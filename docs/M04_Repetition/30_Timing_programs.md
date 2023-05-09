@@ -7,7 +7,7 @@ of an athlete by timing them when they run a race we measure the speed
 of a program by timing how long it takes to execute. The simplest way to
 do this in Python is to use a program structured like this,
 
-![](30_timing_template_py.png)
+![](30_timing_template.py.png)
 
 The function `time.time()` returns the current time in seconds since the
 epoch*. By grabbing the time before the computations begin
@@ -16,7 +16,7 @@ finding their difference we can calculate how long the computations
 took. Here is an example in which we see how long it takes to find the
 sum of the square roots of the numbers from 1 to 1,000,000.
 
-![](30_timing_eg_py.png)
+![](30_timing_eg.py.png)
 
 Truly accurate timing of program execution is much trickier than this
 technique suggests. Unless you get the help of the operating system, the

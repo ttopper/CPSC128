@@ -5,7 +5,7 @@ calls to the `Card` constructor `__init__` invoked
 by `Card(cardnum)` and the `__str__` method invoked via `str(card)`. The
 necessary Card class can be written as,
 
-![](17_class_card_py.png)
+![](17_class_card.py.png)
 
 Notes:
 

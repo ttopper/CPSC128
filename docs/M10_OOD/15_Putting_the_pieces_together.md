@@ -3,15 +3,15 @@
 If you gather together the pieces we have written so far, and add a
 little glue code to the main routine, you have a program that will run.
 
-![](15_wumpus_1_py.png)
+![](15_wumpus_1.py.png)
 
-![](15_wumpus_2_py.png)
+![](15_wumpus_2.py.png)
 
-![](15_wumpus_3_py.png)
+![](15_wumpus_3.py.png)
 
-![](15_wumpus_4_py.png)
+![](15_wumpus_4.py.png)
 
-![](15_wumpus_5_py.png)
+![](15_wumpus_5.py.png)
 
 This is the longest program in the course so take some time to read it
 over. You'll notice that there is:

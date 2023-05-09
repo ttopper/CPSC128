@@ -45,13 +45,13 @@ If you run IDLE you will get a window that looks something like this
 (allowing for OS and version differences, and probably larger—I scaled
 it down a bit to keep the image compact),
 
-![.](08_IDLE_Window.png)
+![.](30_IDLE_window.png)
 
 You can check that Python is working by typing a couple of commands.
 First type: `print "Hello Python"` and then press the Enter key. Then
 try typing: `print 2**16` and pressing Enter. If you see this,
 
-![.](08_IDLE_Test.png)
+![.](30_IDLE_test.png)
 
 it's working! And you've learned your first Python statement: `print`.
 

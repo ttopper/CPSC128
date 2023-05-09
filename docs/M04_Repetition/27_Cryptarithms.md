@@ -44,7 +44,7 @@ The key is to use nested loops to iterate through all possible values of
 the letters, i.e. s, e, n, d, m, o , r, and y. The loops to do so look
 like this:
 
-![.](27_send_more_money_1_py.png)
+![.](27_send_more_money_1.py.png)
 
 Note that the loops for s and m begin at 1 because these letters cannot
 take the value 0 (due to the well-formedness criterion above).
@@ -52,7 +52,7 @@ take the value 0 (due to the well-formedness criterion above).
 Inside all these loops we place statements to 'build' the values of
 send, more and money, and test to see if send+more=money,
 
-![.](27_send_more_money_2_py.png)
+![.](27_send_more_money_2.py.png)
 
 (Note the use of == here where in paragraph form we have written
 send+more=money, and always remember, "Assignment is not equality".)
@@ -61,7 +61,7 @@ If the test-expression is true we are still not quite done. We must
 check that no two letters represent the same digit. That requires a
 second, even longer, `if`,
 
-![](27_send_more_money_3_py.png)
+![](27_send_more_money_3.py.png)
 
 (Note the triangular shape of the comparisons. It results because having
 compared s to e in the first line of comparisons, we do not have to
@@ -70,11 +70,11 @@ compare e to s in the second line, and so on.
 If this `if` also succeeds, then we know we have a solution and should
 display it,
 
-![](27_send_more_money_4_py.png)
+![](27_send_more_money_4.py.png)
 
 Putting it all together we get:
 
-![](27_send_more_money_5_py.png)
+![](27_send_more_money_5.py.png)
 
 Assuming I have not made any typos this code works, but it is slooooow!
 How slow? Try it and see. How many solutions to this cryptarithm are

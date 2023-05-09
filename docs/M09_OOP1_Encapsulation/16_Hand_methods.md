@@ -2,4 +2,4 @@
 
 The hand methods are very similar to the Deck ones,
 
-![](16_class_hand_py.png)
+![](16_class_hand.py.png)

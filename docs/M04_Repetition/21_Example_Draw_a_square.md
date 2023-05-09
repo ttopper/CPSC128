@@ -22,4 +22,4 @@ it is from the code, ask for an explanation.
 And here's one to wet your appetite. It does the job in one line(!) by
 making use of some string operations.
 
-![](21_square_c_py.png)
+![](21_square_c.py.png)

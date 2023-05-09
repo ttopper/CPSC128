@@ -10,7 +10,7 @@ This means you need to:
 
 ## 1. Know what you are getting into
 
-[The official course outline](01_Course_outline.md). Start here. It's not exciting reading, but it is
+[The official course outline](11_Course_outline.md). Start here. It's not exciting reading, but it is
 important, and will give you a clear idea what you are getting
 yourself into. If anything is unclear, or if you would like further
 information, don't hesitate to ask in class, or post your question to the Moodle Discussion Forum.
@@ -49,7 +49,7 @@ If you like having options, there are several good free online [Python textbooks
 
 ## 3. Install Python on your personal computer [Optional, but desirable]
 
-Python is free and available for Windows, MacOS, and Linux. The [Installing Python](30_InstallingPython.md) page will get you started installing it on your system.
+Python is free and available for Windows, MacOS, and Linux. The [Installing Python](30_Installing_python.md) page will get you started installing it on your system.
 
 Be sure to test your installation as described on the page!
 

@@ -4,5 +4,5 @@ Write a program that inputs a positive whole number, and displays all the number
 
 ## Solutions:
 
-![](26_factors_py.png)
+![](26_factors.py.png)
 

@@ -11,5 +11,5 @@ Write a program that inputs the speed of the wind in miles/hour and outputs the 
 ## Solution:
 
 ![Python code to convert wind speed to the Beaufort WInd Scale version
-1.](17_beaufort_scale_a_py.png)
+1.](17_beaufort_scale_a.py.png)
 

@@ -10,4 +10,4 @@ have to provide since none are explicitly visible, but we'll add an
 empty `Card` class to our module now, and add methods to it later as we
 discover they are necessary in working on our `Deck` and `Hand` classes:
 
-![](14_playing_card_1_py.png)
+![](14_playing_card_1.py.png)

@@ -36,4 +36,4 @@ Sample runs:
 
 ![Python code to see if three sides of triangle create a right angle
 using Pythagorean theorem.
-](15_pythagoras_py.png)
+](15_pythagoras.py.png)
