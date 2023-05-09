@@ -22,13 +22,13 @@ questions too!)
 
 Then you can read about:
 
-[The course philosophy](11_Course_philosophy.md)
+[The course philosophy](12_Course_philosophy.md)
 
-[What language we'll use (and why)](12_What_language.md)
+[What language we'll use (and why)](13_What_language.md)
 
-[How your assignments will be graded](13_Marking_scheme.md)
+[How your assignments will be graded](14_Marking_scheme.md)
 
-And even [What will be on the final exam!](14_Examinable_topics_pointer.md)
+And even [What will be on the final exam!](15_Examinable_topics_pointer.md)
 
 ## 2. Know where to find the course resources
 

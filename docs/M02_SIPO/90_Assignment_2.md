@@ -38,7 +38,7 @@ Some facts that might be helpful to you in writing your program:
     speed is often called the wind chill. The effective
     temperature,**T<sub>e</sub>**, can be calculated using the expression,
 
-    ![.](90_wind-chill.png)
+    ![.](90_Wind_chill.png)
 
     where **V** is the wind speed in kilometres per hour, and **T** is
     the temperature in Celsius.

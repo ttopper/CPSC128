@@ -9,7 +9,7 @@
     (You can assume the game state has arisen in the course of a legal
     game).
 
-    Embed your code in the file [a5p1kate.py](90_a5p1kate.py)
+    Embed your code in the file [a5p1kate.py](90_a5p1_kate.py)
 
 2.  ### Dedup
 
@@ -17,7 +17,7 @@
     the list starts out as `[4, 2, 5, 2, 4]`, then after your code
     fragment runs it should be `[4, 2, 5]`.
 
-    Embed your code in the file [a5p2kate.py](90_a5p2kate.py)
+    Embed your code in the file [a5p2kate.py](90_a5p2_kate.py)
 
     (A real-life application would be to remove duplicates from a list
     of IP addresses so you have a list of unique visitors to your site.
@@ -38,7 +38,7 @@
 
     Use the first representation shown in the module notes, i.e. the one
     in [Representing Playing
-    Cards](08-representing-playing-cards.md).
+    Cards](08_Representing_playing_cards.md).
 
     Do not remove your test values from the program so I can see how
     thoroughly you tested your code. Feel free to adapt one of the test

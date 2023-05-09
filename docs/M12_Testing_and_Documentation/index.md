@@ -8,13 +8,13 @@ The second is a way to embed tests of our methods in our Python code which makes
 
 
 1. [UML and Testing with
-    doctest](01-uml-and-testing-with-doctest.md)
+    doctest](01_UML_and_testing_with_doctest.md)
 1. [Unified Modelling Language
-    (UML)](02-unified-modelling-language-uml.md)
-1. [Aside: *is-a* versus *has-a*](03-aside-is-a-versus-has-a.md)
+    (UML)](02_Unified_modelling_language_uml.md)
+1. [Aside: *is-a* versus *has-a*](03_Aside_is_a_versus_has_a.md)
 1. [UML class diagram visual
-    syntax](04-uml-class-diagram-visual-syntax.md)
+    syntax](04_UML_class_diagram_visual_syntax.md)
 1. [Example: Playing card
-    classes](05-example-playing-card-classes.md)
+    classes](05_Example_Playing_card_classes.md)
 1. [Testing with
-    doctest](06-testing-with-doctest.md)
+    doctest](06_Testing_with_doctest.md)

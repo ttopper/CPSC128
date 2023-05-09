@@ -24,51 +24,51 @@ from an English description, to a pseudocode description, and on to a
 Python program.
 
 1. [The idea: Go back up and repeat some
-    code](02-the-idea-go-back-up-and-repeat-some-code.md)
-1. [The flowchart](03-the-flowchart.md)
-1. [The syntax](04-the-syntax.md)
-1. [Hihihi!](05-hihihi.md)
-1. [Infinite Loops](06-infinite-loops.md)
-1. [Validating Input](08-validating-input.md)
+    code](01_The_idea_go_back_up_and_repeat_some_code.md)
+1. [The flowchart](02_The_flowchart.md)
+1. [The syntax](03_The_syntax.md)
+1. [Hihihi!](04_Hihihi.md)
+1. [Infinite Loops](05_Infinite_loops.md)
+1. [Validating Input](06_Validating_input.md)
 1. [Repeating a program (without restarting
-    it)](10-repeating-a-program-without-restarting-it.md)
-1. [Problem: Repeating calculations](12-problem-repeating-calculations.md)
+    it)](07_Repeating_a_program_without_restarting_it.md)
+1. [Problem: Repeating calculations](08_Problem_repeating_calculations.md)
 1. [Example: Find the
-    average](13-example-find-the-average.md)
+    average](09_Example_Find_the_average.md)
 1. [Sentinel controlled
-    input](14-sentinel-controlled-input.md)
+    input](10_Sentinel_controlled_input.md)
 1. [Problem: The guessing
-    game](15-problem-the-guessing-game.md)
+    game](11_Problem_The_guessing_game.md)
 1. [Aside: Getting "random"
-    numbers](16-aside-getting-random-numbers.md)
+    numbers](12_Aside_Getting_random_numbers.md)
 1. [Solution: The Guessing
-    Game](17-solution-the-guessing-game.md)
+    Game](13_Solution_The_guessing_game.md)
 1. [A puzzle: What output does this
-    produce?](18-a-puzzle-what-output-does-this-produce.md)
-1. [Nesting loops](19-nesting-loops.md)
+    produce?](14_A_puzzle_What_output_does_this_produce.md)
+1. [Nesting loops](15_Nesting_loops.md)
 1. [Python's other repetition
-    structure: `for` loops](20-pythons-other-repetition-structure-for-loops.md)
+    structure: `for` loops](16_Pythons_other_repetition_structure_for_loops.md)
 1. [Completely artificial example revisited: using
-    for](21-completely-artificial-example-revisited-using-for.md)
-1. [`for` vs `while`](22-for-vs-while.md)
+    for](17_Completely_artificial_example_revisited_using_for.md)
+1. [`for` vs `while`](18_For_vs_while.md)
 1. [f2c revisited: Fahrenheit to Celsius conversion table
-    using `for`](23-f2c-revisited-fahrenheit-to-celsius-conversion-table-using-for.md)
-1. [Nesting `for` loops](24-nesting-for-loops.md)
+    using `for`](19_F2c_revisited_Fahrenheit_to_celsius_conversion_table_using_for.md)
+1. [Nesting `for` loops](20_Nesting_for_loops.md)
 1. [Example: Draw a
-    square](25-example-draw-a-square.md)
-1. [Module 4 Summary](26-module-4-summary.md)
-1. [Brute Force](27-brute-force.md)
-1. [Simulation](28-simulation.md)
+    square](21_Example_Draw_a_square.md)
+1. [Module 4 Summary](22_Module_4_summary.md)
+1. [Brute Force](23_Brute_force.md)
+1. [Simulation](24_Simulation.md)
 1. [Problem: What are the chances: four children, all
-    girls?](29-problem-what-are-the-chances-four-children-all-girls.md)
+    girls?](25_Problem_What_are_the_chances_four_children_all_girls.md)
 1. [Duelling
-    Incompetents](30-duelling-incompetents.md)
-1. [Factors](31-factors.md)
-1. [Cryptarithms](32-cryptarithms.md)
+    Incompetents](26_Duelling_incompetents.md)
+1. [Factors](26_Factors.md)
+1. [Cryptarithms](27_Cryptarithms.md)
 1. [Python Formatting
-    Guidelines](33-python-formatting-guidelines.md)
+    Guidelines](28_Python_formatting_guidelines.md)
 1. [A list-creating
-    function: `range()`](34-a-list-creating-function-range.md)
-1. [Timing programs](35-timing-programs.md)
+    function: `range()`](29_A_list_creating_function_range.md)
+1. [Timing programs](30_Timing_programs.md)
 1. [Exercise sheet 4](70_Exercise_Sheet_4.md)
 1. [Assignment 4](90_Assignment_4.md)

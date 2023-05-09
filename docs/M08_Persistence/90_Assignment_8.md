@@ -73,7 +73,7 @@ whole thing into memory as a list of lines\...
     Put your function in a module with an `if __name__ == '__main__':`
     section that tests it.
 
-    ![](90_superhero_name_generator.png)
+    ![](90_Superhero_name_generator.png)
 
 ## Logistics
 

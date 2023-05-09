@@ -125,7 +125,7 @@
     Based on your answers it is time to do laundry!
     ```
 
-![](90_laundry.png)
+![](90_Laundry.png)
 
 ## Logistics
 

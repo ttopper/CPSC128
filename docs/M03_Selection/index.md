@@ -14,33 +14,33 @@ One thing to watch for is how we code our selection structures efficiently, so t
 
 
 1. [`if:` A Simple (artificial)
-    Example](01-if-a-simple-artificial-example.md)
+    Example](01_If_A_simple_artificial_example.md)
 1. [Correcting an
-    Oversight](02-correcting-an-oversight.md)
+    Oversight](02_Correcting_an_oversight.md)
 1. [`if` Syntax, in
-    Detail](03-if-syntax-in-detail.md)
+    Detail](03_If_syntax_in_detail.md)
 1. [Relational
-    Expressions](04-relational-expressions.md)
+    Expressions](04_Relational_expressions.md)
 1. [Compound Statements and
-    Indentation](05-compound-statements-and-indentation.md)
+    Indentation](05_Compound_statements_and_indentation.md)
 1. [Example: One program to convert F to C_or_C to
-    F](06-example-one-program-to-convert-f-to-c-or-c-to-f.md)
-1. [The Problem](07-the-problem.md)
-1. [Version 1](08-version-1.md)
-1. [Version 2](09-version-2.md)
+    F](06_Example_One_program_to_convert_f_to_c_or_c_to_f.md)
+1. [The Problem](07_The_problem.md)
+1. [Version 1](08_Version_1.md)
+1. [Version 2](09_Version_2.md)
 1. [Testing
-    Selection](10-testing-selection.md)
+    Selection](10_Testing_selection.md)
 1. [Performance
-    Analysis*](11-performance-analysis.md)
+    Analysis*](11_Performance_analysis.md)
 1. [A Final (Very Small) Example: Absolute
-    value](12-a-final-very-small-example-absolute-value.md)
+    value](12_A_final_very_small_example_Absolute_value.md)
 1. [Summary: Selection
-    using `if`](13-summary-selection-using-if.md)
+    using `if`](13_Summary_Selection_using_if.md)
 1. [Gazinta (as in "2 Gazinta 8, but 3
-    doesn't")](14-gazinta-as-in-2-gazinta-8-but-3-doesnt.md)
+    doesn't")](14_Gazinta_As_in_2_gazinta_8_but_3_doesnt.md)
 1. [Ode to
-    Pythagoras](15-ode-to-pythagoras.md)
-1. [Utility bills](16-utility-bills.md)
-1. [Beaufort Scale](17-beaufort-scale.md)
-1. [Exercise sheet 3](70_Exercise_Sheet_3.md)
+    Pythagoras](15_Ode_to_pythagoras.md)
+1. [Utility bills](16_Utility_bills.md)
+1. [Beaufort Scale](17_Beaufort_scale.md)
+1. [Exercise sheet 3](70_Exercise_sheet_3.md)
 1. [Assignment 3](90_Assignment_3.md)

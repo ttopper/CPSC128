@@ -45,7 +45,7 @@
     me say that presolving it and just the printing the solution is
     definitely a cheat!).
 
-    Include [timing code](35-timing-programs.md) in your program so I can
+    Include [timing code](30_Timing_programs.md) in your program so I can
     compare its speed to others on my computer.
 
 4.  ### Craps

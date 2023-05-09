@@ -80,17 +80,17 @@ precisely and see how closely the result matches the goal. You might
 want to give the instructions to a friend and see what they construct
 before submitting them to me.)
 
-(i)![.](90_SugarCubes2.jpg) ![.](90_SugarCubes6.jpg)(ii)
+(i)![.](90_sugar_cubes_2.jpg) ![.](90_sugar_cubes_6.jpg)(ii)
 
-(iii)![.](90_SugarCubes3.jpg)
-![.](90_SugarCubes7.jpg)(iv)
+(iii)![.](90_sugar_cubes_3.jpg)
+![.](90_sugar_cubes_7.jpg)(iv)
 
-(v)![.](90_SugarCubes5.jpg)
+(v)![.](90_sugar_cubes_5.jpg)
 
 ## Part V: Trading off Processors and Memory
 
 In [Big Picture 1: Computer
-Science](01-big-picture-1-computer-science.md) you
+Science](01_Big_picture_1_Computer_science.md) you
 read that algorithms are ranked according to how much space and time (or
 memory and processing) they use with the goal being to use as little of
 each as possible. The flipside is that most problems can be solved more

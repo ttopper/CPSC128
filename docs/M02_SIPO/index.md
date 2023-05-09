@@ -39,48 +39,48 @@ sculptures to describe, just programs to write from here almost to the
 end of the course. Four programs most weeks.
 
 1. [Recall: Programming
-    is\...](01-recall-programming-is....md)
-1. [The Problem](02-the-problem.md)
+    is\...](01_Recall_Programming_is.md)
+1. [The Problem](02_The_problem.md)
 1. [Do The Problem By
-    Hand](03-do-the-problem-by-hand.md)
+    Hand](03_Do_the_problem_by_hand.md)
 1. [Translate the Algorithm into
-    Python](04-translate-the-algorithm-into-python.md)
+    Python](04_Translate_the_algorithm_into_python.md)
 1. [Enter, run and test the
-    program](05-enter-run-and-test-the-program.md)
-1. [Naming Values](06-naming-values.md)
+    program](05_Enter_run_and_test_the_program.md)
+1. [Naming Values](06_Naming_values.md)
 1. [What will it look like
-    onscreen?](07-what-will-it-look-like-onscreen.md)
-1. [Documentation](08-documentation.md)
+    onscreen?](07_What_will_it_look_like_onscreen.md)
+1. [Documentation](08_Documentation.md)
 1. [Our second program (Same as the first only
-    backwards)](09-our-second-program-same-as-the-first-only-backwards.md)
+    backwards)](09_Our_second_program_Same_as_the_first_only_backwards.md)
 html#translate-to-python)
 1. [Our third program
-    (dhms2s.py)](10-our-third-program-dhms2s.py.md)
-1. [SIPO Summary](11-sipo-summary.md)
+    (dhms2s.py)](10_Our_third_program_dhms2s.py.md)
+1. [SIPO Summary](11_SIPO_summary.md)
 1. [Translate into
-    Python](12-packaging-quantities.md)
+    Python](12_Packaging_quantities.md)
 1. [Modulo: A Sixth Arithmetic
-    Operator](13-modulo-a-sixth-arithmetic-operator.md)
+    Operator](13_Modulo_A_sixth_arithmetic_operator.md)
 1. [Symbolic
-    Constants](14-symbolic-constants.md)
+    Constants](14_Symbolic_constants.md)
 1. [Intermission: Summary (so
-    far)](15-intermission-summary-so-far.md)
+    far)](15_Intermission_Summary_so_far.md)
 1. [Object Types 1: `int`s
-    and `float`s](16-object-types-1-ints-and-floats.md)
+    and `float`s](16_Object_types_1_ints_and_floats.md)
 1. [Example: Calculating Tree
     Radius](17-example-calculating-tree-radius.md)
 1. [Example: Value of your
-    change](18-example-value-of-your-change.md)
+    change](18_Example_Value_of_your_change.md)
 1. [Example: Making
-    change](19-example-making-change.md)
-1. [Pythonic Details](20-pythonic-details.md)
+    change](19_Example_Making_change.md)
+1. [Pythonic Details](20_Pythonic_details.md)
 1. [Triple Quoted
-    Strings](21-triple-quoted-strings.md)
+    Strings](21_Triple_quoted_strings.md)
 1. [The Continuation
-    Character](22-the-continuation-character.md)
-1. [The `done` trick](23-the-done-trick.md)
+    Character](22_The_continuation_character.md)
+1. [The `done` trick](23_The_done_trick.md)
 1. [Output
-    Formatting](24-output-formatting.md)
-1. [The Pythonic Process](25_pythonic_process.md)
+    Formatting](24_Output_formatting.md)
+1. [The Pythonic Process](25_Pythonic_process.md)
 1. [Exercise sheet 2](70_Exercise_sheet_2.md)
 1. [Assignment 2](90_Assignment_2.md)

@@ -10,37 +10,37 @@ There _is_ some new notation and jargon, so to help you concentrate on that we'l
 (Next week we'll consider a new problem domain that has been students' favourite assignment over the years, the world of the original text adventure game "Hunt the Wumpus".)
 
 1. [Object-Oriented
-    Programming](01-object-oriented-programming.md)
-1. [Encapsulation](02-encapsulation.md)
-1. [Inheritance](03-inheritance.md)
-1. [Polymorphism](04-polymorphism.md)
+    Programming](01_Object_oriented_programming.md)
+1. [Encapsulation](02_Encapsulation.md)
+1. [Inheritance](03_Inheritance.md)
+1. [Polymorphism](04_Polymorphism.md)
 1. [The plan for the next three
-    modules](05-the-plan-for-the-next-three-modules.md)
+    modules](05_The_plan_for_the_next_three_modules.md)
 1. [A small example: A dice
-    class](06-a-small-example-a-dice-class.md)
+    class](06_A_small_example_A_dice_class.md)
 1. [Python OOP
-    Syntax](07-python-oop-syntax.md)
+    Syntax](07_Python_OOP_syntax.md)
 1. [Playing Card Classes: The
-    Specification](08-playing-card-classes-the-specification.md)
+    Specification](08_Playing_card_classes_The_specification.md)
 1. [Identifying the necessary
-    classes](09-identifying-the-necessary-classes.md)
+    classes](09_Identifying_the_necessary_classes.md)
 1. [Identifying the classes'
-    methods](10-identifying-the-classes-methods.md)
+    methods](10_Identifying_the_classes_methods.md)
 1. [Program skeleton
-    1](11-program-skeleton-1.md)
+    1](11_Program_skeleton_1.md)
 1. [An invisible method! (A polymorphic
-    aside)](12-an-invisible-method-a-polymorphic-aside.md)
+    aside)](12_An_invisible_method_a_polymorphic_aside.md)
 1. [Program Skeleton
-    2](13-program-skeleton-2.md)
+    2](13_Program_skeleton_2.md)
 1. [An invisible class
-    too!](14-an-invisible-class-too.md)
-1. [Deck methods](15-deck-methods.md)
-1. [Hand methods](16-hand-methods.md)
-1. [Card Methods](17-card-methods.md)
+    too!](14_An_invisible_class_too.md)
+1. [Deck methods](15_Deck_methods.md)
+1. [Hand methods](16_Hand_methods.md)
+1. [Card Methods](17_Card_methods.md)
 1. [Putting all the pieces
-    together](18-putting-all-the-pieces-together.md)
+    together](18_Putting_all_the_pieces_together.md)
 1. [Running the whole
-    thing](19-running-the-whole-thing.md)
+    thing](19_Running_the_whole_thing.md)
 1. [Programming
-    Observation](20-programming-observation.md)
+    Observation](20_Programming_observation.md)
 [1. Assignment 9](90_Assignment_9.md)

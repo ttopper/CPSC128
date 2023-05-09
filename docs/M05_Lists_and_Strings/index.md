@@ -31,29 +31,29 @@ The list and string object types support **a lot** of methods. Some are shown in
 I hope you find lists and strings interesting!
 
 1. [Object-based
-    programming](01-object-based-programming.md)
-1. [Sequence Types](02-sequence-types.md)
+    programming](01_Object_based_programming.md)
+1. [Sequence Types](02_Sequence_types.md)
 1. [What can you do with a
-    list?](03-what-can-you-do-with-a-list.md)
+    list?](03_What_can_you_do_with_a_list.md)
 1. [What can you do with a
-    string?](04-what-can-you-do-with-a-string.md)
+    string?](04_What_can_you_do_with_a_string.md)
 1. [Example: CD
-    Shuffle](05-example-cd-shuffle.md)
-1. [Dice Odds](06-dice-odds.md)
-1. [Bar Graphs](07-bar-graphs.md)
+    Shuffle](05_Example_cd_shuffle.md)
+1. [Dice Odds](06_Dice_odds.md)
+1. [Bar Graphs](07_Bar_graphs.md)
 1. [Representing Playing
-    Cards](08-representing-playing-cards.md)
-1. [Poker hands](09-poker-hands.md)
+    Cards](08_Representing_playing_cards.md)
+1. [Poker hands](09_Poker_hands.md)
 1. [Playing Cards: An alternative
-    representation](10-playing-cards-an-alternative-representation.md)
+    representation](10_Playing_cards_An_alternative_representation.md)
 1. [What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O'
     \], \[ '', '', 'X'\] \]
-    ?](11-what-is-this-x-o-o-x-o-x.md)
-1. [Palindrome](12-palindrome.md)
+    ?](11_What_is_this_x_o_o_x_o_x.md)
+1. [Palindrome](12_Palindrome.md)
 1. [Built-in Type
-    Conversions](13-built-in-type-conversions.md)
+    Conversions](13_Built_in_type_conversions.md)
 1. [The map()
-    function](14-the-map-function.md)
-1. [Tuples](15-tuples.md)
-1. [Exercise sheet 5](70_Exercise_Sheet_5.md)
+    function](14_The_map_function.md)
+1. [Tuples](15_Tuples.md)
+1. [Exercise sheet 5](70_Exercise_sheet_5.md)
 1. [Assignment 5](90_Assignment_5.md)

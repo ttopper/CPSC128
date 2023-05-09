@@ -10,31 +10,31 @@ p.s. My goal is to always respond to email during the week within 24 hours. If I
 
 
 1. [Big Picture 1: Computer
-    Science](01-big-picture-1-computer-science.md)
+    Science](01_Big_picture_1_Computer_science.md)
 1. [Big Picture 2: Computers and
-    Programs](02-big-picture-2-computers-and-programs.md)
+    Programs](02_Big_picture_2_Computers_and_programs.md)
 1. [Big Picture 3:
-    Programming](03-big-picture-3-programming.md)
+    Programming](03_Big_picture_3_Programming.md)
 1. [The World of the Computer: Six (+1) Key Programming
-    Concepts](04-the-world-of-the-computer-six-key-programming-concepts.md)
+    Concepts](04_The_world_of_the_computer_Six_key_programming_concepts.md)
 1. [Operation #1:
-    Input](05-operation-1-input.md)
+    Input](05_Operation_1_Input.md)
 1. [Operation #2:
-    Processing](06-operation-2-processing.md)
+    Processing](06_Operation_2_Processing.md)
 1. [Operation #3:
-    Output](07-operation-3-output.md)
+    Output](07_Operation_3_Output.md)
 1. [Control
-    Structures](08-control-structures.md)
+    Structures](08_Control_structures.md)
 1. [Operation #4: Sequential
-    Execution](09-operation-4-sequential-execution.md)
+    Execution](09_Operation_4_Sequential_execution.md)
 1. [Operation #5:
-    Selection](10-operation-5-selection.md)
+    Selection](10_Operation_5_Selection.md)
 1. [Operation #6:
-    Repetition](11-operation-6-repetition.md)
+    Repetition](11_Operation_6_Repetition.md)
 1. [Bonus Operation:
-    Modularity](12-bonus-operation-modularity.md)
-1. [Summary](13-summary.md)
+    Modularity](12_Bonus_operation_modularity.md)
+1. [Summary](13_Summary.md)
 1. [Using the Python
-    Shell](14-using-the-python-shell.md)
+    Shell](14_Using_the_python_shell.md)
 1. [Exerxise sheet 1](70_Exercise_Sheet_1.md)
 1. [Assignment 1](90_Assignment_1.md)
