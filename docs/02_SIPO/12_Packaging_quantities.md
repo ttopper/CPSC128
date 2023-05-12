@@ -74,28 +74,28 @@ remainders along the way, and
 A literal translation of our manual steps,
 
 ```plaintext
-    days = 200,000/(24*60*60) = 2
-    remainder = 200,000 - 2*(24*60*60) = 27,200
-    hours = 27,200/(60*60) = 7
-    remainder = 27,200 - 7x(60*60) = 2000
-    minutes = 2,000/60 = 33
-    seconds = 2,000 - 33*60 = 20
+days = 200,000/(24*60*60) = 2
+remainder = 200,000 - 2*(24*60*60) = 27,200
+hours = 27,200/(60*60) = 7
+remainder = 27,200 - 7x(60*60) = 2000
+minutes = 2,000/60 = 33
+seconds = 2,000 - 33*60 = 20
 ```
 
 into Python might look like this (we used the // symbol to tell python
 to use integer division):
 
 ```python
-    tot_seconds = int(input("Enter the number of seconds: "))
-    days = tot_seconds // (24*60*60)
-    remainder = tot_seconds - days * (24*60*60)
-    hours = remainder // (60*60)
-    remainder = remainder - hours * (60*60)
-    minutes = remainder // 60
-    remainder = remainder - minutes*60
-    print(tot_seconds, "seconds is", days, "days,")
-    print(hours, "hours,", minutes, "minutes and")
-    print(remainder, " seconds.")
+tot_seconds = int(input("Enter the number of seconds: "))
+days = tot_seconds // (24*60*60)
+remainder = tot_seconds - days * (24*60*60)
+hours = remainder // (60*60)
+remainder = remainder - hours * (60*60)
+minutes = remainder // 60
+remainder = remainder - minutes*60
+print(tot_seconds, "seconds is", days, "days,")
+print(hours, "hours,", minutes, "minutes and")
+print(remainder, " seconds.")
 ```
 
 Notes:

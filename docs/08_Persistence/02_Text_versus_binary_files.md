@@ -57,7 +57,7 @@ which interpretation is correct by displaying some of the file to a
 terminal, or opening it in a 'pure' text editor, e.g. the IDLE editor.
 Here's a dump of a small Python program to a terminal,
 
-    ttopper@D1JWYSB1:~/Present/CPSC128.W13/M08_Persistence
+    ttopper@D1JWYSB1:~/Present/CPSC128.W13/08_Persistence
     $ cat s2bin.py
     # s2bin.py
     # Converts from a string to its binary representation.
@@ -69,12 +69,12 @@ Here's a dump of a small Python program to a terminal,
     for c in s:
         n = ord(c)
         print() "".join([HEXBIN[i] for i in '%X'%n]) )
-    ttopper@D1JWYSB1:~/Present/CPSC128.W13/M08_Persistence
+    ttopper@D1JWYSB1:~/Present/CPSC128.W13/08_Persistence
     $
 
 And here's a partial dump of an MS Word document,
 
-    ttopper@D1JWYSB1:~/Present/CPSC128.W13/M08_Persistence
+    ttopper@D1JWYSB1:~/Present/CPSC128.W13/08_Persistence
     $ cat MSWordFile.doc
     DI◄à¡±→á                > ♥ _ÿ   ♠           ☺   *        ►  ,   ☺   _ÿÿÿ    ) ÿ
     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ

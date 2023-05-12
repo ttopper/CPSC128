@@ -17,7 +17,7 @@ use the computer.
 3.  Press <kbd>F5</kbd> to run your program. This will bring the Python shell
     window to the front where you will interact with your program.
 
-4.  Type <kbd>4</kbd><kbd>0</kbd> and then watch what number appears. If it isn't spproximately 4 you've
+4.  Type <kbd>4</kbd><kbd>0</kbd> and then watch what number appears. If it isn't approximately 4 you've
     got a problem.
 
 Step 4 is a test of our program but it isn't sufficient testing to be

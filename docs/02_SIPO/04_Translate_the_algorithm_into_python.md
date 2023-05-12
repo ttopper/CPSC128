@@ -26,20 +26,20 @@ The next two operations (steps 2 and 3) can be combined into one
 processing (or assignment) statement as follows,
 
 ```python
-    temp_in_c = (temp_in_f - 32) * 5 / 9
+temp_in_c = (temp_in_f - 32) * 5 / 9
 ```
 Finally the last step (4) is equivalent to an output statement,
 
 ```python
-    print(temp_in_c)
+print(temp_in_c)
 ```
 If we write these three statements down in sequence we have the core of
 a very small Python program.
 
 ```python
-    temp_in_f = int(input())
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print(temp_in_c)
+temp_in_f = int(input())
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print(temp_in_c)
 ```
 To check that this seems reasonable let's mentally trace its
 step-by-step operation on our functional computer model.
