@@ -1,0 +1,2855 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Representing Playing Cards - CPSC 128</title>
+
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  <!--
+    You can include external assets of course, but be aware that it means the
+    documentation may not work well offline.
+  -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+
+  <!-- Site CSS styles -->
+  <link rel="stylesheet" href="../../css/theme.css">
+
+  <!-- Site fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <!--
+    extra_css contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+    <link href="../../css/extra.css" rel="stylesheet">
+  
+
+  <!--
+    To include static assets from our theme, just add
+    ../.. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+    <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+
+  <!-- Include and activate code highlighting by highlight.js -->
+  <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
+    <!-- <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- <script src="../../js/theme.js"></script> -->
+
+  <!-- 
+   -->
+
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  <!-- 
+    <script src="../../search/main.js"></script>
+   -->
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <!-- Next and previous links -->
+      
+        <div id="next">
+          
+          
+            <a href="../09_Poker_hands/" title="Poker hands"/>Next &#8594;</a><br>
+            Poker hands <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+          
+            
+        </div>
+        <div id="prev">
+          
+          <a href="../07_Bar_graphs/" title="07 Bar graphs">&#8592; Previous</a><br>
+          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
+          07 Bar graphs
+          
+        </div>
+      
+
+      <!-- Site Table of Contents -->
+      <details>
+        <summary>Contents</summary>
+        
+          <!--
+
+-->
+
+<li >
+    <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
+</li>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      00 Preparing
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/">Orientation and Preparation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/10_Course_schedule/">Course Schedule</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/11_Course_outline/">The official course outline</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/12_Course_philosophy/">Course Philosophy</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/13_What_language/">What Language?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/14_Marking_scheme/">Assignment Marking Scheme</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/20_Textbooks/">Textbooks</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../00_Preparing/30_Installing_python/">Installing Python</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      01 Course Introduction
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/">Introduction: The big picture 🔭</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/01_Big_picture_1_Computer_science/">Big Picture 1: Computer Science</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/02_Big_picture_2_Computers_and_programs/">Big Picture 2: Computers and Programs</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/03_Big_picture_3_Programming/">Big Picture 3: Programming</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/05_Operation_1_Input/">Operation #1: Input</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/06_Operation_2_Processing/">Operation #2: Processing</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/07_Operation_3_Output/">Operation #3: Output</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/08_Control_structures/">Control Structures</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/09_Operation_4_Sequential_execution/">Operation #4: Sequential Execution</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/10_Operation_5_Selection/">Operation #5: Selection</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/11_Operation_6_Repetition/">Operation #6: Repetition</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/12_Bonus_operation_modularity/">Bonus Operation: Modularity</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/13_Summary/">Summary</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/14_Using_the_python_shell/">Using the Python Shell</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/70_Exercise_Sheet_1/">Exercise Sheet 1</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../01_Course_Introduction/90_Assignment_1/">Assignment 1</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      02 SIPO
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/">Introduction: Our first programs 🐣</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/02_The_problem/">The Problem</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/03_Do_the_problem_by_hand/">Do The Problem By Hand</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/04_Translate_the_algorithm_into_python/">Translate the Algorithm into Python</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/05_Enter_run_and_test_the_program/">Enter, run and test the program</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/06_Naming_values/">Naming Values</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/07_What_will_it_look_like_onscreen/">What will it look like onscreen?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/08_Documentation/">Documentation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/09_Our_second_program_Same_as_the_first_only_backwards/">Our second program (Same as the first only backwards)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/10_Our_third_program_dhms2s.py/">Our third program (dhms2s.py)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/11_SIPO_summary/">SIPO Summary</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/12_Packaging_quantities/">Packaging Quantities</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/13_Modulo_A_sixth_arithmetic_operator/">Modulo: A Sixth Arithmetic Operator</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/14_Symbolic_constants/">Symbolic Constants</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/15_Intermission_Summary_so_far/">Intermission: Summary (so far)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/16_Object_types_1_ints_and_floats/">Object Types 1: ints and floats</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/17_Example_Calculating_tree_diameter/">Example: Calculating Tree Diameter</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/18_Example_Value_of_your_change/">Example: Value of your change</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/19_Example_Making_change/">Example: Making change</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/20_Pythonic_details/">Pythonic Details</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/21_Triple_quoted_strings/">Triple Quoted Strings</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/22_The_continuation_character/">The Continuation Character</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/23_The_done_trick/">The `done` trick</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/24_Output_formatting/">Output Formatting</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/70_Exercise_sheet_2/">Exercise Sheet 2</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../02_SIPO/90_Assignment_2/">Assignment 2</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      03 Selection
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/">Introduction: Being selective 🧐</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/01_If_A_simple_artificial_example/">`if:` A Simple (artificial) Example</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/02_Correcting_an_oversight/">Correcting an Oversight</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/03_If_syntax_in_detail/">`if` Syntax, in Detail</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/04_Relational_expressions/">Relational Expressions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/05_Compound_statements_and_indentation/">Compound Statements and Indentation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C_or_C to F</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/07_The_problem/">The Problem</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/08_Version_1/">Version 1</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/09_Version_2/">Version 2</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/10_Testing_selection/">Testing Selection</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/11_Performance_analysis/">Performance Analysis*</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/12_A_final_very_small_example_Absolute_value/">A Final (Very Small) Example: Absolute value</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/13_Summary_Selection_using_if/">Summary: Selection using `if`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/14_Gazinta_As_in_2_gazinta_8_but_3_doesnt/">Gazinta (as in "2 Gazinta 8, but 3 doesn't")</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/15_Ode_to_pythagoras/">Ode to Pythagoras</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/16_Utility_bills/">Utility bills</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/17_Beaufort_scale/">Beaufort Scale</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/70_Exercise_sheet_3/">Exercise Sheet 3</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../03_Selection/90_Assignment_3/">Assignment 3</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      04 Repetition
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/">Introduction: Repetition, repetition, repetition 🔁</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/01_The_idea_go_back_up_and_repeat_some_code/">The idea: Go back up and repeat some code</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/02_The_flowchart/">The flowchart</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/03_The_syntax/">The syntax</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/04_Hihihi/">Hihihi!</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/05_Infinite_loops/">Infinite Loops</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/06_Validating_input/">Validating Input</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/07_Repeating_a_program_without_restarting_it/">Repeating a program (without restarting it)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/08_Problem_repeating_calculations/">Problem: Repeating calculations</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/09_Example_Find_the_average/">Example: Find the average</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/10_Sentinel_controlled_input/">Sentinel controlled input</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/11_Problem_The_guessing_game/">Problem: The guessing game</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/12_Aside_Getting_random_numbers/">Aside: Getting "random" numbers</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/13_Solution_The_guessing_game/">Solution: The Guessing Game</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/14_A_puzzle_What_output_does_this_produce/">A puzzle: What output does this produce?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/15_Nesting_loops/">Nesting loops</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/16_Pythons_other_repetition_structure_for_loops/">Python's other repetition structure: `for` loops</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/17_Completely_artificial_example_revisited_using_for/">Completely artificial example revisited: using for</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/18_For_vs_while/">`for` vs `while`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/19_F2c_revisited_Fahrenheit_to_celsius_conversion_table_using_for/">f2c revisited: Fahrenheit to Celsius conversion table using `for`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/20_Nesting_for_loops/">Nesting `for` loops</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/21_Example_Draw_a_square/">Example: Draw a square</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/22_Module_4_summary/">Module 4 Summary</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/23_Brute_force/">Brute Force</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/24_Simulation/">Simulation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/25_Problem_What_are_the_chances_four_children_all_girls/">Problem: What are the chances: four children, all girls?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/26_Duelling_incompetents/">Duelling Incompetents</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/26_Factors/">Factors</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/27_Cryptarithms/">Cryptarithms</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/28_Python_formatting_guidelines/">Python Formatting Guidelines</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/29_A_list_creating_function_range/">A list-creating function: `range()`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/30_Timing_programs/">Timing programs</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/70_Exercise_Sheet_4/">Exercise Sheet 4</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../04_Repetition/90_Assignment_4/">Assignment 4</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      05 Lists and Strings
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../">Introduction: Lists and strings 🧵</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../01_Object_based_programming/">Object-based programming</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../02_Sequence_types/">Sequence Types</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../03_What_can_you_do_with_a_list/">What can you do with a list?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../04_What_can_you_do_with_a_string/">What can you do with a string?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../05_Example_cd_shuffle/">Example: CD Shuffle</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../06_Dice_odds/">Dice Odds</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../07_Bar_graphs/">07 Bar graphs</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Representing Playing Cards</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../09_Poker_hands/">Poker hands</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../10_Playing_cards_An_alternative_representation/">Playing Cards: An alternative representation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../11_What_is_this_x_o_o_x_o_x/">What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../12_Palindrome/">Palindrome</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../13_Built_in_type_conversions/">Built-in Type Conversions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../14_The_map_function/">The map() function</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../15_Tuples/">Tuples</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../70_Exercise_sheet_5/">Exercise Sheet 5</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../90_Assignment_5/">Assignment 5</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      06 Functions
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/">Introduction: Coding in chunks 🧱</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/01_Modularization/">Modularization</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/02_Functions/">Functions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/03_Writing_functions_is_even/">Writing functions: `is_even()`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/04_Writing_functions_Syntax_summary/">Writing functions: Syntax summary</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/05_Is_odd/">is_odd()</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/06_Example_Dice_roll/">Example: dice_roll()</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/07_Default_arguments/">Default Arguments</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/08_Playing_card_functions_1/">Playing Card Functions 1</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/09_Reusing_functions/">Reusing Functions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/10_Modules/">Modules</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/11_Documenting_modules_and_functions/">Documenting modules and functions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/12_Summary_Module_layout/">Summary: Module Layout</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/13_Example_Playing_card_functions_2/">Example: Playing Card Functions 2</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/14_Refining_import/">Refining import</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/15_Scope/">Scope</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/16_The_perils_of_mutability/">The Perils of Mutability[^*]</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/17_Reference_semantics/">Object destruction: Garbage collection* using reference counting</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/18_Using_versus_changing_a_list/">Using versus changing a list</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/19_Copying_a_list/">Copying a list</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/20_List_comprehensions/">List comprehensions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/21_What_are_these_pyc_files/">What are these pyc files?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/22_Finding_the_standard_library_modules/">Finding the Standard Library Modules</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../06_Functions/90_Assignment_6/">Assignment 6</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      07 Dictionaries
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/">Introduction: Dictionaries? 📖</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/01_Dictionaries/">Dictionaries</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/02_Dictionary_derivation/">Dictionary "derivation"</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/03_What_can_you_do_with_a_dictionary/">What can you do with a dictionary?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/04_Example_word_frequencies/">Example: Word Frequencies</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/05_Example_Scrabble_scoring/">Example: Scrabble Scoring</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/06_Example_Book_database/">Example: Book Database</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/07_Example_A_list_of_dictionaries/">Example: A list of dictionaries</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../07_Dictionaries/90_Assignment_7/">Assignment 7</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      08 Persistence
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/">Introduction: Persistence ∞</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/01_Persistence/">Persistence</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/02_Text_versus_binary_files/">Text versus Binary Files</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/03_Reading_from_text_files/">Reading from text files</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/04_Example_searching_log_files/">Example: Searching log files</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/05_Important_note_Files_are_sequential/">Important note: Files are sequential</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/06_Is_there_more/">Is there more?</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/07_Writing_to_text_files/">Writing to text files</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/08_Appending_to_files/">Appending to files</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/09_Reading_numeric_data/">Reading numeric data</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/10_Designing_file_formats/">Designing file formats</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/11_Pickling/">Pickling</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/12_Shelves/">Shelves</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/13_A_controller_for_our_database/">A controller for our database</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/14_The_main_event_loop/">The main event loop</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../08_Persistence/90_Assignment_8/">Assignment 8</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      09 OOP1 Encapsulation
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/">Introduction: Object-oriented programming 🎁</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/01_Object_oriented_programming/">Object-Oriented Programming</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/02_Encapsulation/">Encapsulation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/03_Inheritance/">Inheritance</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/04_Polymorphism/">Polymorphism</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/05_The_plan_for_the_next_three_modules/">The plan for the next three modules</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/06_A_small_example_A_dice_class/">A small example: A dice class</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/07_Python_OOP_syntax/">Python OOP Syntax</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/08_Playing_card_classes_The_specification/">Playing Card Classes: The Specification</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/09_Identifying_the_necessary_classes/">Identifying the necessary classes</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/10_Identifying_the_classes_methods/">Identifying the classes' methods</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/11_Program_skeleton_1/">Program skeleton 1</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/12_An_invisible_method_a_polymorphic_aside/">An invisible method! (A polymorphic aside)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/13_Program_skeleton_2/">Program Skeleton 2</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/14_An_invisible_class_too/">An invisible class too!</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/15_Deck_methods/">Deck methods</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/16_Hand_methods/">Hand methods</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/17_Card_methods/">Card Methods</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/18_Putting_all_the_pieces_together/">Putting all the pieces together</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/19_Running_the_whole_thing/">Running the whole thing</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/20_Programming_observation/">Programming Observation</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../09_OOP1_Encapsulation/90_Assignment_9/">Assignment 9</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      10 OOD
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/">Introduction: Hunt the Wumpus! 😈</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/01_Object_oriented_design_OOD/">Object-Oriented Design (OOD)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/02_Preamble_to_hunt_the_wumpus/">Preamble to Hunt the Wumpus</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/03_About_hunt_the_wumpus/">About Hunt the Wumpus</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/04_OO_analysis/">OO Analysis</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/05_Object_attributes_and_methods/">Object Attributes and Methods</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/06_The_cave_system_objects/">The Cave System Object(s)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/07_Main_routine_pseudocode/">Main Routine Pseudocode</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/08_Class_cave_system/">`class Cave_System`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/09_Aside_iterative_design/">Aside: Iterative Design</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/10_Class_room/">`class Room`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/11_Class_Pit/">`class Pit`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/12_Class_Bat/">`class Bat`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/13_Class_Wumpus/">`class Wumpus`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/14_Class_Player/">`class Player`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/15_Putting_the_pieces_together/">Putting the pieces together</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/16_New_code_initializing_the_bats/">New code: Initializing the bats</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/17_New_code_pointing_to_a_missing_class_shoot_and_arrows/">New code (pointing to a missing class): `shoot` and `Arrow`s</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/18_New_code_show_cheats/">New code: `show_cheats()`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/19_New_code_display_status_and_warnings/">New code: Display status and warnings</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/20_Memory_diagram/">Memory diagram</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/21_Bug_fixing_mostly_snatch/">Bug: Fixing (mostly) snatch</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/22_Aside_Data_structure_maintenance/">Aside: Data structure maintenance</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/23_Two_more_small_problems/">Two more (small) problems</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../10_OOD/24_Howd_we_do/">How'd we do?</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      11 OOP2 Polymorphism and Inheritance
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/">Introduction: The rest of OOP 😎</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/01_Inheritance_and_polymorphism/">Inheritance and Polymorphism</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/02_Inheritance_example_playing_cards/">Inheritance example: Playing Cards</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/03_Class_Card_Collection/">`class CardCollection`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/04_Class_Deck/">`class Deck`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/05_Class_Hand/">`class Hand`</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/06_Putting_the_pieces_together/">Putting the pieces together</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/07_Aside_Refactoring/">Aside: Refactoring</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/08_Polymorphism/">Polymorphism</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/09_Example_Fractions/">Example: Fractions</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/10_Reverse_engineering/">Reverse engineering</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/11_Class_Fraction/">class Fraction</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/12_Example_Playing_cards/">Example: Playing cards</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/13_A_subtle_point_Semantics/">A subtle point: Semantics</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../11_OOP2_Polymorphism_and_Inheritance/14_Conclusion_Adding_types/">Conclusion: Adding Types</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      12 Testing and Documentation
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/">Introduction: Testing and documentation 🕵️</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/01_UML_and_testing_with_doctest/">UML and Testing with doctest</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/02_Unified_modelling_language_uml/">Unified Modelling Language (UML)</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/03_Aside_is_a_versus_has_a/">Aside: *is-a* versus *has-a*</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/04_UML_class_diagram_visual_syntax/">UML class diagram visual syntax</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/05_Example_Playing_card_classes/">Example: Playing card classes</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../12_Testing_and_Documentation/06_Testing_with_doctest/">Testing with doctest</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+          <!--
+
+-->
+
+  <details>
+    <summary>
+      13 Exam Preparation
+    </summary>
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../13_Exam_Preparation/">Introduction: The Final Exam 🫣 🙀</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../13_Exam_Preparation/01_Examinable_topics/">Examinable Topics</a>
+</li>
+
+        
+    </ul>
+  </details>
+
+        
+      </details>
+
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+
+    </nav>
+  </header>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+        Create a search form that sends the user to the search.html file - this is
+        the other file in the template which adds search to the theme. The only
+        requirement here is that there is a text input with the name 'q' and the
+        action and methods match below.
+      -->
+      <!-- <div role="search">
+        <form action="../../search.html" method="get">
+          <input type="search" name="q" placeholder="Search docs" />
+        </form>
+      </div>
+      -->
+
+  <main>
+    <!-- <h2>Show the table of contents for the current page</h2>
+    <ul>
+    
+        <li><a href="#representing-playing-cards">Representing Playing Cards</a></li>
+        
+            <li><a href="#our-representation-the-simplest-thing-that-could-possibly-work">Our representation: The simplest thing that could possibly work</a></li>
+        
+            <li><a href="#suit-from-card-number">Suit from card number</a></li>
+        
+            <li><a href="#face-value-from-card-number">Face value from card number</a></li>
+        
+            <li><a href="#dealing-a-hand">Dealing a hand</a></li>
+        
+            <li><a href="#putting-it-together">Putting it together</a></li>
+        
+    
+    </ul> -->
+
+    
+      <h1 id="representing-playing-cards">Representing Playing Cards</h1>
+<p>In addition to computational uses such as arrays of counters, lists can also be used to represent real-world “objects”, in particular composite objects that have multiple components. Consider representing a deck of playing cards. A deck of cards is made up of many similar, but not identical, objects. Plainly a deck of cards cannot be easily represented by a single integer, string or floating point value because it has so many constituents, but an ordered list seems like a promising alternative.</p>
+<h2 id="our-representation-the-simplest-thing-that-could-possibly-work">Our representation: The simplest thing that could possibly work</h2>
+<p>A standard deck of playing cards consists of 52 unique cards. Each card combines one of 13 face values (Ace up to King) and one of four suits (Clubs, Diamonds, Hearts and Spades). If we agree on the ordering of face values and suits then we could just refer to each card by a number from 0 to 51, i.e. card 0 is the Ace of Clubs, card 3 is the 4 of Clubs, and card 50 is the Queen of Spades. If we follow standard contract bridge ordering we would number the cards as follows,</p>
+<pre><code class="language-plaintext"> 0 Ace   Clubs    13 Ace   Diamonds    26 Ace   Hearts    39 Ace   Spades
+ 1 Two   Clubs    14 Two   Diamonds    27 Two   Hearts    40 Two   Spades
+ 2 Three Clubs    15 Three Diamonds    28 Three Hearts    41 Three Spades
+ 3 Four  Clubs    16 Four  Diamonds    29 Four  Hearts    42 Four  Spades
+ 4 Five  Clubs    17 Five  Diamonds    30 Five  Hearts    43 Five  Spades
+ 5 Six   Clubs    18 Six   Diamonds    31 Six   Hearts    44 Six   Spades
+ 6 Seven Clubs    19 Seven Diamonds    32 Seven Hearts    45 Seven Spades
+ 7 Eight Clubs    20 Eight Diamonds    33 Eight Hearts    46 Eight Spades
+ 8 Nine  Clubs    21 Nine  Diamonds    34 Nine  Hearts    47 Nine  Spades
+ 9 Ten   Clubs    22 Ten   Diamonds    35 Ten   Hearts    48 Ten   Spades
+10 Jack  Clubs    23 Jack  Diamonds    36 Jack  Hearts    49 Jack  Spades
+11 Queen Clubs    24 Queen Diamonds    37 Queen Hearts    50 Queen Spades
+12 King  Clubs    25 King  Diamonds    38 King  Hearts    51 King  Spades
+</code></pre>
+<p>And a new ordered full deck of cards would be represented by the list,</p>
+<pre><code class="language-python">[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ..., 47, 48, 49, 50, 51]
+</code></pre>
+<p>So in Python we can initialize a full deck just by saying:</p>
+<pre><code class="language-python">deck = list(range(52))
+</code></pre>
+<p>since the <code>range</code> command produces a <code>range</code> object, which can be cast to the list above.</p>
+<p>To work with the card numbers we'll need to be able to figure out the suit and face value of a card given its card number.</p>
+<h2 id="suit-from-card-number">Suit from card number</h2>
+<p>To get the suit a card belongs to from its card number consider how the suits are grouped:</p>
+<pre><code class="language-plaintext"> 0 Clubs    13 Diamonds    26 Hearts    39 Spades
+ 1 Clubs    14 Diamonds    27 Hearts    40 Spades
+ 2 Clubs    15 Diamonds    28 Hearts    41 Spades
+ 3 Clubs    16 Diamonds    29 Hearts    42 Spades
+ 4 Clubs    17 Diamonds    30 Hearts    43 Spades
+ 5 Clubs    18 Diamonds    31 Hearts    44 Spades
+ 6 Clubs    19 Diamonds    32 Hearts    45 Spades
+ 7 Clubs    20 Diamonds    33 Hearts    46 Spades
+ 8 Clubs    21 Diamonds    34 Hearts    47 Spades
+ 9 Clubs    22 Diamonds    35 Hearts    48 Spades
+10 Clubs    23 Diamonds    36 Hearts    49 Spades
+11 Clubs    24 Diamonds    37 Hearts    50 Spades
+12 Clubs    25 Diamonds    38 Hearts    51 Spades
+</code></pre>
+<h3 id="solution-1">Solution 1</h3>
+<p>One way to get the suit from the card number is to test the card number to see which group of 13 (i.e. which suit) it is in.</p>
+<pre><code class="language-python">if cardnum &lt; 13 :
+    suit = 'Clubs'
+elif cardnum &lt; 26 :
+    suit = 'Diamonds'
+elif cardnum &lt; 39 :
+    suit = 'Hearts'
+else :
+    suit = 'Spades'
+</code></pre>
+<h3 id="solution-2">Solution 2</h3>
+<p>An alternative is to get the suit from the card number by dividing the card number by 13. The result tells us which of the groups of 13 our card number is in:</p>
+<pre><code class="language-python">suit = cardnum // 13
+if suit == 0 :
+    suit = 'Clubs'
+elif suit == 1 :
+    suit = 'Diamonds'
+elif suit == 2 :
+    suit = 'Hearts'
+else :
+    suit = 'Spades'
+</code></pre>
+<h2 id="face-value-from-card-number">Face value from card number</h2>
+<p>To get the face value from the card number we need to look at where our card occurs <em>within</em> its group of 13.</p>
+<pre><code class="language-plaintext"> 0 Ace       13 Ace       26 Ace       39 Ace
+ 1 Two       14 Two       27 Two       40 Two
+ 2 Three     15 Three     28 Three     41 Three
+ 3 Four      16 Four      29 Four      42 Four
+ 4 Five      17 Five      30 Five      43 Five
+ 5 Six       18 Six       31 Six       44 Six
+ 6 Seven     19 Seven     32 Seven     45 Seven
+ 7 Eight     20 Eight     33 Eight     46 Eight
+ 8 Nine      21 Nine      34 Nine      47 Nine
+ 9 Ten       22 Ten       35 Ten       48 Ten
+10 Jack      23 Jack      36 Jack      49 Jack
+11 Queen     24 Queen     37 Queen     50 Queen
+12 King      25 King      38 King      51 King
+</code></pre>
+<h3 id="solution-1_1">Solution 1</h3>
+<p>We could do this as we did above by writing the logic directly:</p>
+<pre><code class="language-python">if cardnum == 0 or cardnum == 13 or cardnum == 26 or cardnum == 39 :
+    face_value = 'Ace'
+elif cardnum == 1 or cardnum == 14 or cardnum == 27 or cardnum == 40 :
+    face_value = 'Two'
+elif cardnum == 2 or cardnum == 15 or cardnum == 28 or cardnum == 41 :
+    face_value = 'Three'
+elif cardnum == 3 or cardnum == 16 or cardnum == 29 or cardnum == 42 :
+    face_value = 'Four'
+elif cardnum == 4 or cardnum == 17 or cardnum == 30 or cardnum == 43 :
+    face_value = 'Five'
+elif cardnum == 5 or cardnum == 18 or cardnum == 31 or cardnum == 44 :
+    face_value = 'Six'
+elif cardnum == 6 or cardnum == 19 or cardnum == 32 or cardnum == 45 :
+    face_value = 'Seven'
+elif cardnum == 7 or cardnum == 20 or cardnum == 33 or cardnum == 46 :
+    face_value = 'Eight'
+elif cardnum == 8 or cardnum == 21 or cardnum == 34 or cardnum == 47 :
+    face_value = 'Nine'
+elif cardnum == 9 or cardnum == 22 or cardnum == 35 or cardnum == 48 :
+    face_value = 'Ten'
+elif cardnum == 10 or cardnum == 23 or cardnum == 36 or cardnum == 49 :
+    face_value = 'Jack'
+elif cardnum == 11 or cardnum == 24 or cardnum == 37 or cardnum == 50 :
+    face_value = 'Queen'
+else:
+    face_value = 'King'
+</code></pre>
+<h3 id="solution-2_1">Solution 2</h3>
+<p>Or we could do the same thing using list membership tests instead of equality tests,</p>
+<pre><code class="language-python">if cardnum in [0, 13, 26, 39]:
+    face_value = 'Ace'
+elif cardnum in [1, 14, 27, 40]:
+    face_value = 'Two'
+elif cardnum in [2, 15, 28, 41]:
+    face_value = 'Three'
+elif cardnum in [3, 16, 29, 42]:
+    face_value = 'Four'
+elif cardnum in [4, 17, 30, 43]:
+    face_value = 'Five'
+elif cardnum in [5, 18, 31, 44]:
+    face_value = 'Six'
+elif cardnum in [6, 19, 32, 45]:
+    face_value = 'Seven'
+elif cardnum in [7, 20, 33, 46]:
+    face_value = 'Eight'
+elif cardnum in [8, 21, 34, 47]:
+    face_value = 'Nine'
+elif cardnum in [9, 22, 35, 48]:
+    face_value = 'Ten'
+elif cardnum in [10, 23, 36, 49]:
+    face_value = 'Jack'
+elif cardnum in [11, 24, 37, 50]:
+    face_value = 'Queen'
+else:
+    face_value = 'Kind'
+</code></pre>
+<h3 id="solution-3">Solution 3</h3>
+<p>We could also do it by considering the remainder when we divide the card number by 13.</p>
+<pre><code class="language-python">face_value = cardnum % 13
+if face_value == 0 :
+    face_value = 'Ace'
+elif face_value == 2 :
+    face_value = 'Two'
+elif face_value == 3 :
+    face_value = 'Three'
+elif face_value == 4 :
+    face_value = 'Four'
+elif face_value == 5 :
+    face_value = 'Five'
+elif face_value == 6 :
+    face_value = 'Six'
+elif face_value == 7 :
+    face_value = 'Seven'
+elif face_value == 8 :
+    face_value = 'Eight'
+elif face_value == 9 :
+    face_value = 'Nine'
+elif face_value == 10 :
+    face_value = 'Ten'
+elif face_value == 11 :
+    face_value = 'Jack'
+elif face_value == 12 :
+    face_value = 'Queen'
+else :
+    face_value = 'King'
+</code></pre>
+<h3 id="solution-4">Solution 4</h3>
+<p>A different and very compact modification to Solution 3 is to use <em>list lookup</em> instead of <code>if</code> statements. We'll store the face values in a list, and then use the remainder of the division by 13 to access the appropriate entry in the list:</p>
+<pre><code class="language-python">FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', \
+                'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
+
+face_value = cardnum % 13
+print('The face value of card number', cardnum, 'is', FACE_VALUES[face_value])
+</code></pre>
+<p>Study this code carefully. List lookups like this one are very convenient. They are brief and thus easier to read and understand than the lengthy <code>if</code> cascades above, and the list is easier to edit than either of the previous code-intensive approaches.</p>
+<p>Now that we can work with individual cards let's move on to working with hands, i.e. groups of cards.</p>
+<h2 id="dealing-a-hand">Dealing a hand</h2>
+<p>How can we deal a hand of cards from our deck of cards?</p>
+<h3 id="solution-1_2">Solution 1</h3>
+<p>One approach is to shuffle the cards in the deck and then to deal from the top of deck using the list method <code>pop()</code>.</p>
+<pre><code class="language-python">import random
+
+# Create the deck of cards.
+deck = list(range(52))
+
+# Shuffle the deck of cards
+for swaps in range(104):
+    posn1 = random.randint(0, 51)
+    posn2 = random.randint(0, 51)
+    # Swap the cards at posn1 and posn2
+   (deck[posn1], deck[posn2]) = (deck[posn2], deck[posn1])
+
+# Create the empty hand.
+hand = []
+
+# Deal 5 cards from the deck into the hand.
+for card in range(0, 5):
+    hand.append( deck.pop() )
+</code></pre>
+<p>(You can read about what is going on in the last line of the first <code>for</code> loop in <a href="../15_Tuples/">Tuples</a>.)</p>
+<h3 id="solution-2_2">Solution 2</h3>
+<p>An alternative is to select cards at random from inside the deck to add to the hand.</p>
+<pre><code class="language-python">import random
+deck = list(range(52))
+hand = []
+for card in range(5) :
+    # Choose the card to deal.
+    posn = random.randint(0, len(deck) - 1)
+    # Append the number at that position to the hand.
+    hand.append(deck[posn])
+    # Delete that card from the deck.
+    del(deck[posn])
+</code></pre>
+<p><br></p>
+<h2 id="putting-it-together">Putting it together</h2>
+<p>Pulling selected pieces together we can write code like this,</p>
+<pre><code class="language-python">import random
+
+# Define handy string constants.
+FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
+                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+                'Queen', 'King']
+SUITS = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
+
+# Create deck of cards.
+deck = list(range(52))
+
+# Create empty hand.
+hand = []
+
+# Deal 5 cards into hand.
+for deal in range(5) :
+    posn = random.randint(0, len(deck) - 1)
+    hand.append(deck[posn])
+    del(deck[posn])
+
+# Display the cards in the hand.
+for card in hand:
+    print(FACE_VALUES[card % 13], 'of', SUITS[card // 13])
+</code></pre>
+<p>Try it out! Then try making some changes to get a feel for how the code
+works.</p>
+    
+  </main>
+
+  <footer>
+    <!-- <h2>Link to the source</h2> -->
+    <!--
+        Support repo URL
+      -->
+    <!-- 
+      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/08_Representing_playing_cards.md">Edit on GitHub</a>
+    
+    -->
+
+    <p>License:
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
+    <br>
+    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+
+    <!--
+    MkDocs version      : 1.4.2
+    Docs Build Date UTC : 2023-05-13 04:47:55.611579+00:00
+    -->
+  </footer>
+
+</body>
+</html>
