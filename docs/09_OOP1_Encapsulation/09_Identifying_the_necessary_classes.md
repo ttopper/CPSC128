@@ -7,13 +7,13 @@ a function. We've seen examples of this with Python's built-in
 classes, e.g.
 
 ```plaintext
-    >>> num = int(43.72)
-    >>> num
-    43
-    >>> lst = list('Tim')
-    >>> lst
-    ['T', 'i', 'm']
-    >>>
+>>> num = int(43.72)
+>>> num
+43
+>>> lst = list('Tim')
+>>> lst
+['T', 'i', 'm']
+>>>
 ```
 
 Now we want to look for similar syntax in our specification code,

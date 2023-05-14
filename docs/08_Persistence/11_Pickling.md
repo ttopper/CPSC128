@@ -3,8 +3,8 @@
 Recall this bit of code from writing coordinates to a file,
 
 ```python
-    for coord in coords:
-        f.write(str(coord[0])+' '+str(coord[1])+'\n')
+for coord in coords:
+    f.write(str(coord[0])+' '+str(coord[1])+'\n')
 ```
 
 It's straightforward enough, but it feels like busywork converting
@@ -17,34 +17,34 @@ it _preserves_ the objects the way pickling preserves foods). Its use is
 straightforward:
 
 ```python
-    # life.py
-    universe = [ [0, 0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 1, 0, 0, 0, 0],
-                 [0, 0, 0, 0, 1, 0, 0, 0],
-                 [0, 0, 1, 1, 1, 0, 0, 0],
-                 [0, 0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 0, 0, 0, 0, 0],
-                 [0, 0, 0, 0, 0, 0, 0, 0]
-               ]
-    import pickle
-    f = open( 'pickled_universe.txt', 'wb') # we use wb to indicate we are writing bytes
-    pickle.dump(universe, f)
-    f.close()
-    f = open('pickled_universe.txt', 'rb') # we use rb to indicate we are reading bytes
-    u = pickle.load(f)
-    f.close()
-    print(u)
+# life.py
+universe = [ [0, 0, 0, 0, 0, 0, 0, 0],
+             [0, 0, 0, 0, 0, 0, 0, 0],
+             [0, 0, 0, 1, 0, 0, 0, 0],
+             [0, 0, 0, 0, 1, 0, 0, 0],
+             [0, 0, 1, 1, 1, 0, 0, 0],
+             [0, 0, 0, 0, 0, 0, 0, 0],
+             [0, 0, 0, 0, 0, 0, 0, 0],
+             [0, 0, 0, 0, 0, 0, 0, 0]
+           ]
+import pickle
+f = open( 'pickled_universe.txt', 'wb') # we use wb to indicate we are writing bytes
+pickle.dump(universe, f)
+f.close()
+f = open('pickled_universe.txt', 'rb') # we use rb to indicate we are reading bytes
+u = pickle.load(f)
+f.close()
+print(u)
 ```
 
 Output:
 
 ```plaintext
-    >>> 
-    [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
-     [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0],
-     [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]]
-    >>> 
+>>> 
+[[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
+ [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]]
+>>> 
 ```
 
 Almost any Python object can be pickled (among the exceptions are odd
@@ -56,31 +56,31 @@ particularly compact nor particularly
 readable. `pickled_universe.txt` above looks like this,
 
 ```plaintext
-    (lp0
-    (lp1
-    I0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aa(lp2
-    I0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aI0
-    aa(lp3
-    I0
-    aI0
-    aI0
-    aI1
-    ...
+(lp0
+(lp1
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aa(lp2
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aa(lp3
+I0
+aI0
+aI0
+aI1
+...
 ```
 
 and is 383 bytes in size. That makes it 2 to 3 times as large as our

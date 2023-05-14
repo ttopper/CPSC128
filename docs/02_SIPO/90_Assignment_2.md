@@ -5,18 +5,18 @@
 1.  ### Trivialities
 
     We only know enough Python commands to write simple programs so far,
-    but we do need to practice using what we've got so \... write a
+    but we do need to practice using what we've got so ... write a
     program that produces sessions like this one:
 
 ```plaintext
-        Useless Trivia Generator v0.01
-        ==============================
-        How old are you? 28
-        And how many pounds do you weigh? 165
-        Did you know that you're 196 in dog years!
-        But you're also over 883008000 seconds old.
-        Did you know that on the moon you would weigh only 27.5 pounds?
-        But on the sun, you'd weigh 4471.5 pounds (but not for long!).
+    Useless Trivia Generator v0.01
+    ==============================
+    How old are you? 28
+    And how many pounds do you weigh? 165
+    Did you know that you're 196 in dog years!
+    But you're also over 883008000 seconds old.
+    Did you know that on the moon you would weigh only 27.5 pounds?
+    But on the sun, you'd weigh 4471.5 pounds (but not for long!).
 ```
 
 Some facts that might be helpful to you in writing your program:
@@ -66,11 +66,11 @@ Some facts that might be helpful to you in writing your program:
     inputs 1559 the output should be something like:
 
 ```plaintext
-        1559 feet is equal to:
-          2 furlongs,
-          3 chains,
-         13 yards, and
-          2 feet.
+1559 feet is equal to:
+    2 furlongs,
+    3 chains,
+    13 yards, and
+    2 feet.
 ```
 
 ## Logistics

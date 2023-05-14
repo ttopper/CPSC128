@@ -5,14 +5,14 @@ Here are some exercises to try in the python shell to get an idea of what you ca
 1. Printing things (this is a classic for your first program in every programming language):
 
 ```python
-    print("Hello, world!")
+print("Hello, world!")
 ```
 
 2. Storing values.
 
 ```python
-    name = "Kate"
-    print("Hello", name)
+name = "Kate"
+print("Hello", name)
 ```
 
 Think about why the comma might print in exercise 1, but not in exercise 2.
@@ -20,7 +20,7 @@ Think about why the comma might print in exercise 1, but not in exercise 2.
 3. Printing things from input:
 
 ```python
-    name = input() print("Hello", name)
+name = input() print("Hello", name)
 ```
 
 You can enter any name, but that is not very clear.
@@ -28,16 +28,16 @@ You can enter any name, but that is not very clear.
 4. Printing things from input again:
 
 ```python
-    name = input("Enter your name: ") 
-    print("Hello", name)
+name = input("Enter your name: ") 
+print("Hello", name)
 ```
 
 5. Try some basic math:
 
 ```python
-    speed = int(input())
-    duration = int(input())
-    distance = duration * speed print(distance)
+speed = int(input())
+duration = int(input())
+distance = duration * speed print(distance)
 ```
  
 Based on the changes we made between exercise 3 and 4 change this code so that it is clear what you are supposed to input. Could you make the output clearer as well, based on the examples in 3 and 4?
@@ -45,11 +45,11 @@ Based on the changes we made between exercise 3 and 4 change this code so that i
 6. You can convert from degrees to radians with the following equation: rad = deg * π/180 Here is that code written in python. Note that we have to import the value of pi from the library math.
 
 ```python
-    import math
-    print("This program converts degrees to radians. ")
-    degrees = int(input("Enter the angle in degrees: "))
-    radians = degrees * math.pi / 180
-    print("The angle in radians is equal to", radians)
+import math
+print("This program converts degrees to radians. ")
+degrees = int(input("Enter the angle in degrees: "))
+radians = degrees * math.pi / 180
+print("The angle in radians is equal to", radians)
 ```
 
 7. This code can also be saved in a file. Python files all have the extension `.py`. If you create a new file in IDLE and save it as `deg2rad.py` you can run it from there (using the run drop down menu or by pushing F5). Try that out!

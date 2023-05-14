@@ -85,20 +85,20 @@ face values". To avoid rewriting, that would make a good function, no?)
 
 ```plaintext
 def isStraight(hand):
-    '''Return True if the cards in hand are a straight, and False otherwise.'''
-    make a copy of hand (so we don't change it) and work with the copy from now on
-    replace the card numbers in the copy with numbers representing their face values
-        (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-    sort the copy in ascending numerical order
-    Check that each value is one larger than the previous value:
-    assume the cards are a straight by setting a flag to True
-    for each value in the copy starting with the second value and going to the last value
-        if this value if not one greater than the previous value
-            set the flag to False
-    if the flag is still True
-        it's a straight
-    otherwise
-        it's not
+'''Return True if the cards in hand are a straight, and False otherwise.'''
+make a copy of hand (so we don't change it) and work with the copy from now on
+replace the card numbers in the copy with numbers representing their face values
+    (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
+sort the copy in ascending numerical order
+Check that each value is one larger than the previous value:
+assume the cards are a straight by setting a flag to True
+for each value in the copy starting with the second value and going to the last value
+    if this value if not one greater than the previous value
+        set the flag to False
+if the flag is still True
+    it's a straight
+otherwise
+    it's not
 ```
 3.  Our second approach begins the same way as the first, i.e. by
     replacing card numbers by face values and sorting them, but then we
@@ -111,22 +111,22 @@ def isStraight(hand):
 
 ```plaintext
 def isStraight(hand):
-    '''Return True if the cards in hand are a straight, and False otherwise.'''
-    make a copy of hand (so we don't change it) and work with the copy from now on
-    replace the card numbers in the copy with numbers representing their face values
-        (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-    sort the copy in ascending numerical order
-    find the minimum face value in the list
-    build a new list containing the values a straight starting with that 
-        minimum value would contain, i.e. a list of consecutive numbers
-        starting with the min value and having the same number of values
-        in it as the hand, e.g. min value = 3 and hand size = 5 implies a 
-        test list of [3, 4, 5, 6, 7]
-        (Hint: Use the range command to build the test list.)
-    if the test list equals the sorted copy
-        it's a straight
-    else
-        it's not
+'''Return True if the cards in hand are a straight, and False otherwise.'''
+make a copy of hand (so we don't change it) and work with the copy from now on
+replace the card numbers in the copy with numbers representing their face values
+    (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
+sort the copy in ascending numerical order
+find the minimum face value in the list
+build a new list containing the values a straight starting with that 
+    minimum value would contain, i.e. a list of consecutive numbers
+    starting with the min value and having the same number of values
+    in it as the hand, e.g. min value = 3 and hand size = 5 implies a 
+    test list of [3, 4, 5, 6, 7]
+    (Hint: Use the range command to build the test list.)
+if the test list equals the sorted copy
+    it's a straight
+else
+    it's not
 ```
 4.  Our final approach is based on the observation that the cards in a
     straight must all be different, and that the first and last cards'
@@ -142,27 +142,27 @@ def isStraight(hand):
 
 ```plaintext
 def isStraight(hand):
-    '''Return True if the cards in hand are a straight, and False otherwise.'''
-    make a copy of hand (so we don't change it) and work with the copy from now on
-    replace the card numbers in the copy with numbers representing their face values
-    find the minimum face value (Hint: Use the min function.)
-    find the maximum face value (Hint: Can't you guess?)
-    # If the largest and smallest values are the right distance apart
-    # e.g. in a five card hand they 4 apart
-    if max - min equals length of the list - 1 then
-        # and all the values in the list are different
-        # i.e. they all occur exactly once
-        set the counter of unique values to 0
-        for each value in the list
-            if the number of times it ocurs in the list is 1
-                (Hint: Use the count method.)
-                add one to the counter of unique values
-        if the count of unique values equals the length of the list
-            it's a straight
-        otherwise
-            it's not
-        else
-            it's not a straight
+'''Return True if the cards in hand are a straight, and False otherwise.'''
+make a copy of hand (so we don't change it) and work with the copy from now on
+replace the card numbers in the copy with numbers representing their face values
+find the minimum face value (Hint: Use the min function.)
+find the maximum face value (Hint: Can't you guess?)
+# If the largest and smallest values are the right distance apart
+# e.g. in a five card hand they 4 apart
+if max - min equals length of the list - 1 then
+    # and all the values in the list are different
+    # i.e. they all occur exactly once
+    set the counter of unique values to 0
+    for each value in the list
+        if the number of times it ocurs in the list is 1
+            (Hint: Use the count method.)
+            add one to the counter of unique values
+    if the count of unique values equals the length of the list
+        it's a straight
+    otherwise
+        it's not
+    else
+        it's not a straight
 ```
 
 You can use the test program below to evaluate your code — I will in

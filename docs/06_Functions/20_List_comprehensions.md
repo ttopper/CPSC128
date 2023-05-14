@@ -6,7 +6,7 @@ List comprehensions are not understandings of lists, but a shortcut notation for
 hand = [12, 42, 8, 29, 11]
 face_values = []
 for card in hand:
-    face_values.append( card%13 )
+face_values.append( card%13 )
 ```
 
 Or we could use the shortcut notation provided by list comprehensions and do this,

@@ -7,9 +7,9 @@ use the computer.
     wonder.
 
 ```python
-    temp_in_f = int(input())
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print(temp_in_c)
+temp_in_f = int(input())
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print(temp_in_c)
 ```
 2.  Save the result (File → Save) into a file called `f2c.py`. Note how
     IDLE colourizes the program once it knows the file extension.

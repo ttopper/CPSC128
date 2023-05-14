@@ -48,7 +48,7 @@ very simple program.
 
 In Python the program is just:
 
-    print "Hi!"
+    print( "Hi!" )
 
 which is self-explanatory.
 
@@ -63,7 +63,7 @@ of only three internally supported languages at Google).
 (It's also free in both[*](#L107) senses and available across most
 platforms.)
 
-## And there's this\...
+## And there's this... 😀
 
 ![](13_Xkcd_on_python.png)
 

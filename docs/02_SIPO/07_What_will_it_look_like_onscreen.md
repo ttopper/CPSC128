@@ -19,8 +19,8 @@ temperature on the Celsius scale it will display 4 beneath our 40 on the
 screen. So the screen might look something like this:
 
 ```plaintext
-    40
-    4.444444444444445
+40
+4.444444444444445
 ```
 
 Hardly inspiring, and no casual user would realize they were supposed to

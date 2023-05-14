@@ -21,7 +21,7 @@ print(quotes)
 print()
 print('Here it is again by looping through it:')
 for person in quotes.keys():
-    print(quotes[person])
+print(quotes[person])
 print()
 # Now let's create a shelve and put the quotes in it.
 # Like a file we open it, but unlike with a file
@@ -38,7 +38,7 @@ quotefile = shelve.open('quotes')
 print('Here's the content of the shelve:')
 # Notice how similar this is to working with the in-memory dictionary above.
 for key in quotefile:
-    print(key, ':', quotefile[key])
+print(key, ':', quotefile[key])
 quotefile.close()
 ```
 
@@ -71,7 +71,7 @@ Consider the following transcript carefully,
 >>> s.close()
 >>> s = shelve.open('test_shelve')
 >>> for key in s:
-    print(key, ':', s[key])
+print(key, ':', s[key])
 
 bob : 42
 liz : [31]
@@ -80,7 +80,7 @@ liz : [31]
 >>> s.close()
 >>> s = shelve.open('test_shelve')
 >>> for key in s:
-    print(key, ':', s[key])
+print(key, ':', s[key])
 
 bob : 43
 liz : [31]
@@ -100,7 +100,7 @@ Open the shelve with the option `writeback=True`,
 >>> s.close()
 >>> s = shelve.open('test_shelve')
 >>> for key in s:
-    print(key, ':', s[key])
+print(key, ':', s[key])
 
 bob : 43
 liz : [1]
@@ -122,7 +122,7 @@ Mutate the object via a temporary name assigned to it and then reassign the temp
 >>> s.close()
 >>> s = shelve.open('test_shelve')
 >>> for key in s:
-    print(key, ':', s[key])
+print(key, ':', s[key])
 
 bob : 43
 liz : [2]

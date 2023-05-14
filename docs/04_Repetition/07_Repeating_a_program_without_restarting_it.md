@@ -6,7 +6,7 @@ for example perform a series of conversions without having to restart
 the program. The template to do this is,
 
 ![Python program that let's user chose to run it as many times as they
-want.](07_repeat_program_py.png)
+want.](07_repeat_program.py.png)
 
 The trick is that we use a variable called `again` which we initialize
 to be the letter `y`. We then test the value of `again` to see if it is

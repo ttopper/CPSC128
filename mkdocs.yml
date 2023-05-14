@@ -8,20 +8,32 @@ edit_uri: edit/main/docs/
 copyright:
   This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Unported License</a>.
 
+watch:
+- basic_theme
+# It didn't seem to watch this automatically ?! so I added it here explicitly.
+
 theme: 
-  name: readthedocs
-#  prev_next_buttons_location: bottom
-#  shortcuts: # BUG not working in dev-server 2023-03-19
-#          help: 191    # ?
-#          next: 78     # n
-#          previous: 80 # p
-#          search: 83   # s
+  name: null
+  custom_dir: 'basic_theme/'
+  highlightjs: true
+  hljs_languages:
+      - plaintext
+      - python
+  # name: readthedocs
+  #   prev_next_buttons_location: bottom
 # theme: gitbook
-#theme: windmill
+# theme: windmill
+
 
 extra_css: 
   - css/extra.css
-#  - css/menu.css
+#  - css/normalize.css
+# This is what the documentation at https://www.mkdocs.org/user-guide/configuration/#extra_css says to do, but it's not working...
+# WARNING  -  [08:13:53] "GET /css/normalize.css HTTP/1.1" code 404
+# Next going to follow the documentation at https://www.mkdocs.org/dev-guide/themes/#theme-files
+# "There are various files which a theme treats special in some way. Any other files are simply copied from the theme directory to the same path in the site_dir when the site it built. For example image and CSS files have no special significance and are copied as-is."
+# Currently: Have normalize.css living in both docs/css and basic_theme/css
+
 extra_javascript:
 #  - js/menu.js
 
@@ -45,10 +57,3 @@ plugins:
       arguments:
         version: 8.6.4
         securityLevel: 'loose'
-
-# Experimenting with using a manual table of contents
-# nav:
-#  - 01 Introduction: 'M01_Introduction/index.md'
-#  - 02 SIPO: 'M02_SIPO/index.md'
-#  - 03 Selection: 'M03_Selection/index.md'
-#  - 04 Repetition: 'M04_Repetition/index.md'

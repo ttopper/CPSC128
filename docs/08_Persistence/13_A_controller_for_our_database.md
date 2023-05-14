@@ -26,56 +26,56 @@ work on our database of quotations. The pseudocode for most controllers
 is similar[^**],
 
 ```plaintext
-    Forever
-        Display the possible actions
-        Get the user's choice of action
-        Execute the code corresponding to the chosen action
+Forever
+    Display the possible actions
+    Get the user's choice of action
+    Execute the code corresponding to the chosen action
 ```
 The Python code for CRUD operations on a shelve of quotes could look
 like,
 
 ```python
-    # crud_controller.py
-    import shelve
-    fname = input('What file of quotes would you like to work with? ')
-    db = shelve.open(fname)
+# crud_controller.py
+import shelve
+fname = input('What file of quotes would you like to work with? ')
+db = shelve.open(fname)
 
-    # Forever
-    over = False
-    while not over:
+# Forever
+over = False
+while not over:
 
-        # Display the possible actions
-        print('''
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?''')
+    # Display the possible actions
+    print('''
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?''')
 
-        # Get the user's choice of action
-        choice = input()
+    # Get the user's choice of action
+    choice = input()
+    
+    # Execute the code corresponding to the chosen action
+    if choice == 'c':
+        pass       
+    elif choice == 'r':
+        pass   
+    elif choice == 'u':
+        pass   
+    elif choice == 'd':
+        pass  
+    elif choice == 'l':
+        pass            
+    elif choice == 'q':
+        over = True       
+    else:
+        print('Not a valid choice!')
         
-        # Execute the code corresponding to the chosen action
-        if choice == 'c':
-            pass       
-        elif choice == 'r':
-            pass   
-        elif choice == 'u':
-            pass   
-        elif choice == 'd':
-            pass  
-        elif choice == 'l':
-            pass            
-        elif choice == 'q':
-            over = True       
-        else:
-            print('Not a valid choice!')
-            
-    db.close()
+db.close()
 ```
 
 The code is a fairly straightforward translation of the pseudocode:
@@ -91,13 +91,13 @@ nothing why have them? Because you can't have nothing between
 an `if` and an `elif` or between a pair of `elif`s,
 
 ```plaintext
-    >>> if x > 5:
+>>> if x > 5:
+elif x == 5:
+  File "<pyshell#59>", line 2
     elif x == 5:
-      File "<pyshell#59>", line 2
-        elif x == 5:
-           ^
-    IndentationError: expected an indented block
-    >>> 
+       ^
+IndentationError: expected an indented block
+>>> 
 ```
 
 The job of a `pass` statement is to have a statement somewhere you
@@ -116,112 +116,112 @@ code.
 Here's another version with a couple of the actions filled in,
 
 ```python
-    # crud_controller.py
-    import shelve
-    fname = input('What file of quotes would you like to work with? ')
-    db = shelve.open(fname)
-    over = False
-    while not over:
-        print('''
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?''')
-        choice = input()
+# crud_controller.py
+import shelve
+fname = input('What file of quotes would you like to work with? ')
+db = shelve.open(fname)
+over = False
+while not over:
+    print('''
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?''')
+    choice = input()
+    
+    if choice == 'c':
+        author = input('Who is the author of the quote? ')
+        text = input('What did they say or write? ')
+        lastname = author[author.rfind(' ')+1:]
+        db[lastname] = [author, text]
         
-        if choice == 'c':
-            author = input('Who is the author of the quote? ')
-            text = input('What did they say or write? ')
-            lastname = author[author.rfind(' ')+1:]
-            db[lastname] = [author, text]
+    elif choice == 'r':
+        pass
+    
+    elif choice == 'u':
+        pass
+    
+    elif choice == 'd':
+        pass
+    
+    elif choice == 'l':
+        print('Here are the contents of the shelve', fname, ':')
+        for key in db:
+            print(key, ':', db[key])
             
-        elif choice == 'r':
-            pass
+    elif choice == 'q':
+        over = True
         
-        elif choice == 'u':
-            pass
+    else:
+        print('Not a valid choice!')
         
-        elif choice == 'd':
-            pass
-        
-        elif choice == 'l':
-            print('Here are the contents of the shelve', fname, ':')
-            for key in db:
-                print(key, ':', db[key])
-                
-        elif choice == 'q':
-            over = True
-            
-        else:
-            print('Not a valid choice!')
-            
-    db.close()
+db.close()
 ```
 
 and a sample run,
 
 ```plaintext
-    >>> 
-    What file of quotes would you like to work with? quotes
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?
-    l
-    Here are the contents of the shelve quotes :
-    Beck : ['Kent Beck', 'Optimism is an occupational hazard of programming: 
-    testing is the treatment.']
-    Kernighan : ['Brian Kernighan', 'Controlling complexity is the essence 
-    of computer programming.']
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?
-    c
-    Who is the author of the quote? Fred Flintstone
-    What did they say or write? Yaba daba doo!
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?
-    l
-    Here are the contents of the shelve quotes :
-    Flintstone : ['Fred Flintstone', 'Yaba daba doo!']
-    Beck : ['Kent Beck', 'Optimism is an occupational hazard of programming: 
-    testing is the treatment.']
-    Kernighan : ['Brian Kernighan', 'Controlling complexity is the essence 
-    of computer programming.']
-        Actions
-        -------
-        c - create a quote to add to the collection
-        r - retrieve a quote from the collection and display it
-        u - update a quote in the collection
-        d - delete a quote from the collection
-        l - list all the items in the collection
-        q - exit
-        Your choice?
-    q
-    >>> 
+>>> 
+What file of quotes would you like to work with? quotes
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?
+l
+Here are the contents of the shelve quotes :
+Beck : ['Kent Beck', 'Optimism is an occupational hazard of programming: 
+testing is the treatment.']
+Kernighan : ['Brian Kernighan', 'Controlling complexity is the essence 
+of computer programming.']
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?
+c
+Who is the author of the quote? Fred Flintstone
+What did they say or write? Yaba daba doo!
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?
+l
+Here are the contents of the shelve quotes :
+Flintstone : ['Fred Flintstone', 'Yaba daba doo!']
+Beck : ['Kent Beck', 'Optimism is an occupational hazard of programming: 
+testing is the treatment.']
+Kernighan : ['Brian Kernighan', 'Controlling complexity is the essence 
+of computer programming.']
+    Actions
+    -------
+    c - create a quote to add to the collection
+    r - retrieve a quote from the collection and display it
+    u - update a quote in the collection
+    d - delete a quote from the collection
+    l - list all the items in the collection
+    q - exit
+    Your choice?
+q
+>>> 
 ```
 
 What about the other actions? Check out the assignment :-)

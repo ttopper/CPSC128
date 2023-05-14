@@ -28,13 +28,13 @@ simply add a small banner of meta-information at the top. The result is
 our first complete Python program.
 
 ```python
-    # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
-    # CPSC 128 Example program
-    # Kate Chatfield-Reed, Winter 2023
+# f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
+# CPSC 128 Example program
+# Kate Chatfield-Reed, Winter 2023
 
-    print("This program converts temperatures from Fahrenheit to Celsius.")
-    print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
-    temp_in_f = int(input("Temperature in Fahrenheit: "))
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+print("This program converts temperatures from Fahrenheit to Celsius.")
+print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
+temp_in_f = int(input("Temperature in Fahrenheit: "))
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
 ```

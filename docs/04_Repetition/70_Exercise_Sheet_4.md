@@ -51,8 +51,8 @@ Enter the size of the triangle: 3
 *****
 
 Enter the size of the triangle: 6
-     *
-    ***
+ *
+***
    *****
   *******
  *********

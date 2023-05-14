@@ -21,13 +21,13 @@ The nature of the pattern is that the first item in the pair goes from 'A', to '
 
 ```python
 FACE_VALUES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-               'J', 'Q', 'K']
+           'J', 'Q', 'K']
 SUITS = ['C', 'D', 'H', 'S']
 
 deck = []
 for suit in SUITS :
-    for face_value in FACE_VALUES :
-        deck.append([face_value, suit])
+for face_value in FACE_VALUES :
+    deck.append([face_value, suit])
 ```
 
 > ## The maxim that there is more than one way to do it applies to data representations just as much as to algorithms!

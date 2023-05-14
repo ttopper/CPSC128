@@ -23,8 +23,8 @@ existing one.
   >>> # ^But you just get the printable representation of the list.
   >>> list(4) # Build a list from the integer 4.
   Traceback (most recent call last):
-    File "<pyshell#68>", line 1, in -toplevel-
-      list(4)
+File "<pyshell#68>", line 1, in -toplevel-
+  list(4)
   TypeError: iteration over non-sequence
   >>> # ^But it can't be done.
 ```

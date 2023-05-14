@@ -3,10 +3,12 @@
 The mathematically inclined will examine the previous program and note
 that it mishandles the value 0. Which output statement will be executed
 if zero is entered? Well, the test `value < 0` will be `False` because 0
-is not less than 0, so the first output statement will be skipped, and
+is not _less than_ 0, so the first output statement will be skipped, and
 the second one will be executed displaying the message
 
-    0 is positive
+```plaintext
+0 is positive
+```
 
 on-screen. Unfortunately this is not true: 0 is neither positive nor
 negative. This means our program must actually deal with three
@@ -52,4 +54,4 @@ syntax to express it:
     else:
       print(value, "is positive")
 
-Note the use of `elif` which combines else and if into a single command.
+Note the use of `elif` which combines `else` and `if` into a single command.

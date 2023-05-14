@@ -8,15 +8,15 @@ doing a `.read()` from a file you are at the end of it and doing
 another `.read()` will not reread it, e.g.
 
 ```plaintext
-    >>> f = open('text_file.txt','r')
-    >>> s = f.read()
-    >>> s
-    'The first line.\nLine 2.\nThe third and last line.\n'
-    >>> p = f.read()
-    >>> p
-    ''
-    >>> f.close()
-    >>> 
+>>> f = open('text_file.txt','r')
+>>> s = f.read()
+>>> s
+'The first line.\nLine 2.\nThe third and last line.\n'
+>>> p = f.read()
+>>> p
+''
+>>> f.close()
+>>> 
 ```
 
 Note that it is not an error to try and read from the end of a file

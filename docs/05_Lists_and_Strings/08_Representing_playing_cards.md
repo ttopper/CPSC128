@@ -64,13 +64,13 @@ One way to get the suit from the card number is to test the card number to see w
 
 ```python
 if cardnum < 13 :
-    suit = 'Clubs'
+suit = 'Clubs'
 elif cardnum < 26 :
-    suit = 'Diamonds'
+suit = 'Diamonds'
 elif cardnum < 39 :
-    suit = 'Hearts'
+suit = 'Hearts'
 else :
-    suit = 'Spades'
+suit = 'Spades'
 ```
 
 ### Solution 2
@@ -80,13 +80,13 @@ An alternative is to get the suit from the card number by dividing the card numb
 ```python
 suit = cardnum // 13
 if suit == 0 :
-    suit = 'Clubs'
+suit = 'Clubs'
 elif suit == 1 :
-    suit = 'Diamonds'
+suit = 'Diamonds'
 elif suit == 2 :
-    suit = 'Hearts'
+suit = 'Hearts'
 else :
-    suit = 'Spades'
+suit = 'Spades'
 ```
 
 ## Face value from card number
@@ -115,31 +115,31 @@ We could do this as we did above by writing the logic directly:
 
 ```python
 if cardnum == 0 or cardnum == 13 or cardnum == 26 or cardnum == 39 :
-    face_value = 'Ace'
+face_value = 'Ace'
 elif cardnum == 1 or cardnum == 14 or cardnum == 27 or cardnum == 40 :
-    face_value = 'Two'
+face_value = 'Two'
 elif cardnum == 2 or cardnum == 15 or cardnum == 28 or cardnum == 41 :
-    face_value = 'Three'
+face_value = 'Three'
 elif cardnum == 3 or cardnum == 16 or cardnum == 29 or cardnum == 42 :
-    face_value = 'Four'
+face_value = 'Four'
 elif cardnum == 4 or cardnum == 17 or cardnum == 30 or cardnum == 43 :
-    face_value = 'Five'
+face_value = 'Five'
 elif cardnum == 5 or cardnum == 18 or cardnum == 31 or cardnum == 44 :
-    face_value = 'Six'
+face_value = 'Six'
 elif cardnum == 6 or cardnum == 19 or cardnum == 32 or cardnum == 45 :
-    face_value = 'Seven'
+face_value = 'Seven'
 elif cardnum == 7 or cardnum == 20 or cardnum == 33 or cardnum == 46 :
-    face_value = 'Eight'
+face_value = 'Eight'
 elif cardnum == 8 or cardnum == 21 or cardnum == 34 or cardnum == 47 :
-    face_value = 'Nine'
+face_value = 'Nine'
 elif cardnum == 9 or cardnum == 22 or cardnum == 35 or cardnum == 48 :
-    face_value = 'Ten'
+face_value = 'Ten'
 elif cardnum == 10 or cardnum == 23 or cardnum == 36 or cardnum == 49 :
-    face_value = 'Jack'
+face_value = 'Jack'
 elif cardnum == 11 or cardnum == 24 or cardnum == 37 or cardnum == 50 :
-    face_value = 'Queen'
+face_value = 'Queen'
 else:
-    face_value = 'King'
+face_value = 'King'
 ```
 
 ### Solution 2
@@ -148,31 +148,31 @@ Or we could do the same thing using list membership tests instead of equality te
 
 ```python
 if cardnum in [0, 13, 26, 39]:
-    face_value = 'Ace'
+face_value = 'Ace'
 elif cardnum in [1, 14, 27, 40]:
-    face_value = 'Two'
+face_value = 'Two'
 elif cardnum in [2, 15, 28, 41]:
-    face_value = 'Three'
+face_value = 'Three'
 elif cardnum in [3, 16, 29, 42]:
-    face_value = 'Four'
+face_value = 'Four'
 elif cardnum in [4, 17, 30, 43]:
-    face_value = 'Five'
+face_value = 'Five'
 elif cardnum in [5, 18, 31, 44]:
-    face_value = 'Six'
+face_value = 'Six'
 elif cardnum in [6, 19, 32, 45]:
-    face_value = 'Seven'
+face_value = 'Seven'
 elif cardnum in [7, 20, 33, 46]:
-    face_value = 'Eight'
+face_value = 'Eight'
 elif cardnum in [8, 21, 34, 47]:
-    face_value = 'Nine'
+face_value = 'Nine'
 elif cardnum in [9, 22, 35, 48]:
-    face_value = 'Ten'
+face_value = 'Ten'
 elif cardnum in [10, 23, 36, 49]:
-    face_value = 'Jack'
+face_value = 'Jack'
 elif cardnum in [11, 24, 37, 50]:
-    face_value = 'Queen'
+face_value = 'Queen'
 else:
-    face_value = 'Kind'
+face_value = 'Kind'
 ```
 
 ### Solution 3
@@ -182,31 +182,31 @@ We could also do it by considering the remainder when we divide the card number 
 ```python
 face_value = cardnum % 13
 if face_value == 0 :
-    face_value = 'Ace'
+face_value = 'Ace'
 elif face_value == 2 :
-    face_value = 'Two'
+face_value = 'Two'
 elif face_value == 3 :
-    face_value = 'Three'
+face_value = 'Three'
 elif face_value == 4 :
-    face_value = 'Four'
+face_value = 'Four'
 elif face_value == 5 :
-    face_value = 'Five'
+face_value = 'Five'
 elif face_value == 6 :
-    face_value = 'Six'
+face_value = 'Six'
 elif face_value == 7 :
-    face_value = 'Seven'
+face_value = 'Seven'
 elif face_value == 8 :
-    face_value = 'Eight'
+face_value = 'Eight'
 elif face_value == 9 :
-    face_value = 'Nine'
+face_value = 'Nine'
 elif face_value == 10 :
-    face_value = 'Ten'
+face_value = 'Ten'
 elif face_value == 11 :
-    face_value = 'Jack'
+face_value = 'Jack'
 elif face_value == 12 :
-    face_value = 'Queen'
+face_value = 'Queen'
 else :
-    face_value = 'King'
+face_value = 'King'
 ```
 
 ### Solution 4
@@ -215,7 +215,7 @@ A different and very compact modification to Solution 3 is to use _list lookup_ 
 
 ```python
 FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', \
-                'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
+            'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
 
 face_value = cardnum % 13
 print('The face value of card number', cardnum, 'is', FACE_VALUES[face_value])
@@ -241,9 +241,9 @@ deck = list(range(52))
 
 # Shuffle the deck of cards
 for swaps in range(104):
-    posn1 = random.randint(0, 51)
-    posn2 = random.randint(0, 51)
-    # Swap the cards at posn1 and posn2
+posn1 = random.randint(0, 51)
+posn2 = random.randint(0, 51)
+# Swap the cards at posn1 and posn2
    (deck[posn1], deck[posn2]) = (deck[posn2], deck[posn1])
 
 # Create the empty hand.
@@ -251,7 +251,7 @@ hand = []
 
 # Deal 5 cards from the deck into the hand.
 for card in range(0, 5):
-    hand.append( deck.pop() )
+hand.append( deck.pop() )
 ```
 
 (You can read about what is going on in the last line of the first `for` loop in [Tuples](15_Tuples.md).)
@@ -265,12 +265,12 @@ import random
 deck = list(range(52))
 hand = []
 for card in range(5) :
-    # Choose the card to deal.
-    posn = random.randint(0, len(deck) - 1)
-    # Append the number at that position to the hand.
-    hand.append(deck[posn])
-    # Delete that card from the deck.
-    del(deck[posn])
+# Choose the card to deal.
+posn = random.randint(0, len(deck) - 1)
+# Append the number at that position to the hand.
+hand.append(deck[posn])
+# Delete that card from the deck.
+del(deck[posn])
 ```
 
 <br>
@@ -284,8 +284,8 @@ import random
 
 # Define handy string constants.
 FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                'Queen', 'King']
+            'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+            'Queen', 'King']
 SUITS = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
 
 # Create deck of cards.
@@ -296,13 +296,13 @@ hand = []
 
 # Deal 5 cards into hand.
 for deal in range(5) :
-    posn = random.randint(0, len(deck) - 1)
-    hand.append(deck[posn])
-    del(deck[posn])
+posn = random.randint(0, len(deck) - 1)
+hand.append(deck[posn])
+del(deck[posn])
 
 # Display the cards in the hand.
 for card in hand:
-    print(FACE_VALUES[card % 13], 'of', SUITS[card // 13])
+print(FACE_VALUES[card % 13], 'of', SUITS[card // 13])
 ```
 
 Try it out! Then try making some changes to get a feel for how the code

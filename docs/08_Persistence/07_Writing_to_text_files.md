@@ -4,19 +4,19 @@ The mechanics of writing to text files are very straightforward. Suppose
 we need to store a list of coordinates to a text file, e.g.
 
 ```python
-    coords = [[12, 31], [75, 19], [28, 51]]
+coords = [[12, 31], [75, 19], [28, 51]]
 ```
 
 Writing them to a file could be done by code like this,
 
 ```python
-    # write_coords.py
-    coords = [[12, 31], [75, 19], [28, 51]]
-    fname = input('Name of file to create? ')
-    f = open(fname, 'w')
-    for coord in coords:
-        f.write(str(coord[0]) + ' ' + str(coord[1]) + '\n')
-    f.close()
+# write_coords.py
+coords = [[12, 31], [75, 19], [28, 51]]
+fname = input('Name of file to create? ')
+f = open(fname, 'w')
+for coord in coords:
+    f.write(str(coord[0]) + ' ' + str(coord[1]) + '\n')
+f.close()
 ```
 
 The pattern is similar to reading from a file:
@@ -39,7 +39,7 @@ The resulting file looks like this if you open it in a text editor, e.g.
 IDLE,
 
 ```plaintext
-    12 31
-    75 19
-    28 51
+12 31
+75 19
+28 51
 ```

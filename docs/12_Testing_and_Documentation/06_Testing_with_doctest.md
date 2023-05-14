@@ -18,52 +18,52 @@ Here's a familiar bit of code with tests in it and a main routine that
 will run and report on the tests:
 
 ```python
-    # WumpusAdjMatrixMap.py
-    #
-    # Adjacency matrix representation of a cave_system.
-    # A 1 at entry [i, j] indicates that you can get from room i to room j.
-    #
-    # Note that this cave_system is not a dodecahedron and that some tunnels
-    # are 1-way.
-    cave_system = []
-    cave_system.append([0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    cave_system.append([1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0])
-    cave_system.append([0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0])
-    cave_system.append([0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0])
-    cave_system.append([0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1])
-    cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0])
-    cave_system.append([0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0])
-    cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0])
-    cave_system.append([0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1])
-    cave_system.append([0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
-    cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0])
-    cave_system.append([1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0])
-    cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1])
-    cave_system.append([0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0])
-    cave_system.append([1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0])
-    cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1])
-    cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0])
-    cave_system.append([1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0])
-    cave_system.append([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1])
-    cave_system.append([0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0])
+# WumpusAdjMatrixMap.py
+#
+# Adjacency matrix representation of a cave_system.
+# A 1 at entry [i, j] indicates that you can get from room i to room j.
+#
+# Note that this cave_system is not a dodecahedron and that some tunnels
+# are 1-way.
+cave_system = []
+cave_system.append([0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+cave_system.append([1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0])
+cave_system.append([0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0])
+cave_system.append([0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0])
+cave_system.append([0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1])
+cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0])
+cave_system.append([0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0])
+cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0])
+cave_system.append([0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1])
+cave_system.append([0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0])
+cave_system.append([1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0])
+cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1])
+cave_system.append([0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0])
+cave_system.append([1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0])
+cave_system.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1])
+cave_system.append([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0])
+cave_system.append([1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0])
+cave_system.append([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1])
+cave_system.append([0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0])
 
-    def tunnels_from(cave_map, room_number):
-        ''' returns a list of the rooms that can be reached from room room_number.
-        >>> tunnels_from(cave_system, 0)
-        [1, 4, 7]
-        '''
-        pass
+def tunnels_from(cave_map, room_number):
+    ''' returns a list of the rooms that can be reached from room room_number.
+    >>> tunnels_from(cave_system, 0)
+    [1, 4, 7]
+    '''
+    pass
 
-    def tunnels_to(cave_map, room_number):
-        ''' returns a list of the rooms that have tunnels leading to room room_number.
-        >>> tunnels_to(cave_system, 0)
-        [1, 11, 14, 17]
-        '''
-        pass
+def tunnels_to(cave_map, room_number):
+    ''' returns a list of the rooms that have tunnels leading to room room_number.
+    >>> tunnels_to(cave_system, 0)
+    [1, 11, 14, 17]
+    '''
+    pass
 
-    if __name__=='__main__':
-        import doctest
-        doctest.testmod()
+if __name__=='__main__':
+    import doctest
+    doctest.testmod()
 ```
 
 The `testmod` method will extract the lines in the docstrings that look
@@ -75,27 +75,27 @@ not match it counts as a failure, and reports on it. For example here is
 the output from executing the module above:
 
 ```plaintext
-    >>> 
-    **********************************************************************
-    File "__main__", line 32, in __main__.tunnels_from
-    Failed example:
-        tunnels_from(cave_system, 0)
-    Expected:
-        [1, 4, 7]
-    Got nothing
-    **********************************************************************
-    File "__main__", line 39, in __main__.tunnels_to
-    Failed example:
-        tunnels_to(cave_system, 0)
-    Expected:
-        [1, 11, 14, 17]
-    Got nothing
-    **********************************************************************
-    2 items had failures:
-       1 of   1 in __main__.tunnels_from
-       1 of   1 in __main__.tunnels_to
-    ***Test Failed*** 2 failures.
-    >>> 
+>>> 
+**********************************************************************
+File "__main__", line 32, in __main__.tunnels_from
+Failed example:
+    tunnels_from(cave_system, 0)
+Expected:
+    [1, 4, 7]
+Got nothing
+**********************************************************************
+File "__main__", line 39, in __main__.tunnels_to
+Failed example:
+    tunnels_to(cave_system, 0)
+Expected:
+    [1, 11, 14, 17]
+Got nothing
+**********************************************************************
+2 items had failures:
+   1 of   1 in __main__.tunnels_from
+   1 of   1 in __main__.tunnels_to
+***Test Failed*** 2 failures.
+>>> 
 ```
 
 You can see that the output shows what it expected to get and what it

@@ -16,14 +16,14 @@ methods into functions gives us,
 ```python
 SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
 FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                'Queen', 'King')
+            'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+            'Queen', 'King')
 
 def suit(cardnum):
-    return SUITS[cardnum // 13]
+return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-    return FACE_VALUES[cardnum % 13]
+return FACE_VALUES[cardnum % 13]
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))
@@ -42,17 +42,17 @@ fairly often so let's add a function for that too,
 ```python
 SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
 FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                'Queen', 'King')
+            'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+            'Queen', 'King')
 
 def suit(cardnum):
-    return SUITS[cardnum // 13]
+return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-    return FACE_VALUES[cardnum % 13]
+return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-    return face_value(cardnum) + " of " + suit(cardnum)
+return face_value(cardnum) + " of " + suit(cardnum)
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))

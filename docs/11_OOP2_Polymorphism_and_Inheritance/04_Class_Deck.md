@@ -6,28 +6,28 @@ Python is simply to include the base class name in parentheses after the
 derived class name,
 
 ```python
-     1 class Deck(CardCollection):
-     2     # Override ancestor's constructor, i.e. replace the default.
-     3     def __init__(self):
-     4         self.cards = []
-     5         for cardnum in range(52):
-     6             self.add( Card(cardnum) )
-     7
-     8     # Alias the inherited method "size" as "cards_left",
-     9     # because we usually ask how many cards are left in a
-    10     # deck rather than asking about its size.
-    11     def cards_left(self):
-    12         return self.size()
-    13 
-    14     # Another alias. When using a deck of cards we talk about "dealing"
-    15     # cards not "removing" them from the deck.
-    16     def deal(self):
-    17         return self.remove()
-    18
-    19     # Add a new method, shuffle, that does not exist in ancestor class.
-    20     def shuffle(self):
-    21         for i in range(  2*self.size() ):
-    22             self.cards.insert(random.randrange(len(self.cards)), self.cards.pop())
+ 1 class Deck(CardCollection):
+ 2     # Override ancestor's constructor, i.e. replace the default.
+ 3     def __init__(self):
+ 4         self.cards = []
+ 5         for cardnum in range(52):
+ 6             self.add( Card(cardnum) )
+ 7
+ 8     # Alias the inherited method "size" as "cards_left",
+ 9     # because we usually ask how many cards are left in a
+10     # deck rather than asking about its size.
+11     def cards_left(self):
+12         return self.size()
+13 
+14     # Another alias. When using a deck of cards we talk about "dealing"
+15     # cards not "removing" them from the deck.
+16     def deal(self):
+17         return self.remove()
+18
+19     # Add a new method, shuffle, that does not exist in ancestor class.
+20     def shuffle(self):
+21         for i in range(  2*self.size() ):
+22             self.cards.insert(random.randrange(len(self.cards)), self.cards.pop())
 ```
 
 This example shows most of what you can do with inheritance:

@@ -66,7 +66,7 @@
     c.  `max_count()` should return the name of the room, e.g. 'Rm
         A2507', that contains the most computers.
 
-    Embed your functions in a module with an `if __name__`\... block
+    Embed your functions in a module with an `if __name__`... block
     that runs them and displays their output. It should import the
     file`net_res.py`.
 

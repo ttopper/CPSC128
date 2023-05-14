@@ -23,9 +23,9 @@ The output operation is to display the result, i.e. 51.
 Translating each of those steps into Python gives us:
 
 ```python
-    temp_in_c = int(input())
-    temp_in_f = temp_in_c * 9/5 + 32
-    print(temp_in_f)
+temp_in_c = int(input())
+temp_in_f = temp_in_c * 9/5 + 32
+print(temp_in_f)
 ```
 
 This is the computational core of our program, but we need to add
@@ -36,18 +36,18 @@ meaningful output. Adding a minimal set of instructions and pulling all
 the pieces together gives us this program.
 
 ```python
-    # c2f.py -- converts a temperature in Celsius to its equivalent in Fahrenheit.
-    # CPSC 128 Example program
-    # Kate Chatfield-Reed, Winter 2023
+# c2f.py -- converts a temperature in Celsius to its equivalent in Fahrenheit.
+# CPSC 128 Example program
+# Kate Chatfield-Reed, Winter 2023
 
-    # Input:
-    print "This program converts temperatures from Celsius to Fahrenheit."
-    print "Enter a temperature in Celsius (e.g. 10) and press Enter."
-    temp_in_c = int(input("Enter temperature in Celsius: "))
+# Input:
+print "This program converts temperatures from Celsius to Fahrenheit."
+print "Enter a temperature in Celsius (e.g. 10) and press Enter."
+temp_in_c = int(input("Enter temperature in Celsius: "))
 
-    # Processing:
-    temp_in_f = temp_in_c * 9/5 + 32
+# Processing:
+temp_in_f = temp_in_c * 9/5 + 32
 
-    # Output:
-    print(temp_in_c, "degrees Celsius =", temp_in_f, "degrees Fahrenheit.")
+# Output:
+print(temp_in_c, "degrees Celsius =", temp_in_f, "degrees Fahrenheit.")
 ```

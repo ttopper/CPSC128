@@ -7,7 +7,7 @@ We saw in `playing_cards.py` that we had to refer to `label` by its full name `p
 ...
 print('You are holding,')
 for card in hand:
-    print('The', label(card))
+print('The', label(card))
 ...
 ```
 
@@ -18,8 +18,8 @@ from playing_cards import label
 ...
 print('You are holding,')
 for card in hand:
-    print('The', label(card).)
-    ...
+print('The', label(card).)
+...
 ```
 
 If you want to `import` all the functions in `playing_cards` and refer to them just by their “first names” you can use,
@@ -29,7 +29,7 @@ from playing_cards import *
 ...
 print('You are holding,')
 for card in hand:
-    print('The', label(card))
+print('The', label(card))
 ...
 ```
 
@@ -40,7 +40,7 @@ from playing_cards import label as card_name
 ...
 print('You are holding,')
 for card in hand:
-    print('The', card_name(card))
+print('The', card_name(card))
 ...
 ```
 

@@ -1,0 +1,280 @@
+/*=========================================================
+Contents:
+
+Global Settings - Apply to entire page
+Page layout
+    Name areas to use in grid layout
+    Desktop layout
+    Mobile layout (to come)
+Block Properties - margins and padding for block elements
+Typography and Colour
+=========================================================*/
+
+/*=========================================================
+Global Settings
+=========================================================*/
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+/*=========================================================
+Page Layout (Grid)
+=========================================================*/
+
+/*-----------------------------------
+Name the areas to use in grid layout.
+-----------------------------------*/
+header {
+    grid-area: head;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
+
+/*------------
+Desktop layout
+
+Contents:
+    header
+        nav
+            next
+            prev
+            details (for Contents)
+            img (for thematic image)
+    main
+    footer
+------------*/
+@media (min-width: 1020px) {
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: minmax(150px, 300px) minmax(450px, 1fr);
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "head main"
+            "foot main";
+    }
+
+    /*---------------------
+    Layout-block Properties
+    ---------------------*/
+    header {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    header>nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* nav children */
+    #next {
+        text-align: right;
+    }
+
+    #next, #prev, nav>details {
+        padding: 0.5rem 1rem;
+    }
+
+    #next, #prev, nav>details, header {
+        border-bottom: 2px solid rgb(251, 251, 251);
+    }
+
+    #next {
+        border-top: 2px solid rgb(251, 251, 251);
+    }
+
+    #next, #prev {
+        line-height: 1.0;
+    }
+
+    nav>details {
+        line-height: 1.5;
+    }
+
+    details>ol, details>ul {
+        margin: 0.2rem 0.4rem;
+        list-style-type: decimal-leading-zero;
+    }
+
+    details details {
+        padding-left: 1rem;
+    }
+
+    /* Hack to deal with initial element in Contents list, which
+    should really be changed so it is not an orpahn li element */
+    details>li {
+        padding-left: 1rem;
+    }
+
+    /* Trying to lose the period after the lsit numbers, e.g. 04. -> 04
+    per: https://stackoverflow.com/questions/22856682/change-ol-from-01-to-01
+    and https://codepen.io/maddesigns/pen/JGQejg 
+    to lose the period.
+    BUT this loses the hanging indent...
+    details>ol {
+        counter-reset: item;
+        list-style-type: none;
+    }
+
+    details li {
+        display: block;
+    }
+
+    details li:before {
+        content: counter(item, decimal-leading-zero) " ";
+        counter-increment: item;
+    }
+    */
+
+    main {
+        padding: 1rem 2rem;
+        overflow: auto;
+        background-color: rgb(251, 251, 251);
+    }
+
+    main p, main h1, main h2, main h3, main ol, main ul, main blockquote, main dl, main dt {
+        max-width: 650px;
+    }
+
+    /* Let pre be wider than rest of text if necessary. */
+    main>pre {
+        min-width: 620px; /* So it roughly aligns with typical para width. */
+        max-width: fit-content;
+    }
+
+    main blockquote {
+        margin-left: 50px;
+        max-width: 550px;
+    }
+
+    footer {
+        padding: 0 1rem;
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+}
+
+/*=========================================================
+Block Properties
+=========================================================*/
+h1 {
+    margin-top: 0;
+}
+
+pre {
+    padding: 0.5rem 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p>img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=========================================================
+Typography and Colour
+=========================================================*/
+header, footer {
+    font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+header a, footer a {
+    color: rgb(20, 129, 184);
+    text-decoration: none;
+}
+
+footer {
+    line-height: 1.4;
+}
+
+main {
+    font-family: 'Roboto Slab', Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+main a {
+    color: rgb(20, 129, 184);
+    text-decoration-color: lightgrey;
+    text-decoration-thickness: 2px;
+}
+
+h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    margin-block-start: 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+blockquote {
+    font-style: italic;
+    /* text-align: center; */
+}
+
+/* Make kbd elements look a bit like keyboard keys
+(Takes a lot of work!) */
+kbd {
+    /* ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+code, pre {
+    font-family: monospace, sans-serif;
+}
+
+/* Give code elements in paragraphs a light blue background */
+p code {
+    font-size: 17px;
+    background-color: rgba(234, 242, 251, 1.0);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* Give pre blocks light blue background and slightly rounded corners */
+pre {
+    background-color: rgba(234, 242, 251, 0.5);
+    border-radius: 0.5rem;
+    overflow: auto;
+    line-height: 1.3; /* Roughly approximating what one sees in an IDE. */
+}
+
+/* code in pre blocks can be slightly smaller than in p blocks
+to fit more across the window */
+pre code {
+    font-size: 16px;
+}
+
+/* DEBUG For debugging, not final appearance */
+.active a {
+    color: red;
+    font-weight: bold;
+}

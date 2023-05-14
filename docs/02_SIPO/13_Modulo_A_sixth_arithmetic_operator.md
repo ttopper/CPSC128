@@ -7,12 +7,12 @@ We wrote instructions of our own to calculate the remainder above but using modu
 Using modulo we can rewrite the processing portion of our program like this:
 
 ```python
-    days = tot_seconds // (24*60*60)
-    remainder = tot_seconds % (24*60*60)
-    hours = remainder // (60*60)
-    remainder = remainder % (60*60)
-    minutes = remainder // 60
-    remainder = remainder % 60
+days = tot_seconds // (24*60*60)
+remainder = tot_seconds % (24*60*60)
+hours = remainder // (60*60)
+remainder = remainder % (60*60)
+minutes = remainder // 60
+remainder = remainder % 60
 ```
 
 ## Summary

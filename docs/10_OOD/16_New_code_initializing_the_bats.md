@@ -1,15 +1,15 @@
 # New code: Initializing the bats
 
 ```python
-    # Initialize Bats.
-    NUMBATS = 2
-    for bat in range(NUMBATS):
+# Initialize Bats.
+NUMBATS = 2
+for bat in range(NUMBATS):
+    room = random.choice(cave_system.rooms)
+    # Now check if we have already put a bat in this room,
+    while room.has_bat():
+        # and if we have pick another room.
         room = random.choice(cave_system.rooms)
-        # Now check if we have already put a bat in this room,
-        while room.has_bat():
-            # and if we have pick another room.
-            room = random.choice(cave_system.rooms)
-        room.bat = Bat(room.number)
+    room.bat = Bat(room.number)
 ```
 
 You'll notice there's some new code to initialize the bats. Its job is
@@ -31,5 +31,5 @@ Notes:
     offers a compact alternative to:
 
 ```python
-    room = cave_system.rooms[random.randint(0, len(cave_system.rooms) - 1)]
+room = cave_system.rooms[random.randint(0, len(cave_system.rooms) - 1)]
 ```

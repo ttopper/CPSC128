@@ -1,4 +1,4 @@
-# The World of the Computer: Six (+1) Key Programming Concepts
+# The World of the Computer:<br> Six (+1) Key Programming Concepts
 
 > Most programmers (and by most, I mean the overwhelming majority) use
 > imperative programming techniques that would have been familiar to
@@ -39,7 +39,7 @@ computer. They all share these components.
 -   an input channel used to load values into the processor. Your
     keyboard, mouse, microphone, network all feed into the input
     channel.
-
+    
 -   an output channel that can be used to emit values from the processor
     or memory. Your screen, speakers and network connection are fed by
     the output channel.
@@ -47,17 +47,13 @@ computer. They all share these components.
 The six operations consist of three elementary operations:
 
 -   input
-
 -   processing, and
-
 -   output
 
 and three control structures,
 
 -   sequence
-
 -   selection, and
-
 -   repetition
 
 [^*]: See [The Structured Program Theorem](https://en.wikipedia.org/wiki/Structured_program_theorem).

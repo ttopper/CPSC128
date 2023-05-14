@@ -1,4 +1,4 @@
-# Process for Algorithm Development in Python
+# Algorithm Development in Python
 
 ## Step 1: Read the problem description
 
@@ -32,7 +32,7 @@ explaining something in a lot of detail to another person.
 Write out the algorithm in pseudocode. That means writing it out in a
 mix of language and code. Here you should think about how you can
 translate the steps into the 6 basic programming operations (input,
-procession, output, sequence, selection, repetition, and the bonus 7^th^
+procession, output, sequence, selection, repetition, and the bonus 7<sup>th</sup>
 one modularity).
 
 ## Step 5: Start writing the algorithm in Python

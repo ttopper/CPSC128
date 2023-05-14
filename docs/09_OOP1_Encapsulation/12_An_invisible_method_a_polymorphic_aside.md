@@ -4,13 +4,13 @@ Our code in `playing_cards_1.py` is even runnable. Although it doesn't
 do much, the output is instructive:
 
 ```plaintext
-    >>> 
-    d after shuffling = <__main__.Deck object at 0x000002C52FF39010>
-    d has None cards
-    Your hand of None cards contains: <__main__.Hand object at 0x000002C52CF18AD0>
-    Your hand of None cards contains: <__main__.Hand object at 0x000002C52FF67950>
-    There are None cards left in the deck.
-    >>> 
+>>> 
+d after shuffling = <__main__.Deck object at 0x000002C52FF39010>
+d has None cards
+Your hand of None cards contains: <__main__.Hand object at 0x000002C52CF18AD0>
+Your hand of None cards contains: <__main__.Hand object at 0x000002C52FF67950>
+There are None cards left in the deck.
+>>> 
 ```
 
 One thing to note is that functions without an

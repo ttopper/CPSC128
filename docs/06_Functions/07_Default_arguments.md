@@ -13,7 +13,7 @@ the default number of sides set to 6.
 import random
 
 def dice_roll(sides = 6):
-    return random.randint(1,sides)
+return random.randint(1,sides)
 
 print('Your results are:')
 print('6-sided die:', dice_roll())

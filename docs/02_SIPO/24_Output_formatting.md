@@ -17,11 +17,11 @@ python](24_print_format.png)
 [Below is the output of each print
 statement.]{style="font-size: 0.9375rem;"}\
 
-1.  ![.](24_output_formatting_1.gif)\
+1.  ![.](24_output_formatting_1.gif)
 
 2.  ![.](24_output_formatting_0.gif)
 
-3.  ![.](24_output_formatting_0.gif)\
+3.  ![.](24_output_formatting_0.gif)
 
 The formatting codes used in the second print statement are derived from
 those originally used by the language C and now also used by the
@@ -29,7 +29,7 @@ languages C++, AWK, Perl, and PHP among others. Each format placeholder
 has the form,
 
 ```plaintext
-    %[optional arguments]letter
+%[optional arguments]letter
 ```
 
 The % sign indicates the beginning of a placeholder.

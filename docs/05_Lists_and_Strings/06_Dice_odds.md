@@ -25,29 +25,29 @@ twelves = 0
 
 # Roll dice many times and record frequency of outcomes.
 for roll in range(ROLLS):
-    outcome = random.randint(1, 6) + random.randint(1, 6)
-    if outcome == 2:
-        twos = twos + 1
-    elif outcome == 3:
-        threes = threes + 1
-    elif outcome == 4:
-        fours = fours + 1
-    elif outcome == 5:
-        fives = fives + 1
-    elif outcome == 6:
-        sixes = sixes + 1
-    elif outcome == 7:
-        sevens = sevens + 1
-    elif outcome == 8:
-        eights = eights + 1
-    elif outcome == 9:
-        nines = nines + 1
-    elif outcome == 10:
-        tens = tens + 1
-    elif outcome == 11:
-        elevens = elevens + 1
-    else:
-        twelves = twelves + 1
+outcome = random.randint(1, 6) + random.randint(1, 6)
+if outcome == 2:
+    twos = twos + 1
+elif outcome == 3:
+    threes = threes + 1
+elif outcome == 4:
+    fours = fours + 1
+elif outcome == 5:
+    fives = fives + 1
+elif outcome == 6:
+    sixes = sixes + 1
+elif outcome == 7:
+    sevens = sevens + 1
+elif outcome == 8:
+    eights = eights + 1
+elif outcome == 9:
+    nines = nines + 1
+elif outcome == 10:
+    tens = tens + 1
+elif outcome == 11:
+    elevens = elevens + 1
+else:
+    twelves = twelves + 1
 
 # Display results.
 print("  =====================")
@@ -74,17 +74,17 @@ which produces output like this,
   =====================
   Outcome | Occurrences
   --------+------------
-      2   |      29
-      3   |      66
-      4   |      71
-      5   |     100
-      6   |     137
-      7   |     173
-      8   |     132
-      9   |     122
-     10   |      78
-     11   |      59
-     12   |      33
+  2   |      29
+  3   |      66
+  4   |      71
+  5   |     100
+  6   |     137
+  7   |     173
+  8   |     132
+  9   |     122
+ 10   |      78
+ 11   |      59
+ 12   |      33
   ---------------------
 >>>
 ```
@@ -105,17 +105,17 @@ counters = [0] * 11
 
 # Roll dice many times and record frequency of outcomes.
 for roll in range(ROLLS):
-    outcome = random.randint(1, 6) + random.randint(1, 6)
-    # Now increment the appropriate counter.
-    # Notice that no testing is needed because we can calculate the index of the matching entry.
-    counters[outcome-2] = counters[outcome-2] + 1
+outcome = random.randint(1, 6) + random.randint(1, 6)
+# Now increment the appropriate counter.
+# Notice that no testing is needed because we can calculate the index of the matching entry.
+counters[outcome-2] = counters[outcome-2] + 1
 
 # Display results.
 print("  =====================")
 print("  Outcome | Occurrences")
 print("  --------+------------")
 for posn in range(11):
-    print("{:7d}   |{:8d}".format(posn+2, counters[posn]))
+print("{:7d}   |{:8d}".format(posn+2, counters[posn]))
 print("  ---------------------")
 ```
 

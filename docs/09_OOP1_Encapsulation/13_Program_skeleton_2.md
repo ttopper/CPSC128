@@ -7,13 +7,13 @@ Adding in the `__str__` methods gives us:
 which when run produces,
 
 ```plaintext
-    >>> 
-    d after shuffling = 
-    d has None cards
-    Your hand of None cards contains: 
-    Your hand of None cards contains: 
-    There are None cards left in the deck.
-    >>> 
+>>> 
+d after shuffling = 
+d has None cards
+Your hand of None cards contains: 
+Your hand of None cards contains: 
+There are None cards left in the deck.
+>>> 
 ```
 
 Note that we can't use `pass` in the `__str__` methods because they are

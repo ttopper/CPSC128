@@ -23,10 +23,10 @@ That's really the only new thing this week, but dictionaries can be used in lots
     -   [Counting
         letters](02_Dictionary_derivation.md#counting-letters)
     -   [The limits of
-        ingenuity\...](02_Dictionary_derivation.md#the-limits-of-ingenuity...)
-    -   [\... call for greater ingenuity
-        \...](02_Dictionary_derivation.md#call-for-greater-ingenuity-...)
-    -   [\... which calls for even greater
+        ingenuity...](02_Dictionary_derivation.md#the-limits-of-ingenuity...)
+    -   [... call for greater ingenuity
+        ...](02_Dictionary_derivation.md#call-for-greater-ingenuity-...)
+    -   [... which calls for even greater
         ingenuity](02_Dictionary_derivation.md#which-calls-for-even-greater-ingenuity)
     -   [Summary](02_Dictionary_derivation.md#summary)
 1. [What can you do with a

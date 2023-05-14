@@ -11,30 +11,30 @@ Python version 3 automatically converts ints to floats if needed. However, in so
 Recall our program to convert from Farenheit to Celsius:
 
 ```python
-    # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
-    # CPSC 128 Example program
-    # Kate Chatfield-Reed, Winter 2023
-    #
-    print("This program converts temperatures from Fahrenheit to Celsius.")
-    print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
-    temp_in_f = int(input("Temperature in Fahrenheit: "))
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees
-    Celsius."
+# f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
+# CPSC 128 Example program
+# Kate Chatfield-Reed, Winter 2023
+#
+print("This program converts temperatures from Fahrenheit to Celsius.")
+print("Enter a temperature in Fahrenheit (e.g. 10) and press Enter.")
+temp_in_f = int(input("Temperature in Fahrenheit: "))
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees
+Celsius."
 ```
 
 In this example I assumed that the input would be an integer (or round number). If you enter the input 2.2, it will give an error because I told the computer to expect only an integer.
 
 ```python
-    # f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
-    # CPSC 128 Example program
-    # Kate Chatfield-Reed, Winter 2023
-    #
-    print("This program converts temperatures from Fahrenheit to Celsius.")
-    print("Enter a temperature in Fahrenheit (e.g. 10.0) and press Enter.")
-    temp_in_f = float(input("Temperature in Fahrenheit: "))
-    temp_in_c = (temp_in_f - 32) * 5 / 9
-    print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
+# f2c.py -- converts a temperature in Fahrenheit to its equivalent in Celsius.
+# CPSC 128 Example program
+# Kate Chatfield-Reed, Winter 2023
+#
+print("This program converts temperatures from Fahrenheit to Celsius.")
+print("Enter a temperature in Fahrenheit (e.g. 10.0) and press Enter.")
+temp_in_f = float(input("Temperature in Fahrenheit: "))
+temp_in_c = (temp_in_f - 32) * 5 / 9
+print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
 ```
 
 The necessary changes are shown in red. Try running this version of the program and see how the output changes. Is it what you wanted? If not stay tuned for an update coming soon to a module near you.
@@ -53,8 +53,8 @@ In many problems either `int`s or `float`s can be used depending on the
 type of output required. When it is not clear which choice is best the
 following insight and guidelines may be helpful. The insight is that
 most numbers arise as the result of either measurements (the length,
-duration, weight \... of something), or counts (the number of students,
-cars, bacteria, problems, \...). The resulting guidelines are to:
+duration, weight ... of something), or counts (the number of students,
+cars, bacteria, problems, ...). The resulting guidelines are to:
 
 -   Prefer floating point values for measurements.
 -   Use integers for counts.

@@ -16,7 +16,7 @@ operate on objects. Object operations came with their own jargon of
 objects, methods and messages. For example when we write
 
 ```python
-    a_list.append('Tom')
+a_list.append('Tom')
 ```
 
 we are invoking the `append` _method_ of the list _object_ `a_list`. We

@@ -21,27 +21,27 @@
     The output of running the module might look like this:
 
 ```plaintext
-        Name of file to test with: pooh.txt
-        Number of lines to display: 3
+    Name of file to test with: pooh.txt
+    Number of lines to display: 3
 
-        head says the first 3 lines are:
-        The more it snows
-          (Tiddely pom),
-        The more it goes
+    head says the first 3 lines are:
+    The more it snows
+      (Tiddely pom),
+    The more it goes
 
-        tail says the last 3 lines are:
-         How cold my toes
-          (Tiddely pom),
-         Are growing.
+    tail says the last 3 lines are:
+     How cold my toes
+      (Tiddely pom),
+     Are growing.
 
-        longest says the longest 3 lines are:
-        The more it snows
-        The more it goes
-        And nobody knows
+    longest says the longest 3 lines are:
+    The more it snows
+    The more it goes
+    And nobody knows
 ```
 
 Since the file could be very long you will **not** want to read the
-whole thing into memory as a list of lines\...
+whole thing into memory as a list of lines...
 
 2.  ### Testing `biggest()`
 

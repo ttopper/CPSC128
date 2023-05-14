@@ -20,7 +20,7 @@ Step 1 above, getting the amount to be converted, is equivalent to the
 input operation,
 
 ```python
-    temp_in_f = int(input())
+temp_in_f = int(input())
 ```
 The next two operations (steps 2 and 3) can be combined into one
 processing (or assignment) statement as follows,

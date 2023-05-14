@@ -7,16 +7,16 @@ A second small concern is that it may not be clear to a someone reading our prog
 Python has a convention we will adhere to to help deal with these issues. We will calculate our reused values once near the top of the program and give them names in all caps to indicate that these values are intended to remain unchanged.
 
 ```python
-    SECS_PER_DAY = 24 * 60 * 60
-    SECS_PER_HOUR = 60 * 60
-    SECS_PER_MINUTE = 60
+SECS_PER_DAY = 24 * 60 * 60
+SECS_PER_HOUR = 60 * 60
+SECS_PER_MINUTE = 60
 
-    days = tot_seconds // SECS_PER_DAY
-    remainder = tot_seconds % SECS_PER_DAY
-    hours = remainder // SECS_PER_HOUR
-    remainder = remainder % SECS_PER_HOUR
-    minutes = remainder // SECS_PER_MIN
-    remainder = remainder % SECS_PER_MIN
+days = tot_seconds // SECS_PER_DAY
+remainder = tot_seconds % SECS_PER_DAY
+hours = remainder // SECS_PER_HOUR
+remainder = remainder % SECS_PER_HOUR
+minutes = remainder // SECS_PER_MIN
+remainder = remainder % SECS_PER_MIN
 ```
 Notes:
 
@@ -27,45 +27,45 @@ Notes:
 Putting all these changes together and adding the declarations, overhead, and some instructions gives us the following complete program.
 
 ```python
-    # s2dhms.py -- converts a time in seconds to
-    # its equivalent in days, hours, minutes and seconds.
-    #
-    # CPSC 128 Demonstration Program
-    #
-    # Kate Chatfield-Reed, Winter 2023
+# s2dhms.py -- converts a time in seconds to
+# its equivalent in days, hours, minutes and seconds.
+#
+# CPSC 128 Demonstration Program
+#
+# Kate Chatfield-Reed, Winter 2023
 
-    SECS_PER_DAY = 24 * 60 * 60
-    SECS_PER_HOUR = 60 * 60
-    SECS_PER_MINUTE = 60
+SECS_PER_DAY = 24 * 60 * 60
+SECS_PER_HOUR = 60 * 60
+SECS_PER_MINUTE = 60
 
-    # Input.
-    print("=====================================================")
-    print("     Seconds to Days, Hours, Minutes and Seconds")
-    print("-----------------------------------------------------")
-    print()
-    print("This program converts a number of seconds to its")
-    print("equivalent in days, hours, minutes and seconds.";)
-    tot_seconds = int(input("Enter the number of seconds now (e.g. 116529): "))
-    print()
+# Input.
+print("=====================================================")
+print("     Seconds to Days, Hours, Minutes and Seconds")
+print("-----------------------------------------------------")
+print()
+print("This program converts a number of seconds to its")
+print("equivalent in days, hours, minutes and seconds.";)
+tot_seconds = int(input("Enter the number of seconds now (e.g. 116529): "))
+print()
 
-    # Processing.
-    days = tot_seconds // SECS_PER_DAY
-    remainder = tot_seconds % SECS_PER_DAY
-    hours = remainder // SECS_PER_HOUR
-    remainder = remainder % SECS_PER_HOUR
-    minutes = remainder // SECS_PER_MINUTE
-    remainder = remainder % SECS_PER_MINUTE
+# Processing.
+days = tot_seconds // SECS_PER_DAY
+remainder = tot_seconds % SECS_PER_DAY
+hours = remainder // SECS_PER_HOUR
+remainder = remainder % SECS_PER_HOUR
+minutes = remainder // SECS_PER_MINUTE
+remainder = remainder % SECS_PER_MINUTE
 
-    # Output.
-    print(tot_seconds, "seconds =", days, "days,", hours, "hours,",)
-    print(minutes, "minutes and", remainder, "seconds")
+# Output.
+print(tot_seconds, "seconds =", days, "days,", hours, "hours,",)
+print(minutes, "minutes and", remainder, "seconds")
 ```
 
 Notes:
 
 - Note the effect of the trailing comma in the second last line. Try removing it and see how the output changes. How would you describe what this comma does?
 
-- Note the blank `print()` statements, i.e. `print()` statements with no items in the brackets, used to output blank lines.
+- Note the empty `print()` statements, i.e. `print()` statements with no items in the brackets. These are used to output blank lines.
 
 ## Summary
 

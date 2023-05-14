@@ -14,19 +14,19 @@ behaviours in different contexts. A concrete example we have seen of
 this is the behaviour of the `+` operator: it _adds_ numbers,
 
 ```python
-    x = y + 5
+x = y + 5
 ```
 
 *appends* strings,
 
 ```python
-    salutation = 'Mr.' + last_name
+salutation = 'Mr.' + last_name
 ```
 
 and_extends_lists,
 
 ```python
-    t = [3, 7] + [6, 2]
+t = [3, 7] + [6, 2]
 ```
 
 In each case the semantics of the `+` operator is different because the

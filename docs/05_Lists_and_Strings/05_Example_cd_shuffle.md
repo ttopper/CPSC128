@@ -11,9 +11,9 @@ A good starting point: Imagine we have to do this by hand. Our goal is to write 
 ```plaintext
 Initialize playlist (like getting a blank sheet of paper)
 Until you have six numbers in the playlist
-    Roll the die
-    If the value of the die is not in the playlist
-        Add it to the playlist
+Roll the die
+If the value of the die is not in the playlist
+    Add it to the playlist
 ```
 
 This translates into the following Python,
@@ -21,9 +21,9 @@ This translates into the following Python,
 ```python
 playlist = []
 while len(playlist) < 6:
-    tracknum = random.randint(1,6)
-    if tracknum not in playlist:
-        playlist.append(tracknum)
+tracknum = random.randint(1,6)
+if tracknum not in playlist:
+    playlist.append(tracknum)
 print(playlist)
 ```
 
@@ -45,9 +45,9 @@ Python code:
 ```python
 playlist = []
 while len(playlist) < 6:
-    tracknum = random.randint(1,6)
-    if tracknum not in playlist:
-        playlist.append(tracknum)
+tracknum = random.randint(1,6)
+if tracknum not in playlist:
+    playlist.append(tracknum)
 print(playlist)
 ``` 
 
@@ -64,8 +64,8 @@ An alternative approach takes its inspiration from the button name, i.e. "shuffl
 ```plaintext
 Generate an ordered list of the track numbers
 Shuffle it to generate the playlist by
-    selecting a random track from the list,
-    and moving it to the end of the list.
+selecting a random track from the list,
+and moving it to the end of the list.
 ```
 
 Translating into Python gives us,
@@ -85,8 +85,8 @@ is,
 Generate an ordered list of the track numbers.
 Initialize the playlist.
 Until the ordered list is empty,
-    Select a random track from the ordered list,
-    and move it to the playlist.
+Select a random track from the ordered list,
+and move it to the playlist.
 ```
 This avoids the inefficiency of the first solution when it generates
 numbers that are already in the playlist[^*]. This one will never do
@@ -119,15 +119,15 @@ import random
 print('tracks | dupes')
 print('-------+------')
 for tracks in [1,2,5,10,20,50,100]:
-    loops = 0
-    playlist = []
-    while len(playlist) < tracks:
-        tracknum = random.randint(1,tracks)
-        loops = loops + 1
-        if tracknum not in playlist:
-            playlist.append(tracknum)
-    dupes = loops - tracks
-    print("{:4d}   |{:5d}".format(tracks, dupes))
+loops = 0
+playlist = []
+while len(playlist) < tracks:
+    tracknum = random.randint(1,tracks)
+    loops = loops + 1
+    if tracknum not in playlist:
+        playlist.append(tracknum)
+dupes = loops - tracks
+print("{:4d}   |{:5d}".format(tracks, dupes))
 ```
 (For reliable output it should really run the program multiple times for
 each value of tracks, but this program is meant to be illustrative

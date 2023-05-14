@@ -19,9 +19,9 @@ Looking at our pseudocode it looks like I was right about the container
 type, notice the square brackets in lines 6 and 9 which indicate a list:
 
 ```python
-     6         print('Choose from: ', cave_system.rooms[player.location].tunnels)
-     ...
-     9         new_room = cave_system.rooms[player.location] # Note simplifying alias.
+ 6         print('Choose from: ', cave_system.rooms[player.location].tunnels)
+ ...
+ 9         new_room = cave_system.rooms[player.location] # Note simplifying alias.
 ```
 
 Those show us that `Cave_System`s have a `rooms` attribute that is a
@@ -44,12 +44,12 @@ where these questions are actually asked you can see that they are asked
 of `Room` objects not of the cave system as a whole:
 
 ```python
-    10         if new_room.has_bat():
-                   ...
-    12         elif new_room.has_pit():
-                   ...
-    15         elif new_room.has_wumpus():
-                   ...
+10         if new_room.has_bat():
+               ...
+12         elif new_room.has_pit():
+               ...
+15         elif new_room.has_wumpus():
+               ...
 ```
 
 This means that these methods properly belong to `Room` objects
@@ -61,7 +61,7 @@ slightly non-obvious one. Try spotting it...
 Did you spot it in this line?
 
 ```python
-     2     print(cave_system)
+ 2     print(cave_system)
 ```
 
 There's no explicit method call there, i.e. no parentheses, but

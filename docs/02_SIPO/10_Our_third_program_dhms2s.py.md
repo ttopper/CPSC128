@@ -25,26 +25,26 @@ interactive elements so you can better focus on what matters) of a
 Python program to do this calculation might look like this,
 
 ```python
-    print("Enter your values now,")
-    days = int(input("Enter days: "))
-    hours = int(input("Enter hours: "))
-    minutes = int(input("Enter minutes: "))
-    seconds = int(input("Enter seconds: "))
-    tot_seconds = days*24*60*60 + hours*60*60 + minutes*60 + seconds
-    print("Total seconds is", tot_seconds)
+print("Enter your values now,")
+days = int(input("Enter days: "))
+hours = int(input("Enter hours: "))
+minutes = int(input("Enter minutes: "))
+seconds = int(input("Enter seconds: "))
+tot_seconds = days*24*60*60 + hours*60*60 + minutes*60 + seconds
+print("Total seconds is", tot_seconds)
 ```
 It seems to work but there is one improvement that can be made. The
 small improvement is that we can rewrite the processing statement so it
 does fewer calculations. As it stands the statement,
 
 ```python
-    tot_seconds = days*24*60*60 + hours*60*60 + minutes*60 + seconds;
+tot_seconds = days*24*60*60 + hours*60*60 + minutes*60 + seconds;
 ```
 does 3 additions and 6 multiplications. If we factor the expression and
 rewrite it as,
 
 ```python
-    tot_seconds = ((days*24 + hours)*60 + minutes)*60 + seconds;
+tot_seconds = ((days*24 + hours)*60 + minutes)*60 + seconds;
 ```
 we reduce the count of multiplications from 6 to 3: a significant 50%
 reduction.

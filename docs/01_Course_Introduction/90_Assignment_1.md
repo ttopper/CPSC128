@@ -50,9 +50,9 @@ output!) after you have used the Python shell to:
 
 ```python
 >>> if 10**20 > 20**10:
-    print('10**20 wins!')
+print('10**20 wins!')
 else:
-    print('20**10 wins!')
+print('20**10 wins!')
 ```
 
 -   Run the following code:
@@ -61,15 +61,15 @@ else:
 >>> n = 1000000
 >>> size = 0
 >>> while n > 1:
-    n = n // 2
-    size = size + 1
+n = n // 2
+size = size + 1
 >>> print('1000000 is approximately 2**', size)
 ```
 -   Run the following code:
 
 ```python
 >>> for c in 'Kate':
-    print(c)
+print(c)
 ```
 ## Part IV: Writing Algorithms
 

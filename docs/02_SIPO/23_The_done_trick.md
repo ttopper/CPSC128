@@ -7,7 +7,7 @@ prevent this rapid closure is to add a statement like this one at the
 end of your program,
 
 ```python
-    done = input("Press Enter to exit.")
+done = input("Press Enter to exit.")
 ```
 
 This works because it instructs the computer to await input from the

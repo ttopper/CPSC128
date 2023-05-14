@@ -6,25 +6,25 @@ reveal any missing objects, or missing attributes or methods of objects.
 First we'll say what we want to do as plainly as we can in English.
 
 ```plaintext
-    While the game isn't over
-        Display the game state
-        Display the menu of possible actions
-        Get the user's choice of action
-        If the action is move
-            Display the choices (connected rooms)
-            Get the user's choice
-            Move the player
-            If the room has a bat
-                Have the bat snatch the player
-            Otherwise if the room has a pit
-                Have the pit swallow the player
-            Otherwise if the room has a Wumpus
-                Wake the Wumpus up
-        Otherwise if the action is shoot
-            Get the path for the arrow to follow from the user
-            Tell the arrow to fly that path
-        Otherwise if the action is quit
-            Quit the game
+While the game isn't over
+    Display the game state
+    Display the menu of possible actions
+    Get the user's choice of action
+    If the action is move
+        Display the choices (connected rooms)
+        Get the user's choice
+        Move the player
+        If the room has a bat
+            Have the bat snatch the player
+        Otherwise if the room has a pit
+            Have the pit swallow the player
+        Otherwise if the room has a Wumpus
+            Wake the Wumpus up
+    Otherwise if the action is shoot
+        Get the path for the arrow to follow from the user
+        Tell the arrow to fly that path
+    Otherwise if the action is quit
+        Quit the game
 ```
 
 There's one subtlety here that may escape your notice at first glance
@@ -44,26 +44,26 @@ commands are obvious (e.g. the main while loop control is something
 we've seen before):
 
 ```python
-     1 while not game_over:
-     2     print(cave_system)
-     3     print(player.location)
-     4     action = input('Shoot, move or quit (s/m/q)? ')
-     5     if action == 'm':
-     6         print('Choose from: ', cave_system.rooms[player.location].tunnels)
-     7         room_choice = int(input('Your choice? '))
-     8         player.move(room_choice)
-     9         new_room = cave_system.rooms[player.location] # Note simplifying alias.
-    10         if new_room.has_bat():
-    11             new_room.bat.snatch()
-    12         elif new_room.has_pit():
-    13             new_room.pit.swallow()
-    14             game_over = True
-    15         elif new_room.has_wumpus():
-    16             game_over = room.wumpus.wake_up()
-    17     elif action == 's':
-    18         player.shoot()
-    19     elif action == 'q':
-    20         game_over = True
+ 1 while not game_over:
+ 2     print(cave_system)
+ 3     print(player.location)
+ 4     action = input('Shoot, move or quit (s/m/q)? ')
+ 5     if action == 'm':
+ 6         print('Choose from: ', cave_system.rooms[player.location].tunnels)
+ 7         room_choice = int(input('Your choice? '))
+ 8         player.move(room_choice)
+ 9         new_room = cave_system.rooms[player.location] # Note simplifying alias.
+10         if new_room.has_bat():
+11             new_room.bat.snatch()
+12         elif new_room.has_pit():
+13             new_room.pit.swallow()
+14             game_over = True
+15         elif new_room.has_wumpus():
+16             game_over = room.wumpus.wake_up()
+17     elif action == 's':
+18         player.shoot()
+19     elif action == 'q':
+20         game_over = True
 ```
 
 Take some time to study this code. There are numerous things to note:

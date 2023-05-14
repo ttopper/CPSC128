@@ -22,7 +22,7 @@ The pseudocode to do so might look like this,
 
 ```plaintext
 for each value in the list
-    draw a bar of value asterisks
+draw a bar of value asterisks
 ```
 
 which could be translated into the following Python,
@@ -30,7 +30,7 @@ which could be translated into the following Python,
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-    print(datum * '*')
+print(datum * '*')
 ```
 
 Note:
@@ -45,7 +45,7 @@ The graph doesn't look like much, even for a text graphics chart. Let's dress it
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-    print(datum, datum * '*')
+print(datum, datum * '*')
 ```
 
 To produce,
@@ -71,7 +71,7 @@ This is a little better, but the bars don't all start in the same place. We need
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-    print("{:2d}".format(datum), datum * '*')
+print("{:2d}".format(datum), datum * '*')
 ```
 
 and get this,
@@ -97,7 +97,7 @@ data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 OFW = len(str(max(data))) # Output Field Width.
 FORMAT = "{:" + str(OFW) + "d}" # Format string.
 for datum in data:
-    print(FORMAT.format(datum), datum * '*')
+print(FORMAT.format(datum), datum * '*')
 ```
 
 produces this graph,
@@ -139,14 +139,14 @@ Here's the Python code to do it,.
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s',
-          '8s','9s', '10s', '11s', '12s']
+      '8s','9s', '10s', '11s', '12s']
 OFW = len(str(max(data))) # Output Field Width.
 DFORMAT = "({:" + str(OFW) + "d})" # Data format string.
 label_lens = map(len, labels) # List of label lengths.
 LFW = max(label_lens) # Label Field Width.
 LFORMAT = "{:" + str(LFW) + "s}" # Label format string.
 for i in range(len(data)):
-    print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
 ```
 
 Notes:
@@ -161,7 +161,7 @@ It may surprise you to learn that working programmers spend more time reading co
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
-          '9s', '10s', '11s', '12s']
+      '9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
 print('OFW = ', OFW)
@@ -179,7 +179,7 @@ LFORMAT = "{:" + str(LFW) + "s}" # Label format string.
 print('LFORMAT = ', LFORMAT)
 
 for i in range(len(data)):
-    print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
 ```
 
 This will produce the output,
@@ -213,7 +213,7 @@ There is one last refinement worth working on. We were fortunate that all the va
 SCREEN_WIDTH = 60
 data = [300, 700, 800, 1000, 1400, 1400, 1100, 1100, 900, 600, 200]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
-          '9s', '10s', '11s', '12s']
+      '9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
 DFORMAT = "({:" + str(OFW) + "d})" # Data format string.
@@ -226,12 +226,12 @@ MAX_BAR = SCREEN_WIDTH - (OFW+2) - LFW - 2
 
 max_datum = max(data)
 if max_datum > MAX_BAR:
-    scaled_data = []
-    for datum in data:
-        scaled_data.append(datum * MAX_BAR // max_datum)
+scaled_data = []
+for datum in data:
+    scaled_data.append(datum * MAX_BAR // max_datum)
 
 for i in range(len(data)):
-    print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), scaled_data[i] * '*')
+print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), scaled_data[i] * '*')
 ```
 
 Notes:

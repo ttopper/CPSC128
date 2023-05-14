@@ -3,8 +3,8 @@
 The code for the Hand class may surprise you:
 
 ```python
-    class Hand(CardCollection):
-        pass    
+class Hand(CardCollection):
+    pass    
 ```
 
 It is so short because `Hand` objects do not have any extra methods

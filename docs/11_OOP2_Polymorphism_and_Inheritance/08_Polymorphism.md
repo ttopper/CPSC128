@@ -8,9 +8,9 @@ below each determined by the objects surrounding it, i.e. by its
 context.
 
 ```python
-    x = y + 5
-    salutation = 'Mr.' + last_name
-    t = [3, 7] + [6, 2]
+x = y + 5
+salutation = 'Mr.' + last_name
+t = [3, 7] + [6, 2]
 ```
 
 From the developer's perspective the question is how we can make our

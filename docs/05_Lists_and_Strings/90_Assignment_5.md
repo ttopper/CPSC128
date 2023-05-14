@@ -91,7 +91,7 @@
 
     -   The real `passwd` program, after validating the proposed new
         password, encrypts it and writes it to a file, but we're
-        omitting that final step \... for now!
+        omitting that final step ... for now!
     -   In actual use the program would make a “system call” to get
         the current user's login name. Since we have not seen how to do
         this yet, your program will have to read in the login name.

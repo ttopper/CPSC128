@@ -6,19 +6,19 @@ We could do so by basing it *on our approach* in `is_even`,
 
 ```python
 def is_even(n):
-    if n%2 == 0:
-        return True
-    else:
-        return False
+if n%2 == 0:
+    return True
+else:
+    return False
 ```
 so `is_odd` could be written as,
 
 ```python
 def is_odd(n):
-    if n%2 != 0:
-        return True
-    else:
-        return False
+if n%2 != 0:
+    return True
+else:
+    return False
 ```
 An alternative would be to base it _on `is_even` itself_ (rather than
 just reusing the same approach). Taking this tack we would
@@ -26,7 +26,7 @@ write `is_odd` as,
 
 ```python
 def is_odd(n):
-    return not is_even(n)
+return not is_even(n)
 ```
 which just calls `is_even` and negates its return value. Most
 programmers would prefer the second version even though in

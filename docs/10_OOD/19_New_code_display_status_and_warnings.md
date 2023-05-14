@@ -6,19 +6,19 @@ do, and we need to issue the appropriate warnings when we get close to a
 hazard. This is done by this code just inside the main event loop:
 
 ```python
-    # Display status:
-    print(cave_system)
-    print('You are in room', player.location)
-    print('You have', player.arrows, 'arrows left.')
-    
-    # Display warnings:
-    for room_number in cave_system.rooms[player.location].tunnels:
-        if cave_system.rooms[room_number].has_pit():
-            print('I feel a draft!')
-        if cave_system.rooms[room_number].has_wumpus():
-            print('I smell a wumpus!')
-        if cave_system.rooms[room_number].has_bat():
-            print('Bats nearby!')
+# Display status:
+print(cave_system)
+print('You are in room', player.location)
+print('You have', player.arrows, 'arrows left.')
+
+# Display warnings:
+for room_number in cave_system.rooms[player.location].tunnels:
+    if cave_system.rooms[room_number].has_pit():
+        print('I feel a draft!')
+    if cave_system.rooms[room_number].has_wumpus():
+        print('I smell a wumpus!')
+    if cave_system.rooms[room_number].has_bat():
+        print('Bats nearby!')
 ```
 
 It displays the whole cave system and reminds the player where they are

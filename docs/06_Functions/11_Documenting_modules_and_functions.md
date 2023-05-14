@@ -10,13 +10,13 @@ So far our documentation has consisted of a block of header comments identifying
 this is an artificial test module.'''
 
 def test_fn_1():
-    '''This is the first test function.
-    It doesn't do anything.'''
-    return
+'''This is the first test function.
+It doesn't do anything.'''
+return
 
 def test_fn_2():
-    '''This is the second test function which also does nothing.'''
-    return
+'''This is the second test function which also does nothing.'''
+return
 ```
 
 In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the standard library[^*] modules.
@@ -62,10 +62,10 @@ this is an artificial test module.
 ```plaintext
 >>> print(module_docn.test_fn_1.__doc__)
 This is the first test function.
-    It doesn't do anything.
+It doesn't do anything.
 >>> print(module_docn.test_fn_2.__doc__)
 This is the second test function.
-    It also doesn't do anything.
+It also doesn't do anything.
 >>>
 ```
 
@@ -76,22 +76,22 @@ The docstrings are so useful but this is such a cumbersome way to access them th
 Help on module module_docn:
 
 NAME
-    module_docn
+module_docn
 
 DESCRIPTION
-    This is the module documentation pointing out that
-    this is an artificial test module.
+This is the module documentation pointing out that
+this is an artificial test module.
 
 FUNCTIONS
-    test_fn_1()
-        This is the first test function.
-        It doesn't do anything.
+test_fn_1()
+    This is the first test function.
+    It doesn't do anything.
 
-    test_fn_2()
-        This is the second test function which also does nothing.
+test_fn_2()
+    This is the second test function which also does nothing.
 
 FILE
-    \\home\profiles\kchatfieldreed\documents\cpsc128_intro_oo\programs\module_docn.py
+\\home\profiles\kchatfieldreed\documents\cpsc128_intro_oo\programs\module_docn.py
 
 >>>
 ```
@@ -102,8 +102,8 @@ All the information displayed is automatically extracted from the docstrings in 
 >>> help(module_docn.test_fn_1)
 Help on function test_fn_1 in module module_docn:
 test_fn_1()
-    This is the first test function.
-    It doesn't do anything.
+This is the first test function.
+It doesn't do anything.
 >>>
 ```
 
@@ -113,9 +113,9 @@ or more usefully on real functions,
 >>> help(math.sqrt)
 Help on built-in function sqrt in module math:
 sqrt(...)
-    sqrt(x)
+sqrt(x)
 
-    Return the square root of x.
+Return the square root of x.
 >>>
 ```
 

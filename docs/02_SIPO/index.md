@@ -39,7 +39,7 @@ sculptures to describe, just programs to write from here almost to the
 end of the course. Four programs most weeks.
 
 1. [Recall: Programming
-    is\...](01_Recall_Programming_is.md)
+    is...](01_Recall_Programming_is.md)
 1. [The Problem](02_The_problem.md)
 1. [Do The Problem By
     Hand](03_Do_the_problem_by_hand.md)

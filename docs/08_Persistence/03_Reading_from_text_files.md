@@ -33,11 +33,11 @@ Here's the Python code for each of these options.
 ## One line at a time:
 
 ```python
-        # file_read_1.py
-        f = open('text_file.txt', 'r') # Open the file.
-        for line in f:                 # Iterate through the file a line at a time.
-            print(line, end="")         # Process the current line.
-        f.close()                      # Close the file.
+    # file_read_1.py
+    f = open('text_file.txt', 'r') # Open the file.
+    for line in f:                 # Iterate through the file a line at a time.
+        print(line, end="")         # Process the current line.
+    f.close()                      # Close the file.
 ```
 Notes:
 
@@ -56,22 +56,22 @@ Notes:
     Output:
 
 ```plaintext
-    >>> 
-    The first line.
-    Line 2.
-    The third and last line.
-    >>>
+>>> 
+The first line.
+Line 2.
+The third and last line.
+>>>
 ```
 
 ## The whole file into a string:
 
 ```python
-        # file_read_2.py
-        f = open('text_file.txt', 'r')
-        s = f.read()
-        print('s is', len(s), 'characters long.')
-        print(s)
-        f.close()
+    # file_read_2.py
+    f = open('text_file.txt', 'r')
+    s = f.read()
+    print('s is', len(s), 'characters long.')
+    print(s)
+    f.close()
 ```
 
 -   The read method of the file object `f` reads the entire file
@@ -79,12 +79,12 @@ Notes:
 
   
 ```plaintext
-    >>> 
-    s is 49 characters long.
-    The first line.
-    Line 2.
-    The third and last line.
-    >>> 
+>>> 
+s is 49 characters long.
+The first line.
+Line 2.
+The third and last line.
+>>> 
 ```
 
 -   Note that the file looks the same as before when displayed
@@ -97,19 +97,19 @@ Notes:
 ## The whole file into a list of strings,
 
 ```python
-        # file_read_3.py
-        f = open('text_file.txt', 'r')
-        lines = f.readlines()
-        print(lines)
-        f.close()
+    # file_read_3.py
+    f = open('text_file.txt', 'r')
+    lines = f.readlines()
+    print(lines)
+    f.close()
 ```
 
 Output:
 
 ```plaintext
-    >>> 
-    ['The first line.\n', 'Line 2.\n', 'The third and last line.\n']
-    >>>
+>>> 
+['The first line.\n', 'Line 2.\n', 'The third and last line.\n']
+>>>
 ```
 
 Note that the newline character is included. If you don't want it
