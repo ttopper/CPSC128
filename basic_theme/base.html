@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,10 @@
   <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      {{ base_url }} beforehand which will be the relative path to
+      the root of the documentation.
+    -->
 
   <!-- Make browsers render elements consistently by resetting CSS -->
   <!-- https://necolas.github.io/normalize.css/ -->
@@ -41,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -56,12 +54,6 @@
     <link href="{{ path|url }}" rel="stylesheet">
   {% endfor %}
 
-  <!--
-    To include static assets from our theme, just add
-    {{ base_url }} beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -70,9 +62,6 @@
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
   {%- if config.theme.highlightjs %}
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/{{ config.theme.hljs_style }}.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     {%- for lang in config.theme.hljs_languages %}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/{{lang}}.min.js"></script>
@@ -110,20 +99,20 @@
         <div id="next">
           
           {% if page.next_page %}
-            Next &#8594;<br>
-            <a href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}" />{{ page.next_page.title }}</a><span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}" />{{ page.next_page.title }}</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           {% else %}
-            Next Page &#8594;
+            <span style="color: lightgrey;">Next Page →</span>
           {% endif %}
             
         </div>
         <div id="prev">
           {% if page.previous_page %}
-          &#8592; Previous<br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
           <a href="{{ page.previous_page.url|url }}" title="{{ page.previous_page.title }}">{{ page.previous_page.title }}</a>
           {% else %}
-          &#8592; Previous Page
+          <span style="color: lightgrey;">← Previous Page</span>
           {% endif %}
         </div>
       {% endif %}
@@ -135,34 +124,24 @@
                 {% include "nav.html" %}
               {% endfor %}
             </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="{{ "search.html"|url }}" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="{{ "search.html"|url }}" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    {% for toc_item in page.toc %}
-        <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-        {% for toc_item in toc_item.children %}
-            <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-        {% endfor %}
-    {% endfor %}
-    </ul> -->
-
     {% block content %}
       {{ page.content }}
     {% endblock %}
@@ -178,13 +157,11 @@
       Support repo URL
     -->
     {% if page and page.edit_url %}
-    <a href="{{ page.edit_url }}">Edit on {{ config.repo_name }}</a>.
+    <a href="{{ page.edit_url }}">Source on {{ config.repo_name }}</a>.
     {% elif config.repo_url %}
     <a href="{{ config.repo_url }}">{{ config.repo_name }}</a>
     {% endif %}
     </p>
-
-   
 
     <!--
     MkDocs version      : {{ mkdocs_version }}

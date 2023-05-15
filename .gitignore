@@ -16,3 +16,9 @@ tmp
 *.sh
 
 # Got ideas from: https://github.com/squidfunk/mkdocs-material/blob/master/.gitignore
+
+gen_menu_0.py
+gen-menu.py
+gen-menu.zip
+docs/*.sh
+docs/*.txt
