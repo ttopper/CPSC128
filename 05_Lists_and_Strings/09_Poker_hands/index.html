@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../10_Playing_cards_An_alternative_representation/" title="Playing Cards: An alternative representation"/>Next &#8594;</a><br>
-            Playing Cards: An alternative representation <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../10_Playing_cards_An_alternative_representation/" title="Playing Cards: An alternative representation" />Playing Cards: An alternative representation</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../08_Representing_playing_cards/" title="Representing Playing Cards">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          Representing Playing Cards
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../08_Representing_playing_cards/" title="Representing Playing Cards">Representing Playing Cards</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,73 +2532,52 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#poker-hands">Poker hands</a></li>
-        
-            <li><a href="#solution-1">Solution 1</a></li>
-        
-            <li><a href="#solution-2">Solution 2</a></li>
-        
-            <li><a href="#solution-3">Solution 3</a></li>
-        
-            <li><a href="#solution-4">Solution 4</a></li>
-        
-            <li><a href="#summary">Summary</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="poker-hands">Poker hands</h1>
 <p>We've got a hand of cards; what now? Let's suppose we are playing poker and want to know how good our hand is. In the game of Poker the value of a hand is assessed from high to low as shown at <a href="http://en.wikipedia.org/wiki/List_of_poker_hands">Wikipedia</a>. Let's start by seeing how we could write code to detect if our hand is a flush, i.e. that all the cards in the hand are from the same suit. Since the face values of the cards are irrelevant let's create a second list containing just the suit numbers (0 for clubs, 1 for diamonds, 2 for hearts, and 3 for spades) of the cards in our hand.</p>
 <pre><code class="language-python">suit_list = []
 for card in hand:
-    suit_list.append(card//13)
+suit_list.append(card//13)
 </code></pre>
 <p>For a typical hand <code>suit_list</code> might look like <code>[1, 0, 3, 0, 2]</code> (for a hand with a diamond, a club, a spade, another diamond and a heart), but for a flush it will look like <code>[1, 1, 1, 1, 1]</code>, i.e. all the numbers will be the same.</p>
 <h2 id="solution-1">Solution 1</h2>
 <p>If the cards in the hand all have the same suit then the suit number of the second card is the same as the suit number of the first, and the suit number of the third card is the same as the suit number of the second, and so on. For a five card hand then we could write our test in Python like this,</p>
 <pre><code class="language-python">if suit_list[1] == suit_list[0] and suit_list[2] == suit_list[1] and \
-    suit_list[3] == suit_list[2] and suit_list[4] == suit_list[3]:
-    print(&quot;That's a flush!&quot;)
+suit_list[3] == suit_list[2] and suit_list[4] == suit_list[3]:
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry no flush here.&quot;)
+print(&quot;Sorry no flush here.&quot;)
 </code></pre>
 <p>But hands in other card games may not always have five cards so let's generalize this code to work for any number of cards in the hand. To generalize the code above to any length of hand we need to place the comparison test into a loop and arrange for the loop to compare each neighbouring pair of cards, e.g. by comparing each card to the one before it. If they are the same then we may have a flush, but if they are different then we definitely do not have a flush. So if we get all the way to the end of <code>suit_list</code> and they were always the same then it is a flush.</p>
 <p>The way we implement that logic in Python is to use a Boolean flag variable to keep track of whether it is a flush or not. We'll start out assuming the hand is a flush and so set our flush flag variable to be <code>True</code> at the start. As we loop through the hand, if the suit of a card ever differs from that of the previous card we'll set the flag variable to be <code>False</code>. In most hands we will actually set it to <code>False</code> more than once, which doesn't matter as long as it is <code>False</code> at the end. What does matter is that we never set it to <code>True</code> inside the loop or else we may inadvertently reset it to <code>True</code> after setting it to <code>False</code> because of an earlier mismatch. Remember even one mismatch means it isn't a flush! The pseudocode for this is,</p>
 <pre><code class="language-plaintext">Set the flag variable flush to True
 Starting with the second card in the hand and proceeding to the last card in the hand
-    If the suit of this card is NOT the same as the suit of the previous card
-        Set the flag variable flush to False
+If the suit of this card is NOT the same as the suit of the previous card
+    Set the flag variable flush to False
 If the flag variable flush is True
-    This is a flush
+This is a flush
 Otherwise
-    This is NOT a flush
+This is NOT a flush
 </code></pre>
 <p>This can be implemented in Python as,</p>
 <pre><code class="language-python">flush = True # Start by assuming it is a flush.
@@ -2615,76 +2586,76 @@ Otherwise
 # so the initial previous card is the first card in the hand.
 prev_card = suit_list[0]
 for card in suit_list[1:]:
-    # Note: To loop starting with the second card we use a slice of the list,
-    # that begins in the second position, i.e. position #1.
-    if card != prev_card: # If this card's suit is not the same as the previous one's.
-        flush = False # It's not a flush.
-    prev_card = card # Update previous card: This card will be the previous card
-                     # next time around.
+# Note: To loop starting with the second card we use a slice of the list,
+# that begins in the second position, i.e. position #1.
+if card != prev_card: # If this card's suit is not the same as the previous one's.
+    flush = False # It's not a flush.
+prev_card = card # Update previous card: This card will be the previous card
+                 # next time around.
 if flush:
-    print(&quot;That's a flush!&quot;)
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry, no flush here.&quot;)
+print(&quot;Sorry, no flush here.&quot;)
 </code></pre>
 <p>We could also implement the same pseudocode using quite different Python statements, e.g. we could loop through <code>suit_list</code> using index position, i.e. accessing each entry by its position index, and dispense with the need for the variable <code>prev_card</code>.</p>
 <pre><code class="language-python">flush = True
 for posn in range(1, len(suit_list)-1):
-    if suit_list[posn] != suit_list[posn-1]:
-        flush = False
+if suit_list[posn] != suit_list[posn-1]:
+    flush = False
 if flush:
-    print(&quot;That's a flush!&quot;)
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry, no flush here.&quot;)
+print(&quot;Sorry, no flush here.&quot;)
 </code></pre>
 <h2 id="solution-2">Solution 2</h2>
 <p>Another approach would be to count how many cards there are of each suit. If the count is ever the same as the length of the hand then it's a flush. For example if in a 5 card hand we get 5 diamonds then it's a flush. The pseudocode for this is,</p>
 <pre><code class="language-plaintext">Count the number of clubs
 If the number of clubs equals the number of cards
-    It is a flush
+It is a flush
 Count the number of diamonds
 If the number of diamonds equals the number of cards
-    It is a flush
+It is a flush
 Count the number of hearts
 If the number of hearts equals the number of cards
-    It is a flush
+It is a flush
 Count the number of spades
 If the number of spades equals the number of cards
-    It is a flush
+It is a flush
 </code></pre>
 <p>There is some obvious repetition above which we can replace with a loop to get,</p>
 <pre><code class="language-plaintext">For each suit
-    Count the number of cards in that suit
-        If the number equals the number of cards
-            It is a flush
+Count the number of cards in that suit
+    If the number equals the number of cards
+        It is a flush
 </code></pre>
 <p>Translating this into Python gives us,</p>
 <pre><code class="language-python">flush = False
 for suit in [0,1,2,3]:
-    count = 0
-    for card_suit in suit_list:
-        if card_suit == suit:
-            count = count + 1
-    if count == len(suit_list):
-        flush = True
+count = 0
+for card_suit in suit_list:
+    if card_suit == suit:
+        count = count + 1
+if count == len(suit_list):
+    flush = True
 if flush:
-    print(&quot;That's a flush!&quot;)
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry, no flush here.&quot;)
+print(&quot;Sorry, no flush here.&quot;)
 </code></pre>
 <h2 id="solution-3">Solution 3</h2>
 <p>Yet another approach takes advantage of some of python's built-in list methods. For example the <code>count</code> method counts how often a value occurs in a list. If <code>suit_list</code> represents a flush then the first value in it should occur as many times as there are elements in the list, e.g. 5 times in a 5 card hand. This gives us the very brief,</p>
 <pre><code class="language-python">if suit_list.count(suit_list[0]) == len(suit_list):
-    print(&quot;That's a flush!&quot;)
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry, no flush here.&quot;)
+print(&quot;Sorry, no flush here.&quot;)
 </code></pre>
 <h2 id="solution-4">Solution 4</h2>
 <p>Another approach that leverages Python's built-in list methods begins by noticing that in a flush the first and last values in <code>suit_list</code> are the same, e.g. [<strong>2</strong>, 2, 2, 2, <strong>2</strong>]. Of course this can be true of non-flush hands as well, e.g. [<strong>2</strong>, 1, 3, 0, <strong>2</strong>], but if we sort the non-flush hand before comparing the first and last values we will catch that, e.g. [<strong>2</strong>, 1, 3, 0, <strong>2</strong>] sorted becomes [0, 1, <strong>2</strong>, <strong>2</strong>, 3] and now the first and last values are different. We can do this in Python like this,</p>
 <pre><code class="language-python">suit_list.sort()
 if suit_list[0] == suit_list[len(suit_list) - 1]:
-    print(&quot;That's a flush!&quot;)
+print(&quot;That's a flush!&quot;)
 else:
-    print(&quot;Sorry, no flush here.&quot;)
+print(&quot;Sorry, no flush here.&quot;)
 </code></pre>
 <p><br></p>
 <h2 id="summary">Summary</h2>
@@ -2708,23 +2679,22 @@ useful in a wide variety of problems:</p>
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/09_Poker_hands.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/09_Poker_hands.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.619985+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:16.229184+00:00
     -->
   </footer>
 

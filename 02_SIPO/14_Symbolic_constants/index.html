@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../15_Intermission_Summary_so_far/" title="Intermission: Summary (so far)"/>Next &#8594;</a><br>
-            Intermission: Summary (so far) <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../15_Intermission_Summary_so_far/" title="Intermission: Summary (so far)" />Intermission: Summary (so far)</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../13_Modulo_A_sixth_arithmetic_operator/" title="Modulo: A Sixth Arithmetic Operator">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          Modulo: A Sixth Arithmetic Operator
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../13_Modulo_A_sixth_arithmetic_operator/" title="Modulo: A Sixth Arithmetic Operator">Modulo: A Sixth Arithmetic Operator</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,54 +2532,41 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#symbolic-constants">Symbolic Constants</a></li>
-        
-            <li><a href="#summary">Summary</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="symbolic-constants">Symbolic Constants</h1>
 <p>A second improvement is possible. Looking at our program we see that several calculations are performed more than once, i.e. (24 * 60 * 60) and (60 * 60). There should be a way to avoid the unnecessary recalculation, and there is. All we have to do is to calculate the quantities and store them so we can reuse the pre-calculated quantity. We could store them in a variable, but the quantity shouldn't change, so it would be wise to prevent it from changing if we can.</p>
 <p>A second small concern is that it may not be clear to a someone reading our program (say someone maintaining it, or even ourselves rereading it a few months later) what the quantity 60 * 60 is.</p>
 <p>Python has a convention we will adhere to to help deal with these issues. We will calculate our reused values once near the top of the program and give them names in all caps to indicate that these values are intended to remain unchanged.</p>
-<pre><code class="language-python">    SECS_PER_DAY = 24 * 60 * 60
-    SECS_PER_HOUR = 60 * 60
-    SECS_PER_MINUTE = 60
+<pre><code class="language-python">SECS_PER_DAY = 24 * 60 * 60
+SECS_PER_HOUR = 60 * 60
+SECS_PER_MINUTE = 60
 
-    days = tot_seconds // SECS_PER_DAY
-    remainder = tot_seconds % SECS_PER_DAY
-    hours = remainder // SECS_PER_HOUR
-    remainder = remainder % SECS_PER_HOUR
-    minutes = remainder // SECS_PER_MIN
-    remainder = remainder % SECS_PER_MIN
+days = tot_seconds // SECS_PER_DAY
+remainder = tot_seconds % SECS_PER_DAY
+hours = remainder // SECS_PER_HOUR
+remainder = remainder % SECS_PER_HOUR
+minutes = remainder // SECS_PER_MIN
+remainder = remainder % SECS_PER_MIN
 </code></pre>
 <p>Notes:</p>
 <ul>
@@ -2599,38 +2578,38 @@
 </li>
 </ul>
 <p>Putting all these changes together and adding the declarations, overhead, and some instructions gives us the following complete program.</p>
-<pre><code class="language-python">    # s2dhms.py -- converts a time in seconds to
-    # its equivalent in days, hours, minutes and seconds.
-    #
-    # CPSC 128 Demonstration Program
-    #
-    # Kate Chatfield-Reed, Winter 2023
+<pre><code class="language-python"># s2dhms.py -- converts a time in seconds to
+# its equivalent in days, hours, minutes and seconds.
+#
+# CPSC 128 Demonstration Program
+#
+# Kate Chatfield-Reed, Winter 2023
 
-    SECS_PER_DAY = 24 * 60 * 60
-    SECS_PER_HOUR = 60 * 60
-    SECS_PER_MINUTE = 60
+SECS_PER_DAY = 24 * 60 * 60
+SECS_PER_HOUR = 60 * 60
+SECS_PER_MINUTE = 60
 
-    # Input.
-    print(&quot;=====================================================&quot;)
-    print(&quot;     Seconds to Days, Hours, Minutes and Seconds&quot;)
-    print(&quot;-----------------------------------------------------&quot;)
-    print()
-    print(&quot;This program converts a number of seconds to its&quot;)
-    print(&quot;equivalent in days, hours, minutes and seconds.&quot;;)
-    tot_seconds = int(input(&quot;Enter the number of seconds now (e.g. 116529): &quot;))
-    print()
+# Input.
+print(&quot;=====================================================&quot;)
+print(&quot;     Seconds to Days, Hours, Minutes and Seconds&quot;)
+print(&quot;-----------------------------------------------------&quot;)
+print()
+print(&quot;This program converts a number of seconds to its&quot;)
+print(&quot;equivalent in days, hours, minutes and seconds.&quot;;)
+tot_seconds = int(input(&quot;Enter the number of seconds now (e.g. 116529): &quot;))
+print()
 
-    # Processing.
-    days = tot_seconds // SECS_PER_DAY
-    remainder = tot_seconds % SECS_PER_DAY
-    hours = remainder // SECS_PER_HOUR
-    remainder = remainder % SECS_PER_HOUR
-    minutes = remainder // SECS_PER_MINUTE
-    remainder = remainder % SECS_PER_MINUTE
+# Processing.
+days = tot_seconds // SECS_PER_DAY
+remainder = tot_seconds % SECS_PER_DAY
+hours = remainder // SECS_PER_HOUR
+remainder = remainder % SECS_PER_HOUR
+minutes = remainder // SECS_PER_MINUTE
+remainder = remainder % SECS_PER_MINUTE
 
-    # Output.
-    print(tot_seconds, &quot;seconds =&quot;, days, &quot;days,&quot;, hours, &quot;hours,&quot;,)
-    print(minutes, &quot;minutes and&quot;, remainder, &quot;seconds&quot;)
+# Output.
+print(tot_seconds, &quot;seconds =&quot;, days, &quot;days,&quot;, hours, &quot;hours,&quot;,)
+print(minutes, &quot;minutes and&quot;, remainder, &quot;seconds&quot;)
 </code></pre>
 <p>Notes:</p>
 <ul>
@@ -2638,7 +2617,7 @@
 <p>Note the effect of the trailing comma in the second last line. Try removing it and see how the output changes. How would you describe what this comma does?</p>
 </li>
 <li>
-<p>Note the blank <code>print()</code> statements, i.e. <code>print()</code> statements with no items in the brackets, used to output blank lines.</p>
+<p>Note the empty <code>print()</code> statements, i.e. <code>print()</code> statements with no items in the brackets. These are used to output blank lines.</p>
 </li>
 </ul>
 <h2 id="summary">Summary</h2>
@@ -2649,23 +2628,22 @@ given names in ALLCAPS.</p>
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/02_SIPO/14_Symbolic_constants.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/02_SIPO/14_Symbolic_constants.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.060692+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:15.680862+00:00
     -->
   </footer>
 

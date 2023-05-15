@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../06_Dice_odds/" title="Dice Odds"/>Next &#8594;</a><br>
-            Dice Odds <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../06_Dice_odds/" title="Dice Odds" />Dice Odds</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../04_What_can_you_do_with_a_string/" title="What can you do with a string?">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          What can you do with a string?
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../04_What_can_you_do_with_a_string/" title="What can you do with a string?">What can you do with a string?</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,45 +2532,26 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#example-cd-shuffle">Example: CD Shuffle</a></li>
-        
-            <li><a href="#a-slightly-dated-problem">A slightly dated problem</a></li>
-        
-            <li><a href="#solution-1">Solution 1</a></li>
-        
-            <li><a href="#solution-2">Solution 2</a></li>
-        
-            <li><a href="#solution-3">Solution 3</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="example-cd-shuffle">Example: CD Shuffle</h1>
 <h2 id="a-slightly-dated-problem">A slightly dated problem</h2>
@@ -2587,16 +2560,16 @@
 <p>A good starting point: Imagine we have to do this by hand. Our goal is to write down a playlist on a sheet of paper. But how to make the list random? If we use the CD above with 6 tracks on it we can roll a die to choose the tracks. For example let's say we roll it and get 4, we write 4 down as the first track on our playlist. We roll it again and get 1, so we write 1 down, then on the next roll we get 5 and write that down. On the next roll we roll 1 again, but since we already have 1 on our playlist we don't record it again, we just continue rolling. How long do we continue rolling? Until all 6 numbers have appeared on our playlist. Let's try writing this down in pseudocode form,</p>
 <pre><code class="language-plaintext">Initialize playlist (like getting a blank sheet of paper)
 Until you have six numbers in the playlist
-    Roll the die
-    If the value of the die is not in the playlist
-        Add it to the playlist
+Roll the die
+If the value of the die is not in the playlist
+    Add it to the playlist
 </code></pre>
 <p>This translates into the following Python,</p>
 <pre><code class="language-python">playlist = []
 while len(playlist) &lt; 6:
-    tracknum = random.randint(1,6)
-    if tracknum not in playlist:
-        playlist.append(tracknum)
+tracknum = random.randint(1,6)
+if tracknum not in playlist:
+    playlist.append(tracknum)
 print(playlist)
 </code></pre>
 <p>To more easily see how the English translates into Python here they are side-by-side,</p>
@@ -2611,9 +2584,9 @@ Until you have six numbers in the playlist
 <p>Python code:</p>
 <pre><code class="language-python">playlist = []
 while len(playlist) &lt; 6:
-    tracknum = random.randint(1,6)
-    if tracknum not in playlist:
-        playlist.append(tracknum)
+tracknum = random.randint(1,6)
+if tracknum not in playlist:
+    playlist.append(tracknum)
 print(playlist)
 </code></pre>
 <p>Wait! What about that 6? Not all CDs have exactly 6 tracks. We'll need to replace that by an appropriate variable name and get its value from the user. The result is,</p>
@@ -2623,8 +2596,8 @@ print(playlist)
 <p>An alternative approach takes its inspiration from the button name, i.e. "shuffle". If it says to <em>shuffle</em> why not do just that? We can imagine having cards with the track numbers on them and shuffling those cards until they're mixed up. How would we do this in Python? We'll start with an ordered list of the track numbers, then we'll shuffle the list. We can shuffle it by choosing one item in the list at random and moving it to the end of the list. If we do that a bunch of times we'll end up with a shuffled list. The pseudocode is,</p>
 <pre><code class="language-plaintext">Generate an ordered list of the track numbers
 Shuffle it to generate the playlist by
-    selecting a random track from the list,
-    and moving it to the end of the list.
+selecting a random track from the list,
+and moving it to the end of the list.
 </code></pre>
 <p>Translating into Python gives us,</p>
 <p><img alt="" src="../05_cd_shuffle_b.py.png" /></p>
@@ -2637,8 +2610,8 @@ is,</p>
 <pre><code class="language-plaintext">Generate an ordered list of the track numbers.
 Initialize the playlist.
 Until the ordered list is empty,
-    Select a random track from the ordered list,
-    and move it to the playlist.
+Select a random track from the ordered list,
+and move it to the playlist.
 </code></pre>
 <p>This avoids the inefficiency of the first solution when it generates
 numbers that are already in the playlist<sup id="fnref2:*"><a class="footnote-ref" href="#fn:*">1</a></sup>. This one will never do
@@ -2653,15 +2626,15 @@ import random
 print('tracks | dupes')
 print('-------+------')
 for tracks in [1,2,5,10,20,50,100]:
-    loops = 0
-    playlist = []
-    while len(playlist) &lt; tracks:
-        tracknum = random.randint(1,tracks)
-        loops = loops + 1
-        if tracknum not in playlist:
-            playlist.append(tracknum)
-    dupes = loops - tracks
-    print(&quot;{:4d}   |{:5d}&quot;.format(tracks, dupes))
+loops = 0
+playlist = []
+while len(playlist) &lt; tracks:
+    tracknum = random.randint(1,tracks)
+    loops = loops + 1
+    if tracknum not in playlist:
+        playlist.append(tracknum)
+dupes = loops - tracks
+print(&quot;{:4d}   |{:5d}&quot;.format(tracks, dupes))
 </code></pre>
 <p>(For reliable output it should really run the program multiple times for
 each value of tracks, but this program is meant to be illustrative
@@ -2685,23 +2658,22 @@ duplicates grows; even at 10 tracks we can get 26 duplicates.&#160;<a class="foo
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/05_Example_cd_shuffle.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/05_Example_cd_shuffle.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.579574+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:16.191557+00:00
     -->
   </footer>
 

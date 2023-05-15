@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../09_Poker_hands/" title="Poker hands"/>Next &#8594;</a><br>
-            Poker hands <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../09_Poker_hands/" title="Poker hands" />Poker hands</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../07_Bar_graphs/" title="07 Bar graphs">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          07 Bar graphs
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../07_Bar_graphs/" title="07 Bar graphs">07 Bar graphs</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,47 +2532,26 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#representing-playing-cards">Representing Playing Cards</a></li>
-        
-            <li><a href="#our-representation-the-simplest-thing-that-could-possibly-work">Our representation: The simplest thing that could possibly work</a></li>
-        
-            <li><a href="#suit-from-card-number">Suit from card number</a></li>
-        
-            <li><a href="#face-value-from-card-number">Face value from card number</a></li>
-        
-            <li><a href="#dealing-a-hand">Dealing a hand</a></li>
-        
-            <li><a href="#putting-it-together">Putting it together</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="representing-playing-cards">Representing Playing Cards</h1>
 <p>In addition to computational uses such as arrays of counters, lists can also be used to represent real-world “objects”, in particular composite objects that have multiple components. Consider representing a deck of playing cards. A deck of cards is made up of many similar, but not identical, objects. Plainly a deck of cards cannot be easily represented by a single integer, string or floating point value because it has so many constituents, but an ordered list seems like a promising alternative.</p>
@@ -2627,25 +2598,25 @@
 <h3 id="solution-1">Solution 1</h3>
 <p>One way to get the suit from the card number is to test the card number to see which group of 13 (i.e. which suit) it is in.</p>
 <pre><code class="language-python">if cardnum &lt; 13 :
-    suit = 'Clubs'
+suit = 'Clubs'
 elif cardnum &lt; 26 :
-    suit = 'Diamonds'
+suit = 'Diamonds'
 elif cardnum &lt; 39 :
-    suit = 'Hearts'
+suit = 'Hearts'
 else :
-    suit = 'Spades'
+suit = 'Spades'
 </code></pre>
 <h3 id="solution-2">Solution 2</h3>
 <p>An alternative is to get the suit from the card number by dividing the card number by 13. The result tells us which of the groups of 13 our card number is in:</p>
 <pre><code class="language-python">suit = cardnum // 13
 if suit == 0 :
-    suit = 'Clubs'
+suit = 'Clubs'
 elif suit == 1 :
-    suit = 'Diamonds'
+suit = 'Diamonds'
 elif suit == 2 :
-    suit = 'Hearts'
+suit = 'Hearts'
 else :
-    suit = 'Spades'
+suit = 'Spades'
 </code></pre>
 <h2 id="face-value-from-card-number">Face value from card number</h2>
 <p>To get the face value from the card number we need to look at where our card occurs <em>within</em> its group of 13.</p>
@@ -2666,95 +2637,95 @@ else :
 <h3 id="solution-1_1">Solution 1</h3>
 <p>We could do this as we did above by writing the logic directly:</p>
 <pre><code class="language-python">if cardnum == 0 or cardnum == 13 or cardnum == 26 or cardnum == 39 :
-    face_value = 'Ace'
+face_value = 'Ace'
 elif cardnum == 1 or cardnum == 14 or cardnum == 27 or cardnum == 40 :
-    face_value = 'Two'
+face_value = 'Two'
 elif cardnum == 2 or cardnum == 15 or cardnum == 28 or cardnum == 41 :
-    face_value = 'Three'
+face_value = 'Three'
 elif cardnum == 3 or cardnum == 16 or cardnum == 29 or cardnum == 42 :
-    face_value = 'Four'
+face_value = 'Four'
 elif cardnum == 4 or cardnum == 17 or cardnum == 30 or cardnum == 43 :
-    face_value = 'Five'
+face_value = 'Five'
 elif cardnum == 5 or cardnum == 18 or cardnum == 31 or cardnum == 44 :
-    face_value = 'Six'
+face_value = 'Six'
 elif cardnum == 6 or cardnum == 19 or cardnum == 32 or cardnum == 45 :
-    face_value = 'Seven'
+face_value = 'Seven'
 elif cardnum == 7 or cardnum == 20 or cardnum == 33 or cardnum == 46 :
-    face_value = 'Eight'
+face_value = 'Eight'
 elif cardnum == 8 or cardnum == 21 or cardnum == 34 or cardnum == 47 :
-    face_value = 'Nine'
+face_value = 'Nine'
 elif cardnum == 9 or cardnum == 22 or cardnum == 35 or cardnum == 48 :
-    face_value = 'Ten'
+face_value = 'Ten'
 elif cardnum == 10 or cardnum == 23 or cardnum == 36 or cardnum == 49 :
-    face_value = 'Jack'
+face_value = 'Jack'
 elif cardnum == 11 or cardnum == 24 or cardnum == 37 or cardnum == 50 :
-    face_value = 'Queen'
+face_value = 'Queen'
 else:
-    face_value = 'King'
+face_value = 'King'
 </code></pre>
 <h3 id="solution-2_1">Solution 2</h3>
 <p>Or we could do the same thing using list membership tests instead of equality tests,</p>
 <pre><code class="language-python">if cardnum in [0, 13, 26, 39]:
-    face_value = 'Ace'
+face_value = 'Ace'
 elif cardnum in [1, 14, 27, 40]:
-    face_value = 'Two'
+face_value = 'Two'
 elif cardnum in [2, 15, 28, 41]:
-    face_value = 'Three'
+face_value = 'Three'
 elif cardnum in [3, 16, 29, 42]:
-    face_value = 'Four'
+face_value = 'Four'
 elif cardnum in [4, 17, 30, 43]:
-    face_value = 'Five'
+face_value = 'Five'
 elif cardnum in [5, 18, 31, 44]:
-    face_value = 'Six'
+face_value = 'Six'
 elif cardnum in [6, 19, 32, 45]:
-    face_value = 'Seven'
+face_value = 'Seven'
 elif cardnum in [7, 20, 33, 46]:
-    face_value = 'Eight'
+face_value = 'Eight'
 elif cardnum in [8, 21, 34, 47]:
-    face_value = 'Nine'
+face_value = 'Nine'
 elif cardnum in [9, 22, 35, 48]:
-    face_value = 'Ten'
+face_value = 'Ten'
 elif cardnum in [10, 23, 36, 49]:
-    face_value = 'Jack'
+face_value = 'Jack'
 elif cardnum in [11, 24, 37, 50]:
-    face_value = 'Queen'
+face_value = 'Queen'
 else:
-    face_value = 'Kind'
+face_value = 'Kind'
 </code></pre>
 <h3 id="solution-3">Solution 3</h3>
 <p>We could also do it by considering the remainder when we divide the card number by 13.</p>
 <pre><code class="language-python">face_value = cardnum % 13
 if face_value == 0 :
-    face_value = 'Ace'
+face_value = 'Ace'
 elif face_value == 2 :
-    face_value = 'Two'
+face_value = 'Two'
 elif face_value == 3 :
-    face_value = 'Three'
+face_value = 'Three'
 elif face_value == 4 :
-    face_value = 'Four'
+face_value = 'Four'
 elif face_value == 5 :
-    face_value = 'Five'
+face_value = 'Five'
 elif face_value == 6 :
-    face_value = 'Six'
+face_value = 'Six'
 elif face_value == 7 :
-    face_value = 'Seven'
+face_value = 'Seven'
 elif face_value == 8 :
-    face_value = 'Eight'
+face_value = 'Eight'
 elif face_value == 9 :
-    face_value = 'Nine'
+face_value = 'Nine'
 elif face_value == 10 :
-    face_value = 'Ten'
+face_value = 'Ten'
 elif face_value == 11 :
-    face_value = 'Jack'
+face_value = 'Jack'
 elif face_value == 12 :
-    face_value = 'Queen'
+face_value = 'Queen'
 else :
-    face_value = 'King'
+face_value = 'King'
 </code></pre>
 <h3 id="solution-4">Solution 4</h3>
 <p>A different and very compact modification to Solution 3 is to use <em>list lookup</em> instead of <code>if</code> statements. We'll store the face values in a list, and then use the remainder of the division by 13 to access the appropriate entry in the list:</p>
 <pre><code class="language-python">FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', \
-                'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
+            'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King']
 
 face_value = cardnum % 13
 print('The face value of card number', cardnum, 'is', FACE_VALUES[face_value])
@@ -2772,9 +2743,9 @@ deck = list(range(52))
 
 # Shuffle the deck of cards
 for swaps in range(104):
-    posn1 = random.randint(0, 51)
-    posn2 = random.randint(0, 51)
-    # Swap the cards at posn1 and posn2
+posn1 = random.randint(0, 51)
+posn2 = random.randint(0, 51)
+# Swap the cards at posn1 and posn2
    (deck[posn1], deck[posn2]) = (deck[posn2], deck[posn1])
 
 # Create the empty hand.
@@ -2782,7 +2753,7 @@ hand = []
 
 # Deal 5 cards from the deck into the hand.
 for card in range(0, 5):
-    hand.append( deck.pop() )
+hand.append( deck.pop() )
 </code></pre>
 <p>(You can read about what is going on in the last line of the first <code>for</code> loop in <a href="../15_Tuples/">Tuples</a>.)</p>
 <h3 id="solution-2_2">Solution 2</h3>
@@ -2791,12 +2762,12 @@ for card in range(0, 5):
 deck = list(range(52))
 hand = []
 for card in range(5) :
-    # Choose the card to deal.
-    posn = random.randint(0, len(deck) - 1)
-    # Append the number at that position to the hand.
-    hand.append(deck[posn])
-    # Delete that card from the deck.
-    del(deck[posn])
+# Choose the card to deal.
+posn = random.randint(0, len(deck) - 1)
+# Append the number at that position to the hand.
+hand.append(deck[posn])
+# Delete that card from the deck.
+del(deck[posn])
 </code></pre>
 <p><br></p>
 <h2 id="putting-it-together">Putting it together</h2>
@@ -2805,8 +2776,8 @@ for card in range(5) :
 
 # Define handy string constants.
 FACE_VALUES = ['Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                'Queen', 'King']
+            'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+            'Queen', 'King']
 SUITS = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
 
 # Create deck of cards.
@@ -2817,13 +2788,13 @@ hand = []
 
 # Deal 5 cards into hand.
 for deal in range(5) :
-    posn = random.randint(0, len(deck) - 1)
-    hand.append(deck[posn])
-    del(deck[posn])
+posn = random.randint(0, len(deck) - 1)
+hand.append(deck[posn])
+del(deck[posn])
 
 # Display the cards in the hand.
 for card in hand:
-    print(FACE_VALUES[card % 13], 'of', SUITS[card // 13])
+print(FACE_VALUES[card % 13], 'of', SUITS[card // 13])
 </code></pre>
 <p>Try it out! Then try making some changes to get a feel for how the code
 works.</p>
@@ -2831,23 +2802,22 @@ works.</p>
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/08_Representing_playing_cards.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/08_Representing_playing_cards.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.611579+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:16.215541+00:00
     -->
   </footer>
 

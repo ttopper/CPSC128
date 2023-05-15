@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../13_Built_in_type_conversions/" title="Built-in Type Conversions"/>Next &#8594;</a><br>
-            Built-in Type Conversions <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../13_Built_in_type_conversions/" title="Built-in Type Conversions" />Built-in Type Conversions</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../11_What_is_this_x_o_o_x_o_x/" title="What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../11_What_is_this_x_o_o_x_o_x/" title="What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?">What is this \[ \[ 'X', 'O', '' \], \[ 'O', 'X', 'O' \], \[ '', '', 'X'\] \] ?</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,47 +2532,26 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#palindrome">Palindrome</a></li>
-        
-            <li><a href="#problem">Problem</a></li>
-        
-            <li><a href="#solution-1">Solution 1</a></li>
-        
-            <li><a href="#solution-2">Solution 2</a></li>
-        
-            <li><a href="#refinements">Refinements</a></li>
-        
-            <li><a href="#testing">Testing</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="palindrome">Palindrome</h1>
 <h2 id="problem">Problem</h2>
@@ -2588,38 +2559,38 @@
 <h2 id="solution-1">Solution 1</h2>
 <p>Ignoring, for the moment, palindromic phrases and focussing instead on words like "madam", the striking thing about a palindrome is that it is the same forwards and backwards. That means that the first letter is the same as the last letter, the second letter is the same as the second last letter, etc. In pseudocode,</p>
 <pre><code class="language-plaintext">if first_letter == last_letter and second_letter == second_last_letter and ...
-    Then it is a palindrome.
+Then it is a palindrome.
 else
-    It is NOT a palindrome.
+It is NOT a palindrome.
 </code></pre>
 <p>Let's move this one step closer to Python by figuring out the indices of those letter positions,</p>
 <pre><code class="language-plaintext">if s[0]==s[len(s)-1] and s[1]==s[len(s)-2] and s[2]==s[len(s)-3] and ...
-    Then it is a palindrome.
+Then it is a palindrome.
 else
-    It is NOT a palindrome.
+It is NOT a palindrome.
 </code></pre>
 <p>We have enough programming experience by now to see that this solution is unworkable exactly as it is since we don't know ahead of time how many test expressions we need (because we don't know ahead of time how long the string is). But the concept is sound and we can make it workable if we replace the <code>if</code> statement with a loop that iterates through the font half of the string comparing the characters there to their counterparts in the back half of the string. We'll use the same strategy to detect a palindrome that we did to <a href="../09_Poker_hands/">detect a flush in a poker hand</a>: Assume the word is a palindrome and then test to see if we are right. As before we will use a flag variable to keep track.</p>
 <pre><code class="language-plaintext">palindrome = True # Our flag variable.
 for offset values from 0 to len(s)/2
-    if s[offset] != s[len(s)-1-offset]
-       palindrome = False
+if s[offset] != s[len(s)-1-offset]
+   palindrome = False
 if palindrome
-    then it is a palindrome
+then it is a palindrome
 else
-    It is NOT a palindrome
+It is NOT a palindrome
 </code></pre>
 <p>Now it's a small step to actual Python (long live stepwise refinement!):</p>
 <pre><code class="language-python">s = &quot;madam&quot;
 
 palindrome = True
 for offset in range(0, len(s)/2):
-    if s[offset] != s[len(s)-1-offset]:
-       palindrome = False
+if s[offset] != s[len(s)-1-offset]:
+   palindrome = False
 
 if palindrome:
-    print(&quot;It is a palindrome!&quot;)
+print(&quot;It is a palindrome!&quot;)
 else:
-    print(&quot;It is NOT a palindrome.&quot;)
+print(&quot;It is NOT a palindrome.&quot;)
 </code></pre>
 <h2 id="solution-2">Solution 2</h2>
 <p>Python is often described as a batteries-included language because its built-in libraries are so extensive. We had good luck earlier finding short solutions by leveraging the libraries so let's try that again.</p>
@@ -2656,9 +2627,9 @@ slist = list(s)
 slist.reverse()
 s_reversed = ''.join(slist)
 if s == s_reversed:
-    print(&quot;It is a palindrome!&quot;)
+print(&quot;It is a palindrome!&quot;)
 else:
-    print(&quot;It is NOT a palindrome.&quot;)
+print(&quot;It is NOT a palindrome.&quot;)
 </code></pre>
 <h2 id="refinements">Refinements</h2>
 <p>The original problem statement taunted us by saying that “An excellent program would be able to deal with phrases by ignoring capitalization, spaces and punctuation in the input, e.g. 'A man, a plan, a canal, Panama!' is a palindromic phrase” and it would be nice if our code identified it as such. The trick here is to preprocess the string before letting our code from above at it. What we'll do is take the string and build a new one from it. As we build the new one we will lowercase any capital letters, and exclude any characters that are not alphabetic. The resulting code is,</p>
@@ -2666,11 +2637,11 @@ else:
 print(s, &quot;becomes...&quot;,end='')
 s_new = ''
 for c in s:
-    if c.isalpha():
-        if c.isupper():
-            s_new = s_new + c.lower()
-        else:
-            s_new = s_new + c
+if c.isalpha():
+    if c.isupper():
+        s_new = s_new + c.lower()
+    else:
+        s_new = s_new + c
 print(s_new)
 </code></pre>
 <p>and the output is,</p>
@@ -2698,43 +2669,43 @@ with an odd number of letters,</p>
     in it.</li>
 </ul>
 <p>A good set of test values then would be:</p>
-<pre><code class="language-plaintext">    madam
-    maam
-    motor
-    moor
-    a
-    oo
-    at
-    A man, a plan, a canal, Panama!
+<pre><code class="language-plaintext">madam
+maam
+motor
+moor
+a
+oo
+at
+A man, a plan, a canal, Panama!
 </code></pre>
 <p>Running our program multiple times to test all of these would be tiring
 so it would be nice if we could automate it. We could do that by putting
 our test values into a list and looping through it to run all the tests.
 Thus the testing version of our program might look like this,</p>
 <pre><code class="language-python">TESTS = ['madam', 'maam', 'motor', 'moor', 'a', 'oo', 'at',
-            'A man, a plan, a canal, Panama!']
+        'A man, a plan, a canal, Panama!']
 print('Testing Solution 1:')
 for s in TESTS:
-    print(s,end='')
-    # Preprocess s to lower case and remove non-alphas.
-    s_new = ''
-    for c in s:
-        if c.isalpha():
-            if c.isupper():
-                s_new = s_new + c.lower()
-            else:
-                s_new = s_new + c
-    s = s_new # Replace s with s_new.
+print(s,end='')
+# Preprocess s to lower case and remove non-alphas.
+s_new = ''
+for c in s:
+    if c.isalpha():
+        if c.isupper():
+            s_new = s_new + c.lower()
+        else:
+            s_new = s_new + c
+s = s_new # Replace s with s_new.
 
-    # Test to see if s is a palindrome using Solution 1.
-    palindrome = True
-    for offset in range(0, len(s)//2):
-        if s[offset] != s[len(s)-1-offset]:
-            palindrome = False
-    if palindrome:
-        print(&quot;is a palindrome!&quot;)
-    else:
-        print(&quot;is NOT a palindrome.&quot;)
+# Test to see if s is a palindrome using Solution 1.
+palindrome = True
+for offset in range(0, len(s)//2):
+    if s[offset] != s[len(s)-1-offset]:
+        palindrome = False
+if palindrome:
+    print(&quot;is a palindrome!&quot;)
+else:
+    print(&quot;is NOT a palindrome.&quot;)
 </code></pre>
 <p>This is an awkward way to test our code because we need to edit our
 original program. Fortunately Python allows us to make our palindrome
@@ -2746,23 +2717,22 @@ modules and functions is the topic of the next course module.</p>
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/12_Palindrome.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/05_Lists_and_Strings/12_Palindrome.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.633941+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:16.252874+00:00
     -->
   </footer>
 

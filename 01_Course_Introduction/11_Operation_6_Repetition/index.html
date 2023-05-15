@@ -1,16 +1,12 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 
 <head>
 <meta charset="utf-8"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
 <!--
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
@@ -21,16 +17,25 @@
   -->
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
 <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+<!-- Make browsers render elements consistently by resetting CSS -->
+<!-- https://necolas.github.io/normalize.css/ -->
+<!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+<link href="../../css/normalize.css" rel="stylesheet"/>
+<link href="../../css/highlight.css" rel="stylesheet"/>
 <!-- Site CSS styles -->
 <link href="../../css/theme.css" rel="stylesheet"/>
 <!-- Site fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&amp;family=Roboto+Slab:wght@300;400;500&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;display=swap" rel="stylesheet"/>
 <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -39,23 +44,9 @@
     http://www.mkdocs.org/user-guide/configuration/#extra_css
   -->
 <link href="../../css/extra.css" rel="stylesheet"/>
-<!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-<!-- Make browsers render elements consistently by resetting CSS -->
-<!-- https://necolas.github.io/normalize.css/ -->
-<!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-<link href="../../css/normalize.css" rel="stylesheet"/>
-<link href="../../css/highlight.css" rel="stylesheet"/>
 <script crossorigin="anonymous" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <!-- Include and activate code highlighting by highlight.js -->
 <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-<!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -76,18 +67,22 @@
 </head>
 <body>
 <header>
+<!-- Thematic image -->
+<img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;"/>
 <nav>
 <!-- Next and previous links -->
 <div id="next">
-<a href="../12_Bonus_operation_modularity/" title="Bonus Operation: Modularity"></a>Next →<br/>
-            Bonus Operation: Modularity <span style="color: rgba(251, 236, 218, 0.6);">→</span>
+          
+          
+            Next →<br/>
+<a href="../12_Bonus_operation_modularity/" title="Bonus Operation: Modularity"></a>Bonus Operation: Modularity<span style="color: rgba(251, 236, 218, 0.6);">→</span>
 </div>
 <div id="prev">
-<a href="../10_Operation_5_Selection/" title="Operation #5: Selection">← Previous</a><br/>
-<span style="color: rgba(251, 236, 218, 0.6);">←</span>
-          Operation #5: Selection
           
-        </div>
+          ← Previous<br/>
+<span style="color: rgba(251, 236, 218, 0.6);">←</span>
+<a href="../10_Operation_5_Selection/" title="Operation #5: Selection">Operation #5: Selection</a>
+</div>
 <!-- Site Table of Contents -->
 <details>
 <summary>Contents</summary>
@@ -136,7 +131,7 @@
 <!--
 -->
 <li>
-<a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+<a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 <!--
 -->
@@ -180,7 +175,7 @@
 <!--
 -->
 <li>
-<a href="../04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+<a href="../04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br/> Six (+1) Key Programming Concepts</a>
 </li>
 <!--
 -->
@@ -259,7 +254,7 @@
 <!--
 -->
 <li>
-<a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+<a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 <!--
 -->
@@ -379,7 +374,7 @@
 <!--
 -->
 <li>
-<a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+<a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 <!--
 -->
@@ -1453,31 +1448,22 @@
 </ul>
 </details>
 </details>
-<!-- Thematic image -->
-<img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;"/>
-</nav>
-</header>
 <!-- <h2>Support for search</h2> -->
 <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
 <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
+</nav>
+</header>
 <main>
-<!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#operation-6-repetition">Operation #6: Repetition</a></li>
-        
-    
-    </ul> -->
 <h1 id="operation-6-repetition">Operation #6: Repetition</h1>
 <p>Some procedures require even more than SIPO-plus-Selection; they require
 the ability to repeat a group of instructions, e.g.</p>
@@ -1533,21 +1519,20 @@ the test is true.</p>
 </div>
 </main>
 <footer>
-<!-- <h2>Link to the source</h2> -->
-<!--
-        Support repo URL
-      -->
-<!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/01_Course_Introduction/11_Operation_6_Repetition.md">Edit on GitHub</a>
-    
-    -->
 <p>License:
       <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">CC BY-NC-SA</a>.
-    <br/>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br/>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br/>
+<!--
+      Support repo URL
+    -->
+<a href="https://github.com/ttopper/CPSC128/edit/main/docs/01_Course_Introduction/11_Operation_6_Repetition.md">Source on GitHub</a>.
+    
+    </p>
 <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:54.819835+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:15.482625+00:00
     -->
 </footer>
 <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({

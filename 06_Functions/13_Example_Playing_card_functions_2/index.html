@@ -1,15 +1,11 @@
-<!--
-  This Basic theme serves as an example for how to create other
-  themes by demonstrating the features with minimal HTML and CSS.
-  Comments like this will be through the code to explain briefly
-  what each feature is and point you to the MkDocs documentation
-  to find out more.
--->
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--
+    Derived from mkdocs Basic theme: https://github.com/mkdocs/mkdocs-basic-theme
+  -->
   
   <!--
     The page_title contains the title for a page as shown in the navigation.
@@ -23,10 +19,17 @@
   <link rel="shortcut icon" href="../../img/favicon.ico">
 
   <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"> -->
+      To include static assets from our theme, just add
+      ../.. beforehand which will be the relative path to
+      the root of the documentation.
+    -->
+
+  <!-- Make browsers render elements consistently by resetting CSS -->
+  <!-- https://necolas.github.io/normalize.css/ -->
+  <!-- N.B. This did not work!
+      <link rel="stylesheet" href="/css/normalize.css"> -->
+  <link href="../../css/normalize.css" rel="stylesheet">
+  <link href="../../css/highlight.css" rel="stylesheet">
 
   <!-- Site CSS styles -->
   <link rel="stylesheet" href="../../css/theme.css">
@@ -34,10 +37,12 @@
   <!-- Site fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
-
   <!--
     extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -49,18 +54,6 @@
     <link href="../../css/extra.css" rel="stylesheet">
   
 
-  <!--
-    To include static assets from our theme, just add
-    ../.. beforehand which will be the relative path to
-    the root of the documentation.
-  -->
-  <!-- Make browsers render elements consistently by resetting CSS -->
-  <!-- https://necolas.github.io/normalize.css/ -->
-  <!-- N.B. This did not work!
-    <link rel="stylesheet" href="/css/normalize.css"> -->
-  <link href="../../css/normalize.css" rel="stylesheet">
-  <link href="../../css/highlight.css" rel="stylesheet">
-
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -68,9 +61,6 @@
 
   <!-- Include and activate code highlighting by highlight.js -->
   <!-- from: https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/base.html -->
-    <!-- <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/mono-blue.min.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/plaintext.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/python.min.js"></script>
@@ -97,6 +87,8 @@
 <body>
 
   <header>
+      <!-- Thematic image -->
+      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
 
     <nav>
       <!-- Next and previous links -->
@@ -104,25 +96,25 @@
         <div id="next">
           
           
-            <a href="../14_Refining_import/" title="Refining import"/>Next &#8594;</a><br>
-            Refining import <span style="color: rgba(251, 236, 218, 0.6);">&#8594;</span>
+            Next →<br>
+            <a href="../14_Refining_import/" title="Refining import" />Refining import</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
         <div id="prev">
           
-          <a href="../12_Summary_Module_layout/" title="Summary: Module Layout">&#8592; Previous</a><br>
-          <span style="color: rgba(251, 236, 218, 0.6);">&#8592;</span>
-          Summary: Module Layout
+          ← Previous<br>
+          <span style="color: rgba(251, 236, 218, 0.6);">←</span>
+          <a href="../12_Summary_Module_layout/" title="Summary: Module Layout">Summary: Module Layout</a>
           
         </div>
       
 
       <!-- Site Table of Contents -->
       <details>
-        <summary>Contents</summary>
-        
-          <!--
+              <summary>Contents</summary>
+              
+                <!--
 
 -->
 
@@ -130,8 +122,8 @@
     <a href="../..">Welcome to CPSC 128 - Object Oriented Programming 1</a>
 </li>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -200,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Learning Outcomes → Examinable Topics</a>
+    <a href="../../00_Preparing/15_Examinable_topics_pointer/">Examinable Topics</a>
 </li>
 
         
@@ -225,8 +217,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -277,7 +269,7 @@
 -->
 
 <li >
-    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer: Six (+1) Key Programming Concepts</a>
+    <a href="../../01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/">The World of the Computer:<br> Six (+1) Key Programming Concepts</a>
 </li>
 
         
@@ -392,8 +384,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -417,7 +409,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is\...</a>
+    <a href="../../02_SIPO/01_Recall_Programming_is/">Recall: Programming is...</a>
 </li>
 
         
@@ -633,7 +625,7 @@
 -->
 
 <li >
-    <a href="../../02_SIPO/25_Pythonic_process/">Process for Algorithm Development in Python</a>
+    <a href="../../02_SIPO/25_Pythonic_process/">Algorithm Development in Python</a>
 </li>
 
         
@@ -658,8 +650,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -852,8 +844,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1172,8 +1164,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1348,8 +1340,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1578,8 +1570,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1673,8 +1665,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -1831,8 +1823,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2043,8 +2035,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2282,8 +2274,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2431,8 +2423,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2508,8 +2500,8 @@
     </ul>
   </details>
 
-        
-          <!--
+              
+                <!--
 
 -->
 
@@ -2540,37 +2532,26 @@
     </ul>
   </details>
 
-        
-      </details>
-
-      <!-- Thematic image -->
-      <img src="../../img/gears.jpg" style="width: 90%; margin: 1rem 5%;">
+              
+            </details>
+      <!-- <h2>Support for search</h2> -->
+      <!--
+              Create a search form that sends the user to the search.html file - this is
+              the other file in the template which adds search to the theme. The only
+              requirement here is that there is a text input with the name 'q' and the
+              action and methods match below.
+            -->
+      <!-- <div role="search">
+              <form action="../../search.html" method="get">
+                <input type="search" name="q" placeholder="Search docs" />
+              </form>
+            </div>
+            -->
 
     </nav>
   </header>
-      <!-- <h2>Support for search</h2> -->
-      <!--
-        Create a search form that sends the user to the search.html file - this is
-        the other file in the template which adds search to the theme. The only
-        requirement here is that there is a text input with the name 'q' and the
-        action and methods match below.
-      -->
-      <!-- <div role="search">
-        <form action="../../search.html" method="get">
-          <input type="search" name="q" placeholder="Search docs" />
-        </form>
-      </div>
-      -->
 
   <main>
-    <!-- <h2>Show the table of contents for the current page</h2>
-    <ul>
-    
-        <li><a href="#example-playing-card-functions-2">Example: Playing Card Functions 2</a></li>
-        
-    
-    </ul> -->
-
     
       <h1 id="example-playing-card-functions-2">Example: Playing Card Functions 2</h1>
 <p>Just to provide further examples for study here is a slightly more
@@ -2598,70 +2579,70 @@ import random
 
 SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
 FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
-                'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
-                'Queen', 'King')
+            'Seven', 'Eight', 'Nine', 'Ten', 'Jack',
+            'Queen', 'King')
 
 def suit(cardnum):
-    '''Returns the suit name, e.g. 'Clubs', of the card it is passed.'''
-    return SUITS[cardnum // 13]
+'''Returns the suit name, e.g. 'Clubs', of the card it is passed.'''
+return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-    '''Returns the face value, e.g. 'Three', of the card it is passed.'''
-    return FACE_VALUES[cardnum % 13]
+'''Returns the face value, e.g. 'Three', of the card it is passed.'''
+return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-    '''Returns a string describing the card it is passed,
-    e.g. 'Queen of Hearts'.'''
-    return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
+'''Returns a string describing the card it is passed,
+e.g. 'Queen of Hearts'.'''
+return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
 
 def create_deck():
-    '''Returns a new unshuffled deck of cards.'''
-    return list(range(0,52))
+'''Returns a new unshuffled deck of cards.'''
+return list(range(0,52))
 
 def shuffle(deck):
-    '''Shuffles the card list it is passed by selecting pairs
-    of cards at random and swapping them.'''
-    shuffles = 2 * len(deck)
-    for shuffle in range(shuffles):
-        posn1 = random.randint(0, len(deck)-1)
-        posn2 = random.randint(0, len(deck)-1)
-        deck[posn1], deck[posn2] = deck[posn2], deck[posn1]
-    return
+'''Shuffles the card list it is passed by selecting pairs
+of cards at random and swapping them.'''
+shuffles = 2 * len(deck)
+for shuffle in range(shuffles):
+    posn1 = random.randint(0, len(deck)-1)
+    posn2 = random.randint(0, len(deck)-1)
+    deck[posn1], deck[posn2] = deck[posn2], deck[posn1]
+return
 
 def deal(deck):
-    '''Returns (deals) a card from deck.'''
-    return deck.pop()
+'''Returns (deals) a card from deck.'''
+return deck.pop()
 
 if __name__ == '__main__':
-    # Unit tests
-    # N.B. More needed!
-    deck = create_deck()
-    print('New deck:', deck)
-    shuffle( deck)
-    print('Shuffled deck:', deck)
-    print('Dealing a card...')
-    card = deal(deck)
-    print('    Card number:', card)
-    print('    Face value:', face_value(card))
-    print('    Suit:', suit(card))
-    print('    Description:', label(card))
-    print('Deck after dealing:', deck)
+# Unit tests
+# N.B. More needed!
+deck = create_deck()
+print('New deck:', deck)
+shuffle( deck)
+print('Shuffled deck:', deck)
+print('Dealing a card...')
+card = deal(deck)
+print('    Card number:', card)
+print('    Face value:', face_value(card))
+print('    Suit:', suit(card))
+print('    Description:', label(card))
+print('Deck after dealing:', deck)
 </code></pre>
 <p>Here is an output when it is run,</p>
 <pre><code class="language-plaintext">&gt;&gt;&gt; 
 New deck: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-    18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
-    36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
+36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
 Shuffled deck: [13, 26, 10, 15, 6, 50, 12, 2, 27, 4, 0, 11, 5, 37, 16, 
 49, 14, 30, 1, 18, 35, 42, 41, 34, 20, 25, 22, 51, 29, 21, 28, 31, 3, 32,
-    38, 7, 17, 33, 24, 43, 46, 39, 8, 47, 45, 23, 44, 19, 48, 9, 36, 40]
+38, 7, 17, 33, 24, 43, 46, 39, 8, 47, 45, 23, 44, 19, 48, 9, 36, 40]
 Dealing a card...
-    Card number: 40
-    Face value: Two
-    Suit: Spades
-    Description: Two of Spades
+Card number: 40
+Face value: Two
+Suit: Spades
+Description: Two of Spades
 Deck after dealing: [13, 26, 10, 15, 6, 50, 12, 2, 27, 4, 0, 11, 5, 37,
-    16, 49, 14, 30, 1, 18, 35, 42, 41, 34, 20, 25, 22, 51, 29, 21, 28, 31, 
+16, 49, 14, 30, 1, 18, 35, 42, 41, 34, 20, 25, 22, 51, 29, 21, 28, 31, 
 3, 32, 38, 7, 17, 33, 24, 43, 46, 39, 8, 47, 45, 23, 44, 19, 48, 9, 36]
 &gt;&gt;&gt; 
 </code></pre>
@@ -2670,51 +2651,51 @@ Deck after dealing: [13, 26, 10, 15, 6, 50, 12, 2, 27, 4, 0, 11, 5, 37,
 &gt;&gt;&gt; help( playing_cards_2)
 Help on module playing_cards_2:
 NAME
-    playing_cards_2
+playing_cards_2
 
 DESCRIPTION
-    Contains functions and values for working with playing cards.
-    Cards are simply represented by the numbers from 0 to 51 mapped as follows:
-    0 : Ace of Clubs
-    1 : Two of Clubs
-    ...
-    12 : King of Clubs
-    13 : Ace of Diamonds
-    ...
-    25 : King of Diamonds
-    26 : Ace of Hearts
-    ...
-    50 : Queen of Spades
-    51 : King of Spades
-    A deck of cards and hands of cards are both simply lists of card numbers.
+Contains functions and values for working with playing cards.
+Cards are simply represented by the numbers from 0 to 51 mapped as follows:
+0 : Ace of Clubs
+1 : Two of Clubs
+...
+12 : King of Clubs
+13 : Ace of Diamonds
+...
+25 : King of Diamonds
+26 : Ace of Hearts
+...
+50 : Queen of Spades
+51 : King of Spades
+A deck of cards and hands of cards are both simply lists of card numbers.
 
 FUNCTIONS
-    create_deck()
-        Returns a new unshuffled deck of cards.
+create_deck()
+    Returns a new unshuffled deck of cards.
 
-    deal(deck)
-        Returns (deals) a card from deck.
+deal(deck)
+    Returns (deals) a card from deck.
 
-    face_value(cardnum)
-        Returns the face value, e.g. 'Three', of the card it is passed.
+face_value(cardnum)
+    Returns the face value, e.g. 'Three', of the card it is passed.
 
-    label(cardnum)
-        Returns a string describing the card it is passed,
-        e.g. 'Queen of Hearts'.
+label(cardnum)
+    Returns a string describing the card it is passed,
+    e.g. 'Queen of Hearts'.
 
-    shuffle(deck)
-        Shuffles the card list it is passed by selecting pairs
-        of cards at random and swapping them.
+shuffle(deck)
+    Shuffles the card list it is passed by selecting pairs
+    of cards at random and swapping them.
 
-    suit(cardnum)
-        Returns the suit name, e.g. 'Clubs', of the card it is passed.
+suit(cardnum)
+    Returns the suit name, e.g. 'Clubs', of the card it is passed.
 
 DATA
-    FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', ...
-    SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
+FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', ...
+SUITS = ('Clubs', 'Diamonds', 'Hearts', 'Spades')
 
 FILE
-    \\home\profiles\kchatfieldreed\documents\cpsc128_intro_oo\programs\playing_cards_2.py
+\\home\profiles\kchatfieldreed\documents\cpsc128_intro_oo\programs\playing_cards_2.py
 
 &gt;&gt;&gt; 
 </code></pre>
@@ -2722,23 +2703,22 @@ FILE
   </main>
 
   <footer>
-    <!-- <h2>Link to the source</h2> -->
-    <!--
-        Support repo URL
-      -->
-    <!-- 
-      <a href="https://github.com/ttopper/CPSC128/edit/main/docs/06_Functions/13_Example_Playing_card_functions_2.md">Edit on GitHub</a>
-    
-    -->
-
     <p>License:
       <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA</a>.
-    <br>
-    Built with <a href="https://www.mkdocs.org">MkDocs</a>.</p>
+      <br>
+      Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+      <br>
+    <!--
+      Support repo URL
+    -->
+    
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/06_Functions/13_Example_Playing_card_functions_2.md">Source on GitHub</a>.
+    
+    </p>
 
     <!--
     MkDocs version      : 1.4.2
-    Docs Build Date UTC : 2023-05-13 04:47:55.713175+00:00
+    Docs Build Date UTC : 2023-05-15 15:00:16.385128+00:00
     -->
   </footer>
 
