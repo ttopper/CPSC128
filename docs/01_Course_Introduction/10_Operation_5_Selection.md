@@ -45,7 +45,7 @@ execute _depending_ on the outcome of the test.
 
 This can be presented diagramatically by a flowchart like this:
 
-![.](10_if_flowchart.gif)
+[//]: <> (![.](10_if_flowchart.gif))
 
 ```mermaid
 flowchart TD

@@ -35,25 +35,25 @@ Next we want to calculate how many hours worth of seconds this is. We do
 this similarly to the days calculation above.
 
 ```plaintext
-hours = 27,200/(60*60) = 7
+hours = 27,200 / (60 * 60) = 7
 ```
 
 And find the remainder,
 
 ```plaintext
-remainder = 27,200 - 7x(60x60) = 2000
+remainder = 27,200 - 7 * (60 * 60) = 2,000
 ```
 
 Finally we calculate the number of minutes,
 
 ```plaintext
-minutes = 2,000/60 = 33
+minutes = 2,000 / 60 = 33
 ```
 
 and the remainder of that is the leftover seconds,
 
 ```plaintext
-seconds = 2,000 - 33*60 = 20
+seconds = 2,000 - 33 * 60 = 20
 ```
 
 So 200,000 seconds is equivalent to 2 days, 7 hours, 33 minutes and 20
@@ -74,11 +74,11 @@ remainders along the way, and
 A literal translation of our manual steps,
 
 ```plaintext
-days = 200,000/(24*60*60) = 2
+days = 200,000 / (24*60*60) = 2
 remainder = 200,000 - 2*(24*60*60) = 27,200
-hours = 27,200/(60*60) = 7
-remainder = 27,200 - 7x(60*60) = 2000
-minutes = 2,000/60 = 33
+hours = 27,200 / (60*60) = 7
+remainder = 27,200 - 7*(60*60) = 2,000
+minutes = 2,000 / 60 = 33
 seconds = 2,000 - 33*60 = 20
 ```
 

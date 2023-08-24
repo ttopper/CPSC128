@@ -7,7 +7,7 @@ Write a program that makes change, i.e. given a number of cents of change to mak
 ```plaintext
 How much change do you have to make (in cents)? 197
 195 cents can be made using:
-0 twonies
+0 toonies
 1 loonies
 3 quarters
 2 dimes

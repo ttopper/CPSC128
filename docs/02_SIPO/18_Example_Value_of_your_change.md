@@ -7,7 +7,7 @@ Write a program that will let the user enter the change they have in their pocke
 ```plaintext
 Tell me about the change in your pocket and I'll add it up for you.
 How many of each type of coin do you have?
-Twonies: 1
+Toonies: 1
 Loonies: 0
 Quarters: 3
 Dimes: 2

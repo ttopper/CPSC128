@@ -4,8 +4,8 @@ Together our first four commands make a little program and illustrate
 the fourth operation: sequential execution.
 
 ```python
-speed = input()
-duration = input()
+speed = int(input())
+duration = int(input())
 distance = duration * speed
 print(distance)
 ```
@@ -18,26 +18,26 @@ reorderings will produce errors. For example swapping the second and
 third ones,
 
 ```python
-speed = input()
+speed = int(input())
 distance = duration * speed
-duration = input()
+duration = int(input())
 print(distance)
 ```
 
 or the second and fourth ones,
 
 ```python
-speed = input()
+speed = int(input())
 print(distance)
 distance = duration * speed
-duration = input()
+duration = int(input())
 ```
 
 or the third and fourth ones,
 
 ```python
-speed = input()
-duration = input()
+speed = int(input())
+duration = int(input())
 print(distance)
 distance = duration * speed
 ```

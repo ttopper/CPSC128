@@ -34,16 +34,16 @@ And even [What will be on the final exam!](15_Examinable_topics_pointer.md)
 
 Familiarize yourself with the two[^*] (2!) course websites.
 
-1. The [Moodle site]() will be used for the administrative side of the course.
+1. The [Moodle site](https://moodle.yukonu.ca/course/view.php?id=13038) will be used for the administrative side of the course.
 
 2. The [Github site](https://ttopper.github.io/CPSC128/) provides the learning resources. It is our online textbook.
 
-Github Site <br> (Textbook) | Moodle site <br> (Administration)
-----------------------------|---------------------------- 
-Course Notes and Videos     | Discussion forum
-Assignment descriptions     | Schedule and Calendar (so you can see when the next assignment is due!)
-&nbsp;                      | Your Grades (so you can see how you are doing)
-&nbsp;                      | Assignment submission (or you can use email)
+ Github Site <br> (Textbook)     |     Moodle site <br> (Administration)                                       
+:----------------------------|:----------------------------
+ -  Course Notes and Videos |  -  Discussion forum
+ -  Assignment descriptions |  -  Schedule and Calendar (so you can see when the next assignment is due!)
+ &nbsp; |  -  Your Grades (so you can see how you are doing)
+ &nbsp; |  -  Assignment submission
 
 If you like having options, there are several good free online [Python textbooks](20_Textbooks.md) available.
 

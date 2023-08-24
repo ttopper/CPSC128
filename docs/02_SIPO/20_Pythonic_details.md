@@ -9,3 +9,5 @@ explain these in turn:
 -   the continuation character `\`
 
 -   the line `done = input('Press Enter to exit...')`
+
+-   print formating using f-strings

@@ -3,7 +3,7 @@
 ## Step 1: Read the problem description
 
 Read the question in detail. If the question references something else
-(like and another file or the Moodle), make sure you read that too.
+(like an equation and another file or the Moodle), make sure you read that too.
 
 ## Step 2: Analyze the problem
 

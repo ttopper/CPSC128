@@ -13,7 +13,6 @@ for problems in terms of sequence, selection (`if`) and iteration (`for` and
 - _Technique_ Packaging quantities using `//` and `%`; pulling apart
     numbers using `%` and `//`.
 - _Technique_ Formatting output using format strings.
-- _Technique_ Knowing when to use `input` and when to use `raw_input`.
 - _Technique_ Input validation using `while`.
 - _Technique_ Using counters in programs.
 - _Technique_ Using flag variables, i.e. Boolean variables that

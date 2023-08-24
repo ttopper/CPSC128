@@ -6,7 +6,7 @@ Scott used a tape measure to measure the circumferences of all the trees in a re
 
 ```plaintext
 Enter the circumference of the tree in centimetres: 238
-The tree's diameter is approximately: 75.757752911742188 centimetres.
+The tree's diameter is approximately: 75.76 centimetres.
 ```
 
 ## Solution:

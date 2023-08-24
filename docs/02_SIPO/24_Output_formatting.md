@@ -23,6 +23,8 @@ statement.]{style="font-size: 0.9375rem;"}\
 
 3.  ![.](24_output_formatting_0.gif)
 
+4.  ![.](24_output_formatting_0.gif)
+
 The formatting codes used in the second print statement are derived from
 those originally used by the language C and now also used by the
 languages C++, AWK, Perl, and PHP among others. Each format placeholder
@@ -33,6 +35,10 @@ has the form,
 ```
 
 The % sign indicates the beginning of a placeholder.
+
+Although all of these options are valid in Python 3 we will be using option 
+4, the f-string, because that is currently considered best practice. I also 
+think it the easist to read!
 
 The letter indicates the desired format:
 
@@ -69,11 +75,9 @@ variables in parentheses, e.g.
 
 ![.](24_output_formatting_9.gif)
 
-This example also illustrates that to output a literal % character you
-need to use a pair of them.
 
 There is much more to string formatting than is shown here. For the
 details start with the Python Library Reference [Section
-3.6.2](http://www.python.org/doc/current/lib/typesseq-strings.html).
+7](https://docs.python.org/3/tutorial/inputoutput.html).
 More details can be found in the Gnu AWK manual [Section
-4.5](http://www.gnu.org/manual/gawk/gawk.html#Basic-Printf)
+5.2](https://www.gnu.org/software/gawk/manual/html_node/Print-Examples.html)

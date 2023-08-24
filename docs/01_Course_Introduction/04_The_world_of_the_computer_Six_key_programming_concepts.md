@@ -30,7 +30,7 @@ computer. They all share these components.
 
 -   a processor that manipulates data, usually confined to very simple
     arithmetic (think addition, multiplication) and logical (think
-    oflight switches controlling lights) operations.
+    of light switches controlling lights) operations.
 
 -   a block of memory to store values created during processing. This
     can vary in size from a few bytes for dedicated processors to

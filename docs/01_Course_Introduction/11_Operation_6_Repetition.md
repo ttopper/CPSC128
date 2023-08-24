@@ -49,7 +49,7 @@ the test is true.
 
 Diagramatically this can be represented as,
 
-![.](11_while_flowchart.gif)
+[//]: <> (![.](11_while_flowchart.gif))
 
 ```mermaid
 flowchart TD

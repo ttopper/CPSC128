@@ -12,11 +12,11 @@ and store it with the name `speed` and then input a second value and
 store it with the name `duration` we use the commands,
 
 ```python
-speed = input()
-duration = input()
+speed = int(input())
+duration = int(input())
 ```
 Each of these statements will look to the input channel, take the next
-value from it, store it in memory and label the value. The first
+value from it, store it in memory and label the value as a number (int). The first
 statement labels the value it stores `speed` and the second labels its
 value `duration`. Why label them? So we have a way to refer to them
 later when we want to use them. The effect on our computer is shown

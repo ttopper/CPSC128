@@ -37,7 +37,7 @@ temp_in_c = (temp_in_f - 32) * 5 / 9
 print(temp_in_f, "degrees Fahrenheit =", temp_in_c, "degrees Celsius.")
 ```
 
-The necessary changes are shown in red. Try running this version of the program and see how the output changes. Is it what you wanted? If not stay tuned for an update coming soon to a module near you.
+Try running this version of the program and see how the output changes. Is it what you wanted? If not stay tuned for an update coming soon to a module near you.
 
 The change let the computer know that you could enter any number. It should work if you enter 5, 5.0, or 2.5 as your starting number. Make sure that you pick the number type that is needed for each situation. The key thing to realize here is that 5 and 5.0 are not the same thing.
 

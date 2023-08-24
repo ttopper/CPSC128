@@ -1,3 +1,4 @@
+
 # pChange_Making.py
 #
 # Kate Chatfield-Reed
@@ -10,7 +11,7 @@ print()
 change = round(change/5) * 5
 print(change, "cents change can be given using:")
 
-twonies = change // 200
+toonies = change // 200
 change = change % 200
 loonies = change // 100
 change = change % 100
@@ -20,11 +21,12 @@ dimes = change // 10
 change = change % 10
 nickels = change // 5
 
-print("{:d} twonies,".format(twonies))
-print("{:d} loonies,".format(loonies))
-print("{:d} quarters,".format(quarters))
-print("{:d} dimes,".format(dimes))
-print("{:d} nickels,".format(nickels))
+print(f"{toonies:d} toonies,")
+print(f"{loonies:d} loonies,")
+print(f"{quarters:d} quarters,")
+print(f"{dimes:d} dimes,")
+print(f"{nickels:d} nickels,")
 print()
 
 done = input("Press Enter to exit.")
+

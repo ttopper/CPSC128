@@ -20,7 +20,8 @@ Think about why the comma might print in exercise 1, but not in exercise 2.
 3. Printing things from input:
 
 ```python
-name = input() print("Hello", name)
+name = input()
+print("Hello", name)
 ```
 
 You can enter any name, but that is not very clear.
@@ -39,8 +40,8 @@ speed = int(input())
 duration = int(input())
 distance = duration * speed print(distance)
 ```
- 
-Based on the changes we made between exercise 3 and 4 change this code so that it is clear what you are supposed to input. Could you make the output clearer as well, based on the examples in 3 and 4?
+
+Look at problems 3 and 4 and see if you can use that to change this code so that it is clear what you are supposed to input in problem 5. Could you make the output clearer as well?
 
 6. You can convert from degrees to radians with the following equation: rad = deg * π/180 Here is that code written in python. Note that we have to import the value of pi from the library math.
 

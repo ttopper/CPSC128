@@ -28,7 +28,7 @@ hard?
 **A**: Sure,
 
 1.  While the words in computer languages may refer to an unfamiliar world, it is a shockingly simple world. For example many of them are built on just six key concepts.
-2.  Although computers don't speak English, the languages they do use contain very few words (the [complete list of Python keywords](https://docs.python.org/3/reference/lexical_analysis.html#keywords) contains only 33 words).
+2.  Although computers don't speak English, the languages they do use contain very few words (the [complete list of Python keywords](https://docs.python.org/3/reference/lexical_analysis.html#keywords) contains only 35 words).
 3.  A large set of techniques has been developed to deal with commonly occuring situations, so you almost never have to start from scratch. As a student your job is to learn those techniques.
 
 The main goal of this course is to teach you those concepts, in that language, and to put them to use using those techniques.

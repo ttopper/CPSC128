@@ -3,8 +3,8 @@
 Our statements so far,
 
 ```python
-speed = input()
-duration = input()
+speed = int(input())
+duration = int(input())
 distance = duration * speed
 ```
 

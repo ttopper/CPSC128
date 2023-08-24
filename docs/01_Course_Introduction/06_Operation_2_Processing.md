@@ -47,7 +47,7 @@ When we do math on paper we write 2<sup>3</sup> for "two cubed" or 2 × 2 × 2
 but early programming languages had no easy way to type a superscript
 and so adopted other notations. Python uses `**` for exponentiation
 so `2**3` for two-cubed (the other common choice in programming
-languages is \^ or 2\^3). The pair of asterisks is to remind us of
+languages is ^ or 2^3). The pair of asterisks is to remind us of
 repeated multiplication.
 
 The fact that assignment statements look a bit like equations, has
