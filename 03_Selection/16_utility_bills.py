@@ -16,4 +16,4 @@ else:
         amount = 20.0 + 0.03*(kwh-500)
     else:
         amount = 35.0 + 0.02*(kwh-1000)
-print('Bill amount = ${:.2f}.'.format(amount))
+print(f'Bill amount = ${amount:.2f}')
