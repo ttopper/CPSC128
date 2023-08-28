@@ -20,10 +20,10 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))
@@ -46,13 +46,13 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-return face_value(cardnum) + " of " + suit(cardnum)
+    return face_value(cardnum) + " of " + suit(cardnum)
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))

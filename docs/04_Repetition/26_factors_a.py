@@ -9,7 +9,7 @@ import math
 print("This program will display all the factors of the number you enter.")
 num = int(input("Number: "))
 
-print("{:d}'s factors are:".format(num))
+print(f"{num:d}'s factors are:")
 divisor = 1
 while divisor*divisor <= num:
     if num%divisor == 0:

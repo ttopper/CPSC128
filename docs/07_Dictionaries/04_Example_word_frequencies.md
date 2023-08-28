@@ -90,14 +90,16 @@ Application of some string methods can fix some of these problems,
 
 The body of the loop then becomes,
 
-    for word in words:
-        w = word.lower()
-        w = w.strip('.,;:'"?!()') # Notice the \ to escape the ' inside the string
-        if w.isalpha():
-            if w in word_counts:
-                word_counts[w] = word_counts[w] + 1
-            else:
-                word_counts[w] = 1
+```
+for word in words:
+    w = word.lower()
+    w = w.strip('.,;:\'"?!()') # Notice the \ to escape the ' inside the string
+    if w.isalpha():
+        if w in word_counts:
+            word_counts[w] = word_counts[w] + 1
+        else:
+            word_counts[w] = 1
+```
 
 Of course `isalpha` is too blunt an instrument since we now lose the
 hyphenated words, but we could deal with that too (perhaps by writing

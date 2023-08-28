@@ -10,16 +10,16 @@ So far our documentation has consisted of a block of header comments identifying
 this is an artificial test module.'''
 
 def test_fn_1():
-'''This is the first test function.
-It doesn't do anything.'''
-return
+    '''This is the first test function.
+    It doesn't do anything.'''
+    return
 
 def test_fn_2():
-'''This is the second test function which also does nothing.'''
-return
+    '''This is the second test function which also does nothing.'''
+    return
 ```
 
-In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the standard library[^*] modules.
+In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the [standard library modules](https://docs.python.org/3/py-modindex.html).
 
 Python also has built-in commands that extract this documentation. Recall that when we import a module in the shell we can use `dir` to see it's attributes. Here's an example for a real module, `math`,
 
@@ -44,7 +44,8 @@ and here's the `dir` for our artificial module,
 ```plaintext
 >>> import module_docn
 >>> dir(module_docn)
-['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'test_fn_1', 'test_fn_2']
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__',
+'__name__', '__package__', '__spec__', 'test_fn_1', 'test_fn_2']
 >>>
 ```
 
@@ -91,7 +92,7 @@ test_fn_2()
     This is the second test function which also does nothing.
 
 FILE
-\\home\profiles\kchatfieldreed\documents\cpsc128_intro_oo\programs\module_docn.py
+\\home\profiles\kreed\documents\cpsc128\programs\module_docn.py
 
 >>>
 ```

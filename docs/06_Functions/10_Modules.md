@@ -10,10 +10,10 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
            'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))
@@ -26,7 +26,7 @@ Now suppose that in our new Blackjack program we have a hand of card numbers and
 ...
 print('You are holding,')
 for card in hand:
-print('The', label(card))
+    print('The', label(card))
 ...
 ```
 
@@ -50,7 +50,7 @@ import playing_cards
 hand = [15, 42, 8]
 print('You are holding,')
 for card in hand:
-print('The', playing_cards.label(card))
+    print('The', playing_cards.label(card))
 ```
 
 Note that when importing a module we omit the `.py` suffix, as we do when we refer to the module within the program, i.e. `import playing_cards` instead of `import playing_cards.py` and `playing_cards.label`, instead of `playing_cards.py.label`.
@@ -94,13 +94,13 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-return face_value(cardnum) + " of " + suit(cardnum)
+    return face_value(cardnum) + " of " + suit(cardnum)
 
 print('My name is', __name__) # Line 16!
 card = 15
@@ -143,16 +143,16 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-return face_value(cardnum) + " of " + suit(cardnum)
+    return face_value(cardnum) + " of " + suit(cardnum)
 
 if __name__ == '__main__':
-card = 15
-print("Card", card, "is the", face_value(card), "of", suit(card))
-print("Card", card, "is the", label(card))
+    card = 15
+    print("Card", card, "is the", face_value(card), "of", suit(card))
+    print("Card", card, "is the", label(card))
 ```     

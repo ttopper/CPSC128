@@ -18,7 +18,7 @@ for s in range(1,10):
                                        m!=o and m!=r and m!=y and \
                                        o!=r and o!=y and \
                                        r!=y:
-                                        print("  {:d}{:d}{:d}{:d}".format(s,e,n,d))
-                                        print(" +{:d}{:d}{:d}{:d}".format(m,o,r,e))
+                                        print(f"  {s:d}{e:d}{n:d}{d:d}")
+                                        print(f" +{m:d}{o:d}{r:d}{e:d}")
                                         print("——")
-                                        print(" {:d}{:d}{:d}{:d}{:d}".format(m,o,n,e,y))
+                                        print(f" {m:d}{o:d}{n:d}{e:d}{y:d}")

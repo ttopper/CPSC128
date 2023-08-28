@@ -10,18 +10,18 @@ Ignoring, for the moment, palindromic phrases and focussing instead on words lik
 
 ```plaintext
 if first_letter == last_letter and second_letter == second_last_letter and ...
-Then it is a palindrome.
+    Then it is a palindrome.
 else
-It is NOT a palindrome.
+    It is NOT a palindrome.
 ```
 
 Let's move this one step closer to Python by figuring out the indices of those letter positions,
 
 ```plaintext
 if s[0]==s[len(s)-1] and s[1]==s[len(s)-2] and s[2]==s[len(s)-3] and ...
-Then it is a palindrome.
+    Then it is a palindrome.
 else
-It is NOT a palindrome.
+    It is NOT a palindrome.
 ```
 
 We have enough programming experience by now to see that this solution is unworkable exactly as it is since we don't know ahead of time how many test expressions we need (because we don't know ahead of time how long the string is). But the concept is sound and we can make it workable if we replace the `if` statement with a loop that iterates through the font half of the string comparing the characters there to their counterparts in the back half of the string. We'll use the same strategy to detect a palindrome that we did to [detect a flush in a poker hand](09_Poker_hands.md): Assume the word is a palindrome and then test to see if we are right. As before we will use a flag variable to keep track.
@@ -29,12 +29,12 @@ We have enough programming experience by now to see that this solution is unwork
 ```plaintext
 palindrome = True # Our flag variable.
 for offset values from 0 to len(s)/2
-if s[offset] != s[len(s)-1-offset]
-   palindrome = False
+    if s[offset] != s[len(s)-1-offset]
+        palindrome = False
 if palindrome
-then it is a palindrome
+    then it is a palindrome
 else
-It is NOT a palindrome
+    It is NOT a palindrome
 ```
 
 Now it's a small step to actual Python (long live stepwise refinement!):
@@ -44,13 +44,13 @@ s = "madam"
 
 palindrome = True
 for offset in range(0, len(s)/2):
-if s[offset] != s[len(s)-1-offset]:
-   palindrome = False
+    if s[offset] != s[len(s)-1-offset]:
+        palindrome = False
 
 if palindrome:
-print("It is a palindrome!")
+    print("It is a palindrome!")
 else:
-print("It is NOT a palindrome.")
+    print("It is NOT a palindrome.")
 ```
 
 ## Solution 2
@@ -105,9 +105,9 @@ slist = list(s)
 slist.reverse()
 s_reversed = ''.join(slist)
 if s == s_reversed:
-print("It is a palindrome!")
+    print("It is a palindrome!")
 else:
-print("It is NOT a palindrome.")
+    print("It is NOT a palindrome.")
 ```
 
 ## Refinements
@@ -119,11 +119,11 @@ s = "A man, a plan, a canal, panama."
 print(s, "becomes...",end='')
 s_new = ''
 for c in s:
-if c.isalpha():
-    if c.isupper():
-        s_new = s_new + c.lower()
-    else:
-        s_new = s_new + c
+    if c.isalpha():
+        if c.isupper():
+            s_new = s_new + c.lower()
+        else:
+            s_new = s_new + c
 print(s_new)
 ```
 
@@ -178,26 +178,26 @@ TESTS = ['madam', 'maam', 'motor', 'moor', 'a', 'oo', 'at',
         'A man, a plan, a canal, Panama!']
 print('Testing Solution 1:')
 for s in TESTS:
-print(s,end='')
-# Preprocess s to lower case and remove non-alphas.
-s_new = ''
-for c in s:
-    if c.isalpha():
-        if c.isupper():
-            s_new = s_new + c.lower()
-        else:
-            s_new = s_new + c
-s = s_new # Replace s with s_new.
+    print(s,end=' ')
+    # Preprocess s to lower case and remove non-alphas.
+    s_new = ''
+    for c in s:
+        if c.isalpha():
+            if c.isupper():
+                s_new = s_new + c.lower()
+            else:
+                s_new = s_new + c
+    s = s_new # Replace s with s_new.
 
-# Test to see if s is a palindrome using Solution 1.
-palindrome = True
-for offset in range(0, len(s)//2):
-    if s[offset] != s[len(s)-1-offset]:
-        palindrome = False
-if palindrome:
-    print("is a palindrome!")
-else:
-    print("is NOT a palindrome.")
+    # Test to see if s is a palindrome using Solution 1.
+    palindrome = True
+    for offset in range(0, len(s)//2):
+        if s[offset] != s[len(s)-1-offset]:
+            palindrome = False
+    if palindrome:
+        print("is a palindrome!")
+    else:
+        print("is NOT a palindrome.")
 ```
 
 This is an awkward way to test our code because we need to edit our

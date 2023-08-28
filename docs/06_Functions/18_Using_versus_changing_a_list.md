@@ -35,7 +35,7 @@ Now suppose we want to add 10% to each value in the list. We might reason that i
 
 ```
 for m in magnitudes:
-    m = m + m/10
+    m = m + m//10
 ```
 
 but testing will reveal that it doesn't do what we want,
@@ -43,7 +43,7 @@ but testing will reveal that it doesn't do what we want,
 ```
 >>> magnitudes = [41, 14, 27, 5, 32]
 >>> for m in magnitudes:
-    m = m + m/10
+    m = m + m//10
 >>> print(magnitudes)
 [41, 14, 27, 5, 32]
 >>>
@@ -54,7 +54,7 @@ because the list is unchanged. Have you already spotted the problem? The first p
 |  |
 | :---: |
 | `for m in magnitudes:` |  |
-| `m = m + m/10` |  |
+| `m = m + m//10` |  |
 
 ![](18_using_versus_changing_a_list_1.png)
 
@@ -62,7 +62,7 @@ because the list is unchanged. Have you already spotted the problem? The first p
 
 
 
-Notice carefully what happened. The expression `m + m/10` was evaluated 41 + 41/10 → 41 + 4 → 45 yielding the object 45, so the name `m` was set to refer to this object (remember: "Assignment creates a reference to an object"!) leaving the list unchanged.
+Notice carefully what happened. The expression `m + m//10` was evaluated 41 + 41//10 → 41 + 4 → 45 yielding the object 45, so the name `m` was set to refer to this object (remember: "Assignment creates a reference to an object"!) leaving the list unchanged.
 
 ### What works 1
 
@@ -70,20 +70,20 @@ There are a number of ways to get around this problem. The most general* is to a
 
 ```
 for i in range( len(magnitudes )):
-    magnitudes[i] = magnitudes[i] + magnitudes[i]/10
+    magnitudes[i] = magnitudes[i] + magnitudes[i]//10
 ```
 
 and testing shows it works,
 
 ```
 >>> for i in range( len(magnitudes )):
-    magnitudes[i] = magnitudes[i] + magnitudes[i]/10
+    magnitudes[i] = magnitudes[i] + magnitudes[i]//10
 >>> print(magnitudes)
 [45, 15, 29, 5, 35]
 >>>
 ```
 
-But why does it work? Because the assignment statement on the first iteration becomes `magnitudes[0] = magnitudes[0] + magnitudes[0]/10`. And `magnitudes[0]` is the precise name of the reference that is the first entry in the list so we are changing it directly. Similarly on the later iterations we will change `magnitudes[1]`, `magnitudes[2]` and so on. Remember that the entries in `magnitudes` do have indirect names!
+But why does it work? Because the assignment statement on the first iteration becomes `magnitudes[0] = magnitudes[0] + magnitudes[0]//10`. And `magnitudes[0]` is the precise name of the reference that is the first entry in the list so we are changing it directly. Similarly on the later iterations we will change `magnitudes[1]`, `magnitudes[2]` and so on. Remember that the entries in `magnitudes` do have indirect names!
 
 ### What works 2
 
@@ -92,13 +92,13 @@ Another approach is to create a new list with the modified values and then assig
 ```
 tmp = []
 for m in magnitudes:
-    tmp.append(m + m/10)
+    tmp.append(m + m//10)
 magnitudes = tmp
 ```
 
 ### Other things that work
 
-For more Pythonic approaches to the problem consult Pythonic Details.
+For more Pythonic approaches to the problem consult the last 3 sections of this module.
 
 ## Summary
 

@@ -21,7 +21,7 @@ One way to copy a list is to create an empty one, and then loop through the sour
 magnitudes = [41, 14, 27, 5, 32]
 copy = []
 for m in magnitudes:
-copy.append(m)
+    copy.append(m)
 ```
 
 this gets us what we wanted,
@@ -38,7 +38,7 @@ copy = magnitudes[:]
 
 This works because _slices create new objects_.
 
-Another is to use the class constructor[^*]] for lists, `list`, to create a new list from an existing one,
+Another is to use the class constructor[^*] for lists, `list`, to create a new list from an existing one,
 
 ```python
 copy = list(magnitude)

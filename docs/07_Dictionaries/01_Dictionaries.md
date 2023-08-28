@@ -1,6 +1,6 @@
 # Dictionaries
 
-In use dictionaries^*^ look like lists that can be indexed by strings.
+In use dictionaries[^*] look like lists that can be indexed by strings.
 For example where a list can be indexed by numbers like 1 and 5,
 e.g. `lst[1]`, `lst[5]` a dictionary can be indexed by strings like
 'Tim' or 'Apt 101', e.g. `data['Tim']` and `data['Apt 101']`. In
@@ -13,7 +13,7 @@ underlying typical dictionary implementations.
 
 ------------------------------------------------------------------------
 
-^*^ Aside: Known aliases. The data structures known as dictionaries in
+[^*]: Aside: Known aliases. The data structures known as dictionaries in
 Python go by many names. These include:
 
 -   **Dictionary**: Python, Smalltalk, Objective-C, .NET.

@@ -10,9 +10,9 @@ to use it. Let's say we are working on a game and wish we could write,
 ```python
 num = random.randint(0,100)
 if is_even(num):
-print("Good news your magic number is even! 10 bonus points for you.")
+    print("Good news your magic number is even! 10 bonus points for you.")
 else:
-print("Bad news, your magic number is odd.")
+    print("Bad news, your magic number is odd.")
 ```
 
 The good thing about specifying the use of our function before writing
@@ -28,9 +28,9 @@ previous experience how to implement its core functionality:
 
 ```python
 if n % 2 == 0:
-# It's even
+    # It's even
 else:
-# It's odd
+    # It's odd
 ```
 All we need now is to tie these things together with the necessary
 syntax like this,
@@ -39,17 +39,17 @@ syntax like this,
 import random
 
 def is_even(n):
-if n % 2 == 0:
-    return True
-else:
-    return False
+    if n % 2 == 0:
+        return True
+    else:
+        return False
     
 num = random.randint(0,100)
 
 if is_even(num):
-print("Good news your magic number is even! 10 bonus points for you.")
+    print("Good news your magic number is even! 10 bonus points for you.")
 else:
-print("Bad news, your magic number is odd.")
+    print("Bad news, your magic number is odd.")
 ```
 Notes:
 

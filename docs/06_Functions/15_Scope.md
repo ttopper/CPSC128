@@ -12,10 +12,10 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
            'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 card = 15
 print("Card", card, "is the", face_value(card), "of", suit(card))
@@ -45,8 +45,8 @@ later one of these will happen to you.
 # scope_egs.py
 print('Example 1: Local variable')
 def f():
-x = 1
-print('Inside x is', x)
+    x = 1
+    print('Inside x is', x)
 f()
 print('Outside x is', x) # Error! Comment this line out once you understand why it is an error.
 print()
@@ -54,7 +54,7 @@ print()
 print('Example 2: Global variable')
 x = 1
 def f():
-print('Inside x is', x)
+    print('Inside x is', x)
 f()
 print('Outside x is', x)
 print()
@@ -62,8 +62,8 @@ print()
 print('Example 3: Local variable hides global variable inside function')
 x = 1
 def f():
-x = 2
-print('Inside x is', 2)
+    x = 2
+    print('Inside x is', 2)
 f()
 print('Outside x is', x)
 print()
@@ -71,10 +71,10 @@ print()
 print('Example 4: Lots of hiding')
 x = 1
 def outer():
-x = 2
-def inner():
-    x = 3
-    print('Here in inner x is', x)
+    x = 2
+    def inner():
+        x = 3
+        print('Here in inner x is', x)
 inner()
 print('Here in outer x is', x)
 inner() # Error! Comment this line out once you understand why it is an error.
@@ -83,6 +83,6 @@ print('Out here x is', x)
 
 print('Example 5: Hiding the built-in len')
 def len():
-print('I am not the real len')
+    print('I am not the real len')
 len()
 ```

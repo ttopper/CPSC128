@@ -9,7 +9,7 @@ Create a list:
 
 -   Using `range`, e.g. `nums = list(range(10))`.
 -   By listing the items in the
-    list: `mishmash = [14, 'a', 4.19, 'Kate', True]`\
+    list: `mishmash = [14, 'a', 4.19, 'Kate', True]`
     Notice that values of several types can be stored in the same list.
 
 Access an item from a list:

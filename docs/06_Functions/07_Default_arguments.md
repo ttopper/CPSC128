@@ -17,7 +17,7 @@ return random.randint(1,sides)
 
 print('Your results are:')
 print('6-sided die:', dice_roll())
-print('24-sided die:', dice_roll(24))
+print('20-sided die:', dice_roll(20))
 ```
 
 and the output from a sample run is:
@@ -26,7 +26,7 @@ and the output from a sample run is:
 >>> 
 Your results are:
 6-sided die: 5
-24-sided die: 17
+20-sided die: 17
 >>>
 ```
 Default argument values are common throughout Python. For example

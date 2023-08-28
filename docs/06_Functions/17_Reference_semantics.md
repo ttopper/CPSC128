@@ -17,7 +17,7 @@ back by a `return` statement which creates a reference to them from a
 name in the calling function).
 
 In terms of our diagrams an object's reference count is the number of
-arrow heads pointing to it. At the end of the code fragment above the
+arrow heads pointing to it. At the end of the previous code fragment the
 reference count of `'Matt'` is 1, and the reference count of `'Tom'` is
 3.
 

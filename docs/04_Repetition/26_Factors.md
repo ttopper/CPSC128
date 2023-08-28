@@ -6,3 +6,6 @@ Write a program that inputs a positive whole number, and displays all the number
 
 ![](26_factors.py.png)
 
+
+![](26_factors_b.py.png)
+

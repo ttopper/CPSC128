@@ -26,8 +26,8 @@ SUITS = ['C', 'D', 'H', 'S']
 
 deck = []
 for suit in SUITS :
-for face_value in FACE_VALUES :
-    deck.append([face_value, suit])
+    for face_value in FACE_VALUES :
+        deck.append([face_value, suit])
 ```
 
 > ## The maxim that there is more than one way to do it applies to data representations just as much as to algorithms!

@@ -19,9 +19,9 @@ import random
 
 # B shoots at A
 if random.randint(0, 2) == 2:
-print("B hits A. The duel's over.")
+    print("B hits A. The duel's over.")
 else:
-print("B misses A. The duel continues.")
+    print("B misses A. The duel continues.")
 ```
 
 ## A Shoots
@@ -33,13 +33,13 @@ import random
 
 # B shoots at A
 if random.randint(0, 2) == 2:
-print("B hits A. The duel's over.")
+    print("B hits A. The duel's over.")
 else:
-print("B misses A. The duel continues.")
-if random.randint(0, 1) == 1:
-print("A hits B. The duel's over.")
-else:
-print("A misses B. The duel continues.")
+    print("B misses A. The duel continues.")
+    if random.randint(0, 1) == 1:
+        print("A hits B. The duel's over.")
+    else:
+        print("A misses B. The duel continues.")
 ```
 ## One Complete Duel
 
@@ -50,14 +50,14 @@ import random
  
 while ?:
     # B shoots at A
-if random.randint(0, 2) == 2:
-    print("B hits A. The duel's over.")
-else:
-    print("B misses A. The duel continues.") 
-    if random.randint(0, 1) == 1:
-        print("A hits B. The duel's over.")
+    if random.randint(0, 2) == 2:
+        print("B hits A. The duel's over.")
     else:
-        print("A misses B. The duel continues.")
+        print("B misses A. The duel continues.") 
+        if random.randint(0, 1) == 1:
+            print("A hits B. The duel's over.")
+        else:
+            print("A misses B. The duel continues.")
 ```      
 The question is what the `while` condition should be. We want to say, “while the duel is not over, they keep shooting at each other” and Python lets us come very close to writing this:
 
@@ -67,16 +67,16 @@ import random
 over = False
 while not over:
 # B shoots at A
-if random.randint(0, 2) == 2:
-print("B hits A. The duel's over.")
-over = True
-else:
-print("B misses A. The duel continues.") 
-if random.randint(0, 1) == 1:
-    print("A hits B. The duel's over.")
-    over = True
-else:
-    print("A misses B. The duel continues.")
+	if random.randint(0, 2) == 2:
+	    print("B hits A. The duel's over.")
+	    over = True
+	else:
+	    print("B misses A. The duel continues.") 
+	    if random.randint(0, 1) == 1:
+   	        print("A hits B. The duel's over.")
+    	        over = True
+	    else:
+    	        print("A misses B. The duel continues.")
 ```
 We declare a variable called `over` to hold the state of the duel. It's value is `False` when the duel is not over, and `True` when the duel is over. We initialize it to be `False` (since before they have shot at each other the duel can't be over). We update its value to `True` when one antagonist hits the other. The loop lets them keep taking turns shooting at each other until one finally hits the other.
 
@@ -93,21 +93,21 @@ awins = 0
 bwins = 0
 
 for duel in range(0, 100): # See Pythonic Details for an explanation of range.
-over = False
-while not over:
-    # B shoots at A
-    if random.randint( 0, 2 ) == 2:
-        print("B hit A. The duel's over.")
-        bwins = bwins + 1
-        over = True
-    else:
-        print("B missed A. The duel continues.")
-        if random.randint( 0, 1 ) == 1:
-            print("A hit B. The duel's over.")
-            awins = awins + 1
+    over = False
+    while not over:
+        # B shoots at A
+        if random.randint( 0, 2 ) == 2:
+            print("B hit A. The duel's over.")
+            bwins = bwins + 1
             over = True
         else:
-            print("A missed B. The duel continues.")
+            print("B missed A. The duel continues.")
+            if random.randint( 0, 1 ) == 1:
+                print("A hit B. The duel's over.")
+                awins = awins + 1
+                over = True
+            else:
+                print("A missed B. The duel continues.")
 print(6*'-')
 
 print("A won", awins, "duels.")

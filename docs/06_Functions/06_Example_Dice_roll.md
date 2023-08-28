@@ -18,7 +18,7 @@ This leads to the code,
 
 ```python
 def dice_roll():
-return random.randint(1,6)
+    return random.randint(1,6)
 ```
 which we could use like this,
 
@@ -26,7 +26,7 @@ which we could use like this,
 import random
 
 def dice_roll():
-return random.randint(1,6)
+    return random.randint(1,6)
 
 total = dice_roll() + dice_roll()
 print("On your first roll you got:", total)
@@ -45,7 +45,7 @@ number of sides,
 import random
 
 def dice_roll(sides):
-return random.randint(1,sides)
+    return random.randint(1,sides)
 
 total = dice_roll(6) + dice_roll(6)
 print("On your first roll you got:", total)

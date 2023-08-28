@@ -101,10 +101,7 @@ The Python translation is,
 
 ---
 
-[^*]: Remember "Test at the edges" so after trying a couple of typical
-values like 6 and 10, it would be good to try 2, 1, and even 0.
-
-[^*]: The number of duplicate generations goes up with the length of the
+The number of duplicate generations goes up with the length of the
 list. Here's an instrumented version of the program that displays the
 number of duplicates generated as a function of list length. We call it
 “instrumented” because of the addition of the variable `loops` that is
@@ -119,16 +116,19 @@ import random
 print('tracks | dupes')
 print('-------+------')
 for tracks in [1,2,5,10,20,50,100]:
-loops = 0
-playlist = []
-while len(playlist) < tracks:
-    tracknum = random.randint(1,tracks)
-    loops = loops + 1
-    if tracknum not in playlist:
-        playlist.append(tracknum)
-dupes = loops - tracks
-print("{:4d}   |{:5d}".format(tracks, dupes))
+    loops = 0
+    playlist = []
+    while len(playlist) < tracks:
+        tracknum = random.randint(1,tracks)
+        loops = loops + 1
+        if tracknum not in playlist:
+            playlist.append(tracknum)
+    dupes = loops - tracks
+    print(f"{tracks:4d}   |{dupes:5d}")
 ```
 (For reliable output it should really run the program multiple times for
 each value of tracks, but this program is meant to be illustrative
 rather than a definitive measuring device.)
+
+[^*]: Remember "Test at the edges" so after trying a couple of typical
+values like 6 and 10, it would be good to try 2, 1, and even 0.

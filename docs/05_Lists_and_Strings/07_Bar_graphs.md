@@ -30,7 +30,7 @@ which could be translated into the following Python,
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print(datum * '*')
+    print(datum * '*')
 ```
 
 Note:
@@ -45,7 +45,7 @@ The graph doesn't look like much, even for a text graphics chart. Let's dress it
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print(datum, datum * '*')
+    print(datum, datum * '*')
 ```
 
 To produce,
@@ -71,13 +71,13 @@ This is a little better, but the bars don't all start in the same place. We need
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print("{:2d}".format(datum), datum * '*')
+    print(f"{datum:2d}", datum * '*')
 ```
 
 and get this,
 
 ```
-3 ***
+ 3 ***
  7 *******
  8 ********
 10 **********
@@ -95,9 +95,9 @@ but a width of 2 wouldn't work well for larger values. It would be better to fin
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 OFW = len(str(max(data))) # Output Field Width.
-FORMAT = "{:" + str(OFW) + "d}" # Format string.
 for datum in data:
-print(FORMAT.format(datum), datum * '*')
+    # use f-string formatting to get the number to format another variable
+    print(f"{datum:{OFW:d}d}", datum * '*')
 ```
 
 produces this graph,
@@ -141,12 +141,10 @@ data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 labels = ['2s', '3s', '4s', '5s', '6s', '7s',
       '8s','9s', '10s', '11s', '12s']
 OFW = len(str(max(data))) # Output Field Width.
-DFORMAT = "({:" + str(OFW) + "d})" # Data format string.
 label_lens = map(len, labels) # List of label lengths.
 LFW = max(label_lens) # Label Field Width.
-LFORMAT = "{:" + str(LFW) + "s}" # Label format string.
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+    print(f"{labels[i]:{LFW:d}s}",f"({data[i]:{OFW:d}d})", data[i] * '*')
 ```
 
 Notes:
@@ -160,14 +158,11 @@ It may surprise you to learn that working programmers spend more time reading co
 
 ```python
 data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
-labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
-      '9s', '10s', '11s', '12s']
+labels = ['2s', '3s', '4s', '5s', '6s', '7s',
+      '8s','9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
 print('OFW = ', OFW)
-
-DFORMAT = "({:" + str(OFW) + "d})" # Data format string.
-print('DFORMAT = ', DFORMAT)
 
 label_lens = map(len, labels) # List of label lengths.
 print('label_lens = ', label_lens)
@@ -175,21 +170,16 @@ print('label_lens = ', label_lens)
 LFW = max(label_lens) # Label Field Width.
 print('LFW = ', LFW)
 
-LFORMAT = "{:" + str(LFW) + "s}" # Label format string.
-print('LFORMAT = ', LFORMAT)
-
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+    print(f"{labels[i]:{LFW:d}s}",f"({data[i]:{OFW:d}d})", data[i] * '*')
 ```
 
 This will produce the output,
 
 ```plaintext
 OFW =  2
-DFORMAT =  ({:2d})
 label_lens =  [2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]
 LFW =  3
-LFORMAT =  {:3s}
  2s ( 3) ***
  3s ( 7) *******
  4s ( 8) ********
@@ -216,22 +206,20 @@ labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
       '9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
-DFORMAT = "({:" + str(OFW) + "d})" # Data format string.
 
 label_lens = map(len, labels) # List of label lengths.
 LFW = max(label_lens) # Label Field Width.
-LFORMAT = "{:" + str(LFW) + "s}" # Label format string.
 
 MAX_BAR = SCREEN_WIDTH - (OFW+2) - LFW - 2
 
 max_datum = max(data)
 if max_datum > MAX_BAR:
-scaled_data = []
-for datum in data:
-    scaled_data.append(datum * MAX_BAR // max_datum)
+    scaled_data = []
+    for datum in data:
+        scaled_data.append(datum * MAX_BAR // max_datum)
 
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), scaled_data[i] * '*')
+    print(f"{labels[i]:{LFW:d}s}",f"({data[i]:{OFW:d}d})", scaled_data[i] * '*')
 ```
 
 Notes:

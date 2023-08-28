@@ -25,45 +25,45 @@ twelves = 0
 
 # Roll dice many times and record frequency of outcomes.
 for roll in range(ROLLS):
-outcome = random.randint(1, 6) + random.randint(1, 6)
-if outcome == 2:
-    twos = twos + 1
-elif outcome == 3:
-    threes = threes + 1
-elif outcome == 4:
-    fours = fours + 1
-elif outcome == 5:
-    fives = fives + 1
-elif outcome == 6:
-    sixes = sixes + 1
-elif outcome == 7:
-    sevens = sevens + 1
-elif outcome == 8:
-    eights = eights + 1
-elif outcome == 9:
-    nines = nines + 1
-elif outcome == 10:
-    tens = tens + 1
-elif outcome == 11:
-    elevens = elevens + 1
-else:
-    twelves = twelves + 1
+    outcome = random.randint(1, 6) + random.randint(1, 6)
+    if outcome == 2:
+        twos = twos + 1
+    elif outcome == 3:
+        threes = threes + 1
+    elif outcome == 4:
+        fours = fours + 1
+    elif outcome == 5:
+        fives = fives + 1
+    elif outcome == 6:
+        sixes = sixes + 1
+    elif outcome == 7:
+        sevens = sevens + 1
+    elif outcome == 8:
+        eights = eights + 1
+    elif outcome == 9:
+        nines = nines + 1
+    elif outcome == 10:
+        tens = tens + 1
+    elif outcome == 11:
+        elevens = elevens + 1
+    else:
+        twelves = twelves + 1
 
 # Display results.
 print("  =====================")
 print("  Outcome | Occurrences")
 print("  --------+------------")
-print("      2   |{:8d}".format(twos))
-print("      3   |{:8d}".format(threes))
-print("      4   |{:8d}".format(fours))
-print("      5   |{:8d}".format(fives))
-print("      6   |{:8d}".format(sixes))
-print("      7   |{:8d}".format(sevens))
-print("      8   |{:8d}".format(eights))
-print("      9   |{:8d}".format(nines))
-print("     10   |{:8d}".format(tens))
-print("     11   |{:8d}".format(elevens))
-print("     12   |{:8d}".format(twelves))
+print(f"      2   |{twos:8d}")
+print(f"      3   |{threes:8d}")
+print(f"      4   |{fours:8d}")
+print(f"      5   |{fives:8d}")
+print(f"      6   |{sixes:8d}")
+print(f"      7   |{sevens:8d}")
+print(f"      8   |{eights:8d}")
+print(f"      9   |{nines:8d}")
+print(f"     10   |{tens:8d}")
+print(f"     11   |{elevens:8d}")
+print(f"     12   |{twelves:8d}")
 print("  ---------------------")
 ```
 
@@ -105,17 +105,17 @@ counters = [0] * 11
 
 # Roll dice many times and record frequency of outcomes.
 for roll in range(ROLLS):
-outcome = random.randint(1, 6) + random.randint(1, 6)
-# Now increment the appropriate counter.
-# Notice that no testing is needed because we can calculate the index of the matching entry.
-counters[outcome-2] = counters[outcome-2] + 1
+    outcome = random.randint(1, 6) + random.randint(1, 6)
+    # Now increment the appropriate counter.
+    # Notice that no testing is needed because we can calculate the index of the matching entry.
+    counters[outcome-2] = counters[outcome-2] + 1
 
 # Display results.
 print("  =====================")
 print("  Outcome | Occurrences")
 print("  --------+------------")
 for posn in range(11):
-print("{:7d}   |{:8d}".format(posn+2, counters[posn]))
+    print(f"{posn+2:7d}   |{counters[posn]:8d}")
 print("  ---------------------")
 ```
 

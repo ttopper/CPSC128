@@ -10,6 +10,6 @@ print("Fahrenheit  Celsius")
 while temp_in_f <= 100:
     
     temp_in_c = (temp_in_f - 32) * 5 / 9
-    print("{:8.1f}{:10.1f}".format(temp_in_f,temp_in_c))
+    print(f"{temp_in_f:8.1f}{temp_in_c:10.1f}")
 
     temp_in_f = temp_in_f + 10

@@ -9,7 +9,7 @@ Consider the function increment below. What do you suppose it does? Try running 
 ```python
 # increment.py
 def increment(n):
-n = n + 1
+    n = n + 1
 
 num = 48
 increment( num )
@@ -38,7 +38,7 @@ If you want an increment function you would write and use it slightly differentl
 
 ```python
 def increment(n):
-return n+1
+    return n+1
 num = 48
 num = increment(num)
 print(num)
@@ -53,7 +53,7 @@ when passed to functions, e.g.
 
 ```python
 def increment(seq):
-seq.append(42)
+    seq.append(42)
 
 lst = [48]
 increment( lst )

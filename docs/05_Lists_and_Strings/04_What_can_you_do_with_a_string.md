@@ -1,6 +1,6 @@
 # What can you do with a string?
 
-The full list of string methods is in [Section 2.2.6.4 of the Python Library Reference](http://www.python.org/doc/2.2.1/lib/string-methods.html). Here's an idea of how you might use and combine these methods to carry
+The full list of string methods is in [Python Library Reference](https://docs.python.org/3/library/string.html). Here's an idea of how you might use and combine these methods to carry
 out common operations.
 
 Create a string:
@@ -33,7 +33,7 @@ one).
 -   `name = name + ' Smith'` adds `' Smith'` to the end of the string
     so `'Tim Topper'` becomes `'Tim Topper Smith'`
 -   You can insert into a string by careful use of slices,
-    e.g. `name = name[0:5] + 'Nicholas' + name[5:]` changes `'Tim Topper'` to `'Tim Nicholas Topper'`.
+    e.g. `name = name[0:4] + 'Nicholas ' + name[4:]` changes `'Tim Topper'` to `'Tim Nicholas Topper'`.
 
 Getting information about a string and its contents:
 

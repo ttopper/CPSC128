@@ -100,7 +100,7 @@ Note that the name `d` still exists; it just references (points at) an
 empty dictionary.
 
 Finally note that the **keys** don't have to be strings they can be any
-[immutable type]{.underline}, and the **values** can be any Python
+**immutable type**, and the **values** can be any Python
 object, e.g.
 
     >>> d['Tim'] = 775
@@ -117,7 +117,7 @@ object, e.g.
 
 ------------------------------------------------------------------------
 
-*_Literals_are how to write out values.
+Literals are how to write out values.
 
 -   `4` is an integer literal,
 -   `4.1` is a floating point literal,

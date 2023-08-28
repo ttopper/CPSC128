@@ -13,7 +13,7 @@ a module. For example,
 
     >>> import sys
     >>> sys.path
-    ['//home/Profiles/kchatfieldreed/Documents/CPSC128_Intro_OO/Programs',
+    ['//home/Profiles/kreed/Documents/CPSC128/Programs',
      'C:\\Program Files\\Python311\\Lib\\idlelib',
      'C:\\Program Files\\Python311\\python311.zip',
      'C:\\Program Files\\Python311\\Lib',
@@ -23,7 +23,7 @@ a module. For example,
     >>>
 
 Here we can see that it will begin by looking in my current
-directory `//home/Profiles/kchatfieldreed/Documents/CPSC128_Intro_OO/Programs` and
+directory `//home/Profiles/kreed/Documents/CPSC128/Programs` and
 then work through the remainder of the list. The search stops when the
 first match is found.
 

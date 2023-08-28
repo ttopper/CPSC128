@@ -17,4 +17,4 @@ for i in range(1000):
 percentage = all_girls/1000*100
 
 print("In 1,000 simulated four-child families")
-print("approximately {:.1f} were made up of four daughters.".format(percentage))
+print(f"approximately {percentage:.1f} were made up of four daughters.")
