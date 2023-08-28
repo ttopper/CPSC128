@@ -2562,10 +2562,10 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
            'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 card = 15
 print(&quot;Card&quot;, card, &quot;is the&quot;, face_value(card), &quot;of&quot;, suit(card))
@@ -2575,7 +2575,7 @@ print(&quot;Card&quot;, card, &quot;is the&quot;, face_value(card), &quot;of&quo
 ...
 print('You are holding,')
 for card in hand:
-print('The', label(card))
+    print('The', label(card))
 ...
 </code></pre>
 <p>in hopes of generating output like this,</p>
@@ -2592,7 +2592,7 @@ import playing_cards
 hand = [15, 42, 8]
 print('You are holding,')
 for card in hand:
-print('The', playing_cards.label(card))
+    print('The', playing_cards.label(card))
 </code></pre>
 <p>Note that when importing a module we omit the <code>.py</code> suffix, as we do when we refer to the module within the program, i.e. <code>import playing_cards</code> instead of <code>import playing_cards.py</code> and <code>playing_cards.label</code>, instead of <code>playing_cards.py.label</code>.</p>
 <h2 id="a-problem">A problem</h2>
@@ -2625,13 +2625,13 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
+    return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
 
 print('My name is', __name__) # Line 16!
 card = 15
@@ -2667,18 +2667,18 @@ FACE_VALUES = ('Ace', 'Two', 'Three', 'Four', 'Five', 'Six',
             'Queen', 'King')
 
 def suit(cardnum):
-return SUITS[cardnum // 13]
+    return SUITS[cardnum // 13]
 
 def face_value(cardnum):
-return FACE_VALUES[cardnum % 13]
+    return FACE_VALUES[cardnum % 13]
 
 def label(cardnum):
-return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
+    return face_value(cardnum) + &quot; of &quot; + suit(cardnum)
 
 if __name__ == '__main__':
-card = 15
-print(&quot;Card&quot;, card, &quot;is the&quot;, face_value(card), &quot;of&quot;, suit(card))
-print(&quot;Card&quot;, card, &quot;is the&quot;, label(card))
+    card = 15
+    print(&quot;Card&quot;, card, &quot;is the&quot;, face_value(card), &quot;of&quot;, suit(card))
+    print(&quot;Card&quot;, card, &quot;is the&quot;, label(card))
 </code></pre>
     
   </main>
@@ -2699,7 +2699,7 @@ print(&quot;Card&quot;, card, &quot;is the&quot;, label(card))
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:04.753993+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:41.932417+00:00
     -->
   </footer>
 

@@ -2577,12 +2577,12 @@ for m in magnitudes:
 <h3 id="what-doesnt-work">What doesn't work</h3>
 <p>Now suppose we want to add 10% to each value in the list. We might reason that in the for loop above <code>m</code> takes the value of each entry in the list, so changing it will change the values in the list and so try to do what we want like this,</p>
 <pre><code>for m in magnitudes:
-    m = m + m/10
+    m = m + m//10
 </code></pre>
 <p>but testing will reveal that it doesn't do what we want,</p>
 <pre><code>&gt;&gt;&gt; magnitudes = [41, 14, 27, 5, 32]
 &gt;&gt;&gt; for m in magnitudes:
-    m = m + m/10
+    m = m + m//10
 &gt;&gt;&gt; print(magnitudes)
 [41, 14, 27, 5, 32]
 &gt;&gt;&gt;
@@ -2599,35 +2599,35 @@ for m in magnitudes:
 <td style="text-align: center;"><code>for m in magnitudes:</code></td>
 </tr>
 <tr>
-<td style="text-align: center;"><code>m = m + m/10</code></td>
+<td style="text-align: center;"><code>m = m + m//10</code></td>
 </tr>
 </tbody>
 </table>
 <p><img alt="" src="../18_using_versus_changing_a_list_1.png" /></p>
 <p><img alt="" src="../18_using_versus_changing_a_list_2.png" /></p>
-<p>Notice carefully what happened. The expression <code>m + m/10</code> was evaluated 41 + 41/10 → 41 + 4 → 45 yielding the object 45, so the name <code>m</code> was set to refer to this object (remember: "Assignment creates a reference to an object"!) leaving the list unchanged.</p>
+<p>Notice carefully what happened. The expression <code>m + m//10</code> was evaluated 41 + 41//10 → 41 + 4 → 45 yielding the object 45, so the name <code>m</code> was set to refer to this object (remember: "Assignment creates a reference to an object"!) leaving the list unchanged.</p>
 <h3 id="what-works-1">What works 1</h3>
 <p>There are a number of ways to get around this problem. The most general* is to access the list contents by index,</p>
 <pre><code>for i in range( len(magnitudes )):
-    magnitudes[i] = magnitudes[i] + magnitudes[i]/10
+    magnitudes[i] = magnitudes[i] + magnitudes[i]//10
 </code></pre>
 <p>and testing shows it works,</p>
 <pre><code>&gt;&gt;&gt; for i in range( len(magnitudes )):
-    magnitudes[i] = magnitudes[i] + magnitudes[i]/10
+    magnitudes[i] = magnitudes[i] + magnitudes[i]//10
 &gt;&gt;&gt; print(magnitudes)
 [45, 15, 29, 5, 35]
 &gt;&gt;&gt;
 </code></pre>
-<p>But why does it work? Because the assignment statement on the first iteration becomes <code>magnitudes[0] = magnitudes[0] + magnitudes[0]/10</code>. And <code>magnitudes[0]</code> is the precise name of the reference that is the first entry in the list so we are changing it directly. Similarly on the later iterations we will change <code>magnitudes[1]</code>, <code>magnitudes[2]</code> and so on. Remember that the entries in <code>magnitudes</code> do have indirect names!</p>
+<p>But why does it work? Because the assignment statement on the first iteration becomes <code>magnitudes[0] = magnitudes[0] + magnitudes[0]//10</code>. And <code>magnitudes[0]</code> is the precise name of the reference that is the first entry in the list so we are changing it directly. Similarly on the later iterations we will change <code>magnitudes[1]</code>, <code>magnitudes[2]</code> and so on. Remember that the entries in <code>magnitudes</code> do have indirect names!</p>
 <h3 id="what-works-2">What works 2</h3>
 <p>Another approach is to create a new list with the modified values and then assign it to the old name, e.g.</p>
 <pre><code>tmp = []
 for m in magnitudes:
-    tmp.append(m + m/10)
+    tmp.append(m + m//10)
 magnitudes = tmp
 </code></pre>
 <h3 id="other-things-that-work">Other things that work</h3>
-<p>For more Pythonic approaches to the problem consult Pythonic Details.</p>
+<p>For more Pythonic approaches to the problem consult the last 3 sections of this module.</p>
 <h2 id="summary">Summary</h2>
 <p>When working with lists be clear in your own mind whether you
 are_using_the elements in the list, or_modifying_them and choose
@@ -2666,7 +2666,7 @@ not just Python.</li>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:05.081087+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:42.213607+00:00
     -->
   </footer>
 

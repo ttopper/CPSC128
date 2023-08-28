@@ -2561,9 +2561,9 @@ suppose we want a function that tells us if a number is even.</p>
 to use it. Let's say we are working on a game and wish we could write,</p>
 <pre><code class="language-python">num = random.randint(0,100)
 if is_even(num):
-print(&quot;Good news your magic number is even! 10 bonus points for you.&quot;)
+    print(&quot;Good news your magic number is even! 10 bonus points for you.&quot;)
 else:
-print(&quot;Bad news, your magic number is odd.&quot;)
+    print(&quot;Bad news, your magic number is odd.&quot;)
 </code></pre>
 <p>The good thing about specifying the use of our function before writing
 it is that now we know,</p>
@@ -2576,26 +2576,26 @@ it is that now we know,</p>
 <p>So we know its name, parameter and return type, and we know from
 previous experience how to implement its core functionality:</p>
 <pre><code class="language-python">if n % 2 == 0:
-# It's even
+    # It's even
 else:
-# It's odd
+    # It's odd
 </code></pre>
 <p>All we need now is to tie these things together with the necessary
 syntax like this,</p>
 <pre><code class="language-python">import random
 
 def is_even(n):
-if n % 2 == 0:
-    return True
-else:
-    return False
+    if n % 2 == 0:
+        return True
+    else:
+        return False
 
 num = random.randint(0,100)
 
 if is_even(num):
-print(&quot;Good news your magic number is even! 10 bonus points for you.&quot;)
+    print(&quot;Good news your magic number is even! 10 bonus points for you.&quot;)
 else:
-print(&quot;Bad news, your magic number is odd.&quot;)
+    print(&quot;Bad news, your magic number is odd.&quot;)
 </code></pre>
 <p>Notes:</p>
 <ul>
@@ -2661,7 +2661,7 @@ created until the end of the program).</p>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:04.478770+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:41.682457+00:00
     -->
   </footer>
 

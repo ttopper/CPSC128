@@ -19,4 +19,4 @@ while guess != number:
         print("Too low. Try again!")
     guess = int(input("> "))
 
-print("Correct! The number is {:d}.".format(guess))
+print(f"Correct! The number is {guess:d}.")

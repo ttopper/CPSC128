@@ -2634,7 +2634,7 @@ the : 10
 <p>The body of the loop then becomes,</p>
 <pre><code>for word in words:
     w = word.lower()
-    w = w.strip('.,;:'"?!()') # Notice the \ to escape the ' inside the string
+    w = w.strip('.,;:\'&quot;?!()') # Notice the \ to escape the ' inside the string
     if w.isalpha():
         if w in word_counts:
             word_counts[w] = word_counts[w] + 1
@@ -2664,7 +2664,7 @@ hyphens!), though it is a matter of details we will not pursue.</p>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:05.486018+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:42.572914+00:00
     -->
   </footer>
 

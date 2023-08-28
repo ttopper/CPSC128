@@ -2575,7 +2575,7 @@ draw a bar of value asterisks
 <p>which could be translated into the following Python,</p>
 <pre><code class="language-python">data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print(datum * '*')
+    print(datum * '*')
 </code></pre>
 <p>Note:</p>
 <ul>
@@ -2586,7 +2586,7 @@ print(datum * '*')
 <p>The graph doesn't look like much, even for a text graphics chart. Let's dress it up one step at a time. First we'll display the data value in front of the bar:</p>
 <pre><code class="language-python">data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print(datum, datum * '*')
+    print(datum, datum * '*')
 </code></pre>
 <p>To produce,</p>
 <pre><code class="language-plaintext">3 ***
@@ -2605,10 +2605,10 @@ print(datum, datum * '*')
 <p>This is a little better, but the bars don't all start in the same place. We need to place our data values in fixed length fields. For this data we could do this,</p>
 <pre><code class="language-python">data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 for datum in data:
-print(&quot;{:2d}&quot;.format(datum), datum * '*')
+    print(f&quot;{datum:2d}&quot;, datum * '*')
 </code></pre>
 <p>and get this,</p>
-<pre><code>3 ***
+<pre><code> 3 ***
  7 *******
  8 ********
 10 **********
@@ -2623,9 +2623,9 @@ print(&quot;{:2d}&quot;.format(datum), datum * '*')
 <p>but a width of 2 wouldn't work well for larger values. It would be better to find the largest value in the list and then use the length of that value as the field width. We can do that using the built-in function <code>max</code> to find the field width and then converting that value to a string<sup id="fnref:*"><a class="footnote-ref" href="#fn:*">1</a></sup> and using the <code>len</code> function to get the length of the string. We can then use that output field width to build an appropriate format string. The resuting code,</p>
 <pre><code class="language-python">data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
 OFW = len(str(max(data))) # Output Field Width.
-FORMAT = &quot;{:&quot; + str(OFW) + &quot;d}&quot; # Format string.
 for datum in data:
-print(FORMAT.format(datum), datum * '*')
+    # use f-string formatting to get the number to format another variable
+    print(f&quot;{datum:{OFW:d}d}&quot;, datum * '*')
 </code></pre>
 <p>produces this graph,</p>
 <pre><code class="language-plaintext"> 3 ***
@@ -2659,12 +2659,10 @@ print(FORMAT.format(datum), datum * '*')
 labels = ['2s', '3s', '4s', '5s', '6s', '7s',
       '8s','9s', '10s', '11s', '12s']
 OFW = len(str(max(data))) # Output Field Width.
-DFORMAT = &quot;({:&quot; + str(OFW) + &quot;d})&quot; # Data format string.
 label_lens = map(len, labels) # List of label lengths.
 LFW = max(label_lens) # Label Field Width.
-LFORMAT = &quot;{:&quot; + str(LFW) + &quot;s}&quot; # Label format string.
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+    print(f&quot;{labels[i]:{LFW:d}s}&quot;,f&quot;({data[i]:{OFW:d}d})&quot;, data[i] * '*')
 </code></pre>
 <p>Notes:</p>
 <ul>
@@ -2674,14 +2672,11 @@ print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
 <h2 id="reading-code">Reading Code</h2>
 <p>It may surprise you to learn that working programmers spend more time reading code than writing it. There's reading their own code of course, but they almost always work on large systems made up of code from many programmers, and since their code needs to work with the existing code, they need to be able to read that existing code. When you work in a production environment you have the use of intelligent editors and debuggers that help you trace through code to see what it is doing, and we will indeed use IDLE's debugger later. For now though we can use the original poor man's debugger: <code>print</code> statements. To understand the code above, paste it into a file and then place an appropriate <code>print</code> statement after each line so you can see the values that are being calculated, e.g.</p>
 <pre><code class="language-python">data = [3, 7, 8, 10, 14, 14, 11, 11, 9, 6, 2]
-labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
-      '9s', '10s', '11s', '12s']
+labels = ['2s', '3s', '4s', '5s', '6s', '7s',
+      '8s','9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
 print('OFW = ', OFW)
-
-DFORMAT = &quot;({:&quot; + str(OFW) + &quot;d})&quot; # Data format string.
-print('DFORMAT = ', DFORMAT)
 
 label_lens = map(len, labels) # List of label lengths.
 print('label_lens = ', label_lens)
@@ -2689,18 +2684,13 @@ print('label_lens = ', label_lens)
 LFW = max(label_lens) # Label Field Width.
 print('LFW = ', LFW)
 
-LFORMAT = &quot;{:&quot; + str(LFW) + &quot;s}&quot; # Label format string.
-print('LFORMAT = ', LFORMAT)
-
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), data[i] * '*')
+    print(f&quot;{labels[i]:{LFW:d}s}&quot;,f&quot;({data[i]:{OFW:d}d})&quot;, data[i] * '*')
 </code></pre>
 <p>This will produce the output,</p>
 <pre><code class="language-plaintext">OFW =  2
-DFORMAT =  ({:2d})
 label_lens =  [2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]
 LFW =  3
-LFORMAT =  {:3s}
  2s ( 3) ***
  3s ( 7) *******
  4s ( 8) ********
@@ -2722,22 +2712,20 @@ labels = ['2s', '3s', '4s', '5s', '6s', '7s', '8s',
       '9s', '10s', '11s', '12s']
 
 OFW = len(str(max(data))) # Output Field Width.
-DFORMAT = &quot;({:&quot; + str(OFW) + &quot;d})&quot; # Data format string.
 
 label_lens = map(len, labels) # List of label lengths.
 LFW = max(label_lens) # Label Field Width.
-LFORMAT = &quot;{:&quot; + str(LFW) + &quot;s}&quot; # Label format string.
 
 MAX_BAR = SCREEN_WIDTH - (OFW+2) - LFW - 2
 
 max_datum = max(data)
 if max_datum &gt; MAX_BAR:
-scaled_data = []
-for datum in data:
-    scaled_data.append(datum * MAX_BAR // max_datum)
+    scaled_data = []
+    for datum in data:
+        scaled_data.append(datum * MAX_BAR // max_datum)
 
 for i in range(len(data)):
-print(LFORMAT.format(labels[i]), DFORMAT.format(data[i]), scaled_data[i] * '*')
+    print(f&quot;{labels[i]:{LFW:d}s}&quot;,f&quot;({data[i]:{OFW:d}d})&quot;, scaled_data[i] * '*')
 </code></pre>
 <p>Notes:</p>
 <ul>
@@ -2801,7 +2789,7 @@ design<sup id="fnref2:*"><a class="footnote-ref" href="#fn:*">1</a></sup>.</p>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:03.880415+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:41.198174+00:00
     -->
   </footer>
 

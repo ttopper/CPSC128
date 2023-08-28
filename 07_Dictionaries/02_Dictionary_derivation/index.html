@@ -2703,7 +2703,7 @@ for index in range(26):
 <p>Second, it's not easy to see how to map 'cat' onto 0 and 'pie' onto 2. In our first two examples we were able to do so using simple arithmetic to deal with an offset between the two sequences first by subtracting 2 and then by subtracting 97. Here simple arithmetic will not suffice.</p>
 <h2 id="call-for-greater-ingenuity">... call for greater ingenuity ...</h2>
 <p>Programmers tried numerous arithmetic tricks to map words onto indices. For example we could try adding together the ASCII codes for the letters in the words so 'cat' becomes ord('c') + ord('a') + ord('t') = 99 + 97 + 116 = 312 while 'dog' becomes ord('d') + ord('o') + ord('g') = 100 + 111 + 103 = 314. This works nicely for 'cat' and 'dog', but 'dog' and 'god' end up having the same code (as do all acronyms) which won't do.</p>
-<p>To distinguish 'dog' and 'god' we have to take account of the order of the letters. One way to do this draws its inspiration from numbers. After all 574 and 475 are made from the same digits but we don't confuse them because the position of the numbers matters: 574 means "5 hundreds, 7 tens, and 4 ones" whereas 475 means "4 hundreds, 7 tens and 5 ones". We can adapt this positional scheme to code our strings. If 574 means (5 × 100) + (7 × 10) + (4 × 1) or (5 × 102) + (7 × 101) + (4 × 100) then by analogy cat should mean (3 × 262) + (1 × 261) + (20 × 260) — because c, a and t are the 3rd, 1st and 20th letters of the alphabet. Here's a function that calculates this kind of a string index,</p>
+<p>To distinguish 'dog' and 'god' we have to take account of the order of the letters. One way to do this draws its inspiration from numbers. After all 574 and 475 are made from the same digits but we don't confuse them because the position of the numbers matters: 574 means "5 hundreds, 7 tens, and 4 ones" whereas 475 means "4 hundreds, 7 tens and 5 ones". We can adapt this positional scheme to code our strings. If 574 means (5 × 100) + (7 × 10) + (4 × 1) or (5 × 10^2) + (7 × 10^1) + (4 × 10^0) then by analogy cat should mean (3 × 262) + (1 × 261) + (20 × 260) — because c, a and t are the 3rd, 1st and 20th letters of the alphabet. Here's a function that calculates this kind of a string index,</p>
 <pre><code>def string_index( s ):
     index = 0
     for i in range(len(s)):
@@ -2758,7 +2758,7 @@ ways from providing robust Unicode processing.</li>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:05.392563+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:42.510426+00:00
     -->
   </footer>
 

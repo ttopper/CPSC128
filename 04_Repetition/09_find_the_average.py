@@ -15,4 +15,4 @@ while again == 'y' or again == 'Y':
     again = input("Do you want to add another value (y/n)? ")
 
 average = total/num_count
-print("The average is {:.1f}.".format(average))
+print(f"The average is {average:.1f}.")

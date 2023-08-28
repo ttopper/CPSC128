@@ -2621,20 +2621,28 @@ many times to be sure it has sufficiently scrambled the original list.</p>
 <p>The Python translation is,</p>
 <p><img alt="" src="../05_cd_shuffle_c.py.png" /></p>
 <hr />
+<p>The number of duplicate generations goes up with the length of the
+list. Here's an instrumented version of the program that displays the
+number of duplicates generated as a function of list length. We call it
+“instrumented” because of the addition of the variable <code>loops</code> that is
+measuring its performance by counting iterations, and the addition of
+the initial <code>for</code> loop that is forcing <code>tracks</code> to take on the values we
+are interested in measuring. Run it and see how quickly the number of
+duplicates grows; even at 10 tracks we can get 26 duplicates.</p>
 <pre><code class="language-python"># CDShuffle_dupes.py
 import random
 print('tracks | dupes')
 print('-------+------')
 for tracks in [1,2,5,10,20,50,100]:
-loops = 0
-playlist = []
-while len(playlist) &lt; tracks:
-    tracknum = random.randint(1,tracks)
-    loops = loops + 1
-    if tracknum not in playlist:
-        playlist.append(tracknum)
-dupes = loops - tracks
-print(&quot;{:4d}   |{:5d}&quot;.format(tracks, dupes))
+    loops = 0
+    playlist = []
+    while len(playlist) &lt; tracks:
+        tracknum = random.randint(1,tracks)
+        loops = loops + 1
+        if tracknum not in playlist:
+            playlist.append(tracknum)
+    dupes = loops - tracks
+    print(f&quot;{tracks:4d}   |{dupes:5d}&quot;)
 </code></pre>
 <p>(For reliable output it should really run the program multiple times for
 each value of tracks, but this program is meant to be illustrative
@@ -2643,14 +2651,8 @@ rather than a definitive measuring device.)</p>
 <hr />
 <ol>
 <li id="fn:*">
-<p>The number of duplicate generations goes up with the length of the
-list. Here's an instrumented version of the program that displays the
-number of duplicates generated as a function of list length. We call it
-“instrumented” because of the addition of the variable <code>loops</code> that is
-measuring its performance by counting iterations, and the addition of
-the initial <code>for</code> loop that is forcing <code>tracks</code> to take on the values we
-are interested in measuring. Run it and see how quickly the number of
-duplicates grows; even at 10 tracks we can get 26 duplicates.&#160;<a class="footnote-backref" href="#fnref:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:*" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Remember "Test at the edges" so after trying a couple of typical
+values like 6 and 10, it would be good to try 2, 1, and even 0.&#160;<a class="footnote-backref" href="#fnref:*" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:*" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -2673,7 +2675,7 @@ duplicates grows; even at 10 tracks we can get 26 duplicates.&#160;<a class="foo
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:03.786953+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:41.120211+00:00
     -->
   </footer>
 

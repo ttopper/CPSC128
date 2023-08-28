@@ -2566,7 +2566,7 @@ copy = magnitudes
 <pre><code class="language-python">magnitudes = [41, 14, 27, 5, 32]
 copy = []
 for m in magnitudes:
-copy.append(m)
+    copy.append(m)
 </code></pre>
 <p>this gets us what we wanted,</p>
 <p><img alt="" src="../19_copying_a_list_2.png" /></p>
@@ -2575,7 +2575,7 @@ copy.append(m)
 <pre><code class="language-python">copy = magnitudes[:]
 </code></pre>
 <p>This works because <em>slices create new objects</em>.</p>
-<p>Another is to use the class constructor<sup id="fnref:*"><a class="footnote-ref" href="#fn:*">1</a></sup>] for lists, <code>list</code>, to create a new list from an existing one,</p>
+<p>Another is to use the class constructor<sup id="fnref:*"><a class="footnote-ref" href="#fn:*">1</a></sup> for lists, <code>list</code>, to create a new list from an existing one,</p>
 <pre><code class="language-python">copy = list(magnitude)
 </code></pre>
 <h2 id="whats-with-the-sort-of">What's with the “(sort of)”?</h2>
@@ -2644,7 +2644,7 @@ existing object of that same type.&#160;<a class="footnote-backref" href="#fnref
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-25 20:22:05.112202+00:00
+    Docs Build Date UTC : 2023-08-28 23:23:42.260473+00:00
     -->
   </footer>
 
