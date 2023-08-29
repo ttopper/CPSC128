@@ -13,7 +13,7 @@ Notes:
 -   The `__str__` method calls on two other `Card` methods to get the
     string representations of the card's face value and
     suit: `face_value` and `suit`.
--   The lists `face_values` and `suits` are *class variables*. All
+-   The lists `FACE_VALUES` and `SUITS` are *class variables*. All
     members of the class share access to them. Note that they are
     accessed by prefixing them with the class name, i.e. we
-    use `Card.suits` not just `suits`.
+    use `Card.SUITS` not just `SUITS`.

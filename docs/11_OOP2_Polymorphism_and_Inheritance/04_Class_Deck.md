@@ -33,6 +33,7 @@ derived class name,
 This example shows most of what you can do with inheritance:
 
 → line 1
+
 :   The syntax to define a class `Deck` that inherits from the
     class `CardCollection`. Jargon: Deck is
     the _derived_ or _descendant_ class; `CardCollection` is the _base

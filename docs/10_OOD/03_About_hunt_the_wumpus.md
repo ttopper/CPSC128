@@ -4,17 +4,14 @@ Hunt the Wumpus was one of the first interactive computer games. It is
 often cited as the first Interactive Fiction game, and sometimes as the
 first game written for a microprocessor (as opposed to a minicomputer or
 mainframe). As usual Wikipedia has  [a fine background
-article](http://en.wikipedia.org/wiki/Wumpus) about it. There are
-several online implementations of the game, e.g.
-[[1](http://www.dreamcodex.com/wumpus.php)] and
-[[2](http://www.funkypages.com/games/wumpus.php)] so you can try it
-out before we begin building our own version. The original version was
-written in 1970 in BASIC, but it has since been translated into many
-other languages ([including
-Python](http://granite.sru.edu/~conlon/python_page.html)). For interest,
-here's  [the original BASIC source
-code](http://www.atariarchives.org/morebasicgames/showpage.php?page=179)— **users
-would type this in** (!) in order to play the game.
+article](https://en.wikipedia.org/wiki/Hunt_the_Wumpus) about it. There are
+several online implementations of the [game](http://www.dreamcodex.com/wumpus.php)
+so you can try it out before we begin building our own version. The original
+version was written in 1970 in BASIC, but it has since been translated into many
+other languages ([including Python](http://granite.sru.edu/~conlon/python_page.html)).
+For interest, here's
+[the original BASIC source code](http://www.atariarchives.org/morebasicgames/showpage.php?page=179)—
+**users would type this in** (!) in order to play the game.
 
 I hope you realized from its age that this is a text-based game and not
 a graphical first person shooter. If not, this short game transcript

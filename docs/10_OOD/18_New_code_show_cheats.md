@@ -14,7 +14,7 @@ def show_cheats():
     Should be disabled in the final version.'''
     print 'Psst!'
     for room in cave_system.rooms:
-        if room.has_bat(): print '   There's a bat in room', room.number
-        if room.has_pit(): print '   There's a pit in room', room.number
-        if room.has_wumpus(): print '   There's a wumpus in room', room.number
+        if room.has_bat(): print '   There\'s a bat in room', room.number
+        if room.has_pit(): print '   There\'s a pit in room', room.number
+        if room.has_wumpus(): print '   There\'s a wumpus in room', room.number
 ```

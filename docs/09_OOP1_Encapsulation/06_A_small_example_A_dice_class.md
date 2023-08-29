@@ -35,7 +35,7 @@ if __name__ == '__main__':
     print('result =', result)
     
     print('Rolling red and d1 together gets you:', d1.roll() + red.roll())
-    print('The die d1 has %d sides' % (d1.nsides))
+    print(f'The die d1 has {d1.nsides:d} sides.')
 ```
 
 and then the code with (hopefully helpful) annotations,

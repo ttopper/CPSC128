@@ -49,16 +49,4 @@ the test is true.
 
 Diagramatically this can be represented as,
 
-[//]: <> (![.](11_while_flowchart.gif))
-
-```mermaid
-flowchart TD
-    A(...)
-    B{Test}
-    C[Statements executed<br><b>if</b> test is True]
-    D(...)
-    A --> B
-    B --> |True|C
-    C --> B
-    B --> |False|D
-```
+![.](11_while_flowchart.gif)

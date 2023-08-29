@@ -16,12 +16,12 @@ quotes = {}
 quotes['Kernighan'] = k
 quotes['Beck'] = b
 # Now let's display what we have:
-print('Here's the dictionary:')
+print('Here\'s the dictionary:')
 print(quotes)
 print()
 print('Here it is again by looping through it:')
 for person in quotes.keys():
-print(quotes[person])
+    print(quotes[person])
 print()
 # Now let's create a shelve and put the quotes in it.
 # Like a file we open it, but unlike with a file
@@ -35,10 +35,10 @@ quotefile.close()
 # The quotes should be stored on-disk now.
 # Let's reopen the shelve and display the quotes.
 quotefile = shelve.open('quotes')
-print('Here's the content of the shelve:')
+print('Here\'s the content of the shelve:')
 # Notice how similar this is to working with the in-memory dictionary above.
 for key in quotefile:
-print(key, ':', quotefile[key])
+    print(key, ':', quotefile[key])
 quotefile.close()
 ```
 
@@ -108,14 +108,14 @@ liz : [1]
 
 _But_ listen to the official documentation:
 
-> If the optional writeback parameter is set to True, all entries accessed are cached in memory, and written back at close time; this can make it handier to mutate mutable entries in the persistent dictionary, but, if many entries are accessed, **it can consume vast amounts of memory**for the cache, and it can make the close operation **very slow**since all accessed entries are written back (there is no way to determine which accessed entries are mutable, nor which ones were actually mutated). [*](http://docs.python.org/lib/module-shelve.html)
+> If the optional writeback parameter is set to True, all entries accessed are cached in memory, and written back at close time; this can make it handier to mutate mutable entries in the persistent dictionary, but, if many entries are accessed, **it can consume vast amounts of memory** for the cache, and it can make the close operation **very slow** since all accessed entries are written back (there is no way to determine which accessed entries are mutable, nor which ones were actually mutated). [*](http://docs.python.org/lib/module-shelve.html)
 
 ## Solution 2
 
 Mutate the object via a temporary name assigned to it and then reassign the temporary name to the shelve (i.e. keyed) name. In other words use a temporary name to force an assignment to the keyed name happen:
 
 ```plaintext
->>> s = shelve.open('test_shelve', writeback=True)
+>>> s = shelve.open('test_shelve')
 >>> tmp = s['liz']
 >>> tmp[0] = 2
 >>> s['liz'] = tmp

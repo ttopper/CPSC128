@@ -19,6 +19,6 @@ Inheritance hierarchies are easiest to read bottom up. For example, if
 we begin at the lower right the chart above tells us that
 a `FlexTable` is a kind of `HTMLTable` which is in turn a kind
 of `Panel` which is a kind of `Widget` which is a kind of `UIObject`.
-What this means is that if we improve our code for `Panel`s, then `Widget`s
-and `UIObject`s will instantly and transparently inherit these
+What this means is that if we improve our code for `UIObject`s, then `Widget`s
+and `Panel`s will instantly and transparently inherit these
 improvements as well without us having to modify their code at all.

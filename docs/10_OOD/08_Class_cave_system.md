@@ -55,7 +55,7 @@ of `Room` objects not of the cave system as a whole:
 This means that these methods properly belong to `Room` objects
 not `Cave_System`s so we'll move them there.
 
-What methods_do_cave systems have then? Almost none, but there is one
+What methods _do_ cave systems have then? Almost none, but there is one
 slightly non-obvious one. Try spotting it...
 
 Did you spot it in this line?

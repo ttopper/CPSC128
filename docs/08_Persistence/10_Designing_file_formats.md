@@ -2,7 +2,7 @@
 
 In the previous example we stored our coordinates "one pair to a line separated by white space". That description specifies a file format. Of course it's not the only file format possible. We could have put all the data onto one line, or separated items with commas instead of spaces, or... The limits to what we could design are just the limits of our ingenuity.
 
-The differences of one versus many lines, and commas versus spaces are just cosmetic, but sometimes quite different approaches can be taken to storing some data. One accessible problem that affords different alternatives is the problem of storing the state of the universe in Conway's Game of Life. You can read about this "game" on [Wikipedia](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) and play it online [here](http://www.bitstorm.org/gameoflife/) (among many others).
+The differences of one versus many lines, and commas versus spaces are just cosmetic, but sometimes quite different approaches can be taken to storing some data. One accessible problem that affords different alternatives is the problem of storing the state of the universe in Conway's Game of Life. You can read about this "game" on [Wikipedia](http://en.wikipedia.org/wiki/Conway's_Game_of_Life) and play it online [here](https://playgameoflife.com/) (among many others).
 
 The universe in Conway's game of life is a grid of cells each of which can be in one of two states: alive or dead. A natural way to represent it in Python would be as a list of lists of cells (like a very large tic-tac-toe board):
 

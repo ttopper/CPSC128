@@ -6,9 +6,9 @@ pass _plus_ the methods we have shifted from `Cave_System`s to `Room`s:
 -   Attributes: **3 tunnels**, possibly **a bat**, possibly **a pit**,
     possibly **a wumpus**.
 -   Methods: Should be able to tell us if it **has a bat**, **has a
-    pit**, or **has a wumpus,**\
+    pit**, or **has a wumpus,**
    _plus_
-    should be able to tell us **where you can go from here**/what
+    should be able to tell us **where you can go from here**, what
     rooms are connected to this one; if a room **has a bat**; if a
     room **has a pit**; if the **player is in** a room.
 

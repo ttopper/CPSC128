@@ -17,14 +17,5 @@ processing operations, but those three fundamental parts will always be
 present. This program structure can be represented using a flowchart as
 follows:
 
-<!-- ![.](11_IPO_flowchart.gif) -->
+![.](11_IPO_flowchart.gif)
 
-```mermaid
-flowchart TD
-    A(Begin Execution)
-    B[/<b>Input</b> necessary values/]
-    C[<b>Process</b> stored values,<br>i.e. perform calculations]
-    D[\<b>Output</b> calculated values\]
-    E(End execution)
-    A --> B --> C --> D --> E
-```

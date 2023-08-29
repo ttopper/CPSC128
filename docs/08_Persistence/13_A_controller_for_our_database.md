@@ -235,4 +235,4 @@ controller.
 [^**]: Which may have you thinking that it should be possible to build a
 universal controller which with some OOP and an MVC architecture it
 pretty much is. OOP will be the subject of the remaining four modules of
-this course. MVC you can either Google or wait to study in NCIT 212.
+this course. MVC you can either Google or wait to study in CPSC 129.

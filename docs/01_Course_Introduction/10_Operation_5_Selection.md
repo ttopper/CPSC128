@@ -45,18 +45,4 @@ execute _depending_ on the outcome of the test.
 
 This can be presented diagramatically by a flowchart like this:
 
-[//]: <> (![.](10_if_flowchart.gif))
-
-```mermaid
-flowchart TD
-    A(...)
-    B{Test}
-    C[Statements executed<br><b>if</b> test is True]
-    D[Statements executed<br><b>if</b> test is False]
-    E(...)
-    A --> B
-    B --> |True|C
-    B --> |False|D
-    C --> E
-    D --> E
-```
+![.](10_if_flowchart.gif)

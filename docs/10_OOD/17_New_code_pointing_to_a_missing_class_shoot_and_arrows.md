@@ -57,6 +57,6 @@ elif action == 's':
         game_over = True
         
     elif outcome == MISS:
-        print('I'm afraid the Wumpus wasn't in any of those rooms.')
+        print('I\'m afraid the Wumpus wasn\'t in any of those rooms.')
         print('You wasted your arrow.')
 ```      

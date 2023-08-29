@@ -74,9 +74,9 @@ if __name__ == '__main__':
 
     print('Your card number is 42.')
     c = Card(42)
-    print('It's face value is:', c.face_value())
-    print('It's suit is:', c.suit())
-    print('It's printable representation is:', c)
+    print('It\'s face value is:', c.face_value())
+    print('It\'s suit is:', c.suit())
+    print('It\'s printable representation is:', c)
     print()
 
     print('==================')
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     print()
 
     d = Deck()
-    print('The deck's printable representation:')
+    print('The deck\'s printable representation:')
     print(d)
     print()
 

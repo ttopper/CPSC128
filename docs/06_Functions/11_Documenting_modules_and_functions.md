@@ -19,7 +19,7 @@ def test_fn_2():
     return
 ```
 
-In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the [standard library modules](https://docs.python.org/3/py-modindex.html).
+In an actual module these docstrings would be helpful to a programmer reading your code by explaining what the module and each function in it were designed to do. You can see lots of real examples in the [standard library modules](https://docs.python.org/3/tutorial/stdlib.html).
 
 Python also has built-in commands that extract this documentation. Recall that when we import a module in the shell we can use `dir` to see it's attributes. Here's an example for a real module, `math`,
 
