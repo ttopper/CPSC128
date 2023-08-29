@@ -2567,12 +2567,12 @@ quotes = {}
 quotes['Kernighan'] = k
 quotes['Beck'] = b
 # Now let's display what we have:
-print('Here's the dictionary:')
+print('Here\'s the dictionary:')
 print(quotes)
 print()
 print('Here it is again by looping through it:')
 for person in quotes.keys():
-print(quotes[person])
+    print(quotes[person])
 print()
 # Now let's create a shelve and put the quotes in it.
 # Like a file we open it, but unlike with a file
@@ -2586,10 +2586,10 @@ quotefile.close()
 # The quotes should be stored on-disk now.
 # Let's reopen the shelve and display the quotes.
 quotefile = shelve.open('quotes')
-print('Here's the content of the shelve:')
+print('Here\'s the content of the shelve:')
 # Notice how similar this is to working with the in-memory dictionary above.
 for key in quotefile:
-print(key, ':', quotefile[key])
+    print(key, ':', quotefile[key])
 quotefile.close()
 </code></pre>
 <p>The example shows how to store and retrieve data with the shelve, but what about deleting a stored item? Just use <code>del dictionary[key]</code> or in the specific example above we could use <code>del quotefile['Beck']</code> to remove the Kent Beck quote.</p>
@@ -2641,11 +2641,11 @@ liz : [1]
 </code></pre>
 <p><em>But</em> listen to the official documentation:</p>
 <blockquote>
-<p>If the optional writeback parameter is set to True, all entries accessed are cached in memory, and written back at close time; this can make it handier to mutate mutable entries in the persistent dictionary, but, if many entries are accessed, <strong>it can consume vast amounts of memory</strong>for the cache, and it can make the close operation <strong>very slow</strong>since all accessed entries are written back (there is no way to determine which accessed entries are mutable, nor which ones were actually mutated). <a href="http://docs.python.org/lib/module-shelve.html">*</a></p>
+<p>If the optional writeback parameter is set to True, all entries accessed are cached in memory, and written back at close time; this can make it handier to mutate mutable entries in the persistent dictionary, but, if many entries are accessed, <strong>it can consume vast amounts of memory</strong> for the cache, and it can make the close operation <strong>very slow</strong> since all accessed entries are written back (there is no way to determine which accessed entries are mutable, nor which ones were actually mutated). <a href="http://docs.python.org/lib/module-shelve.html">*</a></p>
 </blockquote>
 <h2 id="solution-2">Solution 2</h2>
 <p>Mutate the object via a temporary name assigned to it and then reassign the temporary name to the shelve (i.e. keyed) name. In other words use a temporary name to force an assignment to the keyed name happen:</p>
-<pre><code class="language-plaintext">&gt;&gt;&gt; s = shelve.open('test_shelve', writeback=True)
+<pre><code class="language-plaintext">&gt;&gt;&gt; s = shelve.open('test_shelve')
 &gt;&gt;&gt; tmp = s['liz']
 &gt;&gt;&gt; tmp[0] = 2
 &gt;&gt;&gt; s['liz'] = tmp
@@ -2692,7 +2692,7 @@ name.</p>
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-08-28 23:23:43.213512+00:00
+    Docs Build Date UTC : 2023-08-29 20:23:13.883767+00:00
     -->
   </footer>
 

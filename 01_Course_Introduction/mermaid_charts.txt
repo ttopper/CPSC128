@@ -1,0 +1,35 @@
+```mermaid
+flowchart TD
+    A(...)
+    B{Test}
+    C[Statements executed<br><b>if</b> test is True]
+    D[Statements executed<br><b>if</b> test is False]
+    E(...)
+    A --> B
+    B --> |True|C
+    B --> |False|D
+    C --> E
+    D --> E
+```
+
+```mermaid
+flowchart TD
+    A(...)
+    B{Test}
+    C[Statements executed<br><b>if</b> test is True]
+    D(...)
+    A --> B
+    B --> |True|C
+    C --> B
+    B --> |False|D
+```
+
+```mermaid
+flowchart TD
+    A(Begin Execution)
+    B[/<b>Input</b> necessary values/]
+    C[<b>Process</b> stored values,<br>i.e. perform calculations]
+    D[\<b>Output</b> calculated values\]
+    E(End execution)
+    A --> B --> C --> D --> E
+```

@@ -1,7 +1,5 @@
 # playing_cards_4.py
-#
 # Add appropriate commenting to the classes and methods
-#
 # Kate, Winter 2023
 
 import random
@@ -70,17 +68,13 @@ if __name__ == '__main__':
     d.shuffle()
     print('d after shuffling =', d, '\n')
     print('d has', d.cards_left(), 'cards.\n')
-
     roxx = Hand()
     chris = Hand()
-
     for card in range(5):
         roxx.add(d.deal())
     print('Your hand of', roxx.size(), 'cards contains:', roxx)
-
     chris.add(d.deal(5))
     print('Your hand of', chris.size(), 'cards contains:', chris)
-
     print('\nThere are', d.cards_left(), 'cards left in the deck.')
     if roxx.is_flush():
         print('roxx rocks!')
