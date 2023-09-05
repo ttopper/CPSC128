@@ -34,4 +34,4 @@ hard?
 The main goal of this course is to teach you those concepts, in that language, and to put them to use using those techniques.
 
 !!! note "Further reading (Optional)"
-For more see Wikipedia's page on [Computer Programming](https://en.wikipedia.org/wiki/Computer_programming). You won't be examined on it, but reading it over will provide you with invaluable background information, of the sort that would often come up during face-to-face classes. It introduces many of the major concepts and concerns that occupy programmers. You won't understand every bit of it on first reading, but that's okay; the ideas will recur as you move through the course.
+For more see Wikipedia's page on [Computer Programming](https://en.wikipedia.org/wiki/Computer_programming). You won't be examined on it, but reading it over will provide you with invaluable background information. It introduces many of the major concepts and concerns that occupy programmers. You won't understand every bit of it on first reading, but that's okay; the ideas will recur as you move through the course.
