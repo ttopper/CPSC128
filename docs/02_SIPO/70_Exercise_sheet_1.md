@@ -58,7 +58,7 @@ root = math.sqrt(num)
 print('The square root of', num, 'is', root)
 ```
 
-4. Look at the following and think about how well the code is written. The program works correctly, so I want you to focus on the clarity of the variable names and the comments included. Look at the marking guide and think about what grade you would give to this code. Make some notes on the feedback you would give to this student to help them improve their grade.
+4. Look at the following and think about how well the code is written. The program works correctly, so I want you to focus on the clarity of the variable names and the comments included. Look at the [marking guide](https://ttopper.github.io/CPSC128/00_Preparing/14_Marking_scheme/) and think about what grade you would give to this code. Make some notes on the feedback you would give to this student to help them improve their grade.
 
 ```python
 # annual_income.py
