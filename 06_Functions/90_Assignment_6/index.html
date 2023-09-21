@@ -711,7 +711,7 @@
 -->
 
 <li >
-    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C_or_C to F</a>
+    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C or C to F</a>
 </li>
 
         
@@ -2560,20 +2560,20 @@
 </ul>
 </li>
 </ol>
-<pre><code class="language-python"># a6p1v1.py
+<pre><code class="language-python"># a6p1name.py
 # Just some practice writing little functions.
 # Insert the necessary functions here.
 
 line(60, '=')
-print 'Function practice'
+print('Function practice')
 line(60, '-')
-num = int(raw_input('Give me an integer value: '))
-print 'Your number contains', ndigits(num),
-print 'digits, is', even_or_odd(num),
+num = int(input('Give me an integer value: '))
+print('Your number contains', ndigits(num), end = ' ')
+print('digits, is', even_or_odd(num), end = '')
 if ispos(num):
-    print 'and is positive.'
+    print(', and is positive.')
 else:
-    print 'but is not positive.'
+    print(', but is not positive.')
 line(60, '-')
 </code></pre>
 <pre><code class="language-plaintext">============================================================
@@ -2737,16 +2737,16 @@ for test in TEST_HANDS:
     # result...
     if isStraight(test[0]) != test[1]:
         # ... display an error message
-        print 'isStraight fails on', test[0]
-print 'Done.'
-print
+        print('isStraight fails on', test[0])
+print('Done.')
+print()
 </code></pre>
 <h2 id="logistics">Logistics</h2>
 <ul>
 <li>
 <p>Use the following naming scheme for your program files:
     <code>a</code><em>assignment#</em><code>p</code><em>problem#</em><code>`yourname</code>.py<code>. So your first
-    attempt at problem 1 on this assignment will be named</code>a6p1bob.py<code>and your solution for problem will be named</code>a6p2bob.py` (adjusted obviously to use your name) .</p>
+    attempt at problem 1 on this assignment will be named</code>a6p1bob.py<code>and your solution for problem 2 will be named</code>a6p2bob.py` (adjusted obviously to use your name) .</p>
 </li>
 <li>
 <p>Please submit all your <code>.py</code> files to the Moodle dropbox.</p>
@@ -2771,7 +2771,7 @@ print
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-09-11 21:51:38.549737+00:00
+    Docs Build Date UTC : 2023-09-21 18:10:42.549832+00:00
     -->
   </footer>
 

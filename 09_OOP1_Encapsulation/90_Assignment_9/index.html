@@ -711,7 +711,7 @@
 -->
 
 <li >
-    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C_or_C to F</a>
+    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C or C to F</a>
 </li>
 
         
@@ -2550,35 +2550,34 @@
 <li>
 <h3 id="a-little-class-of-your-own">A little class of your own</h3>
 <p>Write a Coin class that will enable this code to run,</p>
-<p>```python</p>
-<h1 id="your-class-goes-here">Your class goes here...</h1>
-<p>if <strong>name</strong> == '<strong>main</strong>':
+<pre><code># Your class goes here...
+
+if __name__ == '__main__':
     coin = Coin()
-    print(f'Your first coin is a {coin}.')</p>
-<pre><code>purse = [coin]
-print('Adding four more coins to your purse...')
-for i in range(4):
-    coin = Coin(random.choice([5,10,25,100,200]))
-    purse.append(coin)
+    print(f'Your first coin is a {coin}.')
 
-print('In your purse you now have:')
-for coin in purse:
-    print('\ta', coin)
+    purse = [coin]
+    print('Adding four more coins to your purse...')
+    for i in range(4):
+        coin = Coin(random.choice([5,10,25,100,200]))
+        purse.append(coin)
 
-total = 0
-for coin in purse:
-    total += coin.value
-print('The total value of the coins in your purse is', total, 'cents.')
+    print('In your purse you now have:')
+    for coin in purse:
+        print('\ta', coin)
 
-print('Flipping your coins you get:',end=' ')
-for coin in purse:
-    print(coin.flip(),end = ' ')
+    total = 0
+    for coin in purse:
+        total += coin.value
+    print('The total value of the coins in your purse is', total, 'cents.')
+
+    print('Flipping your coins you get:',end=' ')
+    for coin in purse:
+        print(coin.flip(),end = ' ')
 </code></pre>
 <p>and produce this output,</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Your first coin is a Nickle.
+<pre><code>&gt;&gt;&gt; 
+Your first coin is a Nickle.
 Adding four more coins to your purse...
 In your purse you now have:
     a Nickle
@@ -2588,24 +2587,7 @@ In your purse you now have:
     a Quarter
 The total value of the coins in your purse is 137 cents.
 Flipping your coins you get: Tails Tails Tails Heads Tails
-```</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>and produce this output,</p>
-<p><code>plaintext
-    &gt;&gt;&gt; 
-    Your first coin is a Penny.
-    Adding four more coins to your purse...
-    In your purse you now have:
-          a Penny
-          a Loonie
-          a Penny
-          a Dime
-          a Quarter
-    The total value of the coins in your purse is 137 cents.
-    Flipping your coins you get: Tails Tails Tails Heads Tails
-    &gt;&gt;&gt;</code></p>
+</code></pre>
 <p>Of course due to their random selection the exact coins that end up
 in the purse will vary from run to run, though the first coin
 created in the test above should always be a Penny, i.e. the default
@@ -2617,11 +2599,11 @@ Coin to create is a Penny.</p>
 can find out if a five-card poker hand is a flush, i.e. all cards
 are from the same suit. Here's the specification code to add to the
 end of the module,</p>
-<p><code>python
-if chris.is_flush():
+<pre><code>if chris.is_flush():
     print 'That is a flush!'
 else:
-    print 'Sorry, no flush.'</code></p>
+    print 'Sorry, no flush.'
+</code></pre>
 </li>
 <li>
 <h3 id="extending-a-class-2">Extending a class 2</h3>
@@ -2631,11 +2613,11 @@ have any extra Aces in it. Extend the code in
 <a href="../90_playing_cards_4.py"><code>playing_cards_4.py</code></a> so we can check that a
 deck is fair.</p>
 <p>Here's the specification code to add to the end of the module,</p>
-<p><code>python
-if d.is_fair():
+<pre><code>if d.is_fair():
     print 'The deck is fair.'
 else:
-    print 'Uh oh, this deck is unfair.'</code></p>
+    print 'Uh oh, this deck is unfair.'
+</code></pre>
 <p>Include the tests you used to determine that your method was working
 correctly in the code you submit.</p>
 </li>
@@ -2694,7 +2676,7 @@ with a pair of attributes. Name the attributes <code>suit</code> and
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-09-11 21:51:40.466622+00:00
+    Docs Build Date UTC : 2023-09-21 18:10:44.643000+00:00
     -->
   </footer>
 

@@ -711,7 +711,7 @@
 -->
 
 <li >
-    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C_or_C to F</a>
+    <a href="../../03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/">Example: One program to convert F to C or C to F</a>
 </li>
 
         
@@ -2566,7 +2566,7 @@ print('Hello name')
 <ol start="2">
 <li>Write a program that calculates the annual compound interest on an investment in a bank account. The program will get as input the starting account balance, the interest rate on the account, and the number of years for the money to grow. It will calculate the compound interest assuming that the rate is compounded annually. The equation for compound interest is:</li>
 </ol>
-<pre><code class="language-plaintext">A = P(1 + r/n)nt
+<pre><code class="language-plaintext">A = P(1 + r/n)^nt
 
 A = final balance   
 P = starting balance
@@ -2576,7 +2576,7 @@ t = the time in years
 </code></pre>
 <ol start="3">
 <li>
-<p>Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds. You will need to know that 1 in = 2.53 cm and that 1 kg = 2.2 lbs. It will then convert those value to cm and kg before applying the following equation:</p>
+<p>Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds. You will need to know that 1 in = 2.54 cm and that 1 kg = 2.2 lbs. It will then convert those value to cm and kg before applying the following equation:</p>
 <p><img alt="" src="../70_Skin_area_formula.png" /></p>
 <p>where,</p>
 </li>
@@ -2585,6 +2585,7 @@ t = the time in years
     W= weight in kg
     H= height in cm
 </code></pre>
+<p>*Note that even though is uses the height in cm the result is in meters squared.</p>
 <p>To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.</p>
 <pre><code class="language-python">import math
 num = int(input('Enter a number: ')
@@ -2624,7 +2625,7 @@ print('You make',total, 'dollars.')
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-09-11 21:51:34.735838+00:00
+    Docs Build Date UTC : 2023-09-21 18:10:38.580172+00:00
     -->
   </footer>
 
