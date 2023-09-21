@@ -67,6 +67,6 @@
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*.py . So your solution for problem 1 on this assignment will be named `a4p1.py` .
+    `a`*assignment#*`p`*problem#*name`.py` . So your solution for problem 1 on this assignment will be named `a4p1bob.py` .
 
 -   Submit your assignment through the Moodle page. There will be a Dropbox for the assignment for you to upload your `.py` files.

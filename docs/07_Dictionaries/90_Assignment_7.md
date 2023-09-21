@@ -91,19 +91,19 @@
     Write a function called `peaks` that is passed a list of lists like
     this one and returns a list of the coordinates (row, col) of all the
     peaks in the dataset. A peak is a point that is higher than its
-    eight surrounding neighbours (the red values at (2,7) and (4,3)
-    above are the peaks and the orange values aroung them are their
+    eight surrounding neighbours (the values at (2,7) and (4,3)
+    above are the peaks and the values aroung them are their
     eight neighbours). For the data set above the function should
     return,
 
-        [(2, 6), (4, 3)]
+        [(2, 7), (4, 3)]
 
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*``yourname`.py` . So your first
-    attempt at problem 1 on this assignment will be named `a7p1bob.py`
-    and your solution for problem will be named `a7p2bob.py` (adjusted obviously to use your name) .
+    `a`*assignment#*`p`*problem#*``yourname`.py` . So your solution
+    to problem 1 on this assignment will be named `a7p1bob.py`
+    and your solution for problem 2 will be named `a7p2bob.py` (adjusted obviously to use your name) .
 
 -   Please submit all your .py files to the Moodle dropbox.
      

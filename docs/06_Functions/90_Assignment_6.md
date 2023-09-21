@@ -14,20 +14,20 @@
         the code to fit your functions.
 
 ``` python
-# a6p1v1.py
+# a6p1name.py
 # Just some practice writing little functions.
 # Insert the necessary functions here.
 
 line(60, '=')
-print 'Function practice'
+print('Function practice')
 line(60, '-')
-num = int(raw_input('Give me an integer value: '))
-print 'Your number contains', ndigits(num),
-print 'digits, is', even_or_odd(num),
+num = int(input('Give me an integer value: '))
+print('Your number contains', ndigits(num), end = ' ')
+print('digits, is', even_or_odd(num), end = '')
 if ispos(num):
-    print 'and is positive.'
+    print(', and is positive.')
 else:
-    print 'but is not positive.'
+    print(', but is not positive.')
 line(60, '-')
 ```
 
@@ -199,9 +199,9 @@ for test in TEST_HANDS:
     # result...
     if isStraight(test[0]) != test[1]:
         # ... display an error message
-        print 'isStraight fails on', test[0]
-print 'Done.'
-print
+        print('isStraight fails on', test[0])
+print('Done.')
+print()
 ```
 
 ## Logistics
@@ -209,6 +209,6 @@ print
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#*``yourname`.py` . So your first
     attempt at problem 1 on this assignment will be named `a6p1bob.py`
-    and your solution for problem will be named `a6p2bob.py` (adjusted obviously to use your name) .
+    and your solution for problem 2 will be named `a6p2bob.py` (adjusted obviously to use your name) .
 
 -   Please submit all your `.py` files to the Moodle dropbox.

@@ -41,7 +41,7 @@ Notes:
 
 ------------------------------------------------------------------------
 
-* This is a_theoretical_performance analysis in which we are
+* This is a _theoretical_ performance analysis in which we are
 estimating the expected performance. We will soon also be
-doing_empirical_or_experimental_performance analyses in which we
+doing _empirical_ or _experimental_ performance analyses in which we
 measure actual performance rather than trusting to fallible predictions.

@@ -21,8 +21,8 @@
 
 2.  ### Is it an Armstrong number?
 
-    An Armstrong number is an_n_digit number that is equal to the sum
-    of its digits each raised to the_n_h power. For example 153 equals
+    An Armstrong number is an _n_ digit number that is equal to the sum
+    of its digits each raised to the _n_ th power. For example 153 equals
     1^3^+5^3^+3^3^, so it is an Armstrong number. Write a program that
     inputs a three-digit number, and outputs a message saying whether it
     is an Armstrong number or not.
@@ -130,10 +130,8 @@
 ## Logistics
 
 Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*`v`*version#*`.py` . So your first
-    attempt at problem 1 on this assignment will be named `a3p1v1.py`
-    and your second attempt (should there be one) will be named
-    `a3p1v2.py` .
+    `a`*assignment#*`p`*problem#*`name.py` . So your solution
+    for problem 1 on this assignment will be named `a3p1bob.py` .
 
 ------------------------------------------------------------------------
 

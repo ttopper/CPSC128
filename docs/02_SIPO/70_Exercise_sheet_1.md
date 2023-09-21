@@ -28,7 +28,7 @@ print('Hello name')
 
 
 ```plaintext
-A = P(1 + r/n)nt
+A = P(1 + r/n)^nt
 
 A = final balance   
 P = starting balance
@@ -37,7 +37,7 @@ n = number of times interest applied per time period (use n = 1)
 t = the time in years
 ```
 
-3. Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds. You will need to know that 1 in = 2.53 cm and that 1 kg = 2.2 lbs. It will then convert those value to cm and kg before applying the following equation:
+3. Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds. You will need to know that 1 in = 2.54 cm and that 1 kg = 2.2 lbs. It will then convert those value to cm and kg before applying the following equation:
 
     ![](70_Skin_area_formula.png)
 
@@ -48,6 +48,7 @@ t = the time in years
     W= weight in kg
     H= height in cm
 ```
+*Note that even though is uses the height in cm the result is in meters squared.
 
 To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.
 

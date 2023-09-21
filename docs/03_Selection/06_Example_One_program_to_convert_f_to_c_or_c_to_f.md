@@ -1,4 +1,4 @@
-# Example: One program to convert F to C_or_C to F
+# Example: One program to convert F to C _or_ C to F
 
 Consider this program to convert temperatures in Fahrenheit to Celsius.
 
