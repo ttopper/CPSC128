@@ -65,10 +65,11 @@
     most two more times.
     When the two copies are identical a check is made to ensure
     that the new  password meets construction requirements.
-    Passwords must be constructed to meet the following require-
-    ments:
+    Passwords must be constructed to meet the following requirements:
+
     *  Each password must have  at  least  six  characters.
     *  Each password must contain at least  one  lower-case
+
     alphabetic character, one upper-case alphabetic character,
     and at least one numeric or special character.  In this
     case,  "alphabetic"  refers  to  all upper or lower case
@@ -133,7 +134,7 @@ enough.
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*``yourname`.py` . So your solution
+    `a`*assignment#*`p`*problem#*yourname`.py` . So your solution
     to problem 1 on this assignment will be named `a5p1bob.py`
     and your solution for problem will be named `a5p2bob.py` (adjusted obviously to use your name) .
 
