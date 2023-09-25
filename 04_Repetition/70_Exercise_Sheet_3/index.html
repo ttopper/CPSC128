@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Exercise Sheet 4 - CPSC 128</title>
+  <title>Exercise Sheet 3 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -1139,7 +1139,7 @@
 -->
 
 <li class="active">
-    <a href="./">Exercise Sheet 4</a>
+    <a href="./">Exercise Sheet 3</a>
 </li>
 
         
@@ -2544,9 +2544,10 @@
 
   <main>
     
-      <h1 id="exercise-sheet-4">Exercise Sheet 4</h1>
-<ol start="0">
-<li>Write a program that gets two numbers from the user. The user calculates that number to the power of 1, 2, 3, 4, ... and stops when the result is more than the second number. Think about the weird cases like when the second number is smaller than the first number. Below is an example run of the program.</li>
+      <h1 id="exercise-sheet-3">Exercise Sheet 3</h1>
+<p>For the following problem descriptions decide whether it would be best to use an <strong>if</strong> statement (with or without elifs and else), a <strong>while</strong> loop, or a <strong>for</strong> loop. <strong>You don't actually have to write the code for any of these!</strong></p>
+<ol>
+<li>Write a program that gets two numbers from the user. The user calculates that number to the power of 1, 2, 3, 4, ... while the result is less than the second number. Below is an example run of the program.</li>
 </ol>
 <pre><code class="language-plaintext">Give me a number to “power” up: 2
 Give me a place to stop: 50
@@ -2557,8 +2558,61 @@ Give me a place to stop: 50
 2**4 = 16
 2**5 = 32
 </code></pre>
-<ol>
-<li>Write a program that gives the computer a simulated (and untimed) Paced Auditory Serial Addition Test (PASAT). The computer will keep getting positive integer numbers from the user and add the last two values entered before getting the next value. This is actually quite complicated for a person to keep track of but will be easy for the computer. The program will stop when the user enters a negative number. Below is an example run of the program (5+3=8, 3+4=7, 4+6=10,done).</li>
+<ol start="2">
+<li>
+<p>Write a guessing game program where the user has to guess a number between 1 and 100. The computer will let the user know if they are too high or too low after each guess and stop when the user the guesses correctly. Then it will tell the user about their glorious victory!</p>
+</li>
+<li>
+<p>Get the length and width of a rectangle and tell the user if it is a square or not.</p>
+</li>
+<li>
+<p>Use nested a loop to write a program that outputs a multiplication table for each number from 1 to a number input by the user. The final output should look something like the example below.</p>
+</li>
+</ol>
+<pre><code class="language-plaintext">Enter the biggest number in the table: 5
+1    2    3    4    5
+2    4    6    8   10
+3    6    9   12   15
+4    8   12   16   20
+5   10   15   20   25
+</code></pre>
+<ol start="5">
+<li>
+<p>Write a program that gets the users salary and tells them how much income tax they will pay based on the table below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">2022 FEDERAL INCOME TAX BRACKET</th>
+<th style="text-align: center;">2022 FEDERAL INCOME TAX RATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">$50,197 or less</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr>
+<td style="text-align: center;">$50,198 to $100,392</td>
+<td style="text-align: center;">20.5%</td>
+</tr>
+<tr>
+<td style="text-align: center;">$100,393 to $155,625</td>
+<td style="text-align: center;">26%</td>
+</tr>
+<tr>
+<td style="text-align: center;">$155,626 to $221,708</td>
+<td style="text-align: center;">29%</td>
+</tr>
+<tr>
+<td style="text-align: center;">$221,709 and above</td>
+<td style="text-align: center;">33%</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Write a program that gives the computer a simulated (and untimed) Paced Auditory Serial Addition Test (PASAT). The computer will keep getting positive integer numbers from the user and add the last two values entered before getting the next value. This is actually quite complicated for a person to keep track of but will be easy for the computer. The program will stop when the user enters a negative number. Below is an example run of the program (5+3=8, 3+4=7, 4+6=10,done).</p>
+</li>
 </ol>
 <pre><code class="language-plaintext">Give me a PASAT by giving me positive integers
 to add. When you are ready to stop enter -1.
@@ -2574,18 +2628,17 @@ Start giving me numbers:
 &gt;-1
 Done my PASAT! How did I do?
 </code></pre>
-<ol start="2">
-<li>Use nested <code>for</code> loops to write a program that outputs a multiplication table from 1 to a number input by the user. The final output should look something like the example below. You will need to use number formatting to get it to display like a table.</li>
+<ol start="7">
+<li>Write a program that converts a number from a decimal number to a number in Kaktovik (base 20) using the following pseudocode.</li>
 </ol>
-<pre><code class="language-plaintext">Enter the biggest number in the table: 5
-1    2    3    4    5
-2    4    6    8   10
-3    6    9   12   15
-4    8   12   16   20
-5   10   15   20   25
+<pre><code class="language-plaintext">1. Divide the decimal number by the value of the new base (i.e. 2 for binary)
+2. Get the remainder and make it the right most digit of the new number.
+3. Divide the quotient of the last step by the new base.
+4. Get the remainder and make it the 2nd right most digit.
+5. Repeat steps 3 and 4 until the quotient is zero.
 </code></pre>
-<ol start="3">
-<li>Write a program, using either a <code>for</code> loop or <code>while</code> loop, that draws different sized triangles depending on the user’s input. You will need to think about how the spaces are related to the total number of rows (0 spaces in the last row, 1 in the second last row...) and how the number of stars is related to the position of the row relative to the top (1 star first row, 3, stars second row...). I’ve included two example runs below to give an idea of what I mean.</li>
+<ol start="8">
+<li>Write a program that draws different sized triangles depending on the user’s input. You will need to think about how the spaces are related to the total number of rows (0 spaces in the last row, 1 in the second last row...) and how the number of stars is related to the position of the row relative to the top (1 star first row, 3, stars second row...). I’ve included two example runs below to give an idea of what I mean.</li>
 </ol>
 <pre><code class="language-plaintext">Enter the size of the triangle: 3
   *
@@ -2619,7 +2672,7 @@ Enter the size of the triangle: 6
 
     <!--
     MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-09-21 18:10:40.738806+00:00
+    Docs Build Date UTC : 2023-09-25 22:15:05.094469+00:00
     -->
   </footer>
 
