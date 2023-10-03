@@ -1,4 +1,8 @@
 # send_more_money.py
+import time
+
+start = time.time()
+
 for s in range(1,10):
     for e in range(0,10):
         for n in range(0,10):
@@ -20,5 +24,8 @@ for s in range(1,10):
                                        r!=y:
                                         print(f"  {s:d}{e:d}{n:d}{d:d}")
                                         print(f" +{m:d}{o:d}{r:d}{e:d}")
-                                        print("——")
+                                        print("___________")
                                         print(f" {m:d}{o:d}{n:d}{e:d}{y:d}")
+
+end = time.time()
+print("That took", end-start, "seconds.")
