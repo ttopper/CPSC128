@@ -63,7 +63,7 @@ test with [pooh.txt](90_pooh.txt)
     insert code for the remaining functions, and make sure adding new
     quotes can't delete existing ones. Rename it a8p3name.py.
 
-4.  Super hero name generator
+4.  ### Super hero name generator
 
     Write a function called `superhero_name_generator` that is passed a
     string containing someone's full name, e.g.
