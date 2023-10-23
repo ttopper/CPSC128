@@ -2597,27 +2597,21 @@ When the two copies are identical a check is made to ensure
 that the new  password meets construction requirements.
 Passwords must be constructed to meet the following requirements:</p>
 <ul>
-<li>Each password must have  at  least  six  characters.</li>
-<li>Each password must contain at least  one  lower-case</li>
+<li>Each password must have at least six characters.</li>
+<li>Each password must contain at least one lower-case alphabetic character.</li>
+<li>Each password must contain at least one upper-case alphabetic character.</li>
+<li>Each password must contain at least one numeric or special character.</li>
+<li>Each password must differ from the user's login name and the reverse of that login name. For this comparison, an upper case letter and its corresponding lower case letter are equivalent.</li>
+<li>New passwords must differ from the old in  at  least three  positions (for this comparison, an upper case letter and its corresponding lower  case  letter are equivalent).</li>
 </ul>
-<p>alphabetic character, one upper-case alphabetic character,
-and at least one numeric or special character.  In this
-case,  "alphabetic"  refers  to  all upper or lower case
-letters. (These requirements ensure they do not use a 
-"word", i.e. a string that could be looked up in a
-dictionary, or their phone/SIN/etc. number -- two common
-choices).
-*  Each password must differ from the user's login name
-and the reverse of that login name.  For this comparison,
-an upper case letter and its corresponding lower case letter
-are equivalent.
-*  New passwords must differ from the old in  at  least
-three  positions.  For this comparison, an upper case
-letter and its corresponding lower  case  letter are
-equivalent.          </p>
 <p>Write a program that behaves as specified by this excerpt.</p>
 <p>Notes:</p>
 <ul>
+<li>"Alphabetic"  refers  to  all upper or lower case
+    letters. (These requirements ensure they do not use a 
+    "word", i.e. a string that could be looked up in a
+    dictionary, or their phone/SIN/etc. number -- two common
+    choices).</li>
 <li>The real <code>passwd</code> program, after validating the proposed new
     password, encrypts it and writes it to a file, but we're
     omitting that final step ... for now!</li>
@@ -2687,8 +2681,8 @@ enough.</p>
     </p>
 
     <!--
-    MkDocs version      : 1.5.2
-    Docs Build Date UTC : 2023-10-03 20:29:27.088951+00:00
+    MkDocs version      : 1.5.3
+    Docs Build Date UTC : 2023-10-23 23:37:29.797522+00:00
     -->
   </footer>
 
