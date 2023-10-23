@@ -67,29 +67,23 @@
     that the new  password meets construction requirements.
     Passwords must be constructed to meet the following requirements:
 
-    *  Each password must have  at  least  six  characters.
-    *  Each password must contain at least  one  lower-case
-
-    alphabetic character, one upper-case alphabetic character,
-    and at least one numeric or special character.  In this
-    case,  "alphabetic"  refers  to  all upper or lower case
-    letters. (These requirements ensure they do not use a 
-    "word", i.e. a string that could be looked up in a
-    dictionary, or their phone/SIN/etc. number -- two common
-    choices).
-    *  Each password must differ from the user's login name
-    and the reverse of that login name.  For this comparison,
-    an upper case letter and its corresponding lower case letter
-    are equivalent.
-    *  New passwords must differ from the old in  at  least
-    three  positions.  For this comparison, an upper case
-    letter and its corresponding lower  case  letter are
-    equivalent.          
+    *  Each password must have at least six characters.
+    *  Each password must contain at least one lower-case alphabetic character.
+    *  Each password must contain at least one upper-case alphabetic character.
+    *  Each password must contain at least one numeric or special character.
+    *  Each password must differ from the user's login name and the reverse of that login name. For this comparison, an upper case letter and its corresponding lower case letter are equivalent.
+    *  New passwords must differ from the old in  at  least three  positions (for this comparison, an upper case letter and its corresponding lower  case  letter are equivalent).
+               
 
     Write a program that behaves as specified by this excerpt.
 
     Notes:
 
+    -   "Alphabetic"  refers  to  all upper or lower case
+        letters. (These requirements ensure they do not use a 
+        "word", i.e. a string that could be looked up in a
+        dictionary, or their phone/SIN/etc. number -- two common
+        choices).
     -   The real `passwd` program, after validating the proposed new
         password, encrypts it and writes it to a file, but we're
         omitting that final step ... for now!

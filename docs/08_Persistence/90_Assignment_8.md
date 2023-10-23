@@ -41,7 +41,8 @@
 ```
 
 Since the file could be very long you will **not** want to read the
-whole thing into memory as a list of lines...
+whole thing into memory as a list of lines... Here is a short file to
+test with [pooh.txt](90_pooh.txt)
 
 2.  ### Testing `biggest()`
 
@@ -62,13 +63,14 @@ whole thing into memory as a list of lines...
     insert code for the remaining functions, and make sure adding new
     quotes can't delete existing ones. Rename it a8p3name.py.
 
-4.  ### Optional Bonus: Super hero name generator
+4.  Super hero name generator
 
     Write a function called `superhero_name_generator` that is passed a
     string containing someone's full name, e.g.
     `'Timothy Nicholas Topper'`, and returns their superhero name
     according to the chart below, e.g. my superhero name is Outlandish
-    Psychic Tornado.
+    Psychic Tornado. I've included a tab delimited file with the name
+    mapping, [superhero_name_generator.txt](90_superhero_name_generator.txt).
 
     Put your function in a module with an `if __name__ == '__main__':`
     section that tests it.
@@ -78,7 +80,7 @@ whole thing into memory as a list of lines...
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*``yourname`.py` . So your solution
+    `a`*assignment#*`p`*problem#yourname*`.py` . So your solution
     to problem 1 on this assignment will be named `a8p1bob.py`
     and your solution for problem 2 will be named `a8p2bob.py` (adjusted obviously to use your name).
 

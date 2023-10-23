@@ -20,7 +20,7 @@
 
     c.  The third version (`letter_frequencyC`) should return a
         dictionary that uses the letters as keys and whose values are
-        the letters' counts.
+        the letters' counts. Make sure to use a dictionary specific solution!
 
     The program that will call these functions is
     [`letter_frequency.py`](90_letter_frequency.py). Your job is to replace
@@ -101,7 +101,7 @@
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*``yourname`.py` . So your solution
+    `a`*assignment#*`p`*problem#yourname*`.py` . So your solution
     to problem 1 on this assignment will be named `a7p1bob.py`
     and your solution for problem 2 will be named `a7p2bob.py` (adjusted obviously to use your name) .
 
