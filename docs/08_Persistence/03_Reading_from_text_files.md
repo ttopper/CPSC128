@@ -39,6 +39,19 @@ Here's the Python code for each of these options.
         print(line, end="")         # Process the current line.
     f.close()                      # Close the file.
 ```
+
+or with a while loop...
+
+```python
+    # file_read_1.py
+    f = open('text_file.txt', 'r') # Open the file.
+    line = f.readline()            # Get the first line.
+    while line != "":              # Iterate through the file a line at a time.
+        print(line, end="")        # Process the current line.
+        line = f.readline()
+    f.close()                      # Close the file.
+```
+
 Notes:
 
 -   The arguments to the `open` function are the name of the file to
