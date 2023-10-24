@@ -2563,6 +2563,15 @@ at any given time.</p>
         print(line, end=&quot;&quot;)         # Process the current line.
     f.close()                      # Close the file.
 </code></pre>
+<p>or with a while loop...</p>
+<pre><code class="language-python">    # file_read_1.py
+    f = open('text_file.txt', 'r') # Open the file.
+    line = f.readline()            # Get the first line.
+    while line != &quot;&quot;:              # Iterate through the file a line at a time.
+        print(line, end=&quot;&quot;)        # Process the current line.
+        line = f.readline()
+    f.close()                      # Close the file.
+</code></pre>
 <p>Notes:</p>
 <ul>
 <li>The arguments to the <code>open</code> function are the name of the file to
@@ -2646,7 +2655,7 @@ you need to <code>strip</code> it yourself.</p>
 
     <!--
     MkDocs version      : 1.5.3
-    Docs Build Date UTC : 2023-10-23 23:49:46.666272+00:00
+    Docs Build Date UTC : 2023-10-24 02:46:57.566470+00:00
     -->
   </footer>
 
