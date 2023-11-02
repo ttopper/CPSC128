@@ -111,8 +111,9 @@
 ## Logistics
 
 -   Use the following naming scheme for your program files:
-    `a`*assignment#*`p`*problem#*yourname`.py` . So your first
-    attempt at problem 1 on this assignment will be named `a9p1bob.py`
-    and your solution for problem will be named `a9p2bob.py` (adjusted obviously to use your name) .
+    `a`*assignment#*`p`*problem#*yourname`.py` . So problem 
+    1 on this assignment will be named `a9p1bob.py`
+    and your solution for problem will be named `a9p2bob.py` 
+    (adjusted obviously to use your name) .
 
 -   Please submit all your `.py` files to the Moodle dropbox.
