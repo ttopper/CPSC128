@@ -64,12 +64,15 @@
     a. Suppose you are given this code and told you must add support 
        for an additional shape, pentagons. What changes would you 
        have to make to the module? Call this version a11_1_1a.py.
+
     b. Now refactor this code so it uses three classes Circle, 
        Triangle and Square instead of one where each class has its 
        own draw, fill, etc. methods. Call this version a11_1_1b.py.
+
     c. Finally, what changes have to be made to version a11_1_1b.py 
        to support a new pentagon shape type? Call this version 
        a11_1_1c.py
+
     d. Compare the changes you made in a. and c. above. In each case 
        how much existing code did you have to modify? Which approach 
        is most likely to result in breaking existing code? You can 
