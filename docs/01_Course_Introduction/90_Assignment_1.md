@@ -9,9 +9,9 @@ the material in this module. I am not looking for creativity in the
 answers: feel free to cut and paste from the course notes. In fact, you
 could think of it as a scavenger hunt for answers in the notes.
 
-1.  How much are the assignments in the course worth?
+1.  What would you like to get out of this course?
 
-2.  Which of the examinable topics means the least to you right now?
+2.  How much are the assignments in the course worth?
 
 3.  What should computer science really be called?
 
@@ -39,37 +39,37 @@ download and install it: <https://www.python.org/downloads/>
 Provide the transcript of your Python shell session (including the
 output!) after you have used the Python shell to:
 
+-   Print 'Hello world!'
+
 -   Display the value of 2<sup>100</sup>.
 
 -   Calculate the volume of a sphere of radius 2.0 metres. (The formula
     for the volume of a sphere is 4πr<sup>3</sup>/3.)
 
--   Display the square root of 2.
-
 -   Run the following code:
 
 ```python
 >>> if 10**20 > 20**10:
-print('10**20 wins!')
+    print('10**20 wins!')
 else:
-print('20**10 wins!')
+    print('20**10 wins!')
 ```
 
 -   Run the following code:
 
 ```python
->>> n = 1000000
+>>> n = 6400000
 >>> size = 0
 >>> while n > 1:
-n = n // 2
-size = size + 1
->>> print('1000000 is approximately 2**', size)
+    n = n // 2
+    size = size + 1
+>>> print('6400000 is approximately 2**', size)
 ```
 -   Run the following code:
 
 ```python
->>> for c in 'Kate':
-print(c)
+>>> for c in 'Yukon':
+    print(c)
 ```
 ## Part IV: Writing Algorithms
 
@@ -80,12 +80,11 @@ precisely and see how closely the result matches the goal. You might
 want to give the instructions to a friend and see what they construct
 before submitting them to me.)
 
-(i)![.](90_sugar_cubes_2.jpg) ![.](90_sugar_cubes_6.jpg)(ii)
+(i)![.](90_sugar_cubes_6.jpg)
 
-(iii)![.](90_sugar_cubes_3.jpg)
-![.](90_sugar_cubes_7.jpg)(iv)
+(ii)![.](90_sugar_cubes_7.jpg)
 
-(v)![.](90_sugar_cubes_5.jpg)
+(iii)![.](90_sugar_cubes_5.jpg)
 
 ## Part V: Trading off Processors and Memory
 
