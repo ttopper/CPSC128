@@ -22,3 +22,6 @@ gen-menu.py
 gen-menu.zip
 docs/*.sh
 docs/*.txt
+
+# Noticed .obsidian files in Kate's updates so...
+.obsidian
