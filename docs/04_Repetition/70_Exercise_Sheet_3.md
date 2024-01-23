@@ -1,6 +1,6 @@
 # Exercise Sheet 3
 
-For the following problem descriptions decide whether it would be best to use an **if** statement (with or without elifs and else), a **while** loop, or a **for** loop. **You don't actually have to write the code for any of these!**
+For the following problem descriptions decide whether it would be best to use an **if** statement (with or without elifs and else), a **while** loop, or a **for** loop. You don't have to write code for all of these. **Pick one to solve and show me.**
 
 1. Write a program that gets two numbers from the user. The user calculates that number to the power of 1, 2, 3, 4, ... while the result is less than the second number. Below is an example run of the program.
 
@@ -59,7 +59,7 @@ Start giving me numbers:
 Done my PASAT! How did I do?
 ```
 
-7. Write a program that converts a number from a decimal number to a number in Kaktovik (base 20) using the following pseudocode.
+7. Write a program that converts a number from a decimal number to a number in binary using the following pseudocode.
 
 ```plaintext
 1. Divide the decimal number by the value of the new base (i.e. 2 for binary)

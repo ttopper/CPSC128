@@ -1,6 +1,6 @@
 # Assignment 7
 
-## Problems
+## Problems -- THIS ASSIGNMENT MAY CHANGE
 
 1.  ### Every letter counts
 

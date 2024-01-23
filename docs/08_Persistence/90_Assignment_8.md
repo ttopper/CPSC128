@@ -1,6 +1,6 @@
 # Assignment 8
 
-## Problems
+## Problems -- THIS ASSIGNMENT MAY CHANGE
 
 1.  ### Text file practice
 
