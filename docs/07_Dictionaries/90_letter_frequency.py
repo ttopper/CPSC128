@@ -45,16 +45,16 @@ if __name__ == '__main__':
     # Note that the continued statement above does NOT need a \
     # at the end of the first line.
     result = letter_frequencyA( test_string )
-    print 'letter_frequencyA says:'
-    print result
+    print('letter_frequencyA says:')
+    print(result)
     if result == correct_result:
-        print 'and it\'s right!'
+        print('and it\'s right!')
     else:
-        print 'but it isn\'t right though.'
+        print('but it isn\'t right though.')
         # Note the escaped embedded quote here.
         # Alternatively the outer quotes could be double quotes, and the inner
         # quote not escaped. (see e.g. letter_frequencyC code below)
-    print
+    print()
 
     #########################
     # Test letter_frequencyB:
@@ -66,13 +66,13 @@ if __name__ == '__main__':
                       ['u', 20], ['v', 5], ['w', 21], ['x', 1], ['y', 11],
                       ['z', 1]]
     result = letter_frequencyB( test_string )
-    print 'letter_frequencyB says:'
-    print result
+    print('letter_frequencyB says:')
+    print(result)
     if result == correct_result:
-        print 'and it\'s right!'
+        print('and it\'s right!')
     else:
-        print 'but it isn\'t right though.'
-    print
+        print('but it isn\'t right though.')
+    print()
 
     #########################
     # Test letter_frequencyC:
@@ -82,10 +82,10 @@ if __name__ == '__main__':
                       'l': 26, 'o': 69, 'n': 52, 'p': 18, 's': 58, 'r': 61,
                       'u': 20, 't': 82, 'w': 21, 'v': 5, 'y': 11, 'x': 1, 'z': 1}
     result = letter_frequencyC( test_string )
-    print 'letter_frequencyC says:'
-    print result
+    print('letter_frequencyC says:')
+    print(result)
     if result == correct_result:
-        print 'and it\'s right!'
+        print('and it\'s right!')
     else:
-        print 'but it isn\'t right though.'
-    print
+        print('but it isn\'t right though.')
+    print()

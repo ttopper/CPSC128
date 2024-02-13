@@ -161,8 +161,8 @@ if max - min equals length of the list - 1 then
         it's a straight
     otherwise
         it's not
-    else
-        it's not a straight
+else
+    it's not a straight
 ```
 
 You can use the test program below to evaluate your code — I will in
@@ -192,7 +192,7 @@ TEST_HANDS = [
     [[ 1, 3, 5, 7, 9 ], False]
 ]
 
-print 'Testing isStraight ... '
+print('Testing isStraight ... ')
 # Loop through the list of TEST_HANDS, to test each sample hand.
 for test in TEST_HANDS:
     # If the function isStraight does not return the correct

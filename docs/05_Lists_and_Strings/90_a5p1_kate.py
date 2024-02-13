@@ -30,11 +30,13 @@ for game in GAMES:
     print('---+---+---')
     print('', game[2][0], '|', game[2][1], '|', game[2][2])
     
+    won = False
+    winner = ''
+
     #
     # Put your code here.
     #
-    won = True
-    winner = 'X'
+    
     if won:
         print('Someone has won and it\'s', winner)
     else :

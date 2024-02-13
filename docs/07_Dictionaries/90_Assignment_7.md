@@ -61,8 +61,10 @@
     a.  `count_summary()` should return a dictionary where the machine
         type is the key and the count of machines of that type is the
         value.
+
     b.  `list_by_type(type)` should be passed a type, e.g. SERVER and
         return a list of the rooms containing machines of that type.
+
     c.  `max_count()` should return the name of the room, e.g. 'Rm
         A2507', that contains the most computers.
 
