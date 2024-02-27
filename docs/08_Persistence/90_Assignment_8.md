@@ -1,55 +1,82 @@
 # Assignment 8
 
-## Problems -- THIS ASSIGNMENT MAY CHANGE
+## Problems
 
-1.  ### Text file practice
 
-    Write a module containing three functions. When run, the module
-    should prompt the user for a filename and a number of lines (let's
-    refer to it as `n`) and then call each function in turn with these
-    parameters.
+1.  ### Insect data
 
-    a.  The function `head` should return a list containing the first
-        `n` lines of the file.
+    We have researchers studying birds and their behaviour at Yukon 
+    University. The insects inside a bird’s nesting area have a huge 
+    impact on the reproductive success of the birds. As such our 
+    researchers have set up traps to catch insects in the habitats of 
+    birds they are interested in monitoring. Dr. Tara Stehelin shared her 
+    data, which is available in a tab separated file called 
+    **insect_biomas.txt**. The file is available on the Moodle. We would like 
+    to load this file into python and find out the total number and mass 
+    of insects captured per year, and the difference between those numbers 
+    in different years.
 
-    b.  The function `tail` should return a list containing the last `n`
-        lines of the file.
+    a. Write a function called `load_insect_data` that has one argument: a 
+       string representing the name of the datafile. The function should 
+       return the data from the file as a list of lists. Keep the first row 
+       that has the column names.
 
-    c.  The function `longest` should return a list containing the
-        longest `n` lines of the file.
+    b. Write a function called `calculate_biomass` that has one argument: 
+       the data as a list of lists. The function should calculate the 
+       biomass of insects associated with each row. The function should add 
+       a new column to the data called biomass, the biomass is equal to the 
+       `weight * numberday`. The function should not return anything, but 
+       instead edit the list it was sent.
 
-    The output of running the module might look like this:
+    c. Write a function called `yearly_biomass` that has one argument: the 
+       data from the file as a list of lists. The function should return a 
+       dictionary where the key is the year, and the value is the total 
+       biomass for that year.
 
-```plaintext
-    Name of file to test with: pooh.txt
-    Number of lines to display: 3
 
-    head says the first 3 lines are:
-    The more it snows
-      (Tiddely pom),
-    The more it goes
+2.  ### Small mammal data
 
-    tail says the last 3 lines are:
-     How cold my toes
-      (Tiddely pom),
-     Are growing.
+    At Yukon University we also have researchers tracking wildlife around 
+    Yukon since 2005. They have collected data about mice from a site near 
+    Whitehorse. They used live trapping techniques to record details of 
+    various small mammal they caught during each trapping session. Dr. Scott 
+    Gilbert shared some of his research data in a comma separated text file 
+    **small_mammal_data.csv**. The file is available on the Moodle. We are 
+    particularly interested in the reproductive health of the female 
+    Clethrionomys sp. There are many columns in the data that represent 
+    different characteristics of the mice that were tracked at different time 
+    points over the summer.
 
-    longest says the longest 3 lines are:
-    The more it snows
-    The more it goes
-    And nobody knows
-```
+    a. Write a function called `load_mouse_data` that has two arguments: a string 
+       representing the name of the datafile and a string representing the mouse 
+       `Species` that we are interested in. The function should return the data 
+       from the file as a list of lists with only the rows for that mouse species. 
+       Keep the first row that has the column names. Try to solve this without 
+       loading the whole file.
 
-Since the file could be very long you will **not** want to read the
-whole thing into memory as a list of lines... Here is a short file to
-test with [pooh.txt](90_pooh.txt)
+    b. Write a function called `save_mouse_data` that has two arguments: the data as 
+       a list of lists and a string called filename that indicates where to save 
+       the modified data. The function should create a new data file of the mouse 
+       data with filename specified. The function should return None.
 
-2.  ### Testing `biggest()`
+    c. Write function called `sexed_weight` that has two arguments: the data from 
+       the file as a list of lists and an integer indicating the `Sex` you are 
+       interested in (1 for male and 2 for female). The function returns a float 
+       that represents the mean weight of the mice of that sex in that dataset.
+
+    d. Write a function called `lactation_status` that takes the data from the file 
+       as a list of lists and returns a dictionary where the keys are the `Lactation` 
+       status and the values are the counts of the females with that lactation status. 
+       A lactation status of 1 means not lactating, 2 means just starting or finishing 
+       lactating, and 3 indicates that they are lactating for sure.
+
+
+3.  ### Testing `biggest()`
 
     The last few assignments have provided you with examples of testing
     harnesses to ensure programs are working correctly. Now it is time
     for you to design some tests of your own. The file
-    [a8_2.py](90_a8_2.py) contains six versions of a function named
+    [a8p3kate.py](90_a8p3kate.py) contains six versions of a function named
     `biggest` that all claim to return the largest of three values they
     are passed. Add test cases to the program to determine which ones
     (if any) work correctly. Based on your test cases identify the
@@ -57,25 +84,6 @@ test with [pooh.txt](90_pooh.txt)
     the failure, i.e. what the problem is with the code. Enter your
     answers into the docstrings for each function.
 
-3.  ### CRUD Control
-
-    Complete the program [crud_controller.py](90_crud_controller.py), i.e.
-    insert code for the remaining functions, and make sure adding new
-    quotes can't delete existing ones. Rename it a8p3name.py.
-
-4.  ### Super hero name generator
-
-    Write a function called `superhero_name_generator` that is passed a
-    string containing someone's full name, e.g.
-    `'Timothy Nicholas Topper'`, and returns their superhero name
-    according to the chart below, e.g. my superhero name is Outlandish
-    Psychic Tornado. I've included a tab delimited file with the name
-    mapping, [superhero_name_generator.txt](90_superhero_name_generator.txt).
-
-    Put your function in a module with an `if __name__ == '__main__':`
-    section that tests it.
-
-    ![](90_Superhero_name_generator.png)
 
 ## Logistics
 
