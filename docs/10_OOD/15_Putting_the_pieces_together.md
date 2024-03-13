@@ -11,7 +11,7 @@ little glue code to the main routine, you have a program that will run.
 
 ![](15_wumpus_4.py.png)
 
-![](15_wumpus_5.py.png)
+![](15_wumpus_6.py.png)
 
 This is the longest program in the course so take some time to read it
 over. You'll notice that there is:
