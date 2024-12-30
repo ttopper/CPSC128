@@ -15,7 +15,7 @@ _Feb 25_ | 7.  Aggregate data types 2: Dictionaries.      | [7](../07_Dictionari
 _Mar 4_ | 8.  Text Files.                   | [8](../08_Persistence/90_Assignment_8.md)
 &nbsp; | **Part III: Object-oriented programming**     | &nbsp; 
 _Mar 11_ | 9.  Object-oriented programming (OOP) 1: Encapsulation  | [9](../09_OOP1_Encapsulation/90_Assignment_9.md)
-_Mar 7_ | _Last day to withdraw without academic penalty._    | &nbsp;
+_Mar 13_ | _Last day to withdraw without academic penalty._    | &nbsp;
 _Mar 18_ | 10. Object-oriented design (OOD). | [10]()
 _Mar 25_ | _OOD  continued_                    | &nbsp;
 _Apr 1_ | 11. Object-oriented programming (OOP) 2: Polymorphism and inheritance  | [11]()
