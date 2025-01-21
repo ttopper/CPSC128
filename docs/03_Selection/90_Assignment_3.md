@@ -23,7 +23,7 @@
 
     An Armstrong number is an _n_ digit number that is equal to the sum
     of its digits each raised to the _n_ th power. For example 153 equals
-    1^3^+5^3^+3^3^, so it is an Armstrong number. Write a program that
+    1^3+5^3+3^3, so it is an Armstrong number. Write a program that
     inputs a three-digit number, and outputs a message saying whether it
     is an Armstrong number or not.
 
@@ -115,7 +115,7 @@
     program should tell the user if they need to do laundry based on the flow chart below. I’d also like you to add one more question to the flow chart and think about how it might change the decision (something like smell or maybe accessibility issues). I’ve also included a sample
     run (with just the base criteria).
 
-    ```
+```
     ======================
     Should you do Laundry?
     ----------------------
@@ -123,7 +123,7 @@
     Do you have clean clothes (y or n)? n
     Do you know how to do laundry (y or n)? y
     Based on your answers it is time to do laundry!
-    ```
+```
 
 ![](90_Laundry.png)
 
@@ -131,12 +131,9 @@
 
 Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#*`name.py` . So your solution
-    for problem 1 on this assignment will be named `a3p1bob.py` .
+    for problem 1 on this assignment will be named `a3p1yourname.py` .
 
 ------------------------------------------------------------------------
 
 * based on one on [the Wikipedia page on the Richter
 Scale](http://en.wikipedia.org/wiki/Richter_scale).
-
-** [original
-source](http://www.innovationsinnewspapers.com/index.php/2009/02/21/more-design-awards-for-innovations-projects/).
