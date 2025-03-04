@@ -3,40 +3,9 @@
 ## Problems
 
 
-1.  ### Insect data
+1.  ### Small mammal data
 
-    We have researchers studying birds and their behaviour at Yukon 
-    University. The insects inside a bird’s nesting area have a huge 
-    impact on the reproductive success of the birds. As such our 
-    researchers have set up traps to catch insects in the habitats of 
-    birds they are interested in monitoring. Dr. Tara Stehelin shared her 
-    data, which is available in a tab separated file called 
-    **insect_biomas.txt**. The file is available on the Moodle. We would like 
-    to load this file into python and find out the total number and mass 
-    of insects captured per year, and the difference between those numbers 
-    in different years.
-
-    a. Write a function called `load_insect_data` that has one argument: a 
-       string representing the name of the datafile. The function should 
-       return the data from the file as a list of lists. Keep the first row 
-       that has the column names.
-
-    b. Write a function called `calculate_biomass` that has one argument: 
-       the data as a list of lists. The function should calculate the 
-       biomass of insects associated with each row. The function should add 
-       a new column to the data called biomass, the biomass is equal to the 
-       `weight * numberday`. The function should not return anything, but 
-       instead edit the list it was sent.
-
-    c. Write a function called `yearly_biomass` that has one argument: the 
-       data from the file as a list of lists. The function should return a 
-       dictionary where the key is the year, and the value is the total 
-       biomass for that year.
-
-
-2.  ### Small mammal data
-
-    At Yukon University we also have researchers tracking wildlife around 
+    At Yukon University we have researchers tracking wildlife around 
     Yukon since 2005. They have collected data about mice from a site near 
     Whitehorse. They used live trapping techniques to record details of 
     various small mammal they caught during each trapping session. Dr. Scott 
@@ -71,12 +40,12 @@
        lactating, and 3 indicates that they are lactating for sure.
 
 
-3.  ### Testing `biggest()`
+2.  ### Testing `biggest()`
 
     The last few assignments have provided you with examples of testing
     harnesses to ensure programs are working correctly. Now it is time
     for you to design some tests of your own. The file
-    [a8p3kate.py](90_a8p3kate.py) contains six versions of a function named
+    [a8p2kate.py](90_a8p2kate.py) contains six versions of a function named
     `biggest` that all claim to return the largest of three values they
     are passed. Add test cases to the program to determine which ones
     (if any) work correctly. Based on your test cases identify the
