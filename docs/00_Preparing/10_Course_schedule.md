@@ -5,7 +5,7 @@ _Week_ | _Topic_                    | _Assignment_
 _Sep 3_ | 0.  Course start-up.              | &nbsp;
 &nbsp; | **Part I: Procedural programming**  |
 _Sep 8_ | 1.  Introduction to computer science.      | &nbsp;
-_Sep 8_ | 2.  SIPO (sequence, input, processing and output) programming.       | [2](../02_SIPO/90_Assignment_2.md)
+_Sep 8_ | 2.  SIPO (sequence, input, processing and output) programming.       | [1](../02_SIPO/90_Assignment_1.md)
 _Sep 15_ | 3.  Selection control structures. | [3](../03_Selection/90_Assignment_3.md)
 _Sep 22_ | 4.  Repetition control structures.           | [4](../04_Repetition/90_Assignment_4.md)
 &nbsp; | **Part II: Object-based programming**           | &nbsp;
