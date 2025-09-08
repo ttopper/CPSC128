@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Exercise Sheet 1 - CPSC 128</title>
+  <title>Tutorial 1 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../90_Assignment_2/" title="Assignment 2" />Assignment 2</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_1/" title="Assignment 1" />Assignment 1</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -363,15 +363,6 @@
 </li>
 
         
-            <!--
-
--->
-
-<li >
-    <a href="../../01_Course_Introduction/90_Assignment_1/">Assignment 1</a>
-</li>
-
-        
     </ul>
   </details>
 
@@ -625,7 +616,7 @@
 -->
 
 <li class="active">
-    <a href="./">Exercise Sheet 1</a>
+    <a href="./">Tutorial 1</a>
 </li>
 
         
@@ -634,7 +625,7 @@
 -->
 
 <li >
-    <a href="../90_Assignment_2/">Assignment 2</a>
+    <a href="../90_Assignment_1/">Assignment 1</a>
 </li>
 
         
@@ -2580,7 +2571,7 @@
 
   <main>
     
-      <h1 id="exercise-sheet-1">Exercise Sheet 1</h1>
+      <h1 id="tutorial-1">Tutorial 1</h1>
 <ol>
 <li>Look at the following code fragments. Each one has one small problem that will cause an error or give the wrong output. Using what you know about python math operations and SIPO programming to identify an correct the problems.</li>
 </ol>
@@ -2615,28 +2606,31 @@ print('You make',total, 'dollars.')
 </code></pre>
 <ol start="3">
 <li>
-<p>Write a program that gets a distance in inches from the user and converts to a distance in centimeters (1 in is the same as 2.54 cm). Print the converted value.</p>
-</li>
-<li>
-<p>Write a program that gets a weight in pounsd from the user and converts to a weight in kg (1 kg is the same as 2.2 lb). Print the converted value.</p>
-</li>
-<li>
-<p>Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds.  It will then convert those value to cm and kg before applying the following equation:</p>
-<p><img alt="" src="../70_Skin_area_formula.png" /></p>
-<p>where,</p>
+<h3 id="trivialities">Trivialities</h3>
+<p>We only know enough Python commands to write simple programs so far,
+but we do need to practice using what we've got so ... write a
+program that produces sessions like this one:</p>
 </li>
 </ol>
-<pre><code>    BSA = body surface area
-    W= weight in kg
-    H= height in cm
+<pre><code class="language-plaintext">    Useless Trivia Generator v0.01
+    ==============================
+    How old are you? 28
+    And how many pounds do you weigh? 165
+    Did you know that you're 196 in dog years!
+    But you're also over 883008000 seconds old.
+    Did you know that on the moon you would weigh only 27.5 pounds?
+    But on the sun, you'd weigh 4471.5 pounds (but not for long!).
 </code></pre>
-<p>*Note that even though is uses the height in cm the result is in meters squared.</p>
-<p>To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.</p>
-<pre><code class="language-python">import math
-num = int(input('Enter a number: ')
-root = math.sqrt(num)
-print('The square root of', num, 'is', root)
-</code></pre>
+<p>Some facts that might be helpful to you in writing your program:</p>
+<ul>
+<li>There are seven dog years in each calendar year.</li>
+<li>There are 60 seconds in a minute, 60 minutes in an hour, 24
+    hours in a day, and (at least) 365 days in a year.</li>
+<li>Things weigh 1/6th as much on the moon as they do on the surface
+    of the earth.</li>
+<li>Things weigh 27.1 times as much on the surface of the sun as
+    they do on the surface of the earth.</li>
+</ul>
     
   </main>
 
@@ -2656,7 +2650,7 @@ print('The square root of', num, 'is', root)
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-09-08 19:04:52.992392+00:00
+    Docs Build Date UTC : 2025-09-08 21:34:34.167234+00:00
     -->
   </footer>
 
