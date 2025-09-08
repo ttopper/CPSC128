@@ -82,5 +82,5 @@ html#translate-to-python)
 1. [Output
     Formatting](24_Output_formatting.md)
 1. [The Pythonic Process](25_Pythonic_process.md)
-1. [Exercise sheet 1](70_Exercise_sheet_1.md)
-1. [Assignment 2](90_Assignment_2.md)
+1. [Tutorial 1](70_Exercise_sheet_1.md)
+1. [Assignment 1](90_Assignment_1.md)

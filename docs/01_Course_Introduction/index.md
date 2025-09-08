@@ -4,7 +4,7 @@ This week focusses on the Big Picture of Computer Science, and we just dip our t
 
 This week's assignment is quite different from all the others in the course. Assignment 1 is somewhat artificial, because I need a way to know that you have read the things I ask you to, so it has short answer questions, and an exercise as well. The remaining assignments are more natural and authentic since they all ask you to write programs.
 
-Have a good week, and I Iook forward to hearing from you, and seeing your work.
+Have a good week, and I look forward to hearing from you, and seeing your work.
 
 p.s. My goal is to always respond to email during the week within 24 hours. If I haven't it's probably because I've overlooked your message. Please give me a nudge if that happens! 
 
@@ -36,5 +36,4 @@ p.s. My goal is to always respond to email during the week within 24 hours. If I
 1. [Summary](13_Summary.md)
 1. [Using the Python
     Shell](14_Using_the_python_shell.md)
-[//]: <> (1. [Exerxise sheet 1](70_Exercise_Sheet_1.md))
-1. [Assignment 1](90_Assignment_1.md)
+

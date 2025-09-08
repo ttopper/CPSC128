@@ -1,4 +1,4 @@
-# Exercise Sheet 1
+# Tutorial 1
 
 1. Look at the following code fragments. Each one has one small problem that will cause an error or give the wrong output. Using what you know about python math operations and SIPO programming to identify an correct the problems.
 
@@ -39,29 +39,31 @@ total = w * h * 52
 print('You make',total, 'dollars.')
 ```
 
-3. Write a program that gets a distance in inches from the user and converts to a distance in centimeters (1 in is the same as 2.54 cm). Print the converted value.
+3.  ### Trivialities
 
-4. Write a program that gets a weight in pounsd from the user and converts to a weight in kg (1 kg is the same as 2.2 lb). Print the converted value.
+    We only know enough Python commands to write simple programs so far,
+    but we do need to practice using what we've got so ... write a
+    program that produces sessions like this one:
 
-5. Write a program that calculates the total surface area of your skin. This program will take in the users height and weight in inches and pounds.  It will then convert those value to cm and kg before applying the following equation:
-
-    ![](70_Skin_area_formula.png)
-
-    where,
-
+```plaintext
+    Useless Trivia Generator v0.01
+    ==============================
+    How old are you? 28
+    And how many pounds do you weigh? 165
+    Did you know that you're 196 in dog years!
+    But you're also over 883008000 seconds old.
+    Did you know that on the moon you would weigh only 27.5 pounds?
+    But on the sun, you'd weigh 4471.5 pounds (but not for long!).
 ```
-    BSA = body surface area
-    W= weight in kg
-    H= height in cm
-```
-*Note that even though is uses the height in cm the result is in meters squared.
 
-To solve this equation, you will need to use the square root operator. You do this by importing the library math and then using the sqrt function. I’ve included a short piece of code here to demonstrate.
+Some facts that might be helpful to you in writing your program:
 
-```python
-import math
-num = int(input('Enter a number: ')
-root = math.sqrt(num)
-print('The square root of', num, 'is', root)
-```
+-   There are seven dog years in each calendar year.
+-   There are 60 seconds in a minute, 60 minutes in an hour, 24
+    hours in a day, and (at least) 365 days in a year.
+-   Things weigh 1/6th as much on the moon as they do on the surface
+    of the earth.
+-   Things weigh 27.1 times as much on the surface of the sun as
+    they do on the surface of the earth.
+
 
