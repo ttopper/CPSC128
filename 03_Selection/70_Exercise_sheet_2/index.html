@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Exercise Sheet 2 - CPSC 128</title>
+  <title>Tutorial 2 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../90_Assignment_3/" title="Assignment 3" />Assignment 3</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_2/" title="Assignment 2" />Assignment 2</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -810,7 +810,7 @@
 -->
 
 <li class="active">
-    <a href="./">Exercise Sheet 2</a>
+    <a href="./">Tutorial 2</a>
 </li>
 
         
@@ -819,7 +819,7 @@
 -->
 
 <li >
-    <a href="../90_Assignment_3/">Assignment 3</a>
+    <a href="../90_Assignment_2/">Assignment 2</a>
 </li>
 
         
@@ -2571,7 +2571,7 @@
 
   <main>
     
-      <h1 id="exercise-sheet-2">Exercise Sheet 2</h1>
+      <h1 id="tutorial-2">Tutorial 2</h1>
 <ol>
 <li>Figure out what each program will print if the input is the number <code>-5</code>.</li>
 </ol>
@@ -2603,103 +2603,36 @@ else:
 </code></pre>
 <ol start="2">
 <li>
-<p>Fill in the rest of the truth table for the following logical expression <code>((A or B) and not C)</code>. I’ve made some extra columns so that you can work through it step by step.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">A</th>
-<th style="text-align: center;">B</th>
-<th style="text-align: center;">C</th>
-<th style="text-align: center;">not C</th>
-<th style="text-align: center;">A or B</th>
-<th style="text-align: center;">((A or B) and not C)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-</tr>
-<tr>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
 <p>Write a program that takes a number from the user and prints the absolute value of that number (so if it is a negative number, it will switch it to a positive number before it prints).                              </p>
 </li>
 <li>
-<p>Write a program that gets an integer from the user. It should then print the number with the appropriate suffix (i.e. 552 would be <strong>552nd</strong>. For example if the user entered the number 1, you would print 1st. You can use the modulo operator to figure out the appropriate suffix for each number. <code>num % 10 == 1</code> will return <code>True</code> if the last digit is 1. For your first try ignore numbers that end in 11th, 12th, and 13th which are weird cases because they don’t use 1st, 2nd, and 3rd. Below is the pseudocode.</p>
-<pre><code>Get the number as input from the user
-Check to see if the number ends in a 1
-    print the number with 'st' at the end
-Otherwise check to see if the number ends in a 2
-    print the number with 'nd' at the end
-Otherwise check to see if the number ends in a 3
-    print the number with 'rd' at the end
-Otherwise
-    print the number with 'th' at the end
+<h3 id="is-it-a-triangle">Is it a triangle?</h3>
+<p>Write a program that accepts three numerical values and outputs a
+message indicating whether they could represent the lengths of the
+sides of a triangle or not. Look up the <strong>triangle inequality theorem</strong> 
+to help you design your program.</p>
+<p>A sample run might look like this,</p>
+<pre><code>=================
+Is it a triangle?
+-----------------
+Enter your first value: 4
+Enter the second value: 9
+Enter the third value: 3
+I'm afraid those three numbers could NOT represent the lengths of the sides of a triangle.
 </code></pre>
 </li>
 </ol>
+<p><strong>Optional</strong>. Write a program that gets an integer from the user. It should then print the number with the appropriate suffix (i.e. 552 would be <strong>552nd</strong>. For example if the user entered the number 1, you would print 1st. You can use the modulo operator to figure out the appropriate suffix for each number. <code>num % 10 == 1</code> will return <code>True</code> if the last digit is 1. For your first try ignore numbers that end in 11th, 12th, and 13th which are weird cases because they don’t use 1st, 2nd, and 3rd. Below is the pseudocode.</p>
+<pre><code>    Get the number as input from the user
+    Check to see if the number ends in a 1
+        print the number with 'st' at the end
+    Otherwise check to see if the number ends in a 2
+        print the number with 'nd' at the end
+    Otherwise check to see if the number ends in a 3
+        print the number with 'rd' at the end
+    Otherwise
+        print the number with 'th' at the end
+</code></pre>
     
   </main>
 
@@ -2719,7 +2652,7 @@ Otherwise
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-09-08 21:34:34.860965+00:00
+    Docs Build Date UTC : 2025-09-15 20:21:10.943004+00:00
     -->
   </footer>
 
