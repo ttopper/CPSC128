@@ -42,5 +42,5 @@ One thing to watch for is how we code our selection structures efficiently, so t
     Pythagoras](15_Ode_to_pythagoras.md)
 1. [Utility bills](16_Utility_bills.md)
 1. [Beaufort Scale](17_Beaufort_scale.md)
-1. [Exercise sheet 2](70_Exercise_sheet_2.md)
-1. [Assignment 3](90_Assignment_3.md)
+1. [Tutorial 2](70_Exercise_sheet_2.md)
+1. [Assignment 2](90_Assignment_2.md)

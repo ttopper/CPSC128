@@ -1,25 +1,8 @@
-# Assignment 3
+# Assignment 2
 
 ## Problems
 
-1.  ### Is it a triangle?
-
-    Write a program that accepts three numerical values and outputs a
-    message indicating whether they could represent the lengths of the
-    sides of a triangle or not. (Note: Not necessarily a right-angled
-    triangle, just any triangle at all.)
-
-    A sample run might look like this,
-
-        =================
-        Is it a triangle?
-        -----------------
-        Enter your first value: 4
-        Enter the second value: 9
-        Enter the third value: 3
-        I'm afraid those three numbers could NOT represent the lengths of the sides of a triangle.
-
-2.  ### Is it an Armstrong number?
+1.  ### Is it an Armstrong number?
 
     An Armstrong number is an _n_ digit number that is equal to the sum
     of its digits each raised to the _n_ th power. For example 153 equals
@@ -40,7 +23,7 @@
     will give you the 1s digit, i.e. the rightmost digit, and num/100
     will give you the 100s digit, i.e. the leftmost digit.
 
-3.  ### Richter Scale
+2.  ### Richter Scale
 
     Write a program that inputs the Richter magnitude of an earthquake
     and outputs the corresponding description and typical effects
@@ -109,7 +92,7 @@
         Significant damage unlikely.
 ```
 
-4.  ### Should I do Laundry?
+3.  ### Should I do Laundry?
 
     Write a program that gets the users age, whether they have clean clothes, and whether they know how to do laundry. From that data the
     program should tell the user if they need to do laundry based on the flow chart below. I’d also like you to add one more question to the flow chart and think about how it might change the decision (something like smell or maybe accessibility issues). I’ve also included a sample
