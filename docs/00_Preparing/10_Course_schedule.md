@@ -7,7 +7,7 @@ _Sep 3_ | 0.  Course start-up.              | &nbsp;
 _Sep 8_ | 1.  Introduction to computer science.      | &nbsp;
 _Sep 8_ | 2.  SIPO (sequence, input, processing and output) programming.       | [1](../02_SIPO/90_Assignment_1.md)
 _Sep 15_ | 3.  Selection control structures. | [3](../03_Selection/90_Assignment_2.md)
-_Sep 22_ | 4.  Repetition control structures.           | [4](../04_Repetition/90_Assignment_4.md)
+_Sep 22_ | 4.  Repetition control structures.           | [3](../04_Repetition/90_Assignment_3.md)
 &nbsp; | **Part II: Object-based programming**           | &nbsp;
 _Sep 29_ | 5.  Aggregate data types 1: Lists and strings. | [5](../05_Lists_and_Strings/90_Assignment_5.md)
 _Oct 6_ | 6.  Functions.                    | [6](../06_Functions/90_Assignment_6.md)
