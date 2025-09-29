@@ -9,7 +9,7 @@ _Sep 8_ | 2.  SIPO (sequence, input, processing and output) programming.       |
 _Sep 15_ | 3.  Selection control structures. | [3](../03_Selection/90_Assignment_2.md)
 _Sep 22_ | 4.  Repetition control structures.           | [3](../04_Repetition/90_Assignment_3.md)
 &nbsp; | **Part II: Object-based programming**           | &nbsp;
-_Sep 29_ | 5.  Aggregate data types 1: Lists and strings. | [5](../05_Lists_and_Strings/90_Assignment_5.md)
+_Sep 29_ | 5.  Aggregate data types 1: Lists and strings. | [4](../05_Lists_and_Strings/90_Assignment_4.md)
 _Oct 6_ | 6.  Functions.                    | [6](../06_Functions/90_Assignment_6.md)
 _Oct 20_ | 7.  Aggregate data types 2: Dictionaries.      | [7](../07_Dictionaries/90_Assignment_7.md)
 _Oct 27_ | 8.  Text Files.                   | [8](../08_Persistence/90_Assignment_8.md)

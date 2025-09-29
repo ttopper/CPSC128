@@ -9,23 +9,10 @@
     (You can assume the game state has arisen in the course of a legal
     game).
 
-    Embed your code in the file [a5p1kate.py](90_a5p1_kate.py)
+    Embed your code in the file [a4p1kate.py](90_a4p1_kate.py)
 
-2.  ### Dedup
 
-    Write a program that removes duplicate values from a list, i.e. if
-    the list starts out as `[4, 2, 5, 2, 4]`, then after your code
-    fragment runs it should be `[4, 2, 5]`.
-
-    Embed your code in the file [a5p2kate.py](90_a5p2_kate.py)
-
-    (A real-life application would be to remove duplicates from a list
-    of IP addresses so you have a list of unique visitors to your site.
-    In this case the list might look like `[ '10.9.0.31',
-    '199.247.52.3', '10.9.0.31', '43.98.12.4', '72.1.3.55',
-    '199.247.52.3', ...]`).
-
-3.  ### Poker Full House
+2.  ### Poker Full House
 
     Write a program that decides if a list of card numbers is a full
     house. A full house is a hand in which 3 cards share one face value
@@ -44,7 +31,7 @@
     thoroughly you tested your code. Feel free to adapt one of the test
     frameworks from the problems above to help you in testing your code.
 
-4.  ### Password checker
+3.  ### Password checker
 
     Most computer systems require the user to select a password.
     Unfortunately many users, perhaps most, choose poor passwords, i.e.
@@ -67,12 +54,12 @@
     that the new  password meets construction requirements.
     Passwords must be constructed to meet the following requirements:
 
+    *  The user has three tries to make sure two entries of the new password are the same.
     *  Each password must have at least six characters.
     *  Each password must contain at least one lower-case alphabetic character.
     *  Each password must contain at least one upper-case alphabetic character.
     *  Each password must contain at least one numeric or special character.
-    *  Each password must differ from the user's login name and the reverse of that login name. For this comparison, an upper case letter and its corresponding lower case letter are equivalent.
-    *  New passwords must differ from the old in  at  least three  positions (for this comparison, an upper case letter and its corresponding lower  case  letter are equivalent).
+    *  New passwords must differ from the old password.
                
 
     Write a program that behaves as specified by this excerpt.
@@ -98,7 +85,6 @@
 =============================================
 Password Checker
 ---------------------------------------------
-Enter the login name: ttopper
 Enter your current password: sp33dKills
 Enter new password: duckie
 Confirm new password: duvkie
@@ -129,8 +115,8 @@ enough.
 
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#*yourname`.py` . So your solution
-    to problem 1 on this assignment will be named `a5p1bob.py`
-    and your solution for problem will be named `a5p2bob.py` (adjusted obviously to use your name) .
+    to problem 1 on this assignment will be named `a4p1bob.py`
+    and your solution for problem will be named `a4p2bob.py` (adjusted obviously to use your name) .
 
 -   Please submit all your `.py` files to the Moodle dropbox.
 

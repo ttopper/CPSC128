@@ -55,5 +55,5 @@ I hope you find lists and strings interesting!
 1. [The map()
     function](14_The_map_function.md)
 1. [Tuples](15_Tuples.md)
-1. [Exercise 4](70_Exercise_sheet_4.md)
-1. [Assignment 5](90_Assignment_5.md)
+1. [Tutorial 4](70_Exercise_sheet_4.md)
+1. [Assignment 4](90_Assignment_4.md)

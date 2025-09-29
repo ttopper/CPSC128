@@ -70,5 +70,5 @@ Python program.
 1. [A list-creating
     function: `range()`](29_A_list_creating_function_range.md)
 1. [Timing programs](30_Timing_programs.md)
-1. [Exercise sheet 3](70_Exercise_Sheet_3.md)
+1. [Tutorial 3](70_Exercise_Sheet_3.md)
 1. [Assignment 3](90_Assignment_3.md)
