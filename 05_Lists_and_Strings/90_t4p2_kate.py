@@ -1,4 +1,4 @@
-# a5p2xxxx.py
+# t4p2xxxx.py
 # 
 # Remove duplicate values from the list lst.
 #
