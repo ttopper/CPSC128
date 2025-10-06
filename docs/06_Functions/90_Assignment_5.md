@@ -1,61 +1,8 @@
-# Assignment 6
+# Assignment 5
 
 ## Problems
 
-1.  Insert the necessary function definitions into the code below so
-    that it will work properly (i.e. as shown in the sample runs below
-    it).
-
-    Notes:
-
-    -   0 is a one-digit, even, unsigned number.
-    -   You may not make any changes to the code below, i.e. your
-        functions have to fit the code, you are not allowed to modify
-        the code to fit your functions.
-
-``` python
-# a6p1name.py
-# Just some practice writing little functions.
-# Insert the necessary functions here.
-
-line(60, '=')
-print('Function practice')
-line(60, '-')
-num = int(input('Give me an integer value: '))
-print('Your number contains', ndigits(num), end = ' ')
-print('digits, is', even_or_odd(num), end = '')
-if ispos(num):
-    print(', and is positive.')
-else:
-    print(', but is not positive.')
-line(60, '-')
-```
-
-```plaintext
-============================================================
-Function practice
-------------------------------------------------------------
-Give me an integer value: 78931
-Your number contains 5 digits, is odd and is positive.
-------------------------------------------------------------
-
-============================================================
-Function practice
-------------------------------------------------------------
-Give me an integer value: -122
-Your number contains 3 digits, is even but is not positive.
-------------------------------------------------------------
-```
-**Hint**: There are several ways of tackling the `ndigits` function.
-
--   You can find the number of digits by counting how many times you
-    can divide a number by 10 before you get 0, e.g. 7 can be
-    divided by 10 once, while 732 can be divided 3 times.
--   You can use the logarithm of the number to the base 10.
--   You can convert the number to a string and then use **len()** to
-    see how long the string is.
-
-The next three problems all involve writing functions to determine if a
+All three problems involve writing functions to determine if a
 list of card numbers represents a straight. A straight is a hand in
 which the cards’ face values form a sequence, e.g. 3, 4, 5, 6, 7 and 6,
 4, 7, 3, 5 are both straights (even though the numbers in the second
@@ -74,7 +21,7 @@ function**.
 "replace the card numbers in the copy with numbers representing their
 face values". To avoid rewriting, that would make a good function, no?)
 
-2.  One approach to seeing if the cards in the list are a straight is to
+1.  One approach to seeing if the cards in the list are a straight is to
     sort them in ascending order and then see if each one is one larger
     than the previous one. That is we take 6, 4, 7, 3, 5 and sort it to
     get 3, 4, 5 ,6, 7, and then we make sure the second entry (4) is one
@@ -86,8 +33,7 @@ face values". To avoid rewriting, that would make a good function, no?)
 ```plaintext
 def isStraight(hand):
 '''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
+make a new hand and populate it with numbers representing the face values
     (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
 sort the copy in ascending numerical order
 Check that each value is one larger than the previous value:
@@ -100,7 +46,7 @@ if the flag is still True
 otherwise
     it's not
 ```
-3.  Our second approach begins the same way as the first, i.e. by
+2.  Our second approach begins the same way as the first, i.e. by
     replacing card numbers by face values and sorting them, but then we
     compare the sorted list to a test list with the same starting value.
     What test list? Suppose I tell you I have a five card straight
@@ -112,8 +58,7 @@ otherwise
 ```plaintext
 def isStraight(hand):
 '''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
+make a new hand and populate it with numbers representing the face values
     (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
 sort the copy in ascending numerical order
 find the minimum face value in the list
@@ -128,7 +73,7 @@ if the test list equals the sorted copy
 else
     it's not
 ```
-4.  Our final approach is based on the observation that the cards in a
+3.  Our final approach is based on the observation that the cards in a
     straight must all be different, and that the first and last cards'
     face values will differ by the length of the hand minus 1, e.g. in a
     five card hand the face value of the last card will be 5 minus 1 or
@@ -143,8 +88,7 @@ else
 ```plaintext
 def isStraight(hand):
 '''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
+make a new hand and populate it with numbers representing the face values
 find the minimum face value (Hint: Use the min function.)
 find the maximum face value (Hint: Can't you guess?)
 # If the largest and smallest values are the right distance apart
@@ -208,7 +152,7 @@ print()
 
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#yourname*`.py` . So your first
-    attempt at problem 1 on this assignment will be named `a6p1bob.py`
+    attempt at problem 1 on this assignment will be named `a5p1bob.py`
     and your solution for problem 2 will be named `a6p2bob.py` (adjusted obviously to use your name) .
 
 -   Please submit all your `.py` files to the Moodle dropbox.
