@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Assignment 6 - CPSC 128</title>
+  <title>Tutorial 5 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../../07_Dictionaries/" title="Introduction: Dictionaries? 📖" />Introduction: Dictionaries? 📖</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_5/" title="Assignment 5" />Assignment 5</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -1545,7 +1545,16 @@
 -->
 
 <li class="active">
-    <a href="./">Assignment 6</a>
+    <a href="./">Tutorial 5</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../90_Assignment_5/">Assignment 5</a>
 </li>
 
         
@@ -2571,13 +2580,13 @@
 
   <main>
     
-      <h1 id="assignment-6">Assignment 6</h1>
-<h2 id="problems">Problems</h2>
-<ol>
+      <h1 id="tutorial-5">Tutorial 5</h1>
+<ol start="0">
 <li>
+<h3 id="make-the-code-run">Make the code run</h3>
 <p>Insert the necessary function definitions into the code below so
-    that it will work properly (i.e. as shown in the sample runs below
-    it).</p>
+that it will work properly (i.e. as shown in the sample runs below
+it).</p>
 <p>Notes:</p>
 <ul>
 <li>0 is a one-digit, even, unsigned number.</li>
@@ -2587,7 +2596,7 @@
 </ul>
 </li>
 </ol>
-<pre><code class="language-python"># a6p1name.py
+<pre><code class="language-python"># t5p0name.py
 # Just some practice writing little functions.
 # Insert the necessary functions here.
 
@@ -2626,160 +2635,62 @@ Your number contains 3 digits, is even but is not positive.
 <li>You can convert the number to a string and then use <strong>len()</strong> to
     see how long the string is.</li>
 </ul>
-<p>The next three problems all involve writing functions to determine if a
-list of card numbers represents a straight. A straight is a hand in
-which the cards’ face values form a sequence, e.g. 3, 4, 5, 6, 7 and 6,
-4, 7, 3, 5 are both straights (even though the numbers in the second
-case are not in order), but 3, 4, 5, 7, 8 and 4, 5, 6, 5, 7 are not (the
-first, because 6 is missing, and the second because of the duplicate
-5s). Note that the cards do not have to be in the same suit, e.g. the
-hand containing 2♣, 3♦, 4♣, 5♠ and 6♥ is a straight.</p>
-<p>There are numerous computational approaches that can be taken to decide
-if a list of card numbers is a straight or not. Each of the following
-problems describes one of them and provides pseudocode for it. <strong>Your
-job is to faithfully translate each pseudocode description into a Python
-function</strong>.</p>
-<p>(Hint: You will notice that all three approaches contain the operation
-"replace the card numbers in the copy with numbers representing their
-face values". To avoid rewriting, that would make a good function, no?)</p>
-<ol start="2">
-<li>One approach to seeing if the cards in the list are a straight is to
-    sort them in ascending order and then see if each one is one larger
-    than the previous one. That is we take 6, 4, 7, 3, 5 and sort it to
-    get 3, 4, 5 ,6, 7, and then we make sure the second entry (4) is one
-    larger than the first (3), and that the third entry (5) is one
-    larger than the second (4), and so on. If they all are it's a
-    straight, but if we find neighbouring values that are the same, or
-    that are more than 1 apart it's not a straight. Pseudocode:</li>
-</ol>
-<pre><code class="language-plaintext">def isStraight(hand):
-'''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
-    (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-sort the copy in ascending numerical order
-Check that each value is one larger than the previous value:
-assume the cards are a straight by setting a flag to True
-for each value in the copy starting with the second value and going to the last value
-    if this value if not one greater than the previous value
-        set the flag to False
-if the flag is still True
-    it's a straight
-otherwise
-    it's not
-</code></pre>
-<ol start="3">
-<li>Our second approach begins the same way as the first, i.e. by
-    replacing card numbers by face values and sorting them, but then we
-    compare the sorted list to a test list with the same starting value.
-    What test list? Suppose I tell you I have a five card straight
-    starting from a face value of 3. You could say "Oh you have a 3, a
-    4, a 5, a 6 and a 7." The idea here is to build the necessary test
-    list and compare it to the actual list and to see if they match. If
-    they do it's a straight, otherwise it's not. Pseudocode:</li>
-</ol>
-<pre><code class="language-plaintext">def isStraight(hand):
-'''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
-    (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-sort the copy in ascending numerical order
-find the minimum face value in the list
-build a new list containing the values a straight starting with that 
-    minimum value would contain, i.e. a list of consecutive numbers
-    starting with the min value and having the same number of values
-    in it as the hand, e.g. min value = 3 and hand size = 5 implies a 
-    test list of [3, 4, 5, 6, 7]
-    (Hint: Use the range command to build the test list.)
-if the test list equals the sorted copy
-    it's a straight
-else
-    it's not
-</code></pre>
-<ol start="4">
-<li>Our final approach is based on the observation that the cards in a
-    straight must all be different, and that the first and last cards'
-    face values will differ by the length of the hand minus 1, e.g. in a
-    five card hand the face value of the last card will be 5 minus 1 or
-    4 greater than the first card (as it is for example in <code>[3, 4, 5, 6,
-    7]</code> where 7 is 4 greater than 3). Of course the hand <code>[3, 3, 5, 7,
-    7]</code> also has the right range of values but isn't a straight because
-    the face values in it are not unique (see the first condition in the
-    first sentence above "the cards in a straight must all be
-    different"). Which leads to the second test in the pseudocode
-    below:</li>
-</ol>
-<pre><code class="language-plaintext">def isStraight(hand):
-'''Return True if the cards in hand are a straight, and False otherwise.'''
-make a copy of hand (so we don't change it) and work with the copy from now on
-replace the card numbers in the copy with numbers representing their face values
-find the minimum face value (Hint: Use the min function.)
-find the maximum face value (Hint: Can't you guess?)
-# If the largest and smallest values are the right distance apart
-# e.g. in a five card hand they 4 apart
-if max - min equals length of the list - 1 then
-    # and all the values in the list are different
-    # i.e. they all occur exactly once
-    set the counter of unique values to 0
-    for each value in the list
-        if the number of times it ocurs in the list is 1
-            (Hint: Use the count method.)
-            add one to the counter of unique values
-    if the count of unique values equals the length of the list
-        it's a straight
-    otherwise
-        it's not
-else
-    it's not a straight
-</code></pre>
-<p>You can use the test program below to evaluate your code — I will in
-marking it, though I may add to the set of test cases given below — or
-you can write and use your own test program.</p>
-<pre><code class="language-python"># isstraight_test.py
-# This program tests the function isStraight on several sample hands
-# of cards.
-from a6p2name import isStraight
-#from a6p3name import isStraight
-#from a6p4name import isStraight
-
-# TEST_HANDS is a list containing the hands of cards to use in testing
-# the function isStraight, and the correct result for each hand.
-# Note that not all hands have five cards, and some are straights,
-# while some are not.
-TEST_HANDS = [
-    [[ 1, 2, 3, 4, 5 ], True],
-    [[ 5, 4, 3, 2, 1 ], True],
-    [[ 14, 0, 28, 42, 4 ], True],
-    [[ 1, 2, 3, 4, 5, 6 ], True],
-    [[ 5 ], True],
-    [[ 1, 2, 2, 4, 5 ], False],
-    [[ 1, 2, 2, 5, 5 ], False],
-    [[ 1, 3, 5, 7, 9 ], False]
-]
-
-print('Testing isStraight ... ')
-# Loop through the list of TEST_HANDS, to test each sample hand.
-for test in TEST_HANDS:
-    # If the function isStraight does not return the correct
-    # result...
-    if isStraight(test[0]) != test[1]:
-        # ... display an error message
-        print('isStraight fails on', test[0])
-print('Done.')
-print()
-</code></pre>
-<h2 id="logistics">Logistics</h2>
-<ul>
+<ol>
 <li>
-<p>Use the following naming scheme for your program files:
-    <code>a</code><em>assignment#</em><code>p</code><em>problem#yourname</em><code>.py</code> . So your first
-    attempt at problem 1 on this assignment will be named <code>a6p1bob.py</code>
-    and your solution for problem 2 will be named <code>a6p2bob.py</code> (adjusted obviously to use your name) .</p>
+<h3 id="poker-flush-function">Poker Flush Function</h3>
+<p>Write a function that decides if a list of card numbers is a flush.
+A flush is a hand in which all 5 cards share one suit. For example
+the list <code>[6, 0, 11, 2, 5]</code> is a flush because all the cards are 
+clubs.</p>
+<p>The function should take a list as its argument and return a Boolean.</p>
+<p>Do not remove your test values from the program so I can see how
+thoroughly you tested your code. You can show me your tests and 
+explain why you chose them when you show me your code.</p>
 </li>
 <li>
-<p>Please submit all your <code>.py</code> files to the Moodle dropbox.</p>
+<h3 id="dedup-function-must-use-either-del-or-remove">Dedup Function (must use either del or remove)</h3>
+<p>Write a function that removes duplicate values from a list, i.e. if
+the list starts out as <code>[4, 2, 5, 2, 4]</code>, then after your code
+fragment runs it should be <code>[4, 2, 5]</code>.</p>
+<p>Think about what the arguments and return should be.</p>
 </li>
-</ul>
+<li>
+<h3 id="drawing-diamonds-function">Drawing Diamonds Function</h3>
+<p>Fix the function that displays a diamond on the screen, e.g.</p>
+<pre><code>  *
+ ***
+*****
+ ***
+  *
+</code></pre>
+<p>Your function should get a number to indicate the size of the diamond
+to draw and a string to indicate what character to use to draw it.
+(The size of a diamond is specified by the lengths of its sides, i.e. 
+3 in the case above). The function should return None.</p>
+</li>
+</ol>
+<pre><code class="language-python">
+def diamond(size, char):
+    char_count = 1
+    space_count = size - 1
+
+    for i in range(size):
+        print(space_count*' ' + char_count*'*')
+        char_count = char_count + 2
+        space_count = space_count - 1
+
+    char_count = char_count - 1
+    space_count = space_count + 1
+
+    for i in range(size,1,-1):
+        print(space_count*' ' + char_count*'*')
+        char_count = char_count + 2
+        space_count = space_count - 1
+
+
+diamond(3,'+')
+
+</code></pre>
     
   </main>
 
@@ -2793,13 +2704,13 @@ print()
       Support repo URL
     -->
     
-    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/06_Functions/90_Assignment_6.md">Source on GitHub</a>.
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/06_Functions/70_Exercise_sheet_5.md">Source on GitHub</a>.
     
     </p>
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-10-02 00:13:48.602600+00:00
+    Docs Build Date UTC : 2025-10-06 21:21:54.829092+00:00
     -->
   </footer>
 
