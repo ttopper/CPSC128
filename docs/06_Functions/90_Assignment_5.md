@@ -35,7 +35,7 @@ def isStraight(hand):
 '''Return True if the cards in hand are a straight, and False otherwise.'''
 make a new hand and populate it with numbers representing the face values
     (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-sort the copy in ascending numerical order
+sort the new list in ascending numerical order
 Check that each value is one larger than the previous value:
 assume the cards are a straight by setting a flag to True
 for each value in the copy starting with the second value and going to the last value
@@ -60,7 +60,7 @@ def isStraight(hand):
 '''Return True if the cards in hand are a straight, and False otherwise.'''
 make a new hand and populate it with numbers representing the face values
     (e.g. 1 for Ace, 2 for Two, ... and 13 for King)
-sort the copy in ascending numerical order
+sort the new list in ascending numerical order
 find the minimum face value in the list
 build a new list containing the values a straight starting with that 
     minimum value would contain, i.e. a list of consecutive numbers
@@ -98,7 +98,7 @@ if max - min equals length of the list - 1 then
     # i.e. they all occur exactly once
     set the counter of unique values to 0
     for each value in the list
-        if the number of times it ocurs in the list is 1
+        if the number of times it occurs in the list is 1
             (Hint: Use the count method.)
             add one to the counter of unique values
     if the count of unique values equals the length of the list

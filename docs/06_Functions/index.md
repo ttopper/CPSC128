@@ -44,4 +44,5 @@ Hopefully you have noticed that your longer programs, for example the password c
     files?](21_What_are_these_pyc_files.md)
 1. [Finding the Standard Library
     Modules](22_Finding_the_standard_library_modules.md)
-1. [Assignment 6](90_Assignment_6.md)
+1. [Tutorial 5](70_Exercise_sheet_5.md)
+1. [Assignment 5](90_Assignment_5.md)
