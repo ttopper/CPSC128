@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Assignment 7 - CPSC 128</title>
+  <title>Tutorial 6 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../../08_Persistence/" title="Introduction: Persistence ∞" />Introduction: Persistence ∞</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_6/" title="Assignment 7" />Assignment 7</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -1649,7 +1649,16 @@
 -->
 
 <li class="active">
-    <a href="./">Assignment 7</a>
+    <a href="./">Tutorial 6</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../90_Assignment_6/">Assignment 7</a>
 </li>
 
         
@@ -2580,8 +2589,7 @@
 
   <main>
     
-      <h1 id="assignment-7">Assignment 7</h1>
-<h2 id="problems">Problems</h2>
+      <h1 id="tutorial-6">Tutorial 6</h1>
 <ol>
 <li>
 <h3 id="every-letter-counts">Every letter counts</h3>
@@ -2606,85 +2614,7 @@ functionality specified above. Studying the embedded tests should
 answer any other questions you have about the functions'
 operations.</p>
 </li>
-<li>
-<h3 id="anagrams">Anagrams</h3>
-<p>An anagram is produced by rearranging the letters of one word or
-phrase to produce another word or phrase, e.g. "cat" and "act"
-are anagrams, as are "scare", "races", "acres" and "cares".
-Write two functions called <code>anagramsA</code> and <code>anagramsB</code> each of which
-returns True if the two strings it is passed are anagrams of each
-other and False otherwise. <code>anagramsA</code> should be based on the
-observation that if two strings are anagrams they each have the same
-numbers of each letter in them. This means that their letter
-frequency counts will be identical. <code>anagramsB</code> should be based on
-the observation that anagrams are strings that could be rearranged
-to be the same. One easy way to rearrange things is to use Python's
-built-in sort methods, so you could test to see if two strings are
-anagrams by sorting them and comparing the sorted versions.</p>
-</li>
-<li>
-<h3 id="win-32-network-resource-anlayzer">Win 32 Network Resource Anlayzer</h3>
-<p>Many of the Win32 Network Resource enumeration tools return a list
-of dictionaries:</p>
-<pre><code>[ {'name':'YVB127','comment':'Rm A2507','type':WKSTATION},
-  {'name':'YVB143','comment':'Rm T1010','type':SERVER},
-  ...
-]
-</code></pre>
-<p>Write the following functions to work with the <code>import</code>'ed file
-<a href="../90_net_res.py">net_res.py</a>:</p>
-<p>a.  <code>count_summary()</code> should return a dictionary where the machine
-    type is the key and the count of machines of that type is the
-    value.</p>
-<p>b.  <code>list_by_type(type)</code> should be passed a type, e.g. SERVER and
-    return a list of the rooms containing machines of that type.</p>
-<p>c.  <code>max_count()</code> should return the name of the room, e.g. 'Rm
-    A2507', that contains the most computers.</p>
-<p>Embed your functions in a module with an <code>if __name__</code>... block
-that runs them and displays their output. It should import the
-file<code>net_res.py</code>.</p>
-</li>
-<li>
-<h3 id="topography">Topography</h3>
-<p>No dictionaries required for this one. It just gives you some more
-practice working with lists of lists. Suppose you are given some map
-elevation data stored as a list of lists, e.g.</p>
-<pre><code>data = [ [20, 54, 50, 64, 60, 63, 60, 48, 20, 20],
-         [20, 56, 72, 76, 72, 20, 52, 62, 53, 20],
-         [20, 52, 62, 81, 67, 23, 48, 67, 52, 20],
-         [20, 54, 54, 82, 72, 22, 42, 64, 50, 20],
-         [20, 53, 49, 87, 69, 47, 48, 49, 21, 20],
-         [20, 20, 62, 71, 61, 36, 28, 31, 22, 20],
-         [20, 20, 20, 20, 20, 22, 21, 28, 24, 20],
-         [20, 20, 20, 20, 20, 20, 20, 20, 20, 20],
-         [20, 20, 20, 20, 20, 20, 20, 20, 20, 20],
-         [20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
-       ]
-</code></pre>
-<p>Write a function called <code>peaks</code> that is passed a list of lists like
-this one and returns a list of the coordinates (row, col) of all the
-peaks in the dataset. A peak is a point that is higher than its
-eight surrounding neighbours (the values at (2,7) and (4,3)
-above are the peaks and the values aroung them are their
-eight neighbours). For the data set above the function should
-return,</p>
-<pre><code>[(2, 7), (4, 3)]
-</code></pre>
-</li>
 </ol>
-<h2 id="logistics">Logistics</h2>
-<ul>
-<li>
-<p>Use the following naming scheme for your program files:
-    <code>a</code><em>assignment#</em><code>p</code><em>problem#yourname</em><code>.py</code> . So your solution
-    to problem 1 on this assignment will be named <code>a7p1bob.py</code>
-    and your solution for problem 2 will be named <code>a7p2bob.py</code> (adjusted obviously to use your name) .</p>
-</li>
-<li>
-<p>Please submit all your .py files to the Moodle dropbox.
-     </p>
-</li>
-</ul>
     
   </main>
 
@@ -2698,13 +2628,13 @@ return,</p>
       Support repo URL
     -->
     
-    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/07_Dictionaries/90_Assignment_7.md">Source on GitHub</a>.
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/07_Dictionaries/70_Exercise_sheet_6.md">Source on GitHub</a>.
     
     </p>
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-10-06 21:21:55.326582+00:00
+    Docs Build Date UTC : 2025-10-20 21:51:54.275700+00:00
     -->
   </footer>
 
