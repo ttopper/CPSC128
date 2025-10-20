@@ -153,6 +153,6 @@ print()
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#yourname*`.py` . So your first
     attempt at problem 1 on this assignment will be named `a5p1bob.py`
-    and your solution for problem 2 will be named `a6p2bob.py` (adjusted obviously to use your name) .
+    and your solution for problem 2 will be named `a5p2bob.py` (adjusted obviously to use your name) .
 
 -   Please submit all your `.py` files to the Moodle dropbox.

@@ -58,3 +58,5 @@ That's really the only new thing this week, but dictionaries can be used in lots
     -   [Pseudocode](07_Example_A_list_of_dictionaries.md#pseudocode-4)
     -   [Python
         Code](07_Example_A_list_of_dictionaries.md#python-code-2)
+1. [Tutorial 6](70_Exercise_sheet_6.md)
+1. [Assignment 6](90_Assignment_6.md)

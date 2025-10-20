@@ -11,7 +11,7 @@ _Sep 22_ | 4.  Repetition control structures.           | [3](../04_Repetition/9
 &nbsp; | **Part II: Object-based programming**           | &nbsp;
 _Sep 29_ | 5.  Aggregate data types 1: Lists and strings. | [4](../05_Lists_and_Strings/90_Assignment_4.md)
 _Oct 6_ | 6.  Functions.                    | [5](../06_Functions/90_Assignment_5.md)
-_Oct 20_ | 7.  Aggregate data types 2: Dictionaries.      | [7](../07_Dictionaries/90_Assignment_7.md)
+_Oct 20_ | 7.  Aggregate data types 2: Dictionaries.      | [6](../07_Dictionaries/90_Assignment_6.md)
 _Oct 27_ | 8.  Text Files.                   | [8](../08_Persistence/90_Assignment_8.md)
 _Oct 31_ | _Last day to withdraw without academic penalty._    | &nbsp;
 &nbsp; | **Part III: Object-oriented programming**     | &nbsp; 
