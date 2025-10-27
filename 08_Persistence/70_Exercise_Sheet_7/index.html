@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Exercise - CPSC 128</title>
+  <title>Tutorial 7 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../90_Assignment_8/" title="Assignment 8" />Assignment 8</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_7/" title="Assignment 7" />Assignment 7</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -1816,7 +1816,7 @@
 -->
 
 <li class="active">
-    <a href="./">Exercise</a>
+    <a href="./">Tutorial 7</a>
 </li>
 
         
@@ -1825,7 +1825,7 @@
 -->
 
 <li >
-    <a href="../90_Assignment_8/">Assignment 8</a>
+    <a href="../90_Assignment_7/">Assignment 7</a>
 </li>
 
         
@@ -2589,38 +2589,67 @@
 
   <main>
     
-      <h1 id="exercise">Exercise</h1>
+      <h1 id="tutorial-7">Tutorial 7</h1>
 <ol>
 <li>
 <h3 id="text-file-practice">Text file practice</h3>
-<p>Write a module containing two functions. When run, the module
-should prompt the user for a filename and a number of lines (let's
-refer to it as <code>n</code>) and then call each function in turn with these
-parameters.</p>
-<p>a.  The function <code>head</code> should return a list containing the first
-    <code>n</code> lines of the file.</p>
-<p>b.  The function <code>tail</code> should return a list containing the last <code>n</code>
-    lines of the file.</p>
-<p>Make a test at the bottom to show the output of running the module, 
-it might look like this:</p>
 </li>
 </ol>
-<pre><code class="language-plaintext">    Name of file to test with: pooh.txt
-    Number of lines to display: 3
+<p>Write a module containing three functions. When run, the module
+   should prompt the user for a filename and a number of lines (let's
+   refer to it as <code>n</code>) and then call each function in turn with these
+   parameters.</p>
+<p>a.  The function <code>head1</code> should return a list containing the first
+   <code>n</code> lines of the file using <code>read</code>.</p>
+<p>b.  The function <code>head2</code> should return a list containing the first
+   <code>n</code> lines of the file using <code>readline</code>.</p>
+<p>c. The function <code>head3</code> should return a list containing the first
+   <code>n</code> lines of the file using <code>readlines</code>.</p>
+<p>Make a test at the bottom to show the output of running the module,
+   it might look like this:</p>
+<p>```plaintext
+       Name of file to test with: pooh.txt
+       Number of lines to display: 3</p>
+<pre><code>   head1 says the first 3 lines are:
+   The more it snows
+     (Tiddely pom),
+   The more it goes
 
-    head says the first 3 lines are:
-    The more it snows
-      (Tiddely pom),
-    The more it goes
+   head2 says the first 3 lines are:
+   The more it snows
+     (Tiddely pom),
+   The more it goes
 
-    tail says the last 3 lines are:
-     How cold my toes
-      (Tiddely pom),
-     Are growing.
+   head3 says the first 3 lines are:
+   The more it snows
+     (Tiddely pom),
+   The more it goes
 </code></pre>
-<p>Since the file could be very long you will <strong>not</strong> want to read the
-whole thing into memory as a list of lines... Here is a short file to
-test with <a href="../90_pooh.txt">pooh.txt</a></p>
+<p>```</p>
+<pre><code>Here is a short file to test with \[pooh.txt](90\_pooh.txt)
+</code></pre>
+<ol start="2">
+<li>
+<h3 id="making-it-space-efficient">Making it space efficient</h3>
+</li>
+</ol>
+<p>Since the file could be very long you will <strong>not</strong> want to read
+   the whole thing into memory as a list of lines... Modify one of
+   your <code>head</code> functions from the previous questions so that it
+   only loads the number of lines needed (only one of them will
+   work).</p>
+<p>Here is a short file to test with <a href="../90_pooh.txt">pooh.txt</a></p>
+<ol start="3">
+<li>
+<h3 id="trilobite-data">Trilobite data</h3>
+</li>
+</ol>
+<p>Follow along with the instructor to complete the functions
+   used to work with the trilobite data. Make sure you have
+   working versions of...</p>
+<p>a. <code>open\_trilobite\_data()</code></p>
+<p>b. <code>calculate\_diversity()</code></p>
+<p>c. <code>write\_trilobite\_data()</code></p>
     
   </main>
 
@@ -2640,7 +2669,7 @@ test with <a href="../90_pooh.txt">pooh.txt</a></p>
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-10-20 23:00:35.039178+00:00
+    Docs Build Date UTC : 2025-10-27 20:06:20.012777+00:00
     -->
   </footer>
 

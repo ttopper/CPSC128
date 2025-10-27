@@ -2,1006 +2,1006 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ttopper.github.io/CPSC128/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/10_Course_schedule/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/11_Course_outline/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/12_Course_philosophy/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/13_What_language/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/14_Marking_scheme/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/15_Examinable_topics_pointer/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/20_Textbooks/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/00_Preparing/30_Installing_python/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/01_Big_picture_1_Computer_science/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/02_Big_picture_2_Computers_and_programs/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/03_Big_picture_3_Programming/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/04_The_world_of_the_computer_Six_key_programming_concepts/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/05_Operation_1_Input/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/06_Operation_2_Processing/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/07_Operation_3_Output/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/08_Control_structures/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/09_Operation_4_Sequential_execution/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/10_Operation_5_Selection/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/11_Operation_6_Repetition/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/12_Bonus_operation_modularity/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/13_Summary/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/01_Course_Introduction/14_Using_the_python_shell/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/01_Recall_Programming_is/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/02_The_problem/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/03_Do_the_problem_by_hand/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/04_Translate_the_algorithm_into_python/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/05_Enter_run_and_test_the_program/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/06_Naming_values/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/07_What_will_it_look_like_onscreen/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/08_Documentation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/09_Our_second_program_Same_as_the_first_only_backwards/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/10_Our_third_program_dhms2s.py/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/11_SIPO_summary/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/12_Packaging_quantities/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/13_Modulo_A_sixth_arithmetic_operator/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/14_Symbolic_constants/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/15_Intermission_Summary_so_far/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/16_Object_types_1_ints_and_floats/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/17_Example_Calculating_tree_diameter/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/18_Example_Value_of_your_change/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/19_Example_Making_change/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/20_Pythonic_details/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/21_Triple_quoted_strings/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/22_The_continuation_character/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/23_The_done_trick/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/24_Output_formatting/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/25_Pythonic_process/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/70_Exercise_sheet_1/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/02_SIPO/90_Assignment_1/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/01_If_A_simple_artificial_example/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/02_Correcting_an_oversight/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/03_If_syntax_in_detail/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/04_Relational_expressions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/05_Compound_statements_and_indentation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/06_Example_One_program_to_convert_f_to_c_or_c_to_f/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/07_The_problem/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/08_Version_1/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/09_Version_2/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/10_Testing_selection/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/11_Performance_analysis/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/12_A_final_very_small_example_Absolute_value/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/13_Summary_Selection_using_if/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/14_Gazinta_As_in_2_gazinta_8_but_3_doesnt/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/15_Ode_to_pythagoras/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/16_Utility_bills/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/17_Beaufort_scale/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/70_Exercise_sheet_2/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/03_Selection/90_Assignment_2/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/01_The_idea_go_back_up_and_repeat_some_code/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/02_The_flowchart/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/03_The_syntax/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/04_Hihihi/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/05_Infinite_loops/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/06_Validating_input/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/07_Repeating_a_program_without_restarting_it/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/08_Problem_repeating_calculations/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/09_Example_Find_the_average/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/10_Sentinel_controlled_input/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/11_Problem_The_guessing_game/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/12_Aside_Getting_random_numbers/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/13_Solution_The_guessing_game/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/14_A_puzzle_What_output_does_this_produce/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/15_Nesting_loops/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/16_Pythons_other_repetition_structure_for_loops/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/17_Completely_artificial_example_revisited_using_for/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/18_For_vs_while/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/19_F2c_revisited_Fahrenheit_to_celsius_conversion_table_using_for/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/20_Nesting_for_loops/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/21_Example_Draw_a_square/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/22_Module_4_summary/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/23_Brute_force/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/24_Simulation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/25_Problem_What_are_the_chances_four_children_all_girls/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/26_Duelling_incompetents/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/26_Factors/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/27_Cryptarithms/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/28_Python_formatting_guidelines/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/29_A_list_creating_function_range/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/30_Timing_programs/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/70_Exercise_Sheet_3/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/04_Repetition/90_Assignment_3/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/01_Object_based_programming/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/02_Sequence_types/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/03_What_can_you_do_with_a_list/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/04_What_can_you_do_with_a_string/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/05_Example_cd_shuffle/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/06_Dice_odds/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/07_Bar_graphs/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/08_Representing_playing_cards/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/09_Poker_hands/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/10_Playing_cards_An_alternative_representation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/11_What_is_this_x_o_o_x_o_x/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/12_Palindrome/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/13_Built_in_type_conversions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/14_The_map_function/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/15_Tuples/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/70_Exercise_sheet_4/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/05_Lists_and_Strings/90_Assignment_4/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/01_Modularization/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/02_Functions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/03_Writing_functions_is_even/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/04_Writing_functions_Syntax_summary/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/05_Is_odd/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/06_Example_Dice_roll/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/07_Default_arguments/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/08_Playing_card_functions_1/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/09_Reusing_functions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/10_Modules/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/11_Documenting_modules_and_functions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/12_Summary_Module_layout/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/13_Example_Playing_card_functions_2/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/14_Refining_import/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/15_Scope/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/16_The_perils_of_mutability/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/17_Reference_semantics/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/18_Using_versus_changing_a_list/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/19_Copying_a_list/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/20_List_comprehensions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/21_What_are_these_pyc_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/22_Finding_the_standard_library_modules/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/70_Exercise_sheet_5/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/06_Functions/90_Assignment_5/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/01_Dictionaries/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/02_Dictionary_derivation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/03_What_can_you_do_with_a_dictionary/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/04_Example_word_frequencies/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/05_Example_Scrabble_scoring/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/06_Example_Book_database/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/07_Example_A_list_of_dictionaries/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/70_Exercise_sheet_6/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/07_Dictionaries/90_Assignment_6/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/01_Persistence/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/02_Text_versus_binary_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/03_Reading_from_text_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/04_Example_searching_log_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/05_Important_note_Files_are_sequential/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/06_Is_there_more/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/07_Writing_to_text_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/08_Appending_to_files/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/09_Reading_numeric_data/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/10_Designing_file_formats/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/11_Pickling/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/12_Shelves/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/13_A_controller_for_our_database/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/14_The_main_event_loop/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/08_Persistence/70_Exercise_Sheet_7/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
-         <loc>https://ttopper.github.io/CPSC128/08_Persistence/90_Assignment_8/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://ttopper.github.io/CPSC128/08_Persistence/90_Assignment_7/</loc>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/01_Object_oriented_programming/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/02_Encapsulation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/03_Inheritance/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/04_Polymorphism/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/05_The_plan_for_the_next_three_modules/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/06_A_small_example_A_dice_class/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/07_Python_OOP_syntax/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/08_Playing_card_classes_The_specification/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/09_Identifying_the_necessary_classes/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/10_Identifying_the_classes_methods/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/11_Program_skeleton_1/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/12_An_invisible_method_a_polymorphic_aside/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/13_Program_skeleton_2/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/14_An_invisible_class_too/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/15_Deck_methods/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/16_Hand_methods/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/17_Card_methods/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/18_Putting_all_the_pieces_together/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/19_Running_the_whole_thing/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/20_Programming_observation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/09_OOP1_Encapsulation/90_Assignment_9/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/01_Object_oriented_design_OOD/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/02_Preamble_to_hunt_the_wumpus/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/03_About_hunt_the_wumpus/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/04_OO_analysis/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/05_Object_attributes_and_methods/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/06_The_cave_system_objects/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/07_Main_routine_pseudocode/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/08_Class_cave_system/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/09_Aside_iterative_design/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/10_Class_room/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/11_Class_Pit/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/12_Class_Bat/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/13_Class_Wumpus/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/14_Class_Player/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/15_Putting_the_pieces_together/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/16_New_code_initializing_the_bats/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/17_New_code_pointing_to_a_missing_class_shoot_and_arrows/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/18_New_code_show_cheats/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/19_New_code_display_status_and_warnings/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/20_Memory_diagram/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/21_Bug_fixing_mostly_snatch/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/22_Aside_Data_structure_maintenance/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/23_Two_more_small_problems/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/24_Howd_we_do/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/10_OOD/90_Assignment_10/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/01_Inheritance_and_polymorphism/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/02_Inheritance_example_playing_cards/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/03_Class_Card_Collection/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/04_Class_Deck/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/05_Class_Hand/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/06_Putting_the_pieces_together/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/07_Aside_Refactoring/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/08_Polymorphism/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/09_Example_Fractions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/10_Reverse_engineering/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/11_Class_Fraction/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/12_Example_Playing_cards/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/13_A_subtle_point_Semantics/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/14_Conclusion_Adding_types/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/11_OOP2_Polymorphism_and_Inheritance/90_Assignment_11/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/01_UML_and_testing_with_doctest/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/02_Unified_modelling_language_uml/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/03_Aside_is_a_versus_has_a/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/04_UML_class_diagram_visual_syntax/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/05_Example_Playing_card_classes/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/06_Testing_with_doctest/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/12_Testing_and_Documentation/90_Assignment_12/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/13_Exam_Preparation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
     <url>
          <loc>https://ttopper.github.io/CPSC128/13_Exam_Preparation/01_Examinable_topics/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-27</lastmod>
     </url>
 </urlset>
