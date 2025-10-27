@@ -1,4 +1,4 @@
-# Assignment 8
+# Assignment 7
 
 ## Problems
 
@@ -9,8 +9,8 @@
     Yukon since 2005. They have collected data about mice from a site near 
     Whitehorse. They used live trapping techniques to record details of 
     various small mammal they caught during each trapping session. Dr. Scott 
-    Gilbert shared some of his research data in a comma separated text file 
-    **small_mammal_data.csv**. The file is available on the Moodle. We are 
+    Gilbert shared some of his research data in a tab delimited text file 
+    **small_mammal_data.txt**. The file is available on the Moodle. We are 
     particularly interested in the reproductive health of the female 
     Clethrionomys sp. There are many columns in the data that represent 
     different characteristics of the mice that were tracked at different time 
@@ -45,7 +45,7 @@
     The last few assignments have provided you with examples of testing
     harnesses to ensure programs are working correctly. Now it is time
     for you to design some tests of your own. The file
-    [a8p2kate.py](90_a8p2kate.py) contains six versions of a function named
+    [a7p2kate.py](90_a7p2kate.py) contains six versions of a function named
     `biggest` that all claim to return the largest of three values they
     are passed. Add test cases to the program to determine which ones
     (if any) work correctly. Based on your test cases identify the
@@ -58,7 +58,7 @@
 
 -   Use the following naming scheme for your program files:
     `a`*assignment#*`p`*problem#yourname*`.py` . So your solution
-    to problem 1 on this assignment will be named `a8p1bob.py`
-    and your solution for problem 2 will be named `a8p2bob.py` (adjusted obviously to use your name).
+    to problem 1 on this assignment will be named `a7p1bob.py`
+    and your solution for problem 2 will be named `a7p2bob.py` (adjusted obviously to use your name).
 
 -   Please submit all your `.py` files to the Moodle dropbox.

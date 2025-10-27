@@ -1,11 +1,15 @@
-# a8_2.py
+# a7p2.py
 #
 # A group of functions claiming to return the largest of
 # the three values they are passed.
 #
+# Created:
 # Tim Topper
-# CPSC 128
 # Fall 2012
+#
+# Modified
+# Kate Chatfield-Reed
+# Winter 2023
 
 def biggest_a(a, b, c):
     '''returns the largest of the three values passed.'''

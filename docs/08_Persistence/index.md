@@ -26,5 +26,5 @@ The topic of this module is persistence, but not of the human variety. In comput
     database](13_A_controller_for_our_database.md)
 1. [The main event
     loop](14_The_main_event_loop.md)
-1. [Exercise 7](70_Exercise_Sheet_7.md)
-1. [Assignment 8](90_Assignment_8.md)
+1. [Tutorial 7](70_Exercise_Sheet_7.md)
+1. [Assignment 7](90_Assignment_7.md)

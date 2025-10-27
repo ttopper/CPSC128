@@ -1,36 +1,67 @@
-# Exercise
+# Tutorial 7
 
-1.  ### Text file practice
+1. ### Text file practice
 
-    Write a module containing two functions. When run, the module
-    should prompt the user for a filename and a number of lines (let's
-    refer to it as `n`) and then call each function in turn with these
-    parameters.
+   Write a module containing three functions. When run, the module
+   should prompt the user for a filename and a number of lines (let's
+   refer to it as `n`) and then call each function in turn with these
+   parameters.
 
-    a.  The function `head` should return a list containing the first
-        `n` lines of the file.
+   a.  The function `head1` should return a list containing the first
+   `n` lines of the file using `read`.
 
-    b.  The function `tail` should return a list containing the last `n`
-        lines of the file.
+   b.  The function `head2` should return a list containing the first
+   `n` lines of the file using `readline`.
 
-    Make a test at the bottom to show the output of running the module, 
-    it might look like this:
+   c. The function `head3` should return a list containing the first
+   `n` lines of the file using `readlines`.
 
-```plaintext
-    Name of file to test with: pooh.txt
-    Number of lines to display: 3
+   Make a test at the bottom to show the output of running the module,
+   it might look like this:
 
-    head says the first 3 lines are:
-    The more it snows
-      (Tiddely pom),
-    The more it goes
+   ```plaintext
+       Name of file to test with: pooh.txt
+       Number of lines to display: 3
 
-    tail says the last 3 lines are:
-     How cold my toes
-      (Tiddely pom),
-     Are growing.
-```
+       head1 says the first 3 lines are:
+       The more it snows
+         (Tiddely pom),
+       The more it goes
 
-Since the file could be very long you will **not** want to read the
-whole thing into memory as a list of lines... Here is a short file to
-test with [pooh.txt](90_pooh.txt)
+       head2 says the first 3 lines are:
+       The more it snows
+         (Tiddely pom),
+       The more it goes
+
+       head3 says the first 3 lines are:
+       The more it snows
+         (Tiddely pom),
+       The more it goes
+   ```
+
+    Here is a short file to test with \[pooh.txt](90\_pooh.txt)
+   
+
+2. ### Making it space efficient
+
+   Since the file could be very long you will **not** want to read
+   the whole thing into memory as a list of lines... Modify one of
+   your `head` functions from the previous questions so that it
+   only loads the number of lines needed (only one of them will
+   work).
+
+   Here is a short file to test with [pooh.txt](90_pooh.txt)
+
+
+3. ### Trilobite data
+
+   Follow along with the instructor to complete the functions
+   used to work with the trilobite data. Make sure you have
+   working versions of...
+
+   a. `open\_trilobite\_data()`
+
+   b. `calculate\_diversity()`
+
+   c. `write\_trilobite\_data()`
+
