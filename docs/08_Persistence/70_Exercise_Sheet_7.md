@@ -39,7 +39,7 @@
        The more it goes
    ```
 
-    Here is a short file to test with \[pooh.txt](90\_pooh.txt)
+    Here is a short file to test with [pooh.txt](90_pooh.txt)
    
 
 2. ### Making it space efficient
@@ -59,9 +59,9 @@
    used to work with the trilobite data. Make sure you have
    working versions of...
 
-   a. `open\_trilobite\_data()`
+   a. `open_trilobite_data()`
 
-   b. `calculate\_diversity()`
+   b. `calculate_diversity()`
 
-   c. `write\_trilobite\_data()`
+   c. `write_trilobite_data()`
 
