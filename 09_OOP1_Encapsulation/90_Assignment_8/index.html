@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Assignment 9 - CPSC 128</title>
+  <title>Assignment 8 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -105,7 +105,7 @@
           
           ← Previous<br>
           <span style="color: rgba(251, 236, 218, 0.6);">←</span>
-          <a href="../20_Programming_observation/" title="Programming Observation">Programming Observation</a>
+          <a href="../70_Exercise_Sheet_8/" title="Tutorial 8">Tutorial 8</a>
           
         </div>
       
@@ -2036,8 +2036,17 @@
 
 -->
 
+<li >
+    <a href="../70_Exercise_Sheet_8/">Tutorial 8</a>
+</li>
+
+        
+            <!--
+
+-->
+
 <li class="active">
-    <a href="./">Assignment 9</a>
+    <a href="./">Assignment 8</a>
 </li>
 
         
@@ -2589,55 +2598,9 @@
 
   <main>
     
-      <h1 id="assignment-9">Assignment 9</h1>
+      <h1 id="assignment-8">Assignment 8</h1>
 <h2 id="problems">Problems</h2>
 <ol>
-<li>
-<h3 id="a-little-class-of-your-own">A little class of your own</h3>
-<p>Write a Coin class that will enable this code to run,</p>
-<pre><code># Your class goes here...
-
-if __name__ == '__main__':
-    coin = Coin()
-    print(f'Your first coin is a {coin}.')
-
-    purse = [coin]
-    print('Adding four more coins to your purse...')
-    for i in range(4):
-        coin = Coin(random.choice([5,10,25,100,200]))
-        purse.append(coin)
-
-    print('In your purse you now have:')
-    for coin in purse:
-        print('\ta', coin)
-
-    total = 0
-    for coin in purse:
-        total += coin.value
-    print('The total value of the coins in your purse is', total, 'cents.')
-
-    print('Flipping your coins you get:',end=' ')
-    for coin in purse:
-        print(coin.flip(),end = ' ')
-</code></pre>
-<p>and produce this output,</p>
-<pre><code>&gt;&gt;&gt; 
-Your first coin is a Nickle.
-Adding four more coins to your purse...
-In your purse you now have:
-    a Nickle
-    a Loonie
-    a Penny
-    a Dime
-    a Quarter
-The total value of the coins in your purse is 137 cents.
-Flipping your coins you get: Tails Tails Tails Heads Tails
-</code></pre>
-<p>Of course due to their random selection the exact coins that end up
-in the purse will vary from run to run, though the first coin
-created in the test above should always be a Penny, i.e. the default
-Coin to create is a Penny.</p>
-</li>
 <li>
 <h3 id="extending-a-class-1">Extending a class 1</h3>
 <p>Extend the code in <a href="../90_playing_cards_4.py"><code>playing_cards_4.py</code></a> so we
@@ -2695,8 +2658,8 @@ with a pair of attributes. Name the attributes <code>suit</code> and
 <li>
 <p>Use the following naming scheme for your program files:
     <code>a</code><em>assignment#</em><code>p</code><em>problem#</em>yourname<code>.py</code> . So problem 
-    1 on this assignment will be named <code>a9p1bob.py</code>
-    and your solution for problem will be named <code>a9p2bob.py</code> 
+    1 on this assignment will be named <code>a8p1bob.py</code>
+    and your solution for problem will be named <code>a8p2bob.py</code> 
     (adjusted obviously to use your name) .</p>
 </li>
 <li>
@@ -2716,13 +2679,13 @@ with a pair of attributes. Name the attributes <code>suit</code> and
       Support repo URL
     -->
     
-    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/09_OOP1_Encapsulation/90_Assignment_9.md">Source on GitHub</a>.
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/09_OOP1_Encapsulation/90_Assignment_8.md">Source on GitHub</a>.
     
     </p>
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-10-27 21:31:39.737615+00:00
+    Docs Build Date UTC : 2025-11-03 18:36:12.232765+00:00
     -->
   </footer>
 
