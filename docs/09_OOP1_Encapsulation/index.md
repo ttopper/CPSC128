@@ -43,4 +43,5 @@ There _is_ some new notation and jargon, so to help you concentrate on that we'l
     thing](19_Running_the_whole_thing.md)
 1. [Programming
     Observation](20_Programming_observation.md)
-[1. Assignment 9](90_Assignment_9.md)
+1. [Tutorial 8](70_Exercise_Sheet_8.md)
+1. [Assignment 8](90_Assignment_8.md)
