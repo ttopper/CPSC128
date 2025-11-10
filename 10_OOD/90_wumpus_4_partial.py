@@ -173,7 +173,6 @@ MAP ='''
 # cave_system is a global variable.
 # Global variables are generally frowned on,
 # but we don't have time to do justice to the
-# alternative -- come back for NCIT 212!
 cave_system = Cave_System(TUNNELS, MAP)
 
 # Initialize Bats.
