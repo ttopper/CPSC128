@@ -51,16 +51,16 @@
         In your purse you now have:
             a Nickle
             a Loonie
-            a Penny
+            a Nickle
             a Dime
             a Quarter
-        The total value of the coins in your purse is 137 cents.
+        The total value of the coins in your purse is 145 cents.
         Flipping your coins you get: Tails Tails Tails Heads Tails
         
 
     Of course due to their random selection the exact coins that end up
     in the purse will vary from run to run, though the first coin
-    created in the test above should always be a Penny, i.e. the default
-    Coin to create is a Penny.
+    created in the test above should always be a Nickle, i.e. the default
+    Coin to create is a Nickle.
 
 

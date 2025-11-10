@@ -47,3 +47,5 @@ In the past this has been many students' favourite assignment, and I hope you'll
 1. [Two more (small)
     problems](23_Two_more_small_problems.md)
 1. [How'd we do?](24_Howd_we_do.md)
+1. [Tutorial 9](70_Exercise_Sheet_9.md)
+1. [Assignment 9](90_Assignment_9.md)
