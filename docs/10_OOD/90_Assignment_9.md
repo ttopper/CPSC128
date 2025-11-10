@@ -42,6 +42,6 @@
 
 -   Use the following naming scheme for your program file:
     `a`*assignment#*yourname`.py` . So your code for this assignment 
-    will be named `a10bob.py` (adjusted obviously to use your name).
+    will be named `a9bob.py` (adjusted obviously to use your name).
 
 -   Please submit your `.py` file to the Moodle dropbox.
