@@ -31,3 +31,5 @@ Polymorphism isn't difficult to understand, but implementing it often involves a
     Semantics](13_A_subtle_point_Semantics.md)
 1. [Conclusion: Adding
     Types](14_Conclusion_Adding_types.md)
+1. [Tutorial 10](70_Exercise_Sheet_10.md)
+1. [Assignment 10](90_Assignment_10.md)

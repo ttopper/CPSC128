@@ -24,7 +24,7 @@ class Fraction:
             return Fraction(top, bottom)
         
     def __le__(self, other):
-        return self.num*other.den <= other.den*self.num
+        pass
     
     def __getitem__(self, key):
         if key == 0:

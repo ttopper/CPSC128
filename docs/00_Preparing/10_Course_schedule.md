@@ -18,6 +18,6 @@ _Oct 31_ | _Last day to withdraw without academic penalty._    | &nbsp;
 _Nov 3_ | 9.  Object-oriented programming (OOP) 1: Encapsulation  | [8](../09_OOP1_Encapsulation/90_Assignment_8.md)
 _Nov 10_ | 10. Object-oriented design (OOD). | [9](../10_OOD/90_Assignment_9.md)
 _Nov 17_ | _OOD  continued_                    | &nbsp;
-_Nov 24_ | 11. Object-oriented programming (OOP) 2: Polymorphism and inheritance  | [11]()
+_Nov 24_ | 11. Object-oriented programming (OOP) 2: Polymorphism and inheritance  | [10](../11_OOP2_Polymorphism_and_Inheritance/90_Assignment_10.md)
 _Dec 1_ | 12. Testing (doctest) and documentation (UML)     | [12]()
 _Dec 8_ | **Final Exam Preparation**               | &nbsp;
