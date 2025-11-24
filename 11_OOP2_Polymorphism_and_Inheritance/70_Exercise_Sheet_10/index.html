@@ -11,7 +11,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Assignment 11 - CPSC 128</title>
+  <title>Tutorial 10 - CPSC 128</title>
 
   <!--
     Just add a favicon.ico image to the docs.
@@ -97,7 +97,7 @@
           
           
             Next →<br>
-            <a href="../../12_Testing_and_Documentation/" title="Introduction: Testing and documentation 🕵️" />Introduction: Testing and documentation 🕵️</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
+            <a href="../90_Assignment_10/" title="Assignment 10" />Assignment 10</a><span style="color: rgba(251, 236, 218, 0.6);">→</span>
           
             
         </div>
@@ -2461,7 +2461,16 @@
 -->
 
 <li class="active">
-    <a href="./">Assignment 11</a>
+    <a href="./">Tutorial 10</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../90_Assignment_10/">Assignment 10</a>
 </li>
 
         
@@ -2607,130 +2616,25 @@
 
   <main>
     
-      <h1 id="assignment-11">Assignment 11</h1>
-<h2 id="problems">Problems</h2>
+      <h1 id="tutorial-10">Tutorial 10</h1>
 <ol>
 <li>
-<p>Using a <code>class</code> does not necessarily make a program object oriented. 
-    Consider the code below. The first warning bells are that the 
-    class has no methods and the functions in the module are stand 
-    alone functions not class methods. The code uses a <code>class</code>, but if 
-    you look carefully you will see that the class is used to represent 
-    not one type of object but several types of objects. The give-away 
-    is the attribute kind and the way it is tested by the remaining 
-    functions in the module to decide what to do. <em>YOU DO NOT ACTUALLY 
-    HAVE TO DRAW OR MANIPULATE SHAPES!</em> This is just an example of how 
-    to implement good object oriented design.</p>
-<pre><code># Suppose we need to support circles, equilateral triangles and squares.
-(CIRCLE, TRIANGLE, SQUARE) = range(3)
-class Shape:
-    def __init__(self, k, c, s):
-        self.kind = k
-        self.centre = c
-        self.size = s
-...
-def draw(shape):
-    if shape.kind == CIRCLE:
-        # code to draw a circle
-        ...
-    elif shape.kind == TRIANGLE:
-        # code to draw a triangle
-        ...
-    else:
-        # code to draw a square
-        ...
-def fill(shape, colour):
-# Fills the shape with colour.
-    if shape.kind == CIRCLE:
-        # code to fill in a circle
-        ...
-    elif shape.kind == TRIANGLE:
-        # code to fill in a triangle
-        ...
-    else:
-        # code to fill in a square
-        ...
-def rotate(shape, angle):
-    # Rotates the shape about its centre by angle.
-    if shape.kind == CIRCLE:
-        # code to rotate a circle
-        ...
-    elif shape.kind == TRIANGLE:
-        # code to rotate a triangle
-        ...
-    else:
-        # code to rotate a square
-        ...
-
-def groovy(shape_list):
-    for shape in shape_list:
-        draw(shape)
-        rotate(shape, math.pi/2)
-        fill(shape, random.randint(0,15))
-</code></pre>
-<p>a. Suppose you are given this code and told you must add support 
-   for an additional shape, pentagons. What changes would you 
-   have to make to the module? Call this version a11_1_1a.py.</p>
-<p>b. Now refactor this code so it uses three classes Circle, 
-   Triangle and Square instead of one where each class has its 
-   own draw, fill, etc. methods. Call this version a11_1_1b.py.</p>
-<p>c. Finally, what changes have to be made to version a11_1_1b.py 
-   to support a new pentagon shape type? Call this version 
-   a11_1_1c.py</p>
-<p>d. Compare the changes you made in a. and c. above. In each case 
-   how much existing code did you have to modify? Which approach 
-   is most likely to result in breaking existing code? You can 
-   put your answers to these questions in your submission comment.</p>
+<h3 id="add-inheritance-to-your-monster-vampire-zombie-sith-etc">Add inheritance to your monster (vampire, zombie, Sith, etc.)</h3>
+<p>Take the monster class you wrote in tutorial 8. Adjust it so that it inherits
+from the <code>Monster</code> class we wrote in lecture. Upload your code to the help
+centre so that I can test it all in a large monster attack. Make sure that 
+your code it well commented and that your tests will not run if I import them
+to another module (using <code>__main__</code>).</p>
+<p>The class should have a modified <code>__init__</code> method (if necessary), an <code>__str__</code> 
+method, and a modified attack method.</p>
 </li>
 <li>
-<p>The class <code>CoinJar</code> represents a jar of Canadian coins. Write the 
-    necessary code so this program will run correctly.</p>
-<pre><code>tims = CoinJar(pennies=3, quarters=2, loonies=1,toonies=0)
-mollys = CoinJar(pennies=48, nickels=12, dimes=7, quarters=14)
-print(tims.value()) # Displays 1.53
-print(mollys.value()) # Displays 5.28
-print(tims.dimes) # Displays 0.
-print(tims[0]) # Displays 0.
-print(mollys.quarters) # Displays 14.
-print(mollys[3]) # Displays 7.
-if tims &gt; mollys:
-    print('Tim is richer than Molly.')
-else:
-    print('Molly is at least as rich as Tim.')
-# ^ Displays: Molly is at least as rich as Tim.
-tims = tims + mollys
-print(tims) # Fancy display of your design.
-</code></pre>
-<p>Hint: Since the order of the parameters varies between the two 
-constructor calls in lines 1 and 2 we can tell that named parameters 
-are being used.</p>
-</li>
-<li>
-<p>The file <a href="../90_WumpusAdjMatrixMap.py"><code>WumpusAdjMatrixMap.py</code></a> contains 
-    an alternative representation of a wumpus cave system (one based on an 
-    adjacency matrix* rather than the list of lists of tunnels we have been 
-    using) and stubs for two functions: tunnels_from and tunnels_to. Write 
-    the bodies of these functions so they will work as the docstrings 
-    describe. The docstrings contain one test of each function, but these 
-    are meant to be illustrative rather than exhaustive.</p>
-<p>Note that you don't have to integrate this representation into your 
-earlier Hunt the Wumpus program. This is a stand alone problem.</p>
-<p>Hint: You might want to peek ahead at Module 12 to see how to activate 
-the tests in the docstrings.</p>
+<h3 id="fractions">Fractions</h3>
+<p>Finish the <code>Fraction</code> class we wrote together in lecture. The final code 
+should have addition, subtraction, multiplication, indexing, str, and all
+the equality operators (lt,le,eq,ge,gt).</p>
 </li>
 </ol>
-<h2 id="logistics">Logistics</h2>
-<ul>
-<li>
-<p>Use the following naming scheme for your program files:
-    <code>a</code><em>assignment#</em><code>p</code><em>problem#</em>yourname<code>.py</code> . So your code for the 
-    the first problen of this assignment will be named <code>a11p1bob.py</code> 
-    (adjusted obviously to use your name).</p>
-</li>
-<li>
-<p>Please submit your <code>.py</code> file to the Moodle dropbox.</p>
-</li>
-</ul>
     
   </main>
 
@@ -2744,13 +2648,13 @@ the tests in the docstrings.</p>
       Support repo URL
     -->
     
-    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/11_OOP2_Polymorphism_and_Inheritance/90_Assignment_11.md">Source on GitHub</a>.
+    <a href="https://github.com/ttopper/CPSC128/edit/main/docs/11_OOP2_Polymorphism_and_Inheritance/70_Exercise_Sheet_10.md">Source on GitHub</a>.
     
     </p>
 
     <!--
     MkDocs version      : 1.6.1
-    Docs Build Date UTC : 2025-11-10 20:01:01.972037+00:00
+    Docs Build Date UTC : 2025-11-24 22:13:17.559589+00:00
     -->
   </footer>
 
